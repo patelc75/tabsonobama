@@ -34,3 +34,6 @@
 [submodule "vendor/plugins/rspec-rails"]
 	path = vendor/plugins/rspec-rails
 	url = git://github.com/dchelimsky/rspec-rails.git
+[submodule "vendor/plugins/forgot_password"]
+	path = vendor/plugins/forgot_password
+	url = git://github.com/greenisus/forgot_password.git
