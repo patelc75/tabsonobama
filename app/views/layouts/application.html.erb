@@ -9,7 +9,8 @@
 		<meta name="robots" content="all" />	
 		<meta name="resource-type" content="document" />
 		<meta name="MSSmartTagsPreventParsing" content="true" />
-    <%= stylesheet_link_merged :base %>
+		<!-- fix the default stylesheet link to use asset_packager -->
+    <%= stylesheet_link_tag 'initial', 'form', 'application', :media => 'screen' %>
 		
  	  <%= stylesheet_link_tag 'print', :media => 'print' %>
 	  <%= stylesheet_link_tag 'handheld', :media => 'handheld' %>
