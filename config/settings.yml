@@ -1,3 +1,6 @@
+global:
+  project_name: my_project 
+  
 development: &non_production_settings
   site_url: http://localhost:3000
   site_name: Bort
