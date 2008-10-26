@@ -4,3 +4,6 @@
 [submodule "vendor/plugins/aasm"]
 	path = vendor/plugins/aasm
 	url = git://github.com/rubyist/aasm.git
+[submodule "vendor/plugins/annotate-models"]
+	path = vendor/plugins/annotate-models
+	url = git://github.com/rotuka/annotate-models.git
