@@ -1,1 +1,1 @@
-ExceptionNotifier.exception_recipients = "bort@bort.com"
+ExceptionNotifier.exception_recipients = APP_CONFIG["admin_email"]
