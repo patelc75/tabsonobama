@@ -43,7 +43,7 @@ module Synthesis
       # used by ActionView::Helpers::AssetTagHelper
       def compute_public_path(source, dir, ext=nil, add_asset_id=true)
         source = source.dup
-        source << ".#{ext}" if File.extname(source).blank? && ext
+        source << ".#{ext}" if File.extname(source) != ext && ext
         unless source =~ %r{^[-a-z]+://}
           source = "/#{dir}/#{source}" unless source[0] == ?/
           asset_id = rails_asset_id(source)

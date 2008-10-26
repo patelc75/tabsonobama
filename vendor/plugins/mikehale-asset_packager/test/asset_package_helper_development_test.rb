@@ -54,6 +54,11 @@ class AssetPackageHelperProductionTest < Test::Unit::TestCase
       javascript_include_merged("prototype", "foo")
   end
   
+  def test_js_version_packages
+    assert_dom_equal build_js_expected_string("jquery-1.2.6"), 
+      javascript_include_merged("jquery-1.2.6")
+  end
+  
   def test_js_unpackaged_file
     assert_dom_equal build_js_expected_string("prototype", "foo", "not_part_of_a_package"), 
       javascript_include_merged("prototype", "foo", "not_part_of_a_package")
