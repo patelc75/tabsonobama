@@ -9,8 +9,19 @@
 		<meta name="robots" content="all" />	
 		<meta name="resource-type" content="document" />
 		<meta name="MSSmartTagsPreventParsing" content="true" />
-		<%= stylesheet_link_tag 'base' %>
-		<%= javascript_include_tag :defaults %>
+    <%= stylesheet_link_merged :base %>
+		
+ 	  <%= stylesheet_link_tag 'print', :media => 'print' %>
+	  <%= stylesheet_link_tag 'handheld', :media => 'handheld' %>
+	  		
+  	<!--[if lte IE 6]>
+  		 <%= stylesheet_link_tag 'ie_6' %>
+  	<![endif]-->
+  	
+		<%= javascript_include_merged :base %>
+		<%= javascript_tag "var AUTH_TOKEN = #{form_authenticity_token.inspect};" if protect_against_forgery? %>
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 	</head>
 	<body>
 		<div id="container">
