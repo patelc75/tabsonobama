@@ -6,7 +6,10 @@ If you have any suggestions for improvements then feel free to leave a request o
 
 Install
 
-* Download and unzip Bort
+* Download and unzip Bort (or do a git clone from git://github.com/laktek/extended-bort.git)
+* run 
+      git submodule init
+      git submodule update
 * Edit the database.yml and the settings.yml files
 * Rake db:migrate
 * change the session key in config/environment.rb and REST_AUTH_SITE_KEY in environments config (you can generate keys using rake:secret) 

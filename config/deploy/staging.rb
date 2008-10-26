@@ -29,6 +29,7 @@ role :db, domain, :primary => true
 #############################################################
 
 set :scm, :git
+set :git_enable_submodules, 1
 set :branch, "master"
 set :scm_user, 'bort'
 set :scm_passphrase, "PASSWORD"
