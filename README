@@ -9,27 +9,28 @@ Install
 * Download and unzip Bort
 * Edit the database.yml and the settings.yml files
 * Rake db:migrate
+* change the session key in config/environment.rb and REST_AUTH_SITE_KEY in environments config (you can generate keys using rake:secret) 
 * Have a brew and celebrate
 
-h2. Plugins Installed
+Plugins Installed
 
 Bort comes with a few commonly used plugins installed and already setup.
 
-h3. RESTful Authentication
+  RESTful Authentication
 
-RESTful Authentication is already setup. The routes are setup, along with the mailers and observers.
-Forgotten password comes setup, so you don't have to mess around setting it up with every project.
+  RESTful Authentication is already setup. The routes are setup, along with the mailers and observers.
+  Forgotten password comes setup, so you don't have to mess around setting it up with every project.
 
-The AASM plugin comes pre-installed. RESTful Authentication is also setup to use user activation.
+  The AASM plugin comes pre-installed. RESTful Authentication is also setup to use user activation.
 
-h3. User Roles
+  User Roles
 
-Bort now comes with "Role Requirement":http://code.google.com/p/rolerequirement/ by Tim Harper. A default 
-admin role is predefined along with a default admin user. See the migrations for the admin login details.
+  Bort now comes with "Role Requirement":http://code.google.com/p/rolerequirement/ by Tim Harper. A default 
+  admin role is predefined along with a default admin user. See the migrations for the admin login details.
 
-h3. Open ID Authentication
+  Open ID Authentication
 
-Bort, as of 0.3, has Open ID integrated with RESTful Authentication. Rejoice!
+  Bort, as of 0.3, has Open ID integrated with RESTful Authentication. Rejoice! 
 
 h3. Will Paginate
 
