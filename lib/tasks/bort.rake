@@ -1,6 +1,6 @@
 namespace :bort do
   PLUGIN_LIST = {
-    :acts_as_taggable_on_steroids => 'http://svn.viney.net.nz/things/rails/plugins/acts_as_taggable_on_steroids',
+    :acts_as_taggable_on_steroids => 'git://github.com/mattetti/acts_as_taggable_on_steroids.git',
     :attachment_fu => 'git://github.com/technoweenie/attachment_fu.git',
     :bundle_fu => 'git://github.com/timcharper/bundle-fu.git',
     :fudge_form => 'git://github.com/JimNeath/fudge_form.git',
@@ -28,7 +28,7 @@ namespace :bort do
   namespace :install do
     PLUGIN_LIST.each_pair do |key, value|
       task key do
-        system('script/plugin', 'install', value, '--force')
+        system('git', 'submodule', 'add', value, "vendor/plugins/#{key}")
       end
     end
   end

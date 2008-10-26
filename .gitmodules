@@ -43,3 +43,6 @@
 [submodule "vendor/plugins/webrat"]
 	path = vendor/plugins/webrat
 	url = git://github.com/brynary/webrat.git
+[submodule "vendor/plugins/bundle-fu"]
+	path = vendor/plugins/bundle-fu
+	url = git://github.com/timcharper/bundle-fu.git
