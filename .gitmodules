@@ -7,3 +7,6 @@
 [submodule "vendor/plugins/annotate-models"]
 	path = vendor/plugins/annotate-models
 	url = git://github.com/rotuka/annotate-models.git
+[submodule "vendor/plugins/exception_notification"]
+	path = vendor/plugins/exception_notification
+	url = git://github.com/rails/exception_notification.git
