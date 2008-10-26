@@ -2,7 +2,7 @@ namespace :bort do
   PLUGIN_LIST = {
     :acts_as_taggable_on_steroids => 'git://github.com/mattetti/acts_as_taggable_on_steroids.git',
     :attachment_fu => 'git://github.com/technoweenie/attachment_fu.git',
-    :bundle_fu => 'git://github.com/timcharper/bundle-fu.git',
+    :asset_packager => 'git://github.com/mikehale/asset_packager.git',
     :fudge_form => 'git://github.com/JimNeath/fudge_form.git',
     :haml => 'git://github.com/nex3/haml.git',
     :jrails => 'git://github.com/aaronchi/jrails.git',
