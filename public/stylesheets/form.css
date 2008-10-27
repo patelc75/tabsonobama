@@ -28,13 +28,6 @@ div.form-container div.controlset input { display: inline; float: none; }
 div.form-container div.controlset label.controlset { display: block; float: left; }
 div.form-container div.controlset div { margin-left: 170px; }
 
-/* Styles for multiple inputs */
-/* There is a issue with this once declare set of fields as muliple inputs */
-/* the fields comes after that field becomes floated/not in position */
-/* GP try to fix this */ 
-div.form-container div.multiple-inputs div{float:left; margin-right:3px;}
-div.form-container div.multiple-inputs div label{display:none;}
-
 div.form-container div.buttonrow { margin-left: 180px; }
 div.form-container div.buttonrow input, input.plainbutton { padding: 5px 10px; }
 
