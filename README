@@ -16,6 +16,7 @@ Changes are:
 Install
 
 * Download and unzip Bort (or do a git clone from git://github.com/laktek/extended-bort.git)
+* cd extended-bort
 * run 
       git submodule init
       git submodule update
