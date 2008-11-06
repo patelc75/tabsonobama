@@ -4,9 +4,9 @@
 [submodule "vendor/plugins/aasm"]
 	path = vendor/plugins/aasm
 	url = git://github.com/rubyist/aasm.git
-[submodule "vendor/plugins/annotate-models"]
-	path = vendor/plugins/annotate-models
-	url = git://github.com/rotuka/annotate-models.git
+[submodule "vendor/plugins/annotate_models"]
+	path = vendor/plugins/annotate_models
+	url = git://github.com/rotuka/annotate_models.git
 [submodule "vendor/plugins/exception_notification"]
 	path = vendor/plugins/exception_notification
 	url = git://github.com/rails/exception_notification.git
