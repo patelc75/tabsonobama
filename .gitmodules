@@ -40,3 +40,6 @@
 [submodule "vendor/plugins/bundle-fu"]
 	path = vendor/plugins/bundle-fu
 	url = git://github.com/timcharper/bundle-fu.git
+[submodule "vendor/plugins/restful-authentication"]
+	path = vendor/plugins/restful-authentication
+	url = git://github.com/laktek/restful-authentication.git
