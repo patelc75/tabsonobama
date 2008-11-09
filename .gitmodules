@@ -1,9 +1,6 @@
 [submodule "vendor/rails"]
 	path = vendor/rails
 	url = git://github.com/rails/rails.git
-[submodule "vendor/plugins/aasm"]
-	path = vendor/plugins/aasm
-	url = git://github.com/rubyist/aasm.git
 [submodule "vendor/plugins/annotate_models"]
 	path = vendor/plugins/annotate_models
 	url = git://github.com/rotuka/annotate_models.git
@@ -43,3 +40,6 @@
 [submodule "vendor/plugins/restful-authentication"]
 	path = vendor/plugins/restful-authentication
 	url = git://github.com/laktek/restful-authentication.git
+[submodule "vendor/plugins/aasm"]
+	path = vendor/plugins/aasm
+	url = git://github.com/rubyist/aasm.git
