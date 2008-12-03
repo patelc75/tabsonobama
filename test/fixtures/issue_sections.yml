@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  issue_group_id: 1
+  name: MyString
+  description: MyText
+  rating: 1.5
+
+two:
+  issue_group_id: 1
+  name: MyString
+  description: MyText
+  rating: 1.5
