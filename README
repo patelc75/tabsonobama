@@ -1,32 +1,13 @@
-Extended-Bort
-
-This is a fork of orginial Bort (http://github.com/fudgestudios/bort/tree/master) with some changes.
-
-Changes are:
-    * Git Submodules are used to keep Rails and other plugins updated.
-    * Included Rails 2.2.0 with tha app
-    * Added annotate-models and make_resourceful plugins
-    * Added Action Mailer initializer and SMTP settings for production mode
-    * Uses admin email specified in settings.yml in exception notifier
-    * Replaced rSpec story runner with new Cucumber Scenario Framework (webrat and cucumber plguins are included)
-    * Replaced Prototype js with jQuery
-    * Replaced asset_packager with bundle_fu for bundling assets
-    * Changed Stylesheets by adding an initial stylesheet, application stylesheet and Hartija CSS print stylesheet
+TABS ON OBAMA
+=============
 
 Install
 
-* Download and unzip Bort (or do a git clone from git://github.com/laktek/extended-bort.git)
-* cd extended-bort
 * run 
       git submodule init
       git submodule update
-* Edit the database.yml and the settings.yml files
-* Rake db:migrate
-* change the session key in config/environment.rb and REST_AUTH_SITE_KEY in environments config (you can generate keys using rake:secret) 
-* Have a brew and celebrate
+* Edit the database.yml
+* Run rake db:migrate
+* Run rake app:setup
 
-Credits
-
-Bort put together by people at "Fudge":http://www.fudgestudios.com/. Extended-Bort was done by Lakshan Perera (http://laktek.com) based on Original Bort.
-
-# test commit
+Based on extended-bort.  Bort put together by people at "Fudge":http://www.fudgestudios.com/. Extended-Bort was done by Lakshan Perera (http://laktek.com) based on Original Bort.
