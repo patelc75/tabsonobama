@@ -9,7 +9,36 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080929171348) do
+ActiveRecord::Schema.define(:version => 20081202042411) do
+
+  create_table "issue_bullets", :force => true do |t|
+    t.integer  "issue_section_id"
+    t.text     "name"
+    t.text     "description"
+    t.float    "rating"
+    t.integer  "ratings_count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "issue_groups", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.float    "rating"
+    t.integer  "ratings_count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "issue_sections", :force => true do |t|
+    t.integer  "issue_group_id"
+    t.string   "name"
+    t.text     "description"
+    t.float    "rating"
+    t.integer  "ratings_count"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "open_id_authentication_associations", :force => true do |t|
     t.integer "issued"
@@ -34,6 +63,23 @@ ActiveRecord::Schema.define(:version => 20080929171348) do
     t.datetime "updated_at"
   end
 
+  create_table "profiles", :force => true do |t|
+    t.string   "name"
+    t.string   "location"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "ratings", :force => true do |t|
+    t.integer  "user_id"
+    t.float    "rating"
+    t.string   "issue_type"
+    t.integer  "issue_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "roles", :force => true do |t|
     t.string "name"
   end
@@ -50,13 +96,12 @@ ActiveRecord::Schema.define(:version => 20080929171348) do
     t.datetime "updated_at"
   end
 
-  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
+  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
   create_table "users", :force => true do |t|
     t.string   "login",                     :limit => 40
     t.string   "identity_url"
-    t.string   "name",                      :limit => 100, :default => ""
     t.string   "email",                     :limit => 100
     t.string   "crypted_password",          :limit => 40
     t.string   "salt",                      :limit => 40
