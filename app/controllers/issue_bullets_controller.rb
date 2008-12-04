@@ -1,11 +1,10 @@
 class IssueBulletsController < ApplicationController
-  def index
+  make_resourceful do
+    actions :all
+    belongs_to :section
   end
-
-  def new
+  
+  def current_object
+    @current_object ||= current_model.find_by_permalink(params[:id])
   end
-
-  def edit
-  end
-
 end
