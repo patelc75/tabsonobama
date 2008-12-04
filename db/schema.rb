@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081202042411) do
+ActiveRecord::Schema.define(:version => 20081204032123) do
 
   create_table "issue_bullets", :force => true do |t|
     t.integer  "issue_section_id"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20081202042411) do
     t.integer  "ratings_count"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "permalink"
   end
 
   create_table "issue_sections", :force => true do |t|
