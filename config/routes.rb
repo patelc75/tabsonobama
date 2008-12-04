@@ -17,7 +17,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :issue_groups, :as => :groups do |groups|
     groups.resources :issue_sections, :as => :sections do |sections|
-      sections.resources :issue_bullets, :as => :bullets
+      sections.resources :issue_bullets, :as => :issues
     end
   end
   
