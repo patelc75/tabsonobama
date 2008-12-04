@@ -15,6 +15,12 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :passwords
   map.resource :session
   
+  map.resources :issue_groups, :as => :groups do |groups|
+    groups.resources :issue_sections, :as => :sections do |sections|
+      sections.resources :issue_bullets, :as => :bullets
+    end
+  end
+  
   # Home Page
   map.root :controller => 'sessions', :action => 'new'
 
