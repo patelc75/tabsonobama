@@ -107,7 +107,12 @@ module PermalinkFu
       if read_attribute(self.class.permalink_field).to_s.empty?
         send("#{self.class.permalink_field}=", create_permalink_for(self.class.permalink_attributes))
       end
-      limit   = self.class.columns_hash[self.class.permalink_field].limit
+      
+      # BUG -- We don't care about the actual limit since (a) we're only using strings
+      # and (b) we don't want 255 character url segments :)
+      # limit   = self.class.columns_hash[self.class.permalink_field.to_s].limit
+      limit = 100
+      
       base    = send("#{self.class.permalink_field}=", read_attribute(self.class.permalink_field)[0..limit - 1])
       [limit, base]
     end
