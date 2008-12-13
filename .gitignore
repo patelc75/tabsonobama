@@ -6,3 +6,5 @@ doc/app
 coverage
 db/*.sqlite3
 config/database.yml
+public/stylesheets/cache
+public/javascripts/cache
