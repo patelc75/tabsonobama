@@ -6,7 +6,7 @@ class ChartsController < ApplicationController
     render :layout => false
   end
   def random_data
-    @data = IssueSection.chart_data
-    render :layout => false
+    text = IssueSection.chart_data.map {|datum| datum.join(",")}.join("\n")
+    render :text => text
   end
 end
