@@ -9,7 +9,13 @@
   // <![CDATA[		
   var so = new SWFObject("/amstock/amstock.swf", "amstock", "800", "500", "8", "#FFFFFF");
 //  so.addVariable("path", "/amstock/");
-  so.addVariable("settings_file", escape("/charts/settings"));
+  <%
+    settings_file_url = "/charts/settings"
+    if !data_url.blank?
+      settings_file_url += "?data_url=" + data_url
+    end
+  %>
+  so.addVariable("settings_file", escape("<%= settings_file_url %>"));
 
   so.addVariable("preloader_color", "#000000");
   //so.addVariable("chart_settings", "");
