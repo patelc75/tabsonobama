@@ -1,0 +1,21 @@
+<!-- amstock script-->
+
+<script type="text/javascript" src="/amstock/swfobject.js"></script>
+<div id="flashcontent">
+   <strong>You need to upgrade your Flash Player</strong>
+</div>
+
+<script type="text/javascript">
+  // <![CDATA[		
+  var so = new SWFObject("/amstock/amstock.swf", "amstock", "800", "500", "8", "#FFFFFF");
+//  so.addVariable("path", "/amstock/");
+  so.addVariable("settings_file", escape("/charts/settings"));
+
+  so.addVariable("preloader_color", "#000000");
+  //so.addVariable("chart_settings", "");
+  //so.addVariable("additional_chart_settings", "");
+  //so.addVariable("loading_settings", "Loading settings");
+  so.write("flashcontent");
+  // ]]>
+</script>
+<!-- end of amstock script -->
