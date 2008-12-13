@@ -10,6 +10,7 @@ development:
   username: root
   password:
   pool: 5
+  socket: '/opt/local/var/run/mysqld/mysqld.sock'
   
 test:
   # # Sqlite Settings
@@ -24,6 +25,7 @@ test:
   username: root
   password:
   pool: 5
+  socket: '/opt/local/var/run/mysqld/mysqld.sock'
   
 staging:
   # # Sqlite Settings
@@ -37,6 +39,7 @@ staging:
   username: root
   password:
   pool: 5
+  socket: '/opt/local/var/run/mysqld/mysqld.sock'
   
 production:
   # # Sqlite Settings
@@ -50,3 +53,5 @@ production:
   username: root
   password:
   pool: 5
+  socket: '/opt/local/var/run/mysqld/mysqld.sock'
+  
