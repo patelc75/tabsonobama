@@ -1,0 +1,36 @@
+Acts As Rateble
+=============
+
+Acts_as_rateable is a plugin released under the MIT license. 
+It makes activerecord models rateable through a polymorphic association and optionally logs which user rated which model.
+In this case, one user can rate an object once. Used on cotcot.hu for article rating, sponsored quizzes, etc.
+
+
+Example
+=======
+
+Install the plugin into your vendor/plugins directory, insert 'acts_as_rateable' into your model, then restart your application.
+
+class Post < ActiveRecord::Base
+
+	acts_as_rateable
+	
+end
+
+Now your model is extended by the plugin, you can rate it ( 1-# )or calculate the average rating.
+
+@post.rate_it( 4, current_user.id )
+
+@post.average_rating #=> 4.0
+
+@post.average_rating_round #=> 4
+
+@post.average_rating_percent #=> 80
+
+@post.rated_by?( current_user ) #=> rating || false
+
+Post.find_average_of( 4 ) #=> array of posts
+
+See acts_as_rateable.rb for further details!
+
+Copyright (c) 2007 Ferenc Fekete, http://xpnindustries.com , released under the MIT license

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081204032123) do
+ActiveRecord::Schema.define(:version => 20081214201341) do
 
   create_table "issue_bullets", :force => true do |t|
     t.integer  "issue_section_id"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20081204032123) do
     t.integer  "ratings_count"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "permalink"
   end
 
   create_table "issue_groups", :force => true do |t|
@@ -39,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20081204032123) do
     t.integer  "ratings_count"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "permalink"
   end
 
   create_table "open_id_authentication_associations", :force => true do |t|
@@ -51,9 +53,9 @@ ActiveRecord::Schema.define(:version => 20081204032123) do
   end
 
   create_table "open_id_authentication_nonces", :force => true do |t|
-    t.integer "timestamp",  :null => false
+    t.integer "timestamp",  :default => 0,  :null => false
     t.string  "server_url"
-    t.string  "salt",       :null => false
+    t.string  "salt",       :default => "", :null => false
   end
 
   create_table "passwords", :force => true do |t|
@@ -72,14 +74,21 @@ ActiveRecord::Schema.define(:version => 20081204032123) do
     t.datetime "updated_at"
   end
 
+  create_table "rates", :force => true do |t|
+    t.integer "score"
+  end
+
   create_table "ratings", :force => true do |t|
     t.integer  "user_id"
-    t.float    "rating"
-    t.string   "issue_type"
-    t.integer  "issue_id"
+    t.integer  "rate_id"
+    t.integer  "rateable_id"
+    t.string   "rateable_type", :limit => 32
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "ratings", ["rate_id"], :name => "index_ratings_on_rate_id"
+  add_index "ratings", ["rateable_id", "rateable_type"], :name => "index_ratings_on_rateable_id_and_rateable_type"
 
   create_table "roles", :force => true do |t|
     t.string "name"
@@ -91,7 +100,7 @@ ActiveRecord::Schema.define(:version => 20081204032123) do
   end
 
   create_table "sessions", :force => true do |t|
-    t.string   "session_id", :null => false
+    t.string   "session_id", :default => "", :null => false
     t.text     "data"
     t.datetime "created_at"
     t.datetime "updated_at"

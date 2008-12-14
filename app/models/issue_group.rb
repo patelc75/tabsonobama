@@ -1,6 +1,4 @@
 class IssueGroup < ActiveRecord::Base
-  has_many :ratings, :as => :issue
-  has_many :raters, :through => :ratings, :class_name => 'User', :source => 'user'
-
+  acts_as_rateable
   has_permalink :name
 end
