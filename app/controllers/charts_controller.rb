@@ -6,6 +6,7 @@ class ChartsController < ApplicationController
     render :layout => false
   end
   def random_data
+    # data is in the format "<date>,<value>". Date is in the format "YYYY-MM-DD"
     text = IssueSection.chart_data.map {|datum| datum.join(",")}.join("\n")
     render :text => text
   end

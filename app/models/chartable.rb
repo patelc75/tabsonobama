@@ -10,7 +10,8 @@ module Chartable
   module ClassMethods
 
     # 
-    # chart_data is an array of [<date>,<value>] tuples
+    # chart_data is an array of [<date>,<value>] tuples.
+    # <date> is formatted "YYYY-MM-DD" (use the format :amchart)
     # Right now this method just creates random data
     # [TODO: Override chart_data in included modules to return real data]
     def chart_data(options={})
