@@ -8,7 +8,7 @@
 #   ]
 # ]
 
-data = [["Civil Rights",
+DATA = [["Civil Rights",
   "**Barack Obama will combat employment discrimination:** Obama and Biden will work to overturn the Supreme Court's recent ruling that curtails s and racial minorities' ability to challenge pay discrimination. They will also pass the Fair Pay Act to ensure that women receive equal pay for equal work and the Employment Non-Discrimination Act to prohibit discrimination based on sexual orientation or gender identity or expression.women\n\n**Strengthen civil rights enforcement:** Obama and Biden will reverse the politicization that has occurred in the Bush Administration's Department of Justice. They will put an end to the ideological litmus tests used to fill positions within the Civil Rights Division.\n\n**Expand hate crime statutes:** Obama and Biden will strengthen federal hate crimes legislation, expand hate crimes protection by passing the Matthew Shepard Act, and reinvigorate enforcement at the Department of Justice's Criminal Section.",
   [["Strengthen Civil Rights Enforcement", "", []],
    ["Combat Employment Discrimination", "", []],
@@ -177,7 +177,19 @@ namespace :app do
   end
   
   task :seed => [:environment] do
-    
+    DATA.each do |issue_group_array|
+      ig = IssueGroup.create!(:name => issue_group_array[0], :description => issue_group_array[1])
+      issue_group_array[2].each do |issue_section_array|
+        is = IssueSection.create!(:name => issue_section_array[0], 
+                             :description => issue_section_array[1],
+                             :issue_group => ig)
+        issue_section_array[2].each do |issue_bullet_array|
+          IssueBullet.create!(:name => issue_bullet_array[0],
+                              :description => issue_bullet_array[1],
+                              :issue_section => is)
+        end
+      end
+    end
   end
   
   task :setup => [:bootstrap, :seed]
