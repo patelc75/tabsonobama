@@ -14,15 +14,17 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.resources :passwords
   map.resource :session
-  
+
   map.resources :issue_groups, :as => :groups do |groups|
     groups.resources :issue_sections, :as => :sections do |sections|
       sections.resources :issue_bullets, :as => :issues
     end
   end
-  
+
+  map.resources :splashes
+    
   # Home Page
-  map.root :controller => 'sessions', :action => 'new'
+  map.root :controller => 'splashes', :action => 'index'
 
   # Install the default routes as the lowest priority.
   map.connect ':controller/:action/:id'

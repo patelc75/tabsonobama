@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081214201341) do
+ActiveRecord::Schema.define(:version => 20081216011513) do
 
   create_table "issue_bullets", :force => true do |t|
     t.integer  "issue_section_id"
@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(:version => 20081214201341) do
   end
 
   create_table "open_id_authentication_nonces", :force => true do |t|
-    t.integer "timestamp",  :default => 0,  :null => false
+    t.integer "timestamp",                  :null => false
     t.string  "server_url"
     t.string  "salt",       :default => "", :null => false
   end
@@ -108,6 +108,12 @@ ActiveRecord::Schema.define(:version => 20081214201341) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "splashes", :force => true do |t|
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "login",                     :limit => 40

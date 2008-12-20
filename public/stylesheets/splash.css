@@ -1,0 +1,87 @@
+* {
+		margin: 0;
+		padding: 0;
+}
+
+body {
+		margin: 0;
+		color: #BBB;
+        background-color: #01245c;
+        font: 13px 'Lucida Grande',Arial,Helvetica,Sans-Serif;
+        line-height:18px;
+}
+
+h1, h2, h3, h4, h5 {
+		font-weight:normal;
+}
+
+h2 {
+        font-family: Georgia,"Times New Roman",Times,serif;
+		font-size: 38px;
+		color: #FFF;
+}
+
+a, a:active, a:link, a:visited {
+        border-bottom: 1px dotted #2070ad;
+        color: #2070ad;
+        font-weight: normal;
+        text-decoration: none;
+}
+
+a:hover {
+        border-bottom: 1px dotted #FFF;
+        color: #FFF;
+}
+
+#wrapper { 
+		margin: 0 auto;
+		width: 400px;
+}
+
+#content { 
+		margin: 100px 0 0 0;
+		padding: 165px 0 0 0;
+		width: 400px;
+		height: 350px;
+		background: url('../images/splash_bkgd.gif') no-repeat;
+		color: #FFF;
+}
+
+fieldset {
+		border: none;
+		margin: 0 7px 0 30px;
+}
+
+label {
+        display: block;
+        font-weight: bold;
+        font-size: 15px;
+        color: #FFF;
+}
+
+input {
+        width: 320px;
+        margin: 5px 0;
+        padding: 8px;
+        border: 1px solid #CCC;
+        background-color: #FFF;
+        font-size: 20px;
+        color: #333;
+        font: 20px Georgia, 'Lucinda Grande', sans-serif;
+}
+
+.button {
+        display: block;
+        width: auto;
+        padding: 5px;
+        margin-left: 0;
+        border: none;
+        -moz-border-radius: 3px;
+        cursor: default;
+        text-decoration: none;
+        background-color: #DDD;
+}
+
+.button:hover {
+        background-color: #CCC;
+}

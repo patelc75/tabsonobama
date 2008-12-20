@@ -1,0 +1,11 @@
+	         		Rate the Obama Administration's performance on issues that matter to you. Sign up to receive information about the site's launch and other site updates.
+	         		
+	         			
+		                <label for="email"></label>
+				<% form_for :splash, @splash, :url => { :action => "create" } do |f| %>
+
+		                <input name="splash[email]" id="email" type="email" value="Email" class="input" onfocus="if(this.value=='Email') this.value='';" />
+				<center>
+		                <input name="action" type="submit" value="Notify me" class="button" />
+				</center>
+				<% end %>
