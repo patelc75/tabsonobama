@@ -1,0 +1,20 @@
+<!-- See http://corelib.rubyonrails.org/classes/CGI.html for more environment variables -->
+UNIX hostname: <code><%= `hostname` %></code><br>
+System Datetime: <code><%= `date` %></code><br>
+<br>
+<b>Network</b><br>
+SERVER_ADDR: <code><%= request.env["SERVER_ADDR"].to_s %></code> <br>
+HOST_NAME : <code><%= request.host %></code> <br>
+REMOTE_ADDR: <code><%= request.env["REMOTE_ADDR"].to_s %></code> <br>
+<br>
+<b>Software</b><br>
+OS: <code><%= `cat /etc/redhat-release` %></code><br>
+Database: MySQL <code><%= ActiveRecord::Base.connection.select_value("SELECT  VERSION()") %></code><br>
+Email delivery method: <code><%= ActionMailer::Base.delivery_method %></code><br>
+SMTP server: <code> <%= ActionMailer::Base.smtp_settings[:address] %></code><br>
+Ruby: <code> <%= "#{RUBY_VERSION} (#{RUBY_RELEASE_DATE}) on #{RUBY_PLATFORM}" %> </code><br>
+Rails: <code> <%= "#{Rails::VERSION::STRING}" %> </code><br>
+<!--not sure why git --version is not working-->
+Git: <code><%= `git --version` %></code><br>
+<br>
+
