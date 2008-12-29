@@ -1,4 +1,3 @@
-<%= stylesheet_link_tag "rating" %> 
 <h1>IssueGroups#index</h1>
 <p>Find me in app/views/issue_groups/index.html.erb</p>
 < %= render :partial => "rating/rate", :locals => { :asset => myobject } %>  

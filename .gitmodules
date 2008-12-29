@@ -46,3 +46,6 @@
 [submodule "vendor/plugins/acts_as_rateable"]
 	path = vendor/plugins/acts_as_rateable
 	url = git://github.com/azabaj/acts_as_rateable.git
+[submodule "vendor/plugins/acts-as-rated"]
+	path = vendor/plugins/acts-as-rated
+	url = git://github.com/jasherai/acts-as-rated.git

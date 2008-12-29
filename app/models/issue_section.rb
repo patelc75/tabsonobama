@@ -1,5 +1,5 @@
 class IssueSection < ActiveRecord::Base
-  acts_as_rateable
+  acts_as_rated
   include Chartable
   
   belongs_to :issue_group
