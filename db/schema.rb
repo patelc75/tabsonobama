@@ -9,38 +9,41 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20081216011513) do
+ActiveRecord::Schema.define(:version => 20081229071135) do
 
   create_table "issue_bullets", :force => true do |t|
     t.integer  "issue_section_id"
     t.text     "name"
     t.text     "description"
-    t.float    "rating"
-    t.integer  "ratings_count"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "permalink"
+    t.integer  "rating_count"
+    t.integer  "rating_total",     :limit => 10, :precision => 10, :scale => 0
+    t.decimal  "rating_avg",                     :precision => 10, :scale => 2
   end
 
   create_table "issue_groups", :force => true do |t|
     t.string   "name"
     t.text     "description"
-    t.float    "rating"
-    t.integer  "ratings_count"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "permalink"
+    t.integer  "rating_count"
+    t.integer  "rating_total", :limit => 10, :precision => 10, :scale => 0
+    t.decimal  "rating_avg",                 :precision => 10, :scale => 2
   end
 
   create_table "issue_sections", :force => true do |t|
     t.integer  "issue_group_id"
     t.string   "name"
     t.text     "description"
-    t.float    "rating"
-    t.integer  "ratings_count"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "permalink"
+    t.integer  "rating_count"
+    t.integer  "rating_total",   :limit => 10, :precision => 10, :scale => 0
+    t.decimal  "rating_avg",                   :precision => 10, :scale => 2
   end
 
   create_table "open_id_authentication_associations", :force => true do |t|
@@ -74,21 +77,15 @@ ActiveRecord::Schema.define(:version => 20081216011513) do
     t.datetime "updated_at"
   end
 
-  create_table "rates", :force => true do |t|
-    t.integer "score"
-  end
-
   create_table "ratings", :force => true do |t|
-    t.integer  "user_id"
-    t.integer  "rate_id"
-    t.integer  "rateable_id"
-    t.string   "rateable_type", :limit => 32
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer "rater_id"
+    t.integer "rated_id"
+    t.string  "rated_type"
+    t.integer "rating",     :limit => 10, :precision => 10, :scale => 0
   end
 
-  add_index "ratings", ["rate_id"], :name => "index_ratings_on_rate_id"
-  add_index "ratings", ["rateable_id", "rateable_type"], :name => "index_ratings_on_rateable_id_and_rateable_type"
+  add_index "ratings", ["rated_type", "rated_id"], :name => "index_stats_ratings_on_rated_type_and_rated_id"
+  add_index "ratings", ["rater_id"], :name => "index_stats_ratings_on_rater_id"
 
   create_table "roles", :force => true do |t|
     t.string "name"
@@ -114,6 +111,26 @@ ActiveRecord::Schema.define(:version => 20081216011513) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "statistics", :force => true do |t|
+    t.integer "rated_id"
+    t.string  "rated_type"
+    t.integer "rating_count"
+    t.integer "rating_total", :limit => 10, :precision => 10, :scale => 0
+    t.decimal "rating_avg",                 :precision => 10, :scale => 2
+  end
+
+  add_index "statistics", ["rated_type", "rated_id"], :name => "index_statistics_on_rated_type_and_rated_id"
+
+  create_table "stats_ratings", :force => true do |t|
+    t.integer "rater_id"
+    t.integer "rated_id"
+    t.string  "rated_type"
+    t.integer "rating",     :limit => 10, :precision => 10, :scale => 0
+  end
+
+  add_index "stats_ratings", ["rated_type", "rated_id"], :name => "index_stats_ratings_on_rated_type_and_rated_id"
+  add_index "stats_ratings", ["rater_id"], :name => "index_stats_ratings_on_rater_id"
 
   create_table "users", :force => true do |t|
     t.string   "login",                     :limit => 40
