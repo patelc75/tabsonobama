@@ -80,5 +80,5 @@ end
 
 # recaptcha gem constants
 # gem install --source http://www.loonsoft.com/recaptcha/pkg/ recaptcha
-RCC_PUB  = '6Lf3pgQAAAAAAPlDRCXGMAw8QLagh2G368239qKH'
-RCC_PRIV = '6Lf3pgQAAAAAAAw5QP-WreWmth_PtiQeo_7776XQ'
+RCC_PUB  = '6LfRqgQAAAAAALWpxhD_Qt13QBD_pPFyISEzTnhu'
+RCC_PRIV = '6LfRqgQAAAAAAOMNBL1_vyglxaHyPVqjlN9ItX_w'
