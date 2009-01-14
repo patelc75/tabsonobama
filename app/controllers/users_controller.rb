@@ -42,9 +42,11 @@ class UsersController < ApplicationController
   
   def create_new_user(attributes)
     @user = User.new(attributes)
-    if @user && @user.valid?
+    if @user.valid?
       if @user.not_using_openid?
-        @user.register!
+        if validate_recap(params, @user.errors)
+          @user.register!
+        end
       else
         @user.register_openid!
       end

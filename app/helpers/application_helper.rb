@@ -1,3 +1,6 @@
+require 'recaptcha'
+include ReCaptcha::ViewHelper
+
 module ApplicationHelper
   
   # Sets the page title and outputs title if container is passed in.

@@ -22,6 +22,9 @@
 				<%= f.label :password_confirmation, 'Confirm Password' %>
 				<%= f.password_field :password_confirmation %>
 			</li>
+			<li>
+        <%= get_captcha() %>
+      </li>
 		</ul>
 	</fieldset>
 	<fieldset>
