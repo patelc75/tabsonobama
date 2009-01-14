@@ -77,3 +77,8 @@ Rails::Initializer.run do |config|
   # Please note that observers generated using script/generate observer need to have an _observer suffix
   config.active_record.observers = :user_observer
 end
+
+# recaptcha gem constants
+# gem install --source http://www.loonsoft.com/recaptcha/pkg/ recaptcha
+RCC_PUB  = '6LfRqgQAAAAAALWpxhD_Qt13QBD_pPFyISEzTnhu'
+RCC_PRIV = '6LfRqgQAAAAAAOMNBL1_vyglxaHyPVqjlN9ItX_w'
