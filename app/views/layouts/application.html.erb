@@ -1,1 +1,50 @@
-<%= yield %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	
+	<head>
+	    <title>Keeping Tabs on Obama</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <%= stylesheet_link_tag 'application' %>
+	    
+	    <!--[if lt IE 7]>
+	        <%= stylesheet_link_tag 'ie' %>
+		<![endif]-->    
+	</head>
+
+	<body>
+
+		<div id="spine"></div>
+
+		<div id="wrapper">
+		
+			<div id="header">
+				<h1><a href="#">Tabs on Obama</a></h1>
+			</div>
+	    
+	    	<div id="nav">
+	    		<ul>
+					<li class="home"><a title="Home" href="#">Home</a></li>
+					<li><a title="About" href="#">About</a></li>
+					<li><a title="My Issues" href="#">My Issues</a></li>
+					<li><a title="Blog" href="#">Blog</a></li>
+					<li><a title="Press" href="#">Press</a></li>
+		        </ul>
+		        
+		        <ul id="user">
+					<li><a title="Sign Up" href="#">Sign Up</a></li>
+					<li><a title="Login" href="#">Login</a></li>
+		        </ul>
+	    	</div>
+	    	
+			<div id="content">				
+				<%= yield %>
+			</div>
+
+			<div id="footer">
+				<span id="disclaimer">A Citizen-Run Community</span>
+			</div>
+
+	   </div>
+
+	</body>
+</html>
