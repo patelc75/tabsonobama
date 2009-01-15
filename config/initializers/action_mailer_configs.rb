@@ -1,5 +1,5 @@
-ActionMailer::Base.smtp_settings = {
-    :address => "smtp.example.com",
-    :port => 25,
-    :domain => "example.com"
-}
+require "smtp_tls"
+
+mailer_config = File.open("#{RAILS_ROOT}/config/gmail.yml")
+mailer_options = YAML.load(mailer_config)
+ActionMailer::Base.smtp_settings = mailer_options

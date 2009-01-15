@@ -14,16 +14,8 @@ config.action_view.debug_rjs                         = true
 config.action_controller.perform_caching             = false
 
 # Don't care if the mailer can't send
-config.action_mailer.raise_delivery_errors = false
+config.action_mailer.raise_delivery_errors = true
 
 # Restful Authentication
 REST_AUTH_SITE_KEY = 'f5945d1c74d3502f8a3de8562e5bf21fe3fec887'
 REST_AUTH_DIGEST_STRETCHES = 10
-
-config.action_mailer.smtp_settings = {
-  :address => "smtp.gmail.com",
-  :port => "587",
-  :authentication => :plain,
-  :user_name => "tabsonobama@gmail.com",
-  :password => "obama2008"
-}
