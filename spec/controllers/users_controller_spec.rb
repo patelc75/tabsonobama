@@ -2,7 +2,12 @@ require File.dirname(__FILE__) + '/../spec_helper'
 
 describe UsersController do
   fixtures :users
-
+  
+  before(:each) do
+    recaptcha_client = mock_model(ReCaptcha::Client, :validate => true, :last_error => "mock")
+    ReCaptcha::Client.stub!(:new).and_return(recaptcha_client)
+  end
+  
   it 'allows signup' do
     lambda do
       create_user
