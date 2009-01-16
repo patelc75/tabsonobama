@@ -43,9 +43,6 @@
 [submodule "vendor/plugins/aasm"]
 	path = vendor/plugins/aasm
 	url = git://github.com/rubyist/aasm.git
-[submodule "vendor/plugins/acts_as_rateable"]
-	path = vendor/plugins/acts_as_rateable
-	url = git://github.com/azabaj/acts_as_rateable.git
 [submodule "vendor/plugins/acts-as-rated"]
 	path = vendor/plugins/acts-as-rated
 	url = git://github.com/jasherai/acts-as-rated.git
