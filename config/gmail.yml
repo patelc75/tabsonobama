@@ -1,0 +1,6 @@
+--- 
+  :address: smtp.gmail.com
+  :port: 587
+  :user_name: tabsonobama@gmail.com
+  :password: obama2008
+  :authentication: :plain

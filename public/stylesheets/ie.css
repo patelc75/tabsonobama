@@ -1,0 +1,29 @@
+#content {
+		padding: 15px 22px 15px 23px;
+}
+
+.box h2 {
+		background: #FFF;
+}
+
+.box div.boxcontent {
+		background: #FFF;
+}
+
+.boxcontent div.moreissues {
+		padding: 5px 15px;
+}
+
+#quotes {
+		width: 458px;
+		padding: 0 10px 15px 10px;
+}
+
+#quotes blockquote {
+		margin: 15px 5px;
+}
+
+#quotes blockquote span em.meta {
+		display: inline;
+		float: none;
+}
