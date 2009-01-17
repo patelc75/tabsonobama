@@ -3,7 +3,7 @@
 .star-rating a:active,  
 .star-rating a:focus,  
 .star-rating .current-rating{  
-    background: url('/images/') left -1000px repeat-x;  
+    background: url('/images/full_o.png') left -1000px repeat-x;  
 }  
 .star-rating{  
     position: relative;  
