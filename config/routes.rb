@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :weekly_radio_addresses
+
   map.resources :cabinet_members
  
   # Restful Authentication Rewrites
