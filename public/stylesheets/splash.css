@@ -85,3 +85,10 @@ input {
 .button:hover {
         background-color: #CCC;
 }
+
+#notice {
+  margin: 0 auto;
+  width: 50%;
+  background-color: white;
+  padding: 1em;
+}
