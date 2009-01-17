@@ -1,0 +1,2 @@
+class CabinetMembersController < ApplicationController
+end
