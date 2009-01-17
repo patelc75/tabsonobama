@@ -120,31 +120,6 @@ describe User do
     end
   end
 
-  describe 'allows legitimate names:' do
-    ['Andre The Giant (7\'4", 520 lb.) -- has a posse',
-     '', '1234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890',
-    ].each do |name_str|
-      it "'#{name_str}'" do
-        lambda do
-          u = create_user(:name => name_str)
-          u.errors.on(:name).should     be_nil
-        end.should change(User, :count).by(1)
-      end
-    end
-  end
-  describe "disallows illegitimate names" do
-    ["tab\t", "newline\n",
-     '1234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890_234567890_',
-     ].each do |name_str|
-      it "'#{name_str}'" do
-        lambda do
-          u = create_user(:name => name_str)
-          u.errors.on(:name).should_not be_nil
-        end.should_not change(User, :count)
-      end
-    end
-  end
-
   it 'resets password' do
     users(:quentin).update_attributes(:password => 'new password', :password_confirmation => 'new password')
     User.authenticate('quentin', 'new password').should == users(:quentin)
