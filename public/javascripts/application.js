@@ -8,15 +8,31 @@ function setupLognNav() {
     event.preventDefault();
   });
   
-  $("#cancel-button").click(function(event) {
+  $("#cancel-button-direct").click(function(event) {
     toggleLoginForm();
     event.preventDefault();
   });
+
+  $("#cancel-button-openid").click(function(event) {
+    toggleLoginForm();
+    event.preventDefault();
+  });
+
   
   $("#login-again-link").click(function(event) {
     $("#login-form").show();
     $("#login-links").hide();
     $("#login-again").hide();
+    event.preventDefault();
+  });
+  
+  $("#switch-login-openid").click(function(event) {
+    switchLogin();
+    event.preventDefault();
+  });
+
+  $("#switch-login-direct").click(function(event) {
+    switchLogin();
     event.preventDefault();
   });
 }
@@ -26,6 +42,11 @@ function showLoginAgain() {
   $("#login-again").show();
   $("#login-links").hide();
   $("#login-form").hide();
+}
+
+function switchLogin() {
+  $("#direct-login").toggle();
+  $("#openid-login").toggle();
 }
 
 function toggleLoginForm() {
