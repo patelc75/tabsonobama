@@ -21,6 +21,7 @@ function setupLognNav() {
   });
 }
 
+/* show the form to give the user a chance to login again */
 function showLoginAgain() {
   $("#login-again").show();
   $("#login-links").hide();
