@@ -2,6 +2,7 @@ global:
   project_name: tabsonobama
   
 development: &non_production_settings
+  root_controller: home
   site_url: http://localhost:3000
   site_name: Tabs on Obama
   admin_email: tabsonobama@gmail.com
@@ -10,11 +11,13 @@ test:
   <<: *non_production_settings
 
 staging:
+  root_controller: home
   site_url: http://tabsonobama.org
   site_name: Tabs on Obama
   admin_email: chirag@tabsonobama.org
   
 production:
+  root_controller: splashes
   site_url: http://tabsonobama.org
   site_name: Tabs on Obama
   admin_email: chirag@tabsonobama.org
