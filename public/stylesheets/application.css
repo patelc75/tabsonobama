@@ -286,7 +286,7 @@ ul.issues {
 ul.issues li {
 		float: left;
 		width: 265px;
-		margin: 5px 25px 5px 0;
+		margin: 0px 25px 0px 0;
 }
 
 ul.issues h3 {

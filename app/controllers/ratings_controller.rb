@@ -7,8 +7,8 @@ class RatingsController < ApplicationController
     rateable = @rateable_class.find(params[:id])
     
     # Delete the old ratings for current user
-    Rating.delete_all(["rateable_type = ? AND rateable_id = ? AND user_id = ?", @rateable_class.base_class.to_s, params[:id], @current_user.id])
-    rateable.add_rating Rating.new(:rating => params[:rating], :user_id => @current_user.id)
+    Rating.delete_all(["rated_type = ? AND rated_id = ? AND rater_id = ?", @rateable_class.base_class.to_s, params[:id], @current_user.id])
+    rateable.rate params[:rating].to_f, @current_user
         
     render :update do |page|
       page.replace_html "star-ratings-block-#{rateable.id}", :partial => "rate", :locals => { :asset => rateable }
@@ -23,7 +23,7 @@ class RatingsController < ApplicationController
   def get_class_by_name
     bad_class = false
     begin
-      @rateable_class = Module.const_get(params[:rateable_type])
+      @rateable_class = Module.const_get(params[:rated_type])
     rescue NameError
       # The user is messing with the content_class...
       bad_class = true
