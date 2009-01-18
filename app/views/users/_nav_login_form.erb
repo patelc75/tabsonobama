@@ -1,8 +1,13 @@
 <% if current_user %>
-  you are logged in as
+  You are logged in as
   <%= current_user.login %>
   <%= link_to "Logout", logout_url %>
 <% else %>
+  <div id="login-again" style="display:none">
+    Unable to log you in as <strong><%= @login %></strong>.
+    <%= link_to "Forgot your password?", forgot_password_url %> or
+    <a href='/login' id="login-again-link">Try again</a>.
+  </div>
   <div id="login-links">
   	<li><%= link_to "Signup", signup_url, :title => "Signup" %></li>
   	<li><a title="Login" href="/login" id="login-link">Login</a></li>
@@ -15,7 +20,8 @@
       <input type="button" name="cancel" value="cancel" id="cancel-button">
     <% end %>
   </div>
-  <% if flash[:error] %>
-    <%= javascript_tag "alert('Couldn\\'t log you in as \\'#{@login}\\'');" %>
-  <% end %>
+<% end %>
+<%= javascript_tag "$(document).ready(function() {setupLognNav()});" %>
+<% if flash[:error] %>
+  <%= javascript_tag "$(document).ready(function() {showLoginAgain()});"%>
 <% end %>
