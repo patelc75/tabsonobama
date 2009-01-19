@@ -3,12 +3,12 @@
 .star-rating a:active,  
 .star-rating a:focus,  
 .star-rating .current-rating{  
-    background: url('/images/3_o_symbols_final.gif') left -1000px repeat-x;  
+    background: url('/images/3_Os_redesign_23px_1-18.gif') left -1000px repeat-x;  
 }  
 .star-rating{  
     position: relative;  
-    width: 150px;  
-    height: 30px;  
+    width: 115px;  
+    height: 23px;  
     overflow: hidden;  
     list-style: none;  
     margin: 0;  
@@ -24,8 +24,8 @@
     top: 0;  
     left: 0;  
      text-indent: -1000em;  
-    height: 30px;  
-    line-height: 30px;  
+    height: 23px;  
+    line-height: 23px;  
     outline: none;  
     overflow: hidden;  
     border: none;  
