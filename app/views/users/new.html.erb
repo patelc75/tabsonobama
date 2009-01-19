@@ -1,58 +1,44 @@
 <% @user.password = @user.password_confirmation = nil %>
-<%= title "Signup", :h2 %>
-<div class="form-container">
 <% form_for @user do |f| %>
   <%= f.error_messages %>
-  <fieldset>
-    <legend>Your Details</legend>
-    <ul>
-      <li>
-        <%= f.label :login, 'Username' %>
-        <%= f.text_field :login %>
-      </li>
-      <li>
-        <%= f.label :email %>
-        <%= f.text_field :email %>
-      </li>
-      <li>
-        <%= f.label :password %>
-        <%= f.password_field :password %>
-      </li>
-      <li>
-        <%= f.label :password_confirmation, 'Confirm Password' %>
-        <%= f.password_field :password_confirmation %>
-      </li>
-      <li>
-        <%= get_captcha() %>
-      </li>
-      <!-- profile stuff -->
-      <% fields_for "user[new_profile_attributes]", @profile do |profile_form| %>
-        <li>
-          First Name: <%= profile_form.text_field :first_name %>
-        </li>
-        <li>
-          Last Name: <%= profile_form.text_field :last_name %>
-        </li>
-        <li>
-          Zip: <%= profile_form.text_field :zip %>
-        </li>
-        <li>
-          Affiliation: <%= profile_form.collection_select(:affiliation_id, Affiliation.all, :id, :name) %>
-        </li>
-      <% end %>
-    </ul>
-  </fieldset>
-  <fieldset>
-    <legend>Signup with OpenID</legend>
-    <ul>
-      <li>
-        <label for="openid_url">OpenID URL</label>
-        <%= text_field_tag :openid_url, params[:openid_url] || params['openid.identity'] %>
-      </li>
-    </ul>
-  </fieldset>
-  <div class="buttonrow">
-    <%= submit_tag 'Sign up' %>
+  <div id="user_name_login">
+    <%= title "Sign Up.", :h1 %>
+    <% fields_for "user[new_profile_attributes]", @profile do |profile_form| %>
+      <%= title "First Name", :h2 %>
+      <%= profile_form.text_field :first_name, :id => 'firstname' %>
+      <%= title "Last Name", :h2 %>
+      <%= profile_form.text_field :last_name, :id => 'lastname' %>
+      <%= title "Zipcode", :h2 %>
+      <%= profile_form.text_field :zip, :id => 'zip' %>
+      <%= title "What is your political affiliation?", :p %>
+      <%= profile_form.collection_select(:affiliation_id, Affiliation.all, :id, :name) %>
+    <% end %>
   </div>
+  <%= title "Username", :h2 %>
+  <%= f.text_field :login %>
+  <%= title "Email", :h2 %>
+  <%= f.text_field :email, :id => 'email' %>
+  <%= title "Desired Password:", :h2 %>
+  <%= f.password_field :password, :id => 'pass' %>
+  <%= title "Re-enter Password:", :h2 %>
+  <%= f.password_field :password_confirmation, :id => 'password' %>
+  <%= get_captcha() %>
+  
+  <!-- OpenID signup styled? -->
+  <p>Signup with OpenID</p>
+  <p>
+    OpenID URL:
+    <%= text_field_tag :openid_url, params[:openid_url] || params['openid.identity'] %>
+  </p>
+  <!-- end OpenID section -->
+  
+  <p></p>
+  <p></p>
+  <% fields_for "user[new_profile_attributes]", @profile do |profile_form| %>
+    <p></p>
+    <%= title "What is your political affiliation?", :p %>
+    <%= profile_form.collection_select(:affiliation_id, Affiliation.all, :id, :name) %>
+  <% end %>
+  <p></p>
+  <%= submit_tag 'Sign up', :class => 'button' %>
 <% end %>
-</form>
