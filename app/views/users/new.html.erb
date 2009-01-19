@@ -33,13 +33,5 @@
   </p>
   <!-- end OpenID section -->
   
-  <p></p>
-  <p></p>
-  <% fields_for "user[new_profile_attributes]", @profile do |profile_form| %>
-    <p></p>
-    <%= title "What is your political affiliation?", :p %>
-    <%= profile_form.collection_select(:affiliation_id, Affiliation.all, :id, :name) %>
-  <% end %>
-  <p></p>
   <%= submit_tag 'Sign up', :class => 'button' %>
 <% end %>
