@@ -28,7 +28,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :splashes
     
   # Home Page
-  map.root :controller => 'splashes', :action => 'index'
+  map.root :controller => APP_CONFIG[:root_controller], :action => 'index'
 
   # Install the default routes as the lowest priority.
   map.connect ':controller/:action/:id'

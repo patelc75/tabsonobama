@@ -38,18 +38,10 @@ class SessionsController < ApplicationController
     if user
       self.current_user = user
       successful_login
-      respond_to do |format|
-        format.html { redirect_back_or_default(root_path) }
-        format.js { render :partial => "/users/nav_login_form" }
-      end
     else
-      note_failed_signin
       @login = params[:login]
       @remember_me = params[:remember_me]
-      respond_to do |format|
-        format.html { render :action => :new }
-        format.js { render :partial => "/users/nav_login_form" }
-      end
+      note_failed_signin
     end
   end
   
@@ -57,10 +49,18 @@ class SessionsController < ApplicationController
     new_cookie_flag = (params[:remember_me] == "1")
     handle_remember_cookie! new_cookie_flag
     flash[:notice] = "Logged in successfully"
+    respond_to do |format|
+      format.html { redirect_back_or_default(root_path) }
+      format.js { render :partial => "/users/nav_login_form" }
+    end
   end
 
   def note_failed_signin
     flash.now[:error] = "Couldn't log you in as '#{params[:login]}'"
     logger.warn "Failed login for '#{params[:login]}' from #{request.remote_ip} at #{Time.now.utc}"
+    respond_to do |format|
+      format.html { render :action => :new }
+      format.js { render :partial => "/users/nav_login_form" }
+    end
   end
 end

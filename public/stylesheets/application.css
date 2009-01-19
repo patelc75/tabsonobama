@@ -23,13 +23,20 @@ h1, h2, h3, h4, h5 {
         text-indent: -9000px;
 }
         
-h1 a, h1 a:active, h1 a:link, h1 a:visited, h1 a:hover {
+#header h1 a, #header h1 a:active, #header h1 a:link, #header h1 a:visited, #header h1 a:hover {
         display: block;
         width: 218px;
         height: 180px;
         margin-left: 5px;
         /* IE mouseover flicker fix */
         border-bottom: none;
+}
+
+h1 {
+		margin: 10px 0;
+		font-size: 2.9em;
+		line-height: 1.0em;
+		color: #004382;
 }
 
 h2 {
@@ -55,7 +62,14 @@ a:hover {
         border-bottom: none;
         color: #ac3433;
 }
+p {
+		margin: 15px 0;
+}
 
+hr {
+		margin: 15px 0;
+		border: 1px solid #f0f0f0;
+}
 strong {
 		font-weight: bold;
 		color: #222;
@@ -188,7 +202,24 @@ a:active{
 }
 
 /* content */
+.months{
+		padding-left: 50px;
+		padding-right: 50px;
+}
 
+.phototitlerate{
+		padding-left: 50px;
+		padding-right: 50px;
+}
+.titlerate{
+		float: left;
+		width: 180px;
+}
+
+.photo{
+		width: 560px;
+		float: left;
+}
 .box {
 		width: 900px;
 		margin-bottom: 20px;
@@ -385,11 +416,49 @@ ul#featured .rate {
 		color: #222;
 }
 
+.plans {
+		padding: 0 35px;
+}
+
+.plans h4 {
+		font-size: 1.3em;
+		line-height: 1.0em;
+		color: #004382;
+}
+
+.plans ul {
+		margin: 15px 0;
+		list-style: none;
+}
+
+.plans ul li ul {
+		margin: 15px 35px;
+		
+}
+
+.plans ul li ul li {
+		margin: 10px 35px 10px 0;
+		width: 465px;
+}
+
+.plans ul li ul li .rating ul {
+		margin: 0;
+}
+
+.plans ul li ul li .rating ul li {
+		width: auto;
+}
+
+.plans ul li ul li .text {
+		float: left;
+		width: 300px;
+		font-size: 1.2em;
+}
 /* rating */
 
 .rating {
 		width: 80px;
-		float: right;
+		float: left;
 }
 
 .rating ul {
@@ -488,4 +557,8 @@ br.clear {
 		display: block;
 		height: 1px;
 		margin: -1px 0 0 0
+}
+
+#nav ul#user {
+  color: #000;
 }
