@@ -8,7 +8,7 @@
 #   ]
 # ]
 	
-DATA = [["Civil Rights",
+PROMISES_DATA = [["Civil Rights",
   "**Barack Obama will combat employment discrimination:** Obama and Biden will work to overturn the Supreme Court's recent ruling that curtails s and racial minorities' ability to challenge pay discrimination. They will also pass the Fair Pay Act to ensure that women receive equal pay for equal work and the Employment Non-Discrimination Act to prohibit discrimination based on sexual orientation or gender identity or expression.women\n\n**Strengthen civil rights enforcement:** Obama and Biden will reverse the politicization that has occurred in the Bush Administration's Department of Justice. They will put an end to the ideological litmus tests used to fill positions within the Civil Rights Division.\n\n**Expand hate crime statutes:** Obama and Biden will strengthen federal hate crimes legislation, expand hate crimes protection by passing the Matthew Shepard Act, and reinvigorate enforcement at the Department of Justice's Criminal Section.",
   [["Strengthen Civil Rights Enforcement", "", []],
    ["Combat Employment Discrimination", "", []],
@@ -176,9 +176,9 @@ namespace :app do
     
   end
   
-  task :seed => [:environment] do
+  task :campaign_promises => [:environment] do
     puts "Dumping IssueGroups, IssueSections, and IssueBullets into DB"
-    DATA.each do |issue_group_array|	
+    PROMISES_DATA.each do |issue_group_array|	
       ig = IssueGroup.create!(:name => issue_group_array[0], :description => issue_group_array[1])
       puts "IssueGroup #{issue_group_array[0][0..10]}: #{issue_group_array[1][0..40]}"
       issue_group_array[2].each do |issue_section_array|
@@ -196,5 +196,16 @@ namespace :app do
     end
   end
   
-  task :setup => [:bootstrap, :seed]
+  task :seed => :environment do
+    require 'active_record/fixtures'
+    # TODO: after all in yaml format, use Dir.glob(RAILS_ROOT + '/db/fixtures/*.yml')
+    fixture_files = %w{ weekly_radio_addresses cabinet_members }.collect do |f| 
+      "#{RAILS_ROOT}/db/fixtures/#{f}.yml"
+    end
+    fixture_files.each do |file|
+      Fixtures.create_fixtures('db/fixtures', File.basename(file, '.*'))
+    end
+  end
+  
+  task :setup => [:bootstrap, :seed, :campaign_promises]
 end
