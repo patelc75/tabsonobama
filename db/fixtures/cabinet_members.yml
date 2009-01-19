@@ -1,0 +1,17 @@
+clinton:
+  department: State
+  office: Secretary
+  nominee: Hillary Rodham Clinton
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Hillary_Rodham_Clinton.jpg/220px-Hillary_Rodham_Clinton.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Hillary_Rodham_Clinton
+  previous_political_office: Junior Senator from New York
+  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
+
+chu:
+  department: Energy
+  office: Secretary
+  nominee: Steven Chu
+  image_link: http://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Steven_Chu_ChangeGov_Press.jpg/225px-Steven_Chu_ChangeGov_Press.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Steven_Chu
+  previous_political_office: n/a
+  previous_political_office_link: n/a
