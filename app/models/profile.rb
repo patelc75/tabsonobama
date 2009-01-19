@@ -1,4 +1,5 @@
 class Profile < ActiveRecord::Base
+  has_one :affiliation
   belongs_to :user
   
   validates_format_of :first_name, :with => Authentication.name_regex, :message => Authentication.bad_name_message, :allow_nil => true

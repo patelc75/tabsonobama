@@ -25,6 +25,21 @@
       <li>
         <%= get_captcha() %>
       </li>
+      <!-- profile stuff -->
+      <% fields_for "user[new_profile_attributes]", @profile do |profile_form| %>
+        <li>
+          First Name: <%= profile_form.text_field :first_name %>
+        </li>
+        <li>
+          Last Name: <%= profile_form.text_field :last_name %>
+        </li>
+        <li>
+          Zip: <%= profile_form.text_field :zip %>
+        </li>
+        <li>
+          Affiliation: <%= profile_form.collection_select(:affiliation_id, Affiliation.all, :id, :name) %>
+        </li>
+      <% end %>
     </ul>
   </fieldset>
   <fieldset>

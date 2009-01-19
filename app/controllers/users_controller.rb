@@ -3,8 +3,9 @@ class UsersController < ApplicationController
   
   def new
     @user = User.new
+    @profile = @user.build_profile
   end
- 
+  
   def create
     logout_keeping_session!
     if using_open_id?
