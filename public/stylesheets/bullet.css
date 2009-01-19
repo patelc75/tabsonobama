@@ -1,0 +1,203 @@
+h1 {
+		margin: 10px 0;
+		font-size: 2.9em;
+		line-height: 1.0em;
+		color: #004382;
+}
+
+hr {
+		margin: 15px 0;
+		border: 1px solid #f0f0f0;
+}
+
+.box {
+		width: 900px;
+		margin-bottom: 20px;
+		padding-top: 10px;
+		background: #FFF url('/images/boxtop.gif') no-repeat top left;
+}
+
+.box h2 {
+		margin: 0 0 5px 0;
+		color: #db2a3a;	
+}
+
+.box div.boxcontent {
+		height: 700px;
+		padding: 5px 15px 10px 15px;
+		background: #FFF url('/images/boxbottom.gif') no-repeat bottom left;
+}
+
+.boxcontent h3 {
+		color: #004382;
+		font-weight: normal;
+		font-size: 2.0em;
+		line-height: 1.0em;
+}
+
+.boxcontent a {
+		color: #004382;
+		font-weight: normal;
+}
+
+.boxcontent div.moreissues {
+		float: left;
+		width: 248px;
+		margin: 10px 0;
+		padding: 5px 20px;
+		border-left: 2px solid #f2f2f2;
+}
+
+.boxcontent div.moreissues h3 {
+		font-size: 1.5em;
+		line-height: 1.0em;
+}
+
+.plans {
+		padding: 0 35px;
+}
+
+.plans h4 {
+		font-size: 1.3em;
+		line-height: 1.0em;
+		color: #004382;
+		margin: 10px 35px 10px 0;
+		padding: 0px, 0px, 0px, 0px;
+		float: left;
+		width: 60%;
+}
+
+.plans ul {
+		margin: 15px 0;
+		list-style: none;
+}
+
+.plans ul li ul {
+		//margin: 15px 35px;
+		
+}
+
+.plans ul li ul li {
+		margin: 10px 35px 10px 0;
+		width: 465px;
+}
+
+.plans ul li ul li .rating ul {
+		margin: 0;
+}
+
+.plans ul li ul li .rating ul li {
+		width: auto;
+}
+
+.plans ul li ul li .text {
+		float: left;
+		width: 300px;
+		font-size: 1.2em;
+}
+
+/* rating */
+
+.rating {
+		width: 80px;
+		float: left;
+		margin-top: 10px;
+}
+
+.rating ul {
+		float: right;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 80px;
+		height: 16px;
+		position: relative;
+		background: url('/images/rating.gif') top left repeat-x;		
+}
+
+.rating ul li {
+		padding: 0;
+		margin: 0;
+		height: 16px;
+		width: 16px;
+		float: left;
+		list-style: none;
+}
+
+.rating ul li a {
+		display: block;
+		position: absolute;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		width: 16px;
+		height: 16px;
+		top: 0px;
+		line-height: 16px;
+		text-decoration: none;
+		text-indent: -9000px;
+		z-index: 20;
+}
+
+.rating ul li a:hover {
+		background: url('/images/rating.gif') left center;
+		z-index: 2;
+		left: 0px;
+		border: none;
+}
+.rating a.one-star {
+		left: 0px;
+}
+
+.rating a.one-star:hover {
+		width: 16px;
+}
+
+.rating a.two-stars {
+		left: 16px;
+}
+
+.rating a.two-stars:hover {
+		width: 32px;
+}
+
+.rating a.three-stars {
+		left: 32px;
+}
+
+.rating a.three-stars:hover {
+		width: 48px;
+}
+
+.rating a.four-stars {
+		left: 48px;
+}	
+
+.rating a.four-stars:hover {
+		width: 64px;
+}
+
+.rating a.five-stars{
+		left: 64px;
+}
+
+.rating a.five-stars:hover {
+		width: 80px;
+}
+
+.votes {
+		float: right;
+		width: 80px;
+		padding: 5px 0;
+		text-align: right;
+		color: #BBB;
+		font-size: .85em;
+}
+
+
+br.clear {
+		clear: both;
+		display: block;
+		height: 1px;
+		margin: -1px 0 0 0
+}
