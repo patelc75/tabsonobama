@@ -1,10 +1,10 @@
 <% @convert = %w[one two three four five] %>
-
+  <div align="right">
     <ul class='star-rating'>
         <li class='current-rating' style='width:<%= (asset.rating_average * 23).to_i -%>px;'>
         </li>
         <% 1.upto(5) do |x| -%>
-        <li>
+        <li style="text-align: center">
             <%= link_to_remote( "#{x}", 
                         { :url => { :controller => "ratings", :action => "rate", 
                             :id => asset.id, :rating => x, :rated_type => asset.class.to_s } },
@@ -13,5 +13,6 @@
         </li>
         <% end -%>
     </ul>
-    <div align="right"><%= number_with_precision(asset.rating_average, 1) %>/5 Stars (<%= asset.rated_count %> votes)</div><br />
+  </div>
+  <div align="right" style="color: gray;"><%= number_with_precision(asset.rating_average, 1) %>/5 Stars (<%= asset.rated_count %> votes)</div><br />
 
