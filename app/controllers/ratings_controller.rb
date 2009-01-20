@@ -21,6 +21,9 @@ class RatingsController < ApplicationController
       render :update do |page|
         page.replace_html "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}", :partial => "rate", :locals => { :asset => rateable }
         page.visual_effect :highlight, "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}"
+        unless logged_in?
+          page << "tb_show('Dialog', '#TB_inline?height=150&width=200&inlineId=userLogin&modal=true', null);"
+        end
       end
     else
       render :update do |page|

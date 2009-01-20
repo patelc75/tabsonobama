@@ -1,0 +1,134 @@
+
+body.login {
+background-color:#E5E5E5;
+color:#000000;
+}
+body.login a:hover {
+background:transparent none repeat scroll 0 0;
+color:#0033CC;
+text-decoration:none;
+}
+body.login div#LogoBox {
+margin-top:50px;
+}
+body.login div.login_dialog {
+background-color:#FFFFFF;
+}
+body.login div.login {
+background-color:#FFFFFF;
+border:10px solid #01245c;
+font-family:lucida grande,verdana;
+font-size:12px;
+margin:65px auto;
+padding:20px;
+text-align:left;
+width:400px;
+}
+body.login div.login p {
+margin:0 0 15px;
+padding:0;
+}
+body.login div.login div.flash {
+font-size:12px;
+margin:15px 0;
+padding:7px 5px;
+}
+body.login div.login div.error {
+background-color:#FFFFFF;
+border-bottom:1px solid #990000;
+border-top:1px solid #990000;
+color:#990000;
+}
+body.login div.login div.confirm {
+background-color:#E6F5EA;
+border-bottom:1px solid #339933;
+border-top:1px solid #339933;
+color:#339933;
+}
+body.login div.login h1 {
+color:#000000;
+font-size:25px;
+margin:0 0 20px;
+padding:0;
+}
+body.amnesia div.login h1 {
+margin-bottom:5px;
+}
+body.login div.login h2 {
+color:#000000;
+font-size:12px;
+margin:0 0 2px;
+padding:0;
+}
+body.login div.login inputzipcode {
+font-size:14px;
+margin-bottom:10px;
+padding:3px;
+width:275px;
+}
+body.login div.login input {
+font-size:14px;
+margin-bottom:10px;
+padding:3px;
+width:275px;
+}
+body.login div.login label {
+margin-bottom:10px;
+}
+body.login div.login label input {
+margin-bottom:0;
+}
+body.login div.login input.auto {
+width:auto;
+}
+body.login div.login input.button {
+font-size:14px;
+margin:10px 0 0;
+padding:3px;
+width:auto;
+}
+body.login div.login div.extras {
+border-top:0px #999999;
+margin-top:20px;
+padding-top:0px;
+}
+body.login div.login div.extras ul {
+margin:0 0 0 17px;
+padding:0;
+}
+body.login div.login div.extras ul li {
+font-size:12px;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:;
+padding-bottom:3px;
+}
+body.amnesia div.login {
+width:550px;
+}
+body.amnesia div.login div.note {
+border-left:3px solid orange;
+float:right;
+font-size:12px;
+margin-left:20px;
+padding-left:10px;
+width:200px;
+}
+body.amnesia div.login input {
+margin-bottom:0;
+}
+body.amnesia div.login input.button {
+margin-bottom:25px;
+}
+
+.login #Flash {
+font-size:12px;
+margin-top:12px;
+}
+
+
+
+
+
+
+

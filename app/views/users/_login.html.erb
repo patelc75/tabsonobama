@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 TRANSITIONAL//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>[Tabs Sign Up Page] Login</title>
+  
+  <link href="/stylesheets/login.css" media="screen" rel="stylesheet" type="text/css" />
+  
+
+  
+  <!--[if IE]><link href="/stylesheets/login.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+
+<body class="login">
+  
+
+
+  <div class="login">
+    
+    
+    
+	<div style="width: 400px; text-align: right;">
+	<a href="javascript:void(0)" onclick="tb_remove();"> Close</a>
+	</div>  
+
+    
+
+<div id="login_dialog" class="login_dialog">
+  <% form_remote_tag :url => session_url,:update => "user" do %>
+
+    <div id="user_name_login">
+	  <h1>Sign In or <%= link_to "Signup", signup_url, :title => "Signup" %><h1>
+      <h2>Username</h2>
+      <input name="login" type="text" id="username" />
+      <h2>Password</h2>
+      <input name="password" type="password" id="password" /><br />
+      <label><input type="checkbox" name="remember_me" class="auto" /> Remember me on this computer</label><br />
+      <input type="submit" value="Sign in" class="button" />
+
+      <div class="extras">
+        <ul>
+		  
+          <li><img alt="openID" src="images/openid.jpg"/></li>
+		<li><a href="/amnesia/forgot_password">Use OpenID</a></li>
+		<li><a href="/amnesia/forgot_password">Forget your username and password?</a></li>
+        </ul>
+      </div>
+
+    </div>
+  
+    <div id="open_id_login" style="display: none">
+      <h2><img src="/images/openid.jpg" alt="Login with an OpenID" /></h2>
+      <input id="identity_url" name="openid_url" type="text" /><br />
+      <label><input type="checkbox" name="remember_me" class="auto" /> Remember me on this computer</label><br />
+      <input type="submit" value="Sign in" class="button" />
+
+      <div class="extras">
+
+        <ul>
+          <li><strong>Help:</strong> <a href="/amnesia/trouble_with_openid">My OpenID isn't working and I can't log in</a></li>
+          <li><a href="#" onclick="Login.loginWithUserName(); return false;">Login using a standard username/password</a></li>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+$("username").focus()
+//]]>
+</script>
+
+
+  </div>
+</body>
+
+</html>
