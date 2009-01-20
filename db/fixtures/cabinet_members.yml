@@ -6,6 +6,97 @@ clinton:
   wikipedia_link: http://en.wikipedia.org/wiki/Hillary_Rodham_Clinton
   previous_political_office: Junior Senator from New York
   previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
+  photo_filename: HillaryClinton.jpg
+  
+geithner:
+  department: Treasury
+  office: Secretary
+  nominee: Timothy Geithner
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Timothy_F_Geithner.jpg/75px-Timothy_F_Geithner.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Timothy_Geithner
+  previous_political_office: 9th president of the Federal Reserve Bank of New York
+  previous_political_office_link: http://en.wikipedia.org/wiki/Federal_Reserve_Bank_of_New_York
+  photo_filename: TimothyGeithner.jpg
+
+gates:
+  department: Defense
+  office: Secretary
+  nominee: Robert Gates
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Robert_Gates%2C_official_DoD_photo_portrait%2C_2006.jpg/75px-Robert_Gates%2C_official_DoD_photo_portrait%2C_2006.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Robert_Gates
+  previous_political_office: Director of Central Intelligence for the CIA
+  previous_political_office_link: http://en.wikipedia.org/wiki/Superior_Court_of_the_District_of_Columbia
+  photo_filename: EricHolder.jpg
+
+holder:
+  department: Justice
+  office: Attorney General
+  nominee: Eric Holder
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/EricHolder.jpg/75px-EricHolder.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Eric_Holder
+  previous_political_office: Judge of the Superior Court of the District of Columbia
+  previous_political_office_link: http://en.wikipedia.org/wiki/Director_of_Central_Intelligence
+  photo_filename: RobertGates.jpg
+
+salazar:
+  department: Interior
+  office: Secretary
+  nominee: Ken Salazar
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Kensalazar.jpg/75px-Kensalazar.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Ken_Salazar
+  previous_political_office: Junior Senator from Colorado
+  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
+  photo_filename: KenSalazar.jpg
+
+tobedetermined:
+  department: Commerce
+  office: Secretary
+  nominee: To Be Determined
+  image_link: n/a 
+  wikipedia_link: n/a
+  previous_political_office: n/a 
+  previous_political_office_link: n/a 
+  photo_filename: n/a
+
+solis:
+  department: Labor
+  office: Secretary
+  nominee: Hilda Solis
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Hilda_Solis.jpg/75px-Hilda_Solis.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Hilda_Solis
+  previous_political_office: Member of the United States House of Representatives 
+  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_House_of_Representatives
+  photo_filename: HildaSolis.jpg
+
+daschle:
+  department: Health and Human Services
+  office: Secretary
+  nominee: Tom Daschle
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tom_Daschle%2C_official_Senate_photo.jpg/75px-Tom_Daschle%2C_official_Senate_photo.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Hilda_Solis
+  previous_political_office: U.S. Senator and Senate Majority Leader from South Dakota
+  previous_political_office_link: http://en.wikipedia.org/wiki/Party_leaders_of_the_United_States_Senate
+  photo_filename: TomDaschle.jpg
+
+donovan:
+  department: Housing and Urban Development
+  office: Secretary
+  nominee: Shaun Donovan
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/ShaunDonovan.jpeg/75px-ShaunDonovan.jpeg
+  wikipedia_link: http://en.wikipedia.org/wiki/Shaun_Donovan
+  previous_political_office: Head of the New York City Department of Housing Preservation and Development
+  previous_political_office_link: http://en.wikipedia.org/wiki/New_York_City_Department_of_Housing_Preservation_and_Development
+  photo_filename: ShaunDonovan.jpg
+
+laHood:
+  department: Transportation
+  office: Secretary
+  nominee: Ray LaHood
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Ray_LaHood.jpg/75px-Ray_LaHood.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Ray_LaHood
+  previous_political_office: Republican Member of the United States House of Representatives
+  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_House_of_Representatives
+  photo_filename: RayLaHood.jpg
 
 chu:
   department: Energy
@@ -15,3 +106,35 @@ chu:
   wikipedia_link: http://en.wikipedia.org/wiki/Steven_Chu
   previous_political_office: n/a
   previous_political_office_link: n/a
+
+duncan:
+  department: Education
+  office: Secretary
+  nominee: Arne Duncan
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Arne_Duncan.JPG/75px-Arne_Duncan.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Arne_Duncan
+  previous_political_office: Chief Executive Officer of the Chicago Public Schools
+  previous_political_office_link: http://en.wikipedia.org/wiki/Chicago_Public_Schools
+  photo_filename: ArneDuncan.jpg
+
+shinseki:
+  department: Veterans' Affairs
+  office: Secretary
+  nominee: Eric Shinseki
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Eric_Shinseki_official_portrait.jpg/75px-Eric_Shinseki_official_portrait.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Eric_Shinseki
+  previous_political_office: Chief of Staff of the Army
+  previous_political_office_link: http://en.wikipedia.org/wiki/Chief_of_Staff_of_the_United_States_Army
+  photo_filename: EricShinseki.jpg
+
+napolitano:
+  department: Homeland Security
+  office: Secretary
+  nominee: Janet Napolitano
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/JanetNapolitanoIraq.jpg/75px-JanetNapolitanoIraq.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Janet_Napolitano
+  previous_political_office: Governor of Arizona
+  previous_political_office_link: http://en.wikipedia.org/wiki/Arizona
+  photo_filename: JanetNapolitano.jpg
+
+ 
