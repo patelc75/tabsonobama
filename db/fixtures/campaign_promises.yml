@@ -20,10 +20,9 @@
     :description: "Obama and Biden believe the disparity between sentencing crack and powder-based cocaine is wrong and should be completely eliminated."
   - :name: "Expand Use of Drug Courts"
     :description: "Obama and Biden will give first-time, non-violent offenders a chance to serve their sentence, where appropriate, in the type of drug rehabilitation programs that have proven to work better than a prison term in changing bad behavior."
-
 - :name: "Defense"
   :description: "**Barack Obama will rebuild the military for 21st century tasks:**  Obama and Biden will complete the effort to increase our ground forces by 65,000 soldiers and 27,000 Marines. They will also invest in 21st century missions like counterinsurgency by building up our special operations forces, civil affairs, information operations, foreign language training and other units and capabilities that remain in chronic short supply.\n\n**Restore the readiness of the National Guard and Reserves:** Obama and Biden will provide the National Guard with the equipment it needs for foreign and domestic emergencies. They will ensure that reservists and Guard members are treated fairly when it comes to employment, health, and education benefits.\n\n**Engage our allies in meeting our common security challenges:** Obama and Biden will renew alliances and ensure our allies contribute their fair share to our mutual security."
-  :issues_sections: 
+  :issue_sections: 
   - :name: "Invest in a 21st Century Military"
     :description: ""
     :issue_bullets: 
