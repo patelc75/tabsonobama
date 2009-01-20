@@ -1,0 +1,217 @@
+h1, h2, h3, h4, h5 {
+		font-weight:normal;
+}
+
+h1 {
+		margin: 10px 50px;
+		font-size: 2.9em;
+		line-height: 1.0em;
+		color: #004382;
+}
+
+h2 {
+		margin: 10px 0;
+        font-family: Georgia,'Times New Roman',Times,serif;
+		font-size: 1.7em;
+		line-height: 1.1em;
+		color: #444;
+}
+
+h5 {
+		margin: 10px 0;
+        	font-family: Georgia,'Times New Roman',Times,serif;
+		font-size: 1em;
+		color: #444;
+}
+
+h2 a, h2 a:active, h2 a:link, h2 a:visited {
+		font-weight: normal;
+}
+
+a, a:active, a:link, a:visited {
+        border-bottom: none;
+        color: #2575AD;
+        font-weight: bold;
+        text-decoration: none;
+}
+
+a:hover {
+        border-bottom: none;
+        color: #ac3433;
+}
+
+p {
+		margin: 15px 0;
+}
+
+hr {
+		margin: 15px 0;
+		border: 1px solid #f0f0f0;
+}
+
+strong {
+		font-weight: bold;
+		color: #222;
+}
+
+a:active{
+		outline: none;
+}
+
+.phototitlerate{
+		padding-left: 50px;
+		padding-right: 50px;
+}
+.titlerate{
+		float: left;
+		width: 180px;
+		
+}
+.titleratecabinet{
+		float: left;
+		width: 180px;
+		padding-top: 15px;
+		
+}
+
+.cabinetphoto{
+		width: 125px;
+		float: left;
+		padding-bottom: 10px;
+}
+
+.box {
+		width: 900px;
+		margin-bottom: 20px;
+		padding-top: 10px;
+		background: #FFF url('/images/boxtop.gif') no-repeat top left;
+}
+
+.box h2 {
+		margin: 0 0 5px 0;
+		color: #db2a3a;	
+}
+
+.box div.boxcontent {
+		min-height: 10px;
+		padding: 5px 15px 10px 15px;
+		background: #FFF url('/images/boxbottom.gif') no-repeat bottom left;
+}
+
+.rating {
+		width: 80px;
+		float: left;
+}
+
+.rating ul {
+		float: right;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		width: 80px;
+		height: 16px;
+		position: relative;
+		background: url('/images/rating.gif') top left repeat-x;		
+}
+
+.rating ul li {
+		padding: 0;
+		margin: 0;
+		height: 16px;
+		width: 16px;
+		float: left;
+		list-style: none;
+}
+
+.rating ul li a {
+		display: block;
+		position: absolute;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		width: 16px;
+		height: 16px;
+		top: 0px;
+		line-height: 16px;
+		text-decoration: none;
+		text-indent: -9000px;
+		z-index: 20;
+}
+
+.rating ul li a:hover {
+		background: url('/images/rating.gif') left center;
+		z-index: 2;
+		left: 0px;
+		border: none;
+}
+.rating a.one-star {
+		left: 0px;
+}
+
+.rating a.one-star:hover {
+		width: 16px;
+}
+
+.rating a.two-stars {
+		left: 16px;
+}
+
+.rating a.two-stars:hover {
+		width: 32px;
+}
+
+.rating a.three-stars {
+		left: 32px;
+}
+
+.rating a.three-stars:hover {
+		width: 48px;
+}
+
+.rating a.four-stars {
+		left: 48px;
+}	
+
+.rating a.four-stars:hover {
+		width: 64px;
+}
+
+.rating a.five-stars{
+		left: 64px;
+}
+
+.rating a.five-stars:hover {
+		width: 80px;
+}
+
+.votes {
+		float: right;
+		width: 80px;
+		padding: 5px 0;
+		text-align: right;
+		color: #BBB;
+		font-size: .85em;
+}
+
+
+br.clear {
+		clear: both;
+		display: block;
+		height: 1px;
+		margin: -1px 0 0 0
+}
+
+#cabinetlist {
+	margin-bottom: 1em;
+}
+
+#cabinetlist ul.mainlist {
+	width: 900px;
+	list-style: none;
+}
+
+#cabinetlist ul.mainlist li.mainlist {
+	float: left;
+	width: 450px;
+	height: 200px;
+} 
