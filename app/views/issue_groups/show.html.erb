@@ -1,0 +1,39 @@
+<%= stylesheet_link_tag "groups" %> 
+	    	
+<div class="box">
+ 	<div class="boxcontent">
+	 	<h1><%= current_object.name %></h1>
+	 	<hr />
+    <div class="plans">	
+    	<hr />
+    	<h3>Barack Obama and Joe Biden's Plan</h3>
+    	<ul>
+    	  <% current_object.issue_sections.each do |section| %>
+    		<li><h4><%= section.name %></h4>
+      		<ul>
+      		  <% section.issue_bullets.each do |bullet| %>
+      			<li>
+      				<div class="text">
+      					<%= bullet.name %>
+      				</div>
+      				<div class="rating">
+      					<ul>
+      						<li><a href="#" title="1 out of 5" class="one-star">1</a></li>
+      						<li><a href="#" title="2 out of 5" class="two-stars">2</a></li>
+      						<li><a href="#" title="3 out of 5" class="three-stars">3</a></li>
+      						<li><a href="#" title="4 out of 5" class="four-stars">4</a></li>
+      						<li><a href="#" title="5 out of 5" class="five-stars">5</a></li>
+      					</ul>
+      					<span class="votes"><%= bullet.rated_count %> votes</span>
+      				</div>
+      				<br class="clear" />
+      			</li>
+            <% end %>
+      		</ul>
+    		</li>
+        <% end %>
+    	</ul>
+    	<br class="clear"/>
+  	</div>
+  </div>
+</div>
