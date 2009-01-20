@@ -2,35 +2,41 @@
 
 <!-- cabinet -->
 <div class="box">
- 	<h1>Cabinet</h1>
- 	<hr />
-
-<div id="cabinetlist">
-<ul class="mainlist">
-
-
-
-<li class="mainlist">				
-<div class="phototitlerate">
-	<div class="cabinetphoto">						
-		<img alt="<%= @cabinet_member.nominee %>" src="<%= @cabinet_member.image_link %>" />
-		<h5><a href="<%= @cabinet_member.wikipedia_link %>"><%= @cabinet_member.nominee %></a><h5>										
-	</div>
-	<div class="titlerate">
-          <h3><%= @cabinet_member.office %></h3>
-          <br>
-                  <div id="star-ratings-block-<%=@cabinet_member.class.to_s%>-<%= @cabinet_member.id %>" class="star-ratings-block">
-        		 				<%= render :partial => 'ratings/rate', :locals => {:asset => @cabinet_member} %>
-        		 			</div>
+  <h1>Cabinet</h1>
+  <hr />
+  <div id="cabinetlist">
+    <ul class="mainlist">
+      <li class="mainlist">
+        <div class="phototitlerate">
+          <div class="cabinetphoto">
+            <img alt="<%= @cabinet_member.nominee %>" src="<%= @cabinet_member.image_link %>" />
+            <h5>
+              <a href="<%= @cabinet_member.wikipedia_link %>"><%= @cabinet_member.nominee %></a>
+            </h5>
+          </div>
+          <div class="titlerate">
+            <h3><%= @cabinet_member.office %> of <%= @cabinet_member.department %></h3>
+            <br/>
+            <h4>Formerly:</h3>
+            <h4>
+              <%= link_to @cabinet_member.previous_political_office, @cabinet_member.previous_political_office_link %>
+            </h3>
+            <br>
+            <div id="star-ratings-block-<%=@cabinet_member.class.to_s%>-<%= @cabinet_member.id %>" class="star-ratings-block">
+              <% # TODO: fix and uncomment
+=begin %>
+              <%= render :partial => 'ratings/rate', :locals => {:asset => @cabinet_member} %>
+                            <% 
+=end %>
+            </div>
+          </div>
+        </div>
+        <br class="clear" />
+        <br class="clear"/>
+      </li>
+    </ul>
   </div>
-</div>
-<br class="clear" />
-<br class="clear"/>
-</li>
-
-</ul>
-</div>
-<br class="clear" />
-<br class="clear"/>
-<%= render :partial => "intense_debate/comments", :locals => {:model => @cabinet_member} %>
+  <br class="clear" />
+  <br class="clear"/>
+  <%= render :partial => "intense_debate/comments", :locals => {:model => @cabinet_member} %>
 </div>
