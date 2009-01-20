@@ -10,8 +10,23 @@ class UserMailer < ActionMailer::Base
     @subject << 'Your account has been activated!'
     @body[:url] = APP_CONFIG[:site_url]
   end
-  
+
+  def test_email(to, subject, body) 
+    setup_message(subject, body)
+    @recipients = []
+    @recipients  << to
+  end
+
   protected
+
+  def setup_message(subject, msg_body)
+    @from        = "no-reply@`hostname`"
+    @subject     = "[" + `hostname` + "] "
+    @subject     += subject unless subject.blank?
+    @sent_on     = Time.now
+    body msg_body
+  end
+  
   
   def setup_email(user)
     @recipients = "#{user.email}"

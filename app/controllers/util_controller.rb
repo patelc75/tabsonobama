@@ -1,4 +1,11 @@
 class UtilController < ApplicationController
-def info
-end
+  def info
+  end
+
+  def send_test_email      
+  end    
+  
+  def deliver_test_email    
+    email = UserMailer.deliver_test_email(params[:to], params[:subject], params[:body])  
+  end
 end

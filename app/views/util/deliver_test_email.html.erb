@@ -1,0 +1,16 @@
+<br>
+<b>Sent to the following SMTP server:</b><br>
+<code>ActionMailer::Base.smtp_settings[:address] =          <%= ActionMailer::Base.smtp_settings[:address] %></code><br>
+<code>ActionMailer::Base.smtp_settings[:port] =             <%= ActionMailer::Base.smtp_settings[:port] %></code><br>
+<code>ActionMailer::Base.smtp_settings[:domain] =           <%= ActionMailer::Base.smtp_settings[:domain] %></code><br>
+<code>ActionMailer::Base.smtp_settings[:authentication] =   <%= ActionMailer::Base.smtp_settings[:authentication] %></code><br>
+<code>ActionMailer::Base.smtp_settings[:user_name] =        <%= ActionMailer::Base.smtp_settings[:user_name] %></code><br>
+<br>
+<b>Email message:</b><br>
+<code>
+From: no-reply@<%= `hostname`%><br>
+To: <%= params[:to] %> <br>
+Subject: [<%= `hostname`%>] <%= params[:subject] %> <br>
+Body: <br>
+<%= params[:body] %>
+</code>
