@@ -17,19 +17,12 @@
 		<h5><a href="<%= @cabinet_member.wikipedia_link %>"><%= @cabinet_member.nominee %></a><h5>										
 	</div>
 	<div class="titlerate">
-	</div>
-	<h3><%= @cabinet_member.office %></h3>
-	<br>
-	<div class="rating">
-		<ul>
-			<li><a href="#" title="1 out of 5" class="one-star">1</a></li>
-			<li><a href="#" title="2 out of 5" class="two-stars">2</a></li>
-			<li><a href="#" title="3 out of 5" class="three-stars">3</a></li>
-			<li><a href="#" title="4 out of 5" class="four-stars">4</a></li>
-			<li><a href="#" title="5 out of 5" class="five-stars">5</a></li>
-		</ul> 
-		<span class="votes">18,294 votes</span>
-	</div>
+          <h3><%= @cabinet_member.office %></h3>
+          <br>
+                  <div id="star-ratings-block-<%=@cabinet_member.class.to_s%>-<%= @cabinet_member.id %>" class="star-ratings-block">
+        		 				<%= render :partial => 'ratings/rate', :locals => {:asset => @cabinet_member} %>
+        		 			</div>
+  </div>
 </div>
 <br class="clear" />
 <br class="clear"/>
@@ -39,4 +32,5 @@
 </div>
 <br class="clear" />
 <br class="clear"/>
+<%= render :partial => "intense_debate/comments", :locals => {:model => @cabinet_member} %>
 </div>
