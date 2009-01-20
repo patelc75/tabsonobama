@@ -82,3 +82,64 @@ end
 # gem install --source http://www.loonsoft.com/recaptcha/pkg/ recaptcha
 RCC_PUB  = '6LfRqgQAAAAAALWpxhD_Qt13QBD_pPFyISEzTnhu'
 RCC_PRIV = '6LfRqgQAAAAAAOMNBL1_vyglxaHyPVqjlN9ItX_w'
+
+
+module ActiveRecord #:nodoc:
+  module Acts #:nodoc:
+    module Rated
+      module RateMethods
+
+# Rate the object with or without a rater - create new or update as needed
+#
+# * <tt>value</tt> - the value to rate by, if a rating range was specified will be checked that it is in range
+# * <tt>rater</tt> - an object of the rater class. Must be valid and with an id to be used.
+#                    If the acts_as_rated was passed :with_rater => false, this parameter is not required
+        def rate value, rater = nil
+          # Sanity checks for the parameters
+          rating_class = acts_as_rated_options[:rating_class].constantize
+          with_rater = rating_class.column_names.include? "rater_id"
+          raise RateError, "rating with no rater cannot accept a rater as a parameter" if !with_rater && !rater.nil?
+          if with_rater && !(acts_as_rated_options[:rater_class].constantize === rater)
+            raise RateError, "the rater object must be the one used when defining acts_as_rated (or a descendent of it). other objects are not acceptable"
+          end
+          raise RateError, "rating with rater must receive a rater as parameter" if with_rater && (rater.nil? || rater.id.nil?)
+          r = with_rater ? ratings.find(:first, :conditions => ['rater_id = ?', rater.id]) : nil
+          raise RateError, "value is out of range!" unless acts_as_rated_options[:rating_range].nil? || acts_as_rated_options[:rating_range] === value
+  
+          # Find the place to store the rating statistics if any...
+          # Take care of the case of a separate statistics table
+          unless acts_as_rated_options[:stats_class].nil? || @rating_statistic.class.to_s == acts_as_rated_options[:stats_class]
+            self.rating_statistic = acts_as_rated_options[:stats_class].constantize.new    
+          end
+          target = self if attributes.has_key? 'rating_total'
+          target ||= self.rating_statistic if acts_as_rated_options[:stats_class]
+          rating_class.transaction do
+            # if r.nil?
+            rate = rating_class.new
+            rate.rater_id = rater.id if with_rater
+            if target
+              target.rating_count = (target.rating_count || 0) + 1 
+              target.rating_total = (target.rating_total || 0) + value
+              target.rating_avg = target.rating_total.to_f / target.rating_count
+            end
+            ratings << rate
+            # else
+            #              rate = r
+            #              if target
+            #                target.rating_total += value - rate.rating # Update the total rating with the new one
+            #                target.rating_avg = target.rating_total.to_f / target.rating_count
+            #              end
+            #            end
+    
+            # Remove the actual ratings table entry
+            rate.rating = value
+            if !new_record?
+              rate.save
+              target.save if target
+            end
+          end
+        end
+      end
+    end
+  end
+end
