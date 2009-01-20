@@ -4,7 +4,7 @@ class RatingsController < ApplicationController
   def rate
     
     rateable = @rateable_class.find(params[:id])
-    
+    is_rateable = true
     if logged_in?
       # Delete the old ratings for current user
       # Rating.delete_all(["rated_type = ? AND rated_id = ? AND rater_id = ?", @rateable_class.base_class.to_s, params[:id], @current_user.id])
@@ -14,12 +14,19 @@ class RatingsController < ApplicationController
       if !rating || (rating.updated_at.nil? || (rating.updated_at + 1.day) < Time.now)
         rateable.rate params[:rating].to_f, @current_user
       else
-        #show warning popup
+        is_rateable = false
       end
     end
-    render :update do |page|
-      page.replace_html "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}", :partial => "rate", :locals => { :asset => rateable }
-      page.visual_effect :highlight, "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}"
+    if is_rateable
+      render :update do |page|
+        page.replace_html "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}", :partial => "rate", :locals => { :asset => rateable }
+        page.visual_effect :highlight, "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}"
+      end
+    else
+      render :update do |page|
+        page << "tb_show('Dialog', '#TB_inline?height=150&width=200&inlineId=dialogID&modal=true', null);"
+        #page << '$("#dialog").dialog({ modal: true, overlay: { opacity: 0.5, background: "black" } });'
+      end
     end
   end
   
