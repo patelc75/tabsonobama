@@ -1,0 +1,42 @@
+<%= stylesheet_link_tag "cabinet" %>
+
+<!-- cabinet -->
+<div class="box">
+ 	<h1>Cabinet</h1>
+ 	<hr />
+
+<div id="cabinetlist">
+<ul class="mainlist">
+
+
+
+<li class="mainlist">				
+<div class="phototitlerate">
+	<div class="cabinetphoto">						
+		<img alt="<%= @cabinet_member.nominee %>" src="<%= @cabinet_member.image_link %>" />
+		<h5><a href="<%= @cabinet_member.wikipedia_link %>"><%= @cabinet_member.nominee %></a><h5>										
+	</div>
+	<div class="titlerate">
+	</div>
+	<h3><%= @cabinet_member.office %></h3>
+	<br>
+	<div class="rating">
+		<ul>
+			<li><a href="#" title="1 out of 5" class="one-star">1</a></li>
+			<li><a href="#" title="2 out of 5" class="two-stars">2</a></li>
+			<li><a href="#" title="3 out of 5" class="three-stars">3</a></li>
+			<li><a href="#" title="4 out of 5" class="four-stars">4</a></li>
+			<li><a href="#" title="5 out of 5" class="five-stars">5</a></li>
+		</ul> 
+		<span class="votes">18,294 votes</span>
+	</div>
+</div>
+<br class="clear" />
+<br class="clear"/>
+</li>
+
+</ul>
+</div>
+<br class="clear" />
+<br class="clear"/>
+</div>
