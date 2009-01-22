@@ -28,13 +28,12 @@ namespace :app do
   end
   
   task :seed => :environment do
-    require 'active_record/fixtures'
-    # TODO: after all in yaml format, use Dir.glob(RAILS_ROOT + '/db/fixtures/*.yml')
-    fixture_files = %w{ weekly_radio_addresses cabinet_members }.collect do |f| 
-      "#{RAILS_ROOT}/db/fixtures/#{f}.yml"
-    end
-    fixture_files.each do |file|
-      Fixtures.create_fixtures('db/fixtures', File.basename(file, '.*'))
+    %w{ weekly_radio_addresses cabinet_members }.collect do |table_name|
+      file = "#{RAILS_ROOT}/db/fixtures/#{table_name}.yml"
+      attribute_hashes = YAML.load(File.open(file))
+      attribute_hashes.each do |key,values|
+        table_name.camelize.singularize.constantize.create(values)
+      end
     end
   end
   
