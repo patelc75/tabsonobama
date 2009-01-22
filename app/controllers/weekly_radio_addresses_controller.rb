@@ -5,7 +5,7 @@ class WeeklyRadioAddressesController < ApplicationController
   end
   
   def show
-    @address = WeeklyRadioAddress.find(params[:id])
+    @address = WeeklyRadioAddress.find_by_permalink(params[:id])
   end
   
 end
