@@ -18,7 +18,8 @@
 <div class="phototitlerate">
 	<div class="cabinetphoto">						
 		<img alt="<%=c.nominee%>" src="<%=c.image_link%>" />
-		<h5><a href="<%=c.wikipedia_link%>"><%=c.nominee%></a><h5>										
+		<h5><%= link_to c.nominee, cabinet_member_url(c) %><h5>
+    <!-- <h5><a href="<%=c.wikipedia_link%>"><%=c.nominee%></a><h5> -->
 	</div>
 	<div class="titlerate">
 	</div>
