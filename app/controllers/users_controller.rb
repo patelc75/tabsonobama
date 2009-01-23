@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   skip_before_filter :verify_authenticity_token, :only => :create
   
+  before_filter :login_required, :only => [ :index, :edit, :update ]
+  
   def index
     @roles = Role.all
     @users = User.all
