@@ -65,7 +65,7 @@ describe Profile do
       attrs = {
         :first_name => 'quire',
         :last_name => 'quire',
-        :location => 'Brooklyn, NY',
+        :zip => '11202',
         :user => create_user
       }.merge(options)
       Profile.create(attrs)
