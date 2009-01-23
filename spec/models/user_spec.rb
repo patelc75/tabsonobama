@@ -256,6 +256,41 @@ describe User do
     end
   end
 
+  #
+  # roles
+  #
+  describe 'role changes' do
+
+    before(:each) do
+      @super_admin = Role.create(:name => 'super_admin')
+      @admin = Role.create(:name => 'admin')
+      @user = create_user
+    end
+
+    it 'should add new roles' do
+      @user.roles.should be_empty
+      @user.update_roles([@admin.id])
+      @user.roles.should include(@admin)
+      @user.roles.should_not include(@super_admin)
+    end
+
+    it 'should leave existing roles alone' do
+      @user.roles << @admin
+      @user.roles.should include(@admin)
+      @user.update_roles([@super_admin.id, @admin.id])
+      @user.roles.should include(@admin)
+    end
+
+    it 'should drop stale roles' do
+      @user.roles << @admin
+      @user.roles.should include(@admin)
+      @user.update_roles([@super_admin.id])
+      @user.roles.should_not include(@admin)
+      @user.roles.should include(@super_admin)
+    end
+
+  end
+  
 protected
   def create_user(options = {})
     record = User.new({ :login => 'quire', :email => 'quire@example.com', :password => 'quire69', :password_confirmation => 'quire69' }.merge(options))
