@@ -1,0 +1,16 @@
+%table{:border => "1"}
+  %tr
+    %td
+      username
+    %td
+      assigned roles
+    %td
+      actions
+  - @users.each do |user|
+    %tr
+      %td
+        = user.login
+      %td
+        = user.roles.collect(&:name).join(', ')
+      %td
+        = link_to "edit", edit_user_url(user)

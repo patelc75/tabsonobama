@@ -1,6 +1,26 @@
 class UsersController < ApplicationController
   skip_before_filter :verify_authenticity_token, :only => :create
   
+  def index
+    @roles = Role.all
+    @users = User.all
+  end
+  
+  def edit
+    @roles = Role.all
+    @user = User.find(params[:id])
+  end
+  
+  def update
+    @user = User.find(params[:id])
+    if @user.update_attributes(params[:user])
+      flash[:notice] = "Successfully updated user roles."
+      redirect_to users_url
+    else
+      render :action => 'edit'
+    end
+  end
+  
   def new
     @user = User.new
     @profile = @user.build_profile
@@ -70,5 +90,14 @@ class UsersController < ApplicationController
   def failed_creation(message = 'Sorry, there was an error creating your account')
     flash[:error] = message
     render :action => :new
+  end
+  
+  def authorized?
+    logged_in? && super_admin?
+  end
+  
+  def super_admin?
+    super_admin_role = Role.find_by_name('super_admin')
+    current_user.roles.include?(super_admin_role)
   end
 end

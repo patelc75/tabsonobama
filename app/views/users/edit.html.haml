@@ -1,0 +1,14 @@
+- form_for @user do |form|
+  = form.error_messages
+  %p
+    username:
+    = @user.login
+  %ul
+    roles: 
+    - @roles.each do |role|
+      %li
+        = role.name
+        %input{:type => 'checkbox', :checked => @user.roles.include?(role), :name => "user[updated_roles][#{role.id}]"}
+  %p
+    = form.submit "update user"
+    = link_to 'cancel', users_path
