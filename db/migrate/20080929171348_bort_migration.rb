@@ -75,6 +75,10 @@ class BortMigration < ActiveRecord::Migration
     
     # Add admin role to admin user
     user.roles << admin_role
+    
+    # create a super_admin role, add it to admin user
+    super_admin_role = Role.create(:name => 'super_admin')
+    user.roles << super_admin_role
   end
 
   def self.down
