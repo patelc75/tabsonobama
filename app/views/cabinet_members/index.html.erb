@@ -26,7 +26,7 @@
 	<h4><%= c.department %></h4>
 	<br>	
 	<div id="star-ratings-block-<%= c.class.to_s %>-<%= c.id %>" class="star-ratings-block">
-		<%= render :partial => 'ratings/rate', :locals => {:asset => c} %>
+		<%= render :partial => 'ratings/rate', :locals => {:asset => c, :align => "left"} %>
 	</div>
 </div>
 <br class="clear" />
