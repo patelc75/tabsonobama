@@ -5,7 +5,7 @@ class User
 
   validates_presence_of :login, :if => :not_using_openid?
   validates_length_of :login, :within => 3..40, :if => :not_using_openid?
-  validates_uniqueness_of :login, :case_sensitive => false, :if => :not_using_openid?
+  validates_uniqueness_of :login, :case_sensitive => false
   validates_format_of :login, :with => Authentication.login_regex, :message => Authentication.bad_login_message, :if => :not_using_openid?
   validates_presence_of :email, :if => :not_using_openid?
   validates_length_of :email, :within => 6..100, :if => :not_using_openid?
