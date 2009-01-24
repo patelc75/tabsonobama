@@ -56,9 +56,9 @@
 	    	</div>
 	    	
 			<div id="content">
-			  <% if flash[:notice] %>
+			  <% if flash[:notice] || flash[:error] %>
       	   <div id="notice">
-      	     <%= flash[:notice] %>
+      	     <%= flash[:notice] || flash[:error] %>
              <a id="close-notice" href='#'>X</a>
       	   </div>
     	   <% end %>
