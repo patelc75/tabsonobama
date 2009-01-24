@@ -14,24 +14,27 @@
       <%= title "What is your political affiliation?", :p %>
       <%= profile_form.collection_select(:affiliation_id, Affiliation.all, :id, :name) %>
     <% end %>
+
+    <%= title "Username", :h2 %>
+    <%= f.text_field :login %>
+    <%= title "Email", :h2 %>
+    <%= f.text_field :email, :id => 'email' %>
+    <%= title "Desired Password:", :h2 %>
+    <%= f.password_field :password, :id => 'pass' %>
+    <%= title "Re-enter Password:", :h2 %>
+    <%= f.password_field :password_confirmation, :id => 'password' %>
+	<br />
+	<br />
+    <%= get_captcha() %>
+  
+    <!-- OpenID signup styled? -->
+    <p>Signup with OpenID</p>
+    <p>
+      OpenID URL:
+      <%= text_field_tag :openid_url, params[:openid_url] || params['openid.identity'] %>
+    </p>
+    <!-- end OpenID section -->
+  
+    <%= submit_tag 'Sign up', :class => 'button' %>
   </div>
-  <%= title "Username", :h2 %>
-  <%= f.text_field :login %>
-  <%= title "Email", :h2 %>
-  <%= f.text_field :email, :id => 'email' %>
-  <%= title "Desired Password:", :h2 %>
-  <%= f.password_field :password, :id => 'pass' %>
-  <%= title "Re-enter Password:", :h2 %>
-  <%= f.password_field :password_confirmation, :id => 'password' %>
-  <%= get_captcha() %>
-  
-  <!-- OpenID signup styled? -->
-  <p>Signup with OpenID</p>
-  <p>
-    OpenID URL:
-    <%= text_field_tag :openid_url, params[:openid_url] || params['openid.identity'] %>
-  </p>
-  <!-- end OpenID section -->
-  
-  <%= submit_tag 'Sign up', :class => 'button' %>
 <% end %>
