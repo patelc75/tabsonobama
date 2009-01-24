@@ -4,8 +4,9 @@
   <%= link_to "Logout", logout_url %>
 <% else %>
   <div id="login-again" style="display:none">
-    Unable to log you in as <strong><%= @login %></strong>.
-    <%= link_to "Forgot your password?", forgot_password_url %> or
+    <% if @login %>
+      <%= link_to "Forgot your password?", forgot_password_url %> or
+    <% end %>
     <a href='/login' id="login-again-link">Try again</a>.
   </div>
   <div id="login-links">
