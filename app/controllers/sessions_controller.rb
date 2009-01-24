@@ -51,6 +51,7 @@ class SessionsController < ApplicationController
     flash[:notice] = "Logged in successfully"
     respond_to do |format|
       format.html { redirect_back_or_default(root_path) }
+      #format.js { render :partial => "/users/pop_login_form" }
       format.js { render :partial => "/users/nav_login_form" }
     end
   end
@@ -60,6 +61,7 @@ class SessionsController < ApplicationController
     logger.warn "Failed login for '#{params[:login]}' from #{request.remote_ip} at #{Time.now.utc}"
     respond_to do |format|
       format.html { render :action => :new }
+      #format.js { render :partial => "/users/pop_login_form" }
       format.js { render :partial => "/users/nav_login_form" }
     end
   end
