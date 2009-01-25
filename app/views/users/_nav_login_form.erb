@@ -10,7 +10,7 @@
     <a href='/login' id="login-again-link">Try again</a>.
   </div>
   <div id="login-links">
-  	<li><%= link_to "Signup", signup_url, :title => "Signup" %></li>
+  	<li><a title="SignUp" href="/signup" onclick="tb_show('Dialog', '#TB_inline?height=600&width=400&inlineId=userSignup&modal=true', null); return false;"> Sign Up</li>
   	<li><a title="Login" href="/login" id="login-link">Login</a></li>
   </div>
   <div id="login-form" style="display:none">
