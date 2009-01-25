@@ -30,10 +30,13 @@ namespace :app do
   task :seed => :environment do
     %w{ weekly_radio_addresses cabinet_members }.collect do |table_name|
       file = "#{RAILS_ROOT}/db/fixtures/#{table_name}.yml"
+      puts "Loading " + "#{RAILS_ROOT}/db/fixtures/#{table_name}.yml"
       attribute_hashes = YAML.load(File.open(file))
       attribute_hashes.each do |key,values|
+      	puts key.to_s
         table_name.camelize.singularize.constantize.create(values)
       end
+      puts
     end
   end
   
