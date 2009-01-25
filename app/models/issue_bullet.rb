@@ -1,6 +1,9 @@
 class IssueBullet < ActiveRecord::Base
   acts_as_rated
   belongs_to :issue_section
+
+  include Promotable
+  has_one :promotion, :as => :item, :dependent => :destroy
   
   has_permalink :name
   def to_param
