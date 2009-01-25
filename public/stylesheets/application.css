@@ -144,15 +144,15 @@ strong {
 }
 
 #nav ul li.home {
-		margin-top: 21px;		
+		margin-top: 11px;		
 }
 
 #nav ul li.home a {
-		background: transparent url(../images/home.gif) no-repeat scroll 50% 50%;
+		background: transparent url(../images/homeicon.jpg) no-repeat scroll 50% 50%;
 		display: block;
 		text-indent: -9999px;
-		height: 16px;
-		width: 16px;
+		height: 32px;
+		width: 32px;
 		outline: none;
 }
 
