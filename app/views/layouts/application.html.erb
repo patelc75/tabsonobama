@@ -41,8 +41,8 @@
 	    	<div id="nav">
 	    		<ul>
 					<li class="home"><%= link_to "Home", { :controller => "home", :action => "index" } , { :title => "Home"} %></li>
-					<li><a title="About" href="#">About</a></li>
-					<li><a title="My Ratings" href="#">My Ratings</a></li>
+					<li><%= link_to "About", { :controller => "home", :action => "about" } , { :title => "About"} %></l>
+					<li><%= link_to "My Ratings", { :controller => "ratings", :action => "index" } , { :title => "My Ratings"} %></l>
 					<!--li><a title="Blog" href="#">Blog</a></li-->
 					<!--li><a title="Press" href="#">Press</a></li-->
 		        </ul>
