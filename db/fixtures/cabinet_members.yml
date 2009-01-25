@@ -1,3 +1,23 @@
+biden:
+  department: Office of the Vice President
+  office: Vice President of the United States
+  nominee: Joe Biden
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Thumbnail-sized_photo_of_Joe_Biden.jpg/75px-Thumbnail-sized_photo_of_Joe_Biden.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Joe_Biden
+  previous_political_office: Senator from Delaware
+  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
+  photo_filename: JoeBiden.jpg
+
+chu:
+  department: Energy
+  office: Secretary
+  nominee: Steven Chu
+  image_link: http://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Steven_Chu_ChangeGov_Press.jpg/225px-Steven_Chu_ChangeGov_Press.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Steven_Chu
+  previous_political_office: n/a
+  previous_political_office_link: n/a
+
+
 clinton:
   department: State
   office: Secretary
@@ -7,7 +27,37 @@ clinton:
   previous_political_office: Junior Senator from New York
   previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
   photo_filename: HillaryClinton.jpg
-  
+
+daschle:
+  department: Health and Human Services
+  office: Secretary
+  nominee: Tom Daschle
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tom_Daschle%2C_official_Senate_photo.jpg/75px-Tom_Daschle%2C_official_Senate_photo.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Hilda_Solis
+  previous_political_office: U.S. Senator and Senate Majority Leader from South Dakota
+  previous_political_office_link: http://en.wikipedia.org/wiki/Party_leaders_of_the_United_States_Senate
+  photo_filename: TomDaschle.jpg
+
+donovan:
+  department: Housing and Urban Development
+  office: Secretary
+  nominee: Shaun Donovan
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/ShaunDonovan.jpeg/75px-ShaunDonovan.jpeg
+  wikipedia_link: http://en.wikipedia.org/wiki/Shaun_Donovan
+  previous_political_office: Head of the New York City Department of Housing Preservation and Development
+  previous_political_office_link: http://en.wikipedia.org/wiki/New_York_City_Department_of_Housing_Preservation_and_Development
+  photo_filename: ShaunDonovan.jpg 
+ 
+duncan: 
+  department: Education
+  office: Secretary
+  nominee: Arne Duncan
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Arne_Duncan.JPG/75px-Arne_Duncan.JPG
+  wikipedia_link: http://en.wikipedia.org/wiki/Arne_Duncan
+  previous_political_office: Chief Executive Officer of the Chicago Public Schools
+  previous_political_office_link: http://en.wikipedia.org/wiki/Chief_Executive_Officer
+  photo_filename: ArneDuncan.jpg  
+ 
 geithner:
   department: Treasury
   office: Secretary
@@ -38,55 +88,15 @@ holder:
   previous_political_office_link: http://en.wikipedia.org/wiki/Director_of_Central_Intelligence
   photo_filename: RobertGates.jpg
 
-salazar:
-  department: Interior
-  office: Secretary
-  nominee: Ken Salazar
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Kensalazar.jpg/75px-Kensalazar.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Ken_Salazar
-  previous_political_office: Junior Senator from Colorado
-  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
-  photo_filename: KenSalazar.jpg
-
-tobedetermined:
-  department: Commerce
-  office: Secretary
-  nominee: To Be Determined
-  image_link: n/a 
-  wikipedia_link: n/a
-  previous_political_office: n/a 
-  previous_political_office_link: n/a 
-  photo_filename: n/a
-
-solis:
-  department: Labor
-  office: Secretary
-  nominee: Hilda Solis
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Hilda_Solis.jpg/75px-Hilda_Solis.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Hilda_Solis
-  previous_political_office: Member of the United States House of Representatives 
-  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_House_of_Representatives
-  photo_filename: HildaSolis.jpg
-
-daschle:
-  department: Health and Human Services
-  office: Secretary
-  nominee: Tom Daschle
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tom_Daschle%2C_official_Senate_photo.jpg/75px-Tom_Daschle%2C_official_Senate_photo.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Hilda_Solis
-  previous_political_office: U.S. Senator and Senate Majority Leader from South Dakota
-  previous_political_office_link: http://en.wikipedia.org/wiki/Party_leaders_of_the_United_States_Senate
-  photo_filename: TomDaschle.jpg
-
-donovan:
-  department: Housing and Urban Development
-  office: Secretary
-  nominee: Shaun Donovan
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/ShaunDonovan.jpeg/75px-ShaunDonovan.jpeg
-  wikipedia_link: http://en.wikipedia.org/wiki/Shaun_Donovan
-  previous_political_office: Head of the New York City Department of Housing Preservation and Development
-  previous_political_office_link: http://en.wikipedia.org/wiki/New_York_City_Department_of_Housing_Preservation_and_Development
-  photo_filename: ShaunDonovan.jpg
+kirk:
+  department: Office of US Trade Representative 
+  office: Representative
+  nominee: Rob Kirk
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Kirk1.jpg/75px-Kirk1.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Ron_Kirk
+  previous_political_office: Mayor of Dallas, Texas
+  previous_political_office_link: http://en.wikipedia.org/wiki/Dallas
+  photo_filename: RonKirk.jpg
 
 laHood:
   department: Transportation
@@ -98,24 +108,35 @@ laHood:
   previous_political_office_link: http://en.wikipedia.org/wiki/United_States_House_of_Representatives
   photo_filename: RayLaHood.jpg
 
-chu:
-  department: Energy
+napolitano:
+  department: Homeland Security
   office: Secretary
-  nominee: Steven Chu
-  image_link: http://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Steven_Chu_ChangeGov_Press.jpg/225px-Steven_Chu_ChangeGov_Press.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Steven_Chu
-  previous_political_office: n/a
-  previous_political_office_link: n/a
+  nominee: Janet Napolitano
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/JanetNapolitanoIraq.jpg/75px-JanetNapolitanoIraq.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Janet_Napolitano
+  previous_political_office: Governor of Arizona
+  previous_political_office_link: http://en.wikipedia.org/wiki/Arizona
+  photo_filename: JanetNapolitano.jpg
 
-duncan:
-  department: Education
+salazar:
+  department: Interior
   office: Secretary
-  nominee: Arne Duncan
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Arne_Duncan.JPG/75px-Arne_Duncan.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Arne_Duncan
-  previous_political_office: Chief Executive Officer of the Chicago Public Schools
-  previous_political_office_link: http://en.wikipedia.org/wiki/Chicago_Public_Schools
-  photo_filename: ArneDuncan.jpg
+  nominee: Ken Salazar
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Kensalazar.jpg/75px-Kensalazar.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Ken_Salazar
+  previous_political_office: Junior Senator from Colorado
+  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
+  photo_filename: KenSalazar.jpg
+
+tobedetermined3:
+  department: Commerce
+  office: Secretary
+  nominee: To Be Determined
+  image_link: http://images2.wikia.nocookie.net/uncyclopedia/images/thumb/0/01/DramaticQuestionMark.png/50px-DramaticQuestionMark.png
+  wikipedia_link: http://en.wikipedia.org/wiki/Secretary_of_commerce
+  previous_political_office: n/a 
+  previous_political_office_link: n/a 
+  photo_filename: n/a  
 
 shinseki:
   department: Veterans' Affairs
@@ -127,14 +148,43 @@ shinseki:
   previous_political_office_link: http://en.wikipedia.org/wiki/Chief_of_Staff_of_the_United_States_Army
   photo_filename: EricShinseki.jpg
 
-napolitano:
-  department: Homeland Security
+solis:
+  department: Labor
   office: Secretary
-  nominee: Janet Napolitano
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/JanetNapolitanoIraq.jpg/75px-JanetNapolitanoIraq.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Janet_Napolitano
-  previous_political_office: Governor of Arizona
-  previous_political_office_link: http://en.wikipedia.org/wiki/Arizona
-  photo_filename: JanetNapolitano.jpg
-
+  nominee: Hilda Solis
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Hilda_Solis.jpg/75px-Hilda_Solis.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Hilda_Solis
+  previous_political_office: Member of the United States House of Representatives 
+  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_House_of_Representatives
+  photo_filename: HildaSolis.jpg  
+  
+tobedetermined:
+  department: Office of National Drug Control Policy
+  office: Director
+  nominee: To Be Determined
+  image_link: http://images2.wikia.nocookie.net/uncyclopedia/images/thumb/0/01/DramaticQuestionMark.png/50px-DramaticQuestionMark.png
+  wikipedia_link: http://en.wikipedia.org/wiki/Director_of_the_National_Drug_Control_Policy
+  previous_political_office: n/a 
+  previous_political_office_link: n/a 
+  photo_filename: n/a
+  
+vilsack:
+  department: Agriculture
+  office: Secretary
+  nominee: Tom Vilsack
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Tom_Vilsack%2C_official_USDA_photo_portrait.jpg/75px-Tom_Vilsack%2C_official_USDA_photo_portrait.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Tom_Vilsack
+  previous_political_office: Governor of Iowa
+  previous_political_office_link: http://en.wikipedia.org/wiki/Iowa
+  photo_filename: TomVilsack.jpg
+  
+tobedetermined2:
+  department: Office of Social Security Administration
+  office: Administor
+  nominee: To Be Determined
+  image_link: http://images2.wikia.nocookie.net/uncyclopedia/images/thumb/0/01/DramaticQuestionMark.png/50px-DramaticQuestionMark.png
+  wikipedia_link: http://en.wikipedia.org/wiki/Social_Security_Administration
+  previous_political_office: n/a 
+  previous_political_office_link: n/a 
+  photo_filename: n/a
  
