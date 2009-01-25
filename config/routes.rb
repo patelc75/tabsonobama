@@ -18,6 +18,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.resources :passwords
   map.resource :session
+  
+  map.resources :ratings, :only => :index
 
   map.resources :issue_groups, :as => :groups do |groups|
     groups.resources :issue_sections, :as => :sections do |sections|

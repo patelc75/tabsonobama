@@ -1,5 +1,12 @@
 class RatingsController < ApplicationController
-  before_filter :get_class_by_name
+  before_filter :get_class_by_name, :only => [:rate]
+  
+  before_filter :login_required, :only => [:index]
+  def index
+    @members = CabinetMember.find_rated_by(current_user).uniq
+    @addresses = WeeklyRadioAddress.find_rated_by(current_user).uniq
+    @groups = IssueGroup.find_rated_by(current_user).uniq
+  end
     
   def rate
     
