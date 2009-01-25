@@ -1,0 +1,87 @@
+<div style="display:none" id="userSignup">
+
+<div class="signup">
+	<div style="width: 400px; text-align: right; cursor: pointer;">
+	<a onclick="tb_remove();"> Close</a>
+	</div>  
+	
+	<% form_remote_tag  :url=> session_url, :update => "pop_signup" do  %>
+	  <div id="user_signup">
+		<h1>Sign Up.</h1>
+		<br />
+		<ul>
+			<li>
+				<div>
+					<label for="firstname">First Name</label><br />
+					<input type="text" name="firstname" id="firstname" />
+				</div>
+			</li>
+			<li>
+				<div>
+					<label for="lastname">Last Name</label><br />
+					<input type="text" name="lastname" id="lastname" />
+				</div>
+			</li>
+			<li>
+				<div>
+					<label for"zip">Zipcode</label><br />
+					<input type="text" name="zip" id="zip" />	
+				</div>
+			</li>
+			<li>
+				<div>
+					<label for="affiliation_id" class="affiliation">What is your political affiliation?</label><br />
+					<%= collection_select("user", :affiliation_id, Affiliation.all, :id, :name) %>
+				</div>
+			</li>
+			<li>
+				<div>
+					<label for="login">Username</label><br />
+					<input type="text" name="login" id="login" />
+				</div>
+			</li>
+			<li>
+				<div>
+					<label for="email">Email</label><br />
+					<input type="text" name="email" id="email" />
+				</div>
+			</li>
+			<li>
+				<div>
+					<label for="pass">Desired Password:</label><br />
+					<input type="password" name="password" id="pass" />
+				</div>
+			</li>
+			<li>
+				<div>
+					<label for="password">Re-enter Password:</label><br />
+					<input type="password_confirmation" id="password" />
+				</div>
+			</li>
+			<li>
+				<div class="recaptcha">
+					<div id="reCAPTCHA"> </div>
+				</div>
+			</li>
+			<li>
+				<div class="openidurl">
+					<!-- OpenID signup styled? -->
+					<h3>Signup with OpenID</h3>
+					<label for="openid_url">OpenID URL:</label><br />
+					<%= text_field_tag :openid_url %>
+					<!-- end OpenID section -->
+				</div>
+			</li>
+			<li>
+				<div class="submitbutton">
+					<%= submit_tag 'Sign Up', :class => 'button' %>
+				</div>
+			</li>
+		</ul>
+	  	  
+	  </div>
+	<% end %>
+</div>
+<script type="text/javascript">	
+	setTimeout('Recaptcha.create("6Lf3pgQAAAAAAPlDRCXGMAw8QLagh2G368239qKH","reCAPTCHA", {theme: "white"})',5); 
+</script>
