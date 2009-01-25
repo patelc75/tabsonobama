@@ -40,11 +40,11 @@
 	    
 	    	<div id="nav">
 	    		<ul>
-					<li class="home"><a title="Home" href="#">Home</a></li>
+					<li class="home"><%= link_to "Home", { :controller => "home", :action => "index" } , { :title => "Home"} %></li>
 					<li><a title="About" href="#">About</a></li>
-					<li><a title="My Issues" href="#">My Issues</a></li>
-					<li><a title="Blog" href="#">Blog</a></li>
-					<li><a title="Press" href="#">Press</a></li>
+					<li><a title="My Ratings" href="#">My Ratings</a></li>
+					<!--li><a title="Blog" href="#">Blog</a></li-->
+					<!--li><a title="Press" href="#">Press</a></li-->
 		        </ul>
 		        
 		        <ul id="user">
@@ -53,9 +53,9 @@
 	    	</div>
 	    	
 			<div id="content">
-			  <% if flash[:notice] || flash[:error] %>
+			  <% if flash[:notice] %>
       	   <div id="notice">
-      	     <%= flash[:notice] || flash[:error] %>
+      	     <%= flash[:notice] %>
              <a id="close-notice" href='#'>X</a>
       	   </div>
     	   <% end %>

@@ -1,0 +1,23 @@
+<% avg = asset.rating_average_by_rater(rater) %>
+<% count = asset.rating_count_by_rater(rater) %>
+
+<% @convert = %w[one two three four five] %>
+<div align="<%= defined?(align) ? align : 'right' %>">
+  <ul class='star-rating'>
+      <li class='current-rating' style='width:<%= (avg * 23).to_i -%>px;'>
+      </li>
+      <% 1.upto(5) do |x| -%>
+      <li style="text-align: center">
+          <%= link_to_remote( "#{x}", 
+                      { :url => { :controller => "ratings", :action => "rate", 
+                          :id => asset.id, :rating => x, :rated_type => asset.class.to_s } },
+                      { :class => "#{@convert[x-1]}-stars", :name => "#{pluralize(x,'star')} out of 5",
+                          :title => "Rate this a #{x} out of 5" } ) %>
+      </li>
+      <% end -%>
+  </ul>
+</div>
+<div align="<%= defined?(align) ? align : 'right' %>" style="color: gray;">
+  <%= number_with_precision(avg, 1) %>/5 Stars (<%= count %> votes)
+</div>
+<br />

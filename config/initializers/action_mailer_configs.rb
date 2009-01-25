@@ -6,7 +6,10 @@ SMTP_SETTINGS_GMAIL = YAML.load(gmail_configs)
 SMTP_SETTINGS_LOCALHOST = {
   :address => "localhost" ,
   :port => 25,
-  :domain => "tabsonobama.org"
+  :domain => "tabsonobama.org",
+  :authentication => :login,
+  :user_name => "tabsuser",
+  :password => "r0ck0n"
 }
 
 case ENV['RAILS_ENV']

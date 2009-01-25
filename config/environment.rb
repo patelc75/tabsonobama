@@ -139,6 +139,27 @@ module ActiveRecord #:nodoc:
             end
           end
         end
+        
+        def rating_average_by_rater(rater)
+          ActiveRecord::Base.connection.select_values("
+            SELECT AVG(ratings.rating) 
+            FROM ratings 
+            WHERE rated_type = '#{self.class}'
+            AND rater_id = #{rater.id} 
+            AND rated_id = #{self.id}
+          ").first.to_f
+        end
+        
+        def rating_count_by_rater(rater)
+          ActiveRecord::Base.connection.select_values("
+            SELECT COUNT(ratings.rating) 
+            FROM ratings 
+            WHERE rated_type = '#{self.class}'
+            AND rater_id = #{rater.id} 
+            AND rated_id = #{self.id}
+          ").first.to_i
+        end
+        
       end
     end
   end
