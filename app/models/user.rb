@@ -9,6 +9,11 @@ class User < ActiveRecord::Base
   validates_associated :profile
   
   attr_accessible :new_profile_attributes, :updated_roles
+  
+  def is_admin?
+    roles.include?(Role.admin_role)
+  end
+  
   def new_profile_attributes=(profile_attributes)
     self.build_profile(profile_attributes)
   end
