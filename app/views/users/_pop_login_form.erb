@@ -13,8 +13,8 @@
 	<% else %>
 	<div id="login_failure" style="display: none;">Unable to log you in as <strong><%= @login %></strong>.</div>
 	<div id="login_dialog" class="login_dialog">
-		<h1>Sign In or <%= link_to "Sign Up", signup_url, :title => "Sign Up" %></h1>
-		<div id="user_name_login">
+		<h1>Sign In or <a title="SignUp" href="/signup" onclick="tb_remove(); setTimeout('tb_show(\'Dialog\', \'#TB_inline?height=600&width=400&inlineId=userSignup&modal=true\', null)',500); return false;"> Sign Up</a></h1>
+		<div id="user_name_login" style="display: block;">
 		<% form_remote_tag :url => session_url,:update => "pop_login" do %>
 			<h2>Username</h2>
 			<input name="login" id="login" type="text" />
