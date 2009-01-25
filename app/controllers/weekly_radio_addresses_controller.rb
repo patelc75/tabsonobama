@@ -1,7 +1,7 @@
 class WeeklyRadioAddressesController < ApplicationController
   
   def index
-    @addresses = WeeklyRadioAddress.find(:all)
+    @addresses = WeeklyRadioAddress.find(:all, :order => "timestamp DESC")
   end
   
   def show
