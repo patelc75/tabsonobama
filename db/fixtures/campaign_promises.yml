@@ -1,10 +1,8 @@
-# TODO: finish converting DATA structure to yaml, update rake task
 --- 
-    
-:issue_groups: 
+:issue_groups:
 - :name: "Civil Rights"
   :description: ""
-  :issue_sections: 
+  :issue_sections:
   - :name: "Strengthen Civil Rights Enforcement"
     :description: "Obama and Biden will reverse the politicization that has occurred in the Bush Administration's Department of Justice. They will put an end to the ideological litmus tests used to fill positions within the Civil Rights Division."
   - :name: "Combat Employment Discrimination"
@@ -21,11 +19,9 @@
     :description: "Obama and Biden believe the disparity between sentencing crack and powder-based cocaine is wrong and should be completely eliminated."
   - :name: "Expand Use of Drug Courts"
     :description: "Obama and Biden will give first-time, non-violent offenders a chance to serve their sentence, where appropriate, in the type of drug rehabilitation programs that have proven to work better than a prison term in changing bad behavior."
-
-:issue_groups:
 - :name: "Defense"
   :description: ""
-  :issues_sections: 
+  :issue_sections:
   - :name: "Invest in a 21st Century Military"
     :description: ""
     :issue_bullets: 
@@ -41,7 +37,6 @@
     - :name: "Lighten the Burdens on Our Brave Troops and Their Families:"
       :description: "An Obama-Biden administration will create a Military Families Advisory Board to provide a conduit for military families' concerns to be brought to the attention of senior policymakers and the public. Obama and Biden will end the Bush administration's stop-loss policy and establish predictability in deployments so that active duty and reserves know what they can and must expect."
       :short: "create a Military Advisory Board"
-  :issues_sections:
   - :name: "Build Defense Capabilities for the 21st Century"
     :description: ""
     :issue_bullets: 
@@ -66,19 +61,17 @@
     - :name: "Protect the U.S in Cyberspace:"
       :description: "An Obama-Biden administration will work in cooperation with our allies and the private sector to identify and protect against emerging cyber-threats."    
       :short: "protect against cyber threats"
-  :issues_sections:
   - :name: "Restore the Readiness of the National Guard and Reserves"
     :description: "Barack Obama and Joe Biden will provide the National Guard with the equipment it needs for foreign and domestic emergencies and time to restore and refit before deploying. They will make the head of the National Guard a member of the Joint Chiefs of Staff to ensure concerns of our citizen soldiers reach the level they mandate. They will ensure that reservists and Guard members are treated fairly when it comes to employment, health, and education benefits."
   - :name: "Develop Whole of Government Initiatives to Promote Security"
     :description: ""
-    :issue_bullets: 
+    :issue_bullets:
     - :name: "Integrate Military and Civilian Efforts:"
       :description: "An Obama-Biden administration will build up the capacity of each non-Pentagon agency to deploy personnel and area experts where they are needed, to help move soldiers, sailors, airmen and Marines out of civilian roles."
       :short: "integrate military and civilian efforts"
     - :name: "Create a Civilian Assistance Corps (CAC):"
       :description: "An Obama-Biden administration will set a goal of creating a national CAC of 25,000 personnel. This corps of civilian volunteers with special skill, sets (doctors, lawyers, engineers, city planners, agriculture specialists, police, etc.) would be organized to provide each federal agency with a pool of volunteer experts willing to deploy in times of need at home and abroad."
       :short: "create a civilian assistance corps"
-  :issues_sections:
   - :name: "Restore Our Alliances"
     :description: ""
     :issue_bullets: 
@@ -88,7 +81,6 @@
     - :name: "Organize to Help Our Partners and Allies in Need:"
       :description: "An Obama-Biden administration will expand humanitarian activities that build friends and allies at the regional and local level (such as during the response to the tsunami in South and Southeast Asia), and win hearts and minds in the process."
       :short: "organize to help our partners and allies"
-  :issues_sections:
   - :name: "Reform Contracting"
     :description: ""
     :issue_bullets: 
@@ -98,11 +90,9 @@
     - :name: "Restore Honesty, Openness, and Commonsense to Contracting and Procurement:"
       :description: "An Obama-Biden administration will realize savings by reducing the corruption and cost overruns that have become all too routine in defense contracting. This includes launching a program of acquisition reform and management, which would end the common practice of no-bid contracting.Obama and Biden will end the abuse of supplemental budgets by creating a system of oversight for war funds as stringent as in the regular budget. Obama and Biden will restore the government's ability to manage contracts by rebuilding our contract officer corps. They will order the Justice Department to prioritize prosecutions that will punish and deter fraud, waste and abuse."
       :short: "restore honesty to contracting"
-      
-:issue_groups:      
 - :name: "Disabilities"
   :description: ""
-  :issues_sections: 
+  :issue_sections:
   - :name: ""
     :description: "Barack Obama and Joe Biden's comprehensive agenda to empower individuals with disabilities fits in with the campaign's overarching message of equalizing opportunities for all Americans. In addition to reclaiming America's global leadership on this issue by becoming a signatory to -- and having the Senate ratify -- the UN Convention on the Rights of Persons with Disabilities, the plan has four parts, designed to provide lifelong supports and resources to Americans with disabilities."
     :issue_bullets: 
@@ -115,10 +105,9 @@
     - :name: "Support Independent, Community-Based Living for Americans with Disabilities:"
       :description: "Obama and Biden will ensure people with mental or functional disabilities are placed in community settings when appropriate."     
       :short: "ensure settings for those with disabilities"
-:issue_groups:      
 - :name: "Economy"
   :description: ""
-  :issues_sections: 
+  :issue_sections: 
   - :name: "Jumpstart the Economy"
     :description: ""
     :issue_bullets: 
@@ -128,7 +117,6 @@
     - :name: "Provide $50 billion to Jumpstart the Economy and Prevent 1 Million Americans from Losing Their Jobs:"
       :description: "This relief would include a $25 billion State Growth Fund to prevent state and local cuts in health, education, housing, and heating assistance or counterproductive increases in property taxes, tolls or fees. The Obama-Biden relief plan will also include $25 billion in a Jobs and Growth Fund to prevent cutbacks in road and bridge maintenance and fund school re­pair - all to save more than 1 million jobs in danger of being cut." 
       :short: "provide relief to jumpstart the economy"
-  :issues_sections:
   - :name: "Provide Middle Class Americans Tax Relief"
     :description: "Obama and Biden will cut income taxes by $1,000 for working families to offset the payroll tax they pay."
     :issue_bullets:
@@ -141,7 +129,6 @@
     - :name: "Simplify Tax Filings for Middle Class Americans:"
       :description: "Obama and Biden will dramatically simplify tax filings so that millions of Americans will be able to do their taxes in less than five minutes. Obama and Biden will ensure that the IRS uses the information it already gets from banks and employers to give taxpayers the option of pre-filled tax forms to verify, sign and return. Experts estimate that the Obama-Biden proposal will save Americans up to 200 million total hours of work and aggravation and up to $2 billion in tax preparer fees."
       :short: "simplify tax filings"
-  :issues_sections:
   - :name: "Trade"
     :description: "Obama and Biden believe that trade with foreign nations should strengthen the American economy and create more American jobs. He will stand firm against agreements that undermine our economic security."
     :issue_bullets:
@@ -160,7 +147,6 @@
     - :name: "Reward Companies that Support American Workers:"
       :description: "Barack Obama introduced the Patriot Employer Act of 2007 with Senators Richard Durbin (D-IL) and Sherrod Brown (D-OH) to reward companies that create good jobs with good benefits for American workers. The legislation would provide a tax credit to companies that maintain or increase the number of full-time workers in America relative to those outside the US; maintain their corporate headquarters in America if it has ever been in America; pay decent wages; prepare workers for retirement; provide health insurance; and support employees who serve in the military."
       :short: "reward companies supporting american workers"
-  :issues_sections:
   - :name: "Invest in the Manufacturing Sector and Create 5 Million New Green Jobs"
     :description: ""
     :issue_bullets:
@@ -171,22 +157,20 @@
       :description: "The Manufacturing Extension Partnership (MEP) works with manufacturers across the country to improve efficiency, implement new technology and strengthen company growth. This highly-successful program has engaged in more than 350,000 projects across the country and in 2006 alone, helped create and protect over 50,000 jobs. But despite this success, funding for MEP has been slashed by the Bush administration. Barack Obama and Joe Biden will double funding for the MEP so its training centers can continue to bolster the competitiveness of U.S. manufacturers."
       :short: "double funding for mep"
     - :name: "Invest In A Clean Energy Economy And Create 5 Million New Green Jobs:"
-      :description: "Obama and Biden will invest $150 billion over 10 years to advance the next generation of biofuels and fuel infrastructure, accelerate the commercialization of plug-in hybrids, promote development of commercial scale renewable energy, invest in low emissions coal plants, and begin transition to a new digital electricity grid. The plan will also invest in America's highly-skilled manufacturing workforce and manufacturing centers to ensure that American workers have the skills and tools they need to pioneer the first wave of green technologies that will be in high demand throughout the world."   
+      :description: "Obama and Biden will invest $150 billion over 10 years to advance the next generation of biofuels and fuel infrastructure, accelerate the commercialization of plug-in hybrids, promote development of commercial scale renewable energy, invest in low emissions coal plants, and begin transition to a new digital electricity grid. The plan will also invest in America's highly-skilled manufacturing workforce and manufacturing centers to ensure that American workers have the skills and tools they need to pioneer the first wave of green technologies that will be in high demand throughout the world."
       :short: "create new green jobs"
     - :name: "Create New Job Training Programs for Clean Technologies:"
       :description: "The Obama-Biden plan will increase funding for federal workforce training programs and direct these programs to incorporate green technologies training, such as advanced manufacturing and weatherization training, into their efforts to help Americans find and retain stable, high-paying jobs. Obama and Biden will also create an energy-focused youth jobs program to invest in disconnected and disadvantaged youth."
       :short: "create training programs for clean technologies"
     - :name: "Boost the Renewable Energy Sector and Create New Jobs:"
-      :description: "The Obama-Biden plan will create new federal policies, and expand existing ones, that have been proven to create new American jobs. Obama and Biden will create a federal Renewable Portfolio Standard (RPS) that will require 25 percent of American electricity be derived from renewable sources by 2025, which has the potential to create hundreds of thousands of new jobs on its own. Obama and Biden will also extend the Production Tax Credit, a credit used successfully by American farmers and investors to increase renewable energy production and create new local jobs."          
+      :description: "The Obama-Biden plan will create new federal policies, and expand existing ones, that have been proven to create new American jobs. Obama and Biden will create a federal Renewable Portfolio Standard (RPS) that will require 25 percent of American electricity be derived from renewable sources by 2025, which has the potential to create hundreds of thousands of new jobs on its own. Obama and Biden will also extend the Production Tax Credit, a credit used successfully by American farmers and investors to increase renewable energy production and create new local jobs."
       :short: "boost renewable energy sector"
-  :issues_sections:
   - :name: "New Jobs Through National Infrastructure Investment"
     :description: "Barack Obama and Joe Biden believe that it is critically important for the United States to rebuild its national transportation infrastructure – its highways, bridges, roads, ports, air, and train systems – to strengthen user safety, bolster our long-term competitiveness and ensure our economy continues to grow."
     :issue_bullets:
     - :name: "Create a National Infrastructure Reinvestment Bank:"
       :description: "Barack Obama and Joe Biden will address the infrastructure challenge by creating a National Infrastructure Reinvestment Bank to expand and enhance, not supplant, existing federal transportation investments. This independent entity will be directed to invest in our nation’s most challenging transportation infrastructure needs. The Bank will receive an infusion of federal money, $60 billion over 10 years, to provide financing to transportation infrastructure projects across the nation. These projects will create up to two million new direct and indirect jobs and stimulate approximately $35 billion per year in new economic activity."
       :short: "create national infrastructure reinvestment bank"
-  :issues_sections:
   - :name: "Technology, Innovation and Creating Jobs"
     :description: "Barack Obama and Joe Biden will increase federal support for research, technology and innovation for companies and universities so that American families can lead the world in creating new advanced jobs and products."
     :issue_bullets: 
@@ -199,7 +183,6 @@
     - :name: "Deploy Next-Generation Broadband:"
       :description: "Barack Obama and Joe Biden believe we can get broadband to every community in America through a combination of reform of the Universal Service Fund, better use of the nation's wireless spectrum, promotion of next-generation facilities, technologies and applications, and new tax and loan incentives."
       :short: "deploy next generation broadband"
-  :issues_sections:
   - :name: "Support Small Business"
     :description: ""
     :issue_bullets: 
@@ -209,7 +192,6 @@
     - :name: "Create a National Network of Public-Private Business Incubators:"
       :description: "Barack Obama and Joe Biden will support entrepreneurship and spur job growth by creating a national network of public-private business incubators. Business incubators facilitate the critical work of entrepreneurs in creating start-up companies. Obama and Biden will invest $250 million per year to increase the number and size of incubators in disadvantaged communities throughout the country."
       :short: "support entreprenueurship"
-  :issue_sections:
   - :name: "Labor"
     :description: "Obama and Biden will strengthen the ability of workers to organize unions. He will fight for passage of the Employee Free Choice Act. Obama and Biden will ensure that his labor appointees support workers' rights and will work to ban the permanent replacement of striking workers. Obama and Biden will also increase the minimum wage and index it to inflation to ensure it rises every year."
     :issue_bullets:  
@@ -225,7 +207,6 @@
     - :name: "Raise the Minimum Wage:"
       :description: "Barack Obama and Joe Biden will raise the minimum wage, index it to inflation and increase the Earned Income Tax Credit to make sure that full-time workers earn a living wage that allows them to raise their families and pay for basic needs."
       :short: "raise the minimum wage"
-  :issue_sections:
   - :name: "Protect Homeownership and Crack Down on Mortgage Fraud"
     :description: "Obama and Biden will crack down on fraudulent brokers and lenders. They will also make sure homebuyers have honest and complete information about their mortgage options, and they will give a tax credit to all middle-class homeowners."
     :issue_bullets:
@@ -241,7 +222,6 @@
     - :name: "Close Bankruptcy Loophole for Mortgage Companies:"
       :description: "Obama and Biden will work to eliminate the provision that prevents bankruptcy courts from modifying an individual's mortgage payments. They believe that the subprime mortgage industry, which has engaged in dangerous and sometimes unscrupulous business practices, should not be shielded by outdated federal law."
       :short: "close bankruptcy loophole for mortgage companies"
-  :issue_sections:
   - :name: "Address Predatory Credit Card Practices"
     :description: "Obama and Biden will establish a five-star rating system so that every consumer knows the risk involved in every credit card. They also will establish a Credit Card Bill of Rights to stop credit card companies from exploiting consumers with unfair practices."
     :issue_bullets:
@@ -251,7 +231,6 @@
     - :name: "Establish a Credit Card Bill of Rights to Protect Consumers:"
       :description: "Obama and Biden will create a Credit Card Bill of Rights to protect consumers. The Obama-Biden plan will: 1. Ban Unilateral Changes 2. Apply Interest Rate Increases Only to Future Debt 3. Prohibit Interest on Fees 4. Prohibit 'Universal Defaults' 4. Require Prompt and Fair Crediting of Cardholder Payments"
       :short: "establish a credit card bill of rights"
-  :issue_sections:
   - :name: "Reform Bankruptcy Laws"
     :description: "Obama and Biden will reform our bankruptcy laws to protect working people, ban executive bonuses for bankrupt companies, and require disclosure of all pension investments."
     :issue_bullets:
@@ -264,7 +243,6 @@
     - :name: "Reform Bankruptcy Laws to Protect Families Facing a Medical Crisis:"
       :description: "Obama and Biden will create an exemption in bankruptcy law for individuals who can prove they filed for bankruptcy because of medical expenses. This exemption will create a process that forgives the debt and lets the individuals get back on their feet."
       :short: "reform bankruptcy laws in medical crisis"
-  :issue_sections:
   - :name: "Work/Family Balance"
     :description: "Obama and Biden will double funding for after-school programs, expand the Family Medical Leave Act, provide low-income families with a refundable tax credit to help with their child-care expenses, and encourage flexible work schedules."
     :issue_bullets:
@@ -286,8 +264,6 @@
     - :name: "Expand Flexible Work Arrangements:"
       :description: "Obama and Biden will create a program to inform businesses about the benefits of flexible work schedules; help businesses create flexible work opportunities; and increase federal incentives for telecommuting. Obama and Biden will also make the federal government a model employer in terms of adopting flexible work schedules and permitting employees to request flexible arrangements."
       :short: "epand flexible work arrangements"
-      
-:issue_groups:      
 - :name: "Education"
   :description: ""
   :issue_sections:
@@ -303,7 +279,6 @@
     - :name: "Affordable, High-Quality Child Care:" 
       :description: "Obama and Biden will also provide affordable and high-quality child care to ease the burden on working families."
       :short: "provide affordable child care"
-  :issue_sections:
   - :name: "K-12"
     :description: ""
     :issue_bullets: 
@@ -331,7 +306,6 @@
     - :name: "Support English Language Learners:"
       :description: "Obama and Biden support transitional bilingual education and will help Limited English Proficient students get ahead by holding schools accountable for making sure these students complete school."
       :short: "support english language learners"
-  :issue_sections:
   - :name: "Recruit, Prepare, Retain, and Reward America's Teachers"
     :description: ""
     :issue_bullets: ""
@@ -347,8 +321,6 @@
     - :name: "Reward Teachers:"
       :description: "Obama and Biden will promote new and innovative ways to increase teacher pay that are developed with teachers, not imposed on them. Districts will be able to design programs that reward accomplished educators who serve as a mentor to new teachers with a salary increase. Districts can reward teachers who work in underserved places like rural areas and inner cities. And if teachers consistently excel in the classroom, that work can be valued and rewarded as well."
       :short: "reward teachers"
-    
-:issue_groups:
 - :name: "Energy and Environment"
   :description: ""
   :issue_sections:
@@ -364,7 +336,6 @@
     - :name: "Swap Oil from the Strategic Petroleum Reserve to Cut Prices:"
       :description: "With oil prices doubling in the past year, Barack Obama and Joe Biden believe we have an economic emergency that requires a limited, responsible swap of light oil from the Strategic Petroleum Reserve (SPR) for heavy crude oil to help bring down prices at the pump."
       :short: "swap light oil from spr"
-  :issue_sections:
   - :name: "Eliminate Our Current Imports from the Middle East and Venezuela within 10 Years"
     :description: ""
     :issue_bullets: 
@@ -386,7 +357,6 @@
     - :name: "Promote the Responsible Domestic Production of Oil and Natural Gas:"
       :description: "An Obama-Biden administration will establish a process for early identification of any infrastructure obstacles/shortages or possible federal permitting process delays to drilling in the Bakken Shale formation, the Barnett shale formation, and the National Petroleum Reserve-Alaska."
       :short: "prmote responsible production of oil and gas"
-  :issue_sections:
   - :name: "Create Millions of New Green Jobs"
     :description: ""
     :issue_bullets:
@@ -405,7 +375,6 @@
     - :name: "Prioritize the Construction of the Alaska Natural Gas Pipeline:"
       :description: "As president, Obama will work with stakeholders to facilitate construction of the pipeline. Not only is this pipeline critical to our energy security, it will create thousands of new jobs."
       :short: "facilitate the construction of alaskan pipeline"
-  :issue_sections:
   - :name: "Reduce our Greenhouse Gas Emissions 80 Percent by 2050"
     :description: ""
     :issue_bullets:
@@ -415,8 +384,6 @@
     - :name: "Make the U.S. a Leader on Climate Change:"
       :description: "Obama and Biden will re-engage with the U.N. Framework Convention on Climate Change (UNFCC) -- the main international forum dedicated to addressing the climate problem. They will also create a Global Energy Forum of the world’s largest emitters to focus exclusively on global energy and environmental issues."    
       :short: "lead climate change"
-
-:issue_groups:
 - :name: "Ethics"
   :description: ""
   :issue_sections:
@@ -429,7 +396,6 @@
     - :name: "Require Independent Monitoring of Lobbying Laws and Ethics Rules:"
       :description: "Obama and Biden will use the power of the presidency to fight for an independent watchdog agency to oversee the investigation of congressional ethics violations so that the public can be assured that ethics complaints will be investigated."
       :short: "investigate congressional ethics violations"
-  :issue_sections:
   - :name: "Shine the Light on Federal Contracts, Tax Breaks and Earmarks"
     :description: ""
     :issue_bullets:
@@ -448,7 +414,6 @@
     - :name: "Shine Light on Earmarks and Pork Barrel Spending:"
       :description: "Obama's Transparency and Integrity in Earmarks Act will shed light on all earmarks by disclosing the name of the legislator who asked for each earmark, along with a written justification, 72 hours before they can be approved by the full Senate." 
       :short: "shine light on earmarks"
-  :issue_sections:
   - :name: "Bring Americans Back into their Government"
     :description: ""
     :issue_bullets:
@@ -464,7 +429,6 @@
     - :name: "Release Presidential Records:"
       :description: "Obama and Biden will nullify the Bush attempts to make the timely release of presidential records more difficult."  
       :short: "release presidential records"
-  :issue_sections:
   - :name: "Free the Executive Branch from Special Interest Influence"
     :description: ""
     :issue_bullets: 
@@ -477,12 +441,8 @@
     - :name: "Reform the Political Appointee Process:"
       :description: "FEMA Director Michael Brown was not qualified to head the agency, and the result was a disaster for the people of the Gulf Coast. But in an Obama-Biden administration, every official will have to rise to the standard of proven excellence in the agency's mission." 
       :short: "reform the political appointee process"
-  
-:issue_groups:
 - :name: "Faith"
   :description: "In June of 2006, Senator Obama delivered what was called the most important speech on religion and politics in 40 years. Speaking before an evangelical audience, Senator Obama candidly discussed his own religious conversion and doubts, and the need for a deeper, more substantive discussion about the role of faith in American life. Senator Obama also laid down principles for how to discuss faith in a pluralistic society, including the need for religious people to translate their concerns into universal, rather than religion-specific, values during public debate. In December, 2006, Senator Obama discussed the importance of faith in the global battle against AIDS."
-
-:issue_groups:
 - :name: "Family"
   :description: ""
   :issue_sections:
@@ -519,7 +479,6 @@
     - :name: "Expand Flexible Work Arrangements:"
       :description: "Barack Obama and Joe Biden will address this concern by creating a program to inform businesses about the benefits of flexible work schedules for productivity and establishing positive workplaces; helping businesses create flexible work opportunities; and increasing federal incentives for telecommuting. Obama and Biden will also make the federal government a model employer in terms of adopting flexible work schedules and permitting employees to petition to request flexible arrangements."
       :short: "expand flexible work arrangements"
-  :issue_sections:
   - :name: "Strengthen Our Schools"
     :description: ""
     :issue_bullets:
@@ -535,14 +494,12 @@
     - :name: "Make College More Affordable:"
       :description: "Barack Obama and Joe Biden will make college affordable for all Americans by creating a new American Opportunity Tax Credit. This universal and fully refundable credit will ensure that the first $4,000 of a college education is completely free for most Americans, and will cover two-thirds the cost of tuition at the average public college or university. Recipients of this credit will be required to conduct 100 hours of public service a year."
       :short: "make college more affordable"
-  :issue_sections:
   - :name: "Help American Families Stay Healthy"
     :description: ""
     :issue_bullets:
     - :name: "Provide Universal Health Care and Lower Health Costs:"
       :description: "Barack Obama and Joe Biden are committed to signing universal health legislation by the end of their first term in office that ensures all Americans have high-quality, affordable health care coverage. Their plan will save a typical American family up to $2,500 every year on medical expenditures by providing affordable, comprehensive and portable health coverage for every American; modernizing the U.S. health care system to contain spiraling health care costs and improve the quality of patient care; and promoting prevention and strengthening public health to prevent disease and protect against natural and man-made disasters."
       :short: "provide universal health care"
-  :issue_sections:
   - :name: "Protect Homeownership"
     :description: ""
     :issue_bullets: 
@@ -558,7 +515,6 @@
     - :name: "Close Bankruptcy Loophole for Mortgage Companies:"
       :description: "As president, Obama will work to eliminate the federal bankruptcy law's Chapter 13 provision that prevents bankruptcy courts from modifying an individual's mortgage payments. This forces individuals who seek bankruptcy protection to continue paying the full amount of their existing mortgage plans. This provision, which provides unique protection to the mortgage industry, places the interests of big lenders over than of low and middle-income Americans. Obama and Biden believe that the subprime mortgage industry, which has engaged in dangerous and sometimes unscrupulous business practices, should not be shielded by outdated federal law."
       :short: "eliminate chapter 13 provision"
-  :issue_sections:
   - :name: "Strengthen Families at Home"
     :description: ""
     :issue_bullets: 
@@ -568,7 +524,6 @@
     - :name: "Support Parents with Young Children:"
       :description: "Barack Obama and Joe Biden will expand programs like the successful Nurse-Family Partnership to all low-income, first-time mothers. The Nurse-Family Partnership provides home visits by trained registered nurses to low-income expectant mothers and their families. Researchers at the Federal Reserve Bank of Minneapolis concluded that these programs produced an average of five dollars in savings for every dollar invested and produced more than $28,000 in net savings for every high-risk family enrolled in the program. The Obama-Biden plan would assist approximately 570,000 first-time mothers each year."
       :short: "support parents with young children"
-  :issue_sections:
   - :name: "Strengthen Retirement Security"
     :description: ""
     :issue_bullets: 
@@ -581,8 +536,6 @@
     - :name: "Expand Retirement Savings Incentives for Working Families:"
       :description: "Obama and Biden will ensure savings incentives are fair to all workers by creating a generous savings match for low and middle-income Americans. Their plan will match 50 percent of the first $1,000 of savings for families that earn less than $75,000. The savings match will be automatically deposited into designated personal accounts. Over 80 percent of these savings incentives will go to new savers."     
       :short: "ensure saving incentives are fair"
-
-:issue_groups:
 - :name: "Fiscal"
   :description: ""
   :issue_sections:
@@ -604,7 +557,6 @@
     - :name: "End Wasteful Government Spending:"
       :description: "Obama and Biden will stop funding wasteful, obsolete federal government programs that make no financial sense. Obama and Biden have called for an end to subsidies for oil and gas companies that are enjoying record profits, as well as the elimination of subsidies to the private student loan industry which has repeatedly used unethical business practices. Obama and Biden will also tackle wasteful spending in the Medicare program."
       :short: "end wasteful government spending"
-  :issue_sections:
   - :name: "Make the Tax System More Fair and Efficient"
     :description: ""
     :issue_bullets:
@@ -614,8 +566,6 @@
     - :name: "Close Special Interest Corporate Loopholes:"
       :description: "Obama and Biden will level the playing field for all businesses by eliminating special-interest loopholes and deductions, such as those for the oil and gas industry."
       :short: "close special interest corporate loopholes"
-
-:issue_groups:
 - :name: "Foreign Policy"
   :description: ""
   :issue_sections:
@@ -628,7 +578,6 @@
     - :name: "Diplomacy:"
       :description: "Obama supports tough, direct presidential diplomacy with Iran without preconditions. Now is the time to pressure Iran directly to change their troubling behavior. Obama and Biden would offer the Iranian regime a choice. If Iran abandons its nuclear program and support for terrorism, we will offer incentives like membership in the World Trade Organization, economic investments, and a move toward normal diplomatic relations. If Iran continues its troubling behavior, we will step up our economic pressure and political isolation. Seeking this kind of comprehensive settlement with Iran is our best way to make progress."
       :short: "support presidential diplomacy with iran"
-  :issue_sections:
   - :name: "Renewing American Diplomacy"
     :description: ""
     :issue_bullets:
@@ -650,7 +599,6 @@
     - :name: "Seek New Partnerships in Asia:"
       :description: "Obama and Biden will forge a more effective framework in Asia that goes beyond bilateral agreements, occasional summits, and ad hoc arrangements, such as the six-party talks on North Korea. They will maintain strong ties with allies like Japan, South Korea and Australia; work to build an infrastructure with countries in East Asia that can promote stability and prosperity; and work to ensure that China plays by international rules."
       :short: "seek new partnerships in asia"
-  :issue_sections:
   - :name: "Nuclear Weapons"
     :description: ""
     :issue_bullets:
@@ -666,7 +614,6 @@
     - :name: "Toward a Nuclear Free World:"
       :description: "Obama and Biden will set a goal of a world without nuclear weapons, and pursue it. Obama and Biden will always maintain a strong deterrent as long as nuclear weapons exist. Butthey will take several steps down the long road toward eliminating nuclear weapons. They will stop the development of new nuclear weapons; work with Russia to take U.S. and Russian ballistic missiles off hair trigger alert; seek dramatic reductions in U.S. and Russian stockpiles of nuclear weapons and material; and set a goal to expand the U.S.-Russian ban on intermediate- range missiles so that the agreement is global."
       :short: "set a goal of a nuclear free world"
-  :issue_sections:
   - :name: "Bipartisanship and Openness"
     :description: ""
     :issue_bullets:
@@ -685,7 +632,6 @@
     - :name: "Engaging the American People on Foreign Policy:"
       :description: "Obama and Biden will bring foreign policy decisions directly to the people by requiring his national security officials to have periodic national broadband town hall meetings to discuss foreign policy. They will personally deliver occasional fireside chats via webcast."
       :short: "engaging the american people on foreign policy"
-  :issue_sections:
   - :name: "On Israel"
     :description: ""
     :issue_bullets:
@@ -698,14 +644,12 @@
     - :name: "Support Foreign Assistance to Israel:"
       :description: "Barack Obama and Joe Biden have consistently supported foreign assistance to Israel. They defend and support the annual foreign aid package that involves both military and economic assistance to Israel and have advocated increased foreign aid budgets to ensure that these funding priorities are met. They have called for continuing U.S. cooperation with Israel in the development of missile defense systems."
       :short: "support foreign assistance to israel"
-  :issue_sections:
   - :name: "Meeting the Challenge of a Resurgent Russia"
     :description: ""
     :issue_bullets:
     - :name: "A Comprehensive Strategy:"
       :description: "Russia today is not the Soviet Union, and we are not returning to the Cold War. Retrofitting outdated 20th century thinking to address this new 21st century challenge will not advance American national interests. Instead, Obama and Biden will address the new challenges Russia poses by pursuing an integrated and vigorous strategy that encompasses the entire region. The core components of this strategy include: 1. Supporting democratic partners and upholding principles of sovereignty throughout Europe and Eurasia while working proactively to gauge effectively the intentions of actors in the region, and address tensions between countries before they escalate into military confrontations; 2. Strengthening the Transatlantic alliance, so that we deal with Russia with one, unified voice; 3. Helping to decrease the dependence of our allies and partners in the region on Russian energy; 4. Engaging directly with the Russian government on issues of mutual interest, such as countering nuclear proliferation, reducing our nuclear arsenals, expanding trade and investment opportunities, and fighting Al Qaeda and the Taliban; and also reaching out directly to the Russian people to promote our common values; and, 5. Keeping the door open to fuller integration into the global system for all states in the region, including Russia, that demonstrates a commitment to act as responsible, law-abiding members of the international community."
       :short: "address to challenges russia poses"
-  :issue_sections:
   - :name: "On Africa"
     :description: ""
     :issue_bullets:
@@ -718,7 +662,6 @@
     - :name: "Expand Prosperity:"
       :description: "Obama and Biden will expand prosperity by establishing an Add Value to Agriculture Initiative, creating a fund that will extend seed capital and technical assistance to small and medium enterprises, and reforming the World Bank and International Monetary Fund. They will launch the Global Energy and Environment Initiative to ensure African countries have access to low carbon energy technology and can profitably participate in the new global carbon market so as to ensure solid economic development even while the world dramatically reduces its greenhouse gas emissions. They will also strengthen the African Growth and Opportunity Act to ensure that African producers can access the U.S. market and will encourage more American companies to invest on the continent."
       :short: "create a fund to extend seed capital"
-  :issue_sections:
   - :name: "On Latin America & the Caribbean"
     :description: ""
     :issue_bullets:
@@ -740,8 +683,6 @@
     - :name: "Advance Security Across the Region:"
       :description: "Obama and Biden believe that we need to target all sources of insecurity through a new hemispheric security initiative. This initiative will foster cooperation within the region to combat gangs, trafficking and violent criminal activity. It will strive to find the best practices that work across the hemisphere, and to tailor approaches to fit each country."
       :short: "advance security across the region"
-
-:issue_groups:
 - :name: "Healthcare"
   :description: ""
   :issue_sections:
@@ -769,7 +710,6 @@
     - :name: ""
       :description: "Ensure everyone who needs it will receive a tax credit for their premiums."
       :short: "ensure a tax credit for premiums"
-  :issue_sections:
   - :name: "Reduce Costs and Save a Typical American Family up to $2,500 as reforms phase in"
     :description: ""
     :issue_bullets:
@@ -785,7 +725,6 @@
     - :name: ""
       :description: "Reform the insurance market to increase competition by taking on anticompetitive activity that drives up prices without improving quality of care."
       :short: "reform the insurance market"
-  :issue_sections:
   - :name: "Defeat Terrorism Worldwide "
     :description: ""
     :issue_bullets:
@@ -804,7 +743,6 @@
     - :name: "Restore American Influence and Restore Our Values:"
       :description: "Thwarting terrorist networks requires international partnerships in military, intelligence, law enforcement, financial transactions, border controls, and transportation security. To make diplomacy more effective, Obama will stop shuttering consulates and start opening them in the tough and hopeless corners of the world. He will expand our foreign service, and develop the capacity of our civilian aid workers to work alongside the military."
       :short: "restore american influence and values"
-  :issue_sections:
   - :name: "Prevent Nuclear Terrorism"
     :description: "Barack Obama and Joe Biden have a comprehensive strategy for nuclear security that will reduce the danger of nuclear terrorism, prevent the spread of nuclear weapons capabilities, and strengthen the nuclear nonproliferation regime."
     :issue_bullets:
@@ -844,7 +782,6 @@
     - :name: "Strengthen Nuclear Risk Reduction Work at Defense, State, and Energy Departments:  "
       :description: "Thwarting terrorist networks requires international partnerships in military, intelligence, law enforcement, financial transactions, border controls, and transportation security. To make diplomacy more effective, Obama will stop shuttering consulates and start opening them in the tough and hopeless corners of the world. He will expand our foreign service, and develop the capacity of our civilian aid workers to work alongside the military."
       :short: "open consulates in corners of the world"
-  :issue_sections:
   - :name: "Strengthen American Biosecurity"
     :description: "Biological weapons pose a serious and increasing national security risk. Barack Obama and Joe Biden will work to prevent bioterror attacks and mitigate consequences."
     :issue_bullets:
@@ -860,7 +797,6 @@
     - :name: "Lead an International Effort to Diminish Impact of Major Infectious Disease Epidemics:"
       :description: "Senator Obama was one of the first legislators to recognize the dangers of a potential avian influenza pandemic and was successful in securing $25 million for U.S. agencies to combat and contain widespread outbreaks of avian flu and worked to provide $4 billion in funding to the Centers for Disease Control to combat avian flu. Barack Obama will continue to promote international efforts to develop new diagnostics, vaccines, and medicines that will be available and affordable in all parts of the world."
       :short: "create effort to lessen disease epidemics"
-  :issue_sections:
   - :name: "Protect Our Information Networks"
     :description: "As president, Barack Obama will lead an effort, working with private industry, the research community and our citizens, to build a trustworthy and accountable cyber infrastructure that is resilient, protects America's competitive advantage, and advances our national and homeland security."
     :issue_bullets:
@@ -882,7 +818,6 @@
     - :name: "Mandate Standards for Securing Personal Data and Require Companies to Disclose Personal Information Data Breaches:"
       :description: "Nearly 10 million Americans are victims of identity theft each year, costing more than $55 billion. We must ensure that the privacy of personnel data in computer systems is better protected. The federal government must partner with industry and our citizens to secure personal data stored on government and private systems. An Obama administration will institute a common standard for securing such data across industries and will back strong legislation to protect the rights of individuals in the information age."      
       :short: "ensure privacy of personal data"
-  :issue_sections:
   - :name: "Improve Intelligence Capacity and Protect Civil Liberties"
     :description: ""
     :issue_bullets:
@@ -895,7 +830,6 @@
     - :name: "Strengthen Institutions to Fight Terrorism:"
       :description: "Overseas, Barack Obama will establish a Shared Security Partnership Program to invest $5 billion over three years to improve cooperation between U.S. and foreign intelligence and law enforcement agencies. This program will include information sharing, as well as funding for training, operations, border security, anti-corruption programs, technology, and the targeting of terrorist financing."
       :short: "strengthen institutions to fight terrorism"
-  :issue_sections:
   - :name: "Protect Americans from Terrorist Attacks and Natural Disasters"
     :description: ""
     :issue_bullets:
@@ -914,7 +848,6 @@
     - :name: "Working with State and Local Governments and the Private Sector:"
       :description: "Barack Obama believes the federal government must be a better partner to states and localities, listen to local concerns and consider local priorities. Barack Obama will reach out to the private sector to leverage its expertise and assets to protect our homeland security."
       :short: "work with state and local governments"
-  :issue_sections:
   - :name: "Protect Critical Infrastructure"
     :description: ""
     :issue_bullets:
@@ -936,7 +869,6 @@
     - :name: "Improve Border Security:"
       :description: "Americans know that our national border security system is broken, leaving our country vulnerable. Barack Obama will support the virtual and physical infrastructure and manpower necessary to secure our borders and keep our nation safe."
       :short: "improve border security"
-  :issue_sections:
   - :name: "Modernize America's Aging Infrastructure"
     :description: ""
     :issue_bullets:
@@ -949,8 +881,6 @@
     - :name: "Invest in Critical Infrastructure Projects:"
       :description: "Barack Obama will invest in our nation's most pressing short and long-term infrastructure needs, including modernizing our electrical grid and upgrading our highway, rail, ports, water, and aviation infrastructure. Obama will establish a Grid Modernization Commission to facilitate adoption of Smart Grid practices to improve efficiency and security of our electricity grid. He will also build on his work in the U.S. Senate to ensure that the federal government prioritizes strengthening our critical infrastructure."
       :short: "invest in critical infrastructure projects"
-
-:issue_groups:
 - :name: "Immigration"
   :description: ""
   :issue_sections:
@@ -964,8 +894,6 @@
     :description: "Obama and Biden support a system that allows undocumented immigrants who are in good standing to pay a fine, learn English, and go to the back of the line for the opportunity to become citizens."
   - :name: "Work with Mexico"
     :description: "Obama and Biden believe we need to do more to promote economic development in Mexico to decrease illegal immigration."
-      
-:issue_groups:
 - :name: "Iraq"
   :description: ""
   :issue_sections:
@@ -981,8 +909,6 @@
     :description: "Barack Obama and Joe Biden believe that America has both a moral obligation and a responsibility for security that demands we confront Iraq’s humanitarian crisis—more than five million Iraqis are refugees or are displaced inside their own country. Obama and Biden will form an international working group to address this crisis. He will provide at least $2 billion to expand services to Iraqi refugees in neighboring countries, and ensure that Iraqis inside their own country can find sanctuary. Obama and Biden will also work with Iraqi authorities and the international community to hold the perpetrators of potential war crimes, crimes against humanity, and genocide accountable. They will reserve the right to intervene militarily, with our international partners, to suppress potential genocidal violence within Iraq."
   - :name: "The Status-of-Forces-Agreement"
     :description: "Obama and Biden believe any Status of Forces Agreement, or any strategic framework agreement, should be negotiated in the context of a broader commitment by the U.S. to begin withdrawing its troops and forswearing permanent bases. Obama and Biden also believe that any security accord must be subject to Congressional approval. It is unacceptable that the Iraqi government will present the agreement to the Iraqi parliament for approval—yet the Bush administration will not do the same with the U.S. Congress. The Bush administration must submit the agreement to Congress or allow the next administration to negotiate an agreement that has bipartisan support here at home and makes absolutely clear that the U.S. will not maintain permanent bases in Iraq."
-
-:issue_groups:
 - :name: "Poverty"
   :description: ""
   :issue_sections:
@@ -1001,7 +927,6 @@
     - :name: "Reduce Crime Recidivism by Providing Ex-Offender Supports:"
       :description: "Obama and Biden will work to ensure that ex-offenders have access to job training, substance abuse and mental health counseling, and employment opportunities. Obama and Biden will also create a prison-to-work incentive program and reduce barriers to employment."
       :short: "reduce crime recidivism"
-  :issue_sections:
   - :name: "Make Work Pay for All Americans"
     :description: ""
     :issue_bullets:
@@ -1027,7 +952,6 @@
     - :name: "Expand Paid Sick Days:"
       :description: "Today, three-out-of-four low-wage workers have no paid sick days. Obama and Biden support guaranteeing workers seven paid sick days per year."
       :short: "guarentee workers seven paid sick days"
-  :issue_sections:
   - :name: "Increase the Supply of Affordable Housing"
     :description: ""
     :issue_bullets:
@@ -1037,7 +961,6 @@
     - :name: "Fully Fund the Community Development Block Grant:"
       :description: "Obama and Biden will fully fund the Community Development Block Grant program and engage with urban leaders across the country to increase resources to the highest need Americans."
       :short: "fully fund the community development blog grant program"
-  :issue_sections:
   - :name: "Tackle Concentrated Poverty"
     :description: ""
     :issue_bullets:
@@ -1050,8 +973,6 @@
     - :name: "Invest in Rural Areas:"
       :description: "Obama and Biden will invest in rural small businesses and fight to expand high-speed Internet access. They will improve rural schools and attract more doctors to rural areas. And they will implement a bold climate change and energy independence plan that will revitalize rural America through new investments in renewable energy production, including wind, solar and biofuel investments."
       :short: "invest in rural areas"
-
-:issue_groups:
 - :name: "Rural"
   :description: ""
   :issue_sections:
@@ -1079,7 +1000,6 @@
     - :name: "Partner with Landowners to Conserve Private Lands:"
       :description: "Obama and Biden will increase incentives for farmers and private landowners to conduct sustainable agriculture and protect wetlands, grasslands, and forests."
       :short: "partner with landowners to conserve private lands"
-  :issue_sections:
   - :name: "Support Rural Economic Development"
     :description: ""
     :issue_bullets:
@@ -1092,7 +1012,6 @@
     - :name: "Promote Leadership in Renewable Energy:"
       :description: "Obama and Biden will ensure that our rural areas continue their leadership in the renewable fuels movement. This will transform the economy, especially in rural America, which is poised to produce and refine more American biofuels and provide more wind power than ever before, and create millions of new jobs across the country."
       :short: "promote leadership in renewable energy"
-  :issue_sections:
   - :name: "Improve Rural Quality Of Life"
     :description: ""
     :issue_bullets:
@@ -1108,8 +1027,6 @@
     - :name: "Upgrade Rural Infrastructure:"
       :description: "Obama and Biden will invest in the core infrastructure, roads, bridges, locks, dams, water systems and essential air service that rural communities need."
       :short: "upgrade rural infrastructure"
-
-:issue_groups:
 - :name: "Service"
   :description: ""
   :issue_sections:
@@ -1128,7 +1045,6 @@
     - :name: "Show the World the Best Face of America:"
       :description: "Obama and Biden will set up an America's Voice Initiative to send Americans who are fluent speakers of local languages to expand our public diplomacy. They also will extend opportunities for older individuals such as teachers, engineers, and doctors to serve overseas."
       :short: "show the best face of america"
-  :issue_sections:
   - :name: "Integrate Service into Learning"
     :description: ""
     :issue_bullets:
@@ -1144,7 +1060,6 @@
     - :name: "Promote College Serve-Study:"
       :description: "Obama and Biden will ensure that at least 25 percent of College Work-Study funds are used to support public service opportunities instead of jobs in dining halls and libraries."
       :short: "promote college serve study"
-  :issue_sections:
   - :name: "Invest in the Nonprofit Sector"
     :description: ""
     :issue_bullets:
@@ -1154,15 +1069,13 @@
     - :name: "Social Entrepreneurship Agency for Nonprofits:"
       :description: "Barack Obama and Joe Biden will a create an agency within the Corporation for National and Community Service dedicated to building the capacity and effectiveness of the nonprofit sector."
       :short: "social entrepreneurship agency for nonprofits"
-
-:issue_groups:
 - :name: "Seniors and Social Security"
   :description: ""
   :issue_sections:
   - :name: "Protect Social Security"
     :description: "Obama and Biden are committed to ensuring Social Security is solvent and viable for the American people, now and in the future. Obama and Biden will be honest with the American people about the long-term solvency of Social Security and the ways we can address the shortfall. Obama and Biden will protect Social Security benefits for current and future beneficiaries alike. And they do not believe it is necessary or fair to hardworking seniors to raise the retirement age. Obama and Biden are strongly opposed to privatizing Social Security. As part of a bipartisan plan that would be phased in over many years, they will ask those making over $250,000 to contribute a bit more to Social Security to keep it sound. Obama does not support uncapping the full payroll tax of 12.4 percent rate. Instead, he and Joe Biden are considering plans that would ask those making over $250,000 to pay in the range of 2 to 4 percent more in total (combined employer and employee). "
   - :name: "Strengthen Retirement Savings"
-    :description: ""   
+    :description: ""
     :issue_bullets:
     - :name: "Reform Corporate Bankruptcy Laws to Protect Workers and Retirees:"
       :description: "Current bankruptcy laws protect banks before workers. Obama and Biden will protect pensions by putting promises to workers higher on the list of debts that companies cannot shed; ensuring that the bankruptcy courts do not demand more sacrifice from workers than executives; telling companies that they cannot issue executive bonuses while cutting worker pensions; increasing the amount of unpaid wages and benefits workers can claim in court; and limiting the circumstances under which retiree benefits can be reduced."
@@ -1182,7 +1095,6 @@
     - :name: "Prevent Age Discrimination:"
       :description: "Obama and Biden will fight job discrimination for aging employees by strengthening the Age Discrimination in Employment Act and empowering the Equal Employment Opportunity Commission to prevent all forms of discrimination."
       :short: "prevent age discrimination"
-  :issue_sections:
   - :name: "Affordable Health Care"
     :description: ""
     :issue_bullets:
@@ -1198,7 +1110,6 @@
     - :name: "Strengthen Long-Term Care Options:"
       :description: "As president, Obama will work to give seniors choices about their care, consistent with their needs, and not biased towards institutional care. He will work to reform the financing of long term care to protect seniors and families. He will work to improve the quality of elder care, including by training more nurses and health care workers."
       :short: "strengthen long term care options"
-  :issue_sections:
   - :name: "Protect and Honor Seniors"
     :description: ""
     :issue_bullets:
@@ -1208,7 +1119,6 @@
     - :name: "Support Senior Volunteer Efforts:"
       :description: "Retired Americans have a wide range of skills and knowledge to contribute to local and national public service efforts. Obama and Biden will engage more interested seniors into public service opportunities by expanding and improving programs like Senior Corps to connect seniors with quality volunteer opportunities."
       :short: "support senior volunteer efforts"
-:issue_groups:
 - :name: "Taxes"
   :description: "Barack Obama’s tax plan delivers broad-based tax relief to middle class families and cuts taxes for small businesses and companies that create jobs in America, while restoring fairness to our tax code and returning to fiscal responsibility. Coupled with Obama’s commitment to invest in key areas like health, clean energy, innovation and education, his tax plan will help restore bottom-up economic growth that helps create good jobs in America and empowers all families achieve the American dream."
   :issue_sections:
@@ -1224,8 +1134,6 @@
     - :name: "Obama’s plan will cut taxes overall, reducing revenues to below the levels that prevailed under Ronald Reagan (less than 18.2 percent of GDP)."
       :description: "The Obama tax plan is a net tax cut – his tax relief for middle class families is larger than the revenue raised by his tax changes for families over $250,000. Coupled with his commitment to cut unnecessary spending, Obama will pay for this tax relief while bringing down the budget deficit."
       :short: "overal tax cuts"
-
-:issue_groups:
 - :name: "Technology"
   :description: ""
   :issue_sections:
@@ -1244,7 +1152,6 @@
     - :name: "Safeguard our Right to Privacy:"
       :description: "The open information platforms of the 21st century can also tempt institutions to violate the privacy of citizens. As president, Barack Obama will strengthen privacy protections for the digital age and will harness the power of technology to hold government and business accountable for violations of personal privacy."
       :short: "safeguard our right to privacy"
-  :issue_sections:
   - :name: "Create a Transparent and Connected Democracy"
     :description: ""
     :issue_bullets:
@@ -1254,17 +1161,15 @@
     - :name: "Bring Government into the 21st Century:"
       :description: " Barack Obama and Joe Biden will use technology to reform government and improve the exchange of information between the federal government and citizens while ensuring the security of our networks. Obama and Biden believe in the American people and in their intelligence, expertise, and ability and willingness to give and to give back to make government work better. Obama will appoint the nation's first Chief Technology Officer (CTO) to ensure that our government and all its agencies have the right infrastructure, policies and services for the 21st century. The CTO will ensure the safety of our networks and will lead an interagency effort, working with chief technology and chief information officers of each of the federal agencies, to ensure that they use best-in-class technologies and share best practices."
       :short: "bring government into the 21st century"
-  :issue_sections:
   - :name: "Deploy a Modern Communications Infrastructure"
-    :description: ""         
-    :issue_bullets:    
+    :description: ""
+    :issue_bullets:
     - :name: "Deploy Next-Generation Broadband:"
       :description: "Barack Obama believes that America should lead the world in broadband penetration and Internet access. As a country, we have ensured that every American has access to telephone service and electricity, regardless of economic status, and Obama will do likewise for broadband Internet access. Obama and Biden believe we can get true broadband to every community in America through a combination of reform of the Universal Service Fund, better use of the nation’s wireless spectrum, promotion of next-generation facilities, technologies and applications, and new tax and loan incentives."
       :short: "deploy next generation broadband"
-  :issue_sections:
   - :name: "Improve America's Competitiveness"
-    :description: ""        
-    :issue_bullets:    
+    :description: ""
+    :issue_bullets:
     - :name: "Promote American Businesses Abroad:"
       :description: "Barack Obama and Joe Biden support a trade policy that ensures our goods and services are treated fairly in foreign markets. President Bush has failed to address the fact that China has engaged in ongoing currency manipulation that undercuts US exports; that China fails to enforce U.S. copyrights and trademarks and that some of our competitors create regulatory and tax barriers to the delivery and sale of technology goods and services abroad. Barack Obama will fight for fair treatment of our companies abroad."
       :short: "promote american businesses abroad"
@@ -1292,10 +1197,9 @@
     - :name: "Restore Scientific Integrity to the White House:"
       :description: "Good policy in Washington depends on sound advice from the nation's scientists and engineers and decision-making based on the needs of all Americans. Obama and Biden will restore the basic principle that government decisions should be based on the best-available, scientifically-valid evidence and not on the ideological predispositions of agency officials or political appointees."
       :short: "restore scientific integrity to the white house"
-  :issue_sections:
   - :name: "Prepare All Our Children for the 21st Century Economy" 
-    :description:          
-    :issue_bullets:    
+    :description: ""
+    :issue_bullets:
     - :name: "Make Math and Science Education a National Priority:"
       :description: "Obama and Biden will recruit math and science degree graduates to the teaching profession and will support efforts to help these teachers learn from professionals in the field. He will also work to ensure that all children have access to a strong science curriculum at all grade levels."
       :short: "make math and science education a priority"
@@ -1311,7 +1215,6 @@
     - :name: "Increase Science and Math Graduates:"
       :description: "Obama and Biden will improve science and math education in K through 12, to prepare more students for these studies in college. They will work to increase our number of science and engineering graduates and encourage undergraduates studying math and science to pursue graduate studies. They will also work to increase the representation of minorities and women in the science and technology pipeline, tapping the diversity of America to meet the increasing demand for a skilled workforce. The challenges of the 21st century can only be met by combining many skills from people with many backgrounds. America's diversity is a clear competitive advantage if we use it."
       :short: "increase science and math graduates"
-  :issue_sections:
   - :name: "Prepare Adults for a Changing Economy"
     :description: ""        
     :issue_bullets:    
@@ -1321,10 +1224,9 @@
     - :name: "Build a Reliable Safety Net:"
       :description: "Obama and Biden will work, through his proposals on portable health care and retirement savings accounts and expanding unemployment insurance, for programs that will help Americans facing job transitions in a fierce global economy."
       :short: "build a reliable safety net"
-  :issue_sections:
   - :name: "Employ Science, Technology and Innovation to Solve Our Nation’s Most Pressing Problems"
     :description: "The 21st century tools of technology and telecommunications have unleashed the forces of globalization on a previously unimagined scale. They have “flattened” communications and labor markets and have contributed to a period of unprecedented innovation, making us more productive, connected global citizens. By maximizing the power of technology, we can strengthen the quality and affordability of our health care, advance climate-friendly energy development and deployment, improve education throughout the country, and ensure that America remains the world’s leader in technology."         
-    :issue_bullets:    
+    :issue_bullets:
     - :name: "Lower Health Care Costs by Investing in Electronic Information Technology Systems:"
       :description: "A key feature of Barack Obama and Joe Biden's health care plan is the use of health information technology to lower the cost of health care. Most medical records are still stored on paper, which makes them difficult to use to coordinate care, measure quality, or reduce medical errors. Processing paper claims also costs twice as much as processing electronic claims. Barack Obama and Joe Biden will invest $10 billion a year over the next five years to move the U.S. health care system to broad adoption of standards-based electronic health information systems, including electronic health records."
       :short: "invest in information technology systems"
@@ -1340,14 +1242,12 @@
     - :name: "Advance Stem Cell Research:"
       :description: "Despite recent advances pointing to alternatives like adult stem cell and cord blood, embryonic stem cells remain unmatched in their potential for treatment of a wide variety of diseases and health conditions. Barack Obama has been a long-term supporter of increased stem cell research. He introduced legislation while a member of the Illinois Senate that would allow embryonic stem cell research in Illinois. Obama has cosponsored legislation to allow greater federal government funding on a wider array of stem cell lines. Obama believes we need high ethical standards that allow for research on stem cells derived from embryos produced for in vitro fertilization, embryos that would otherwise be needlessly destroyed."
       :short: "advance stem cell research"
-
-:issue_groups:
 - :name: "Urban Policy"
-  :description: ""
+  :description: " "
   :issue_sections:
   - :name: "Strengthen Federal Commitment to our Cities"
-    :description: ""         
-    :issue_bullets:    
+    :description: ""
+    :issue_bullets:
     - :name: "Create a White House Office on Urban Policy:"
       :description: "Obama and Biden will create a White House Office of Urban Policy to develop a strategy for metropolitan America and to ensure that all federal dollars targeted to urban areas are effectively spent on the highest-impact programs. The Director of Urban Policy will report directly to the president and coordinate all federal urban programs."
       :short: "white house office on urban policy"
@@ -1357,7 +1257,6 @@
     - :name: "Do No Harm:"
       :description: "Barack Obama and Joe Biden do not support imposing unfunded mandates on states and localities. They strongly support providing necessary funding for programs such as No Child Left Behind."
       :short: "do no harm"
-  :issue_sections:
   - :name: "Stimulate Economic Prosperity in our Metropolitan Regions" 
     :description: ""       
     :issue_bullets:    
@@ -1388,20 +1287,18 @@
     - :name: "Invest in a Skilled Clean Technologies Workforce:"
       :description: "Obama and Biden will increase funding for federal workforce training programs and direct these programs to incorporate green technologies training, such as advanced manufacturing and weatherization training, into their efforts to help Americans find and retain stable jobs. Obama and Biden will also create an energy-focused youth jobs program to invest in disconnected and disadvantaged youth."
       :short: "invest in a skilled clean technologies workforce"
-  :issue_sections:
   - :name: "HOUSING"
-    :description: ""      
-    :issue_bullets:    
+    :description: ""
+    :issue_bullets:
     - :name: "Lower People's Interest Payments by Creating a New Mortgage Interest Tax Credit:"
       :description: "Many middle class Americans do not receive the existing mortgage interest tax deduction because they do not itemize their taxes.  Obama and Biden will ensure that middle-class Americans get the financial assistance they need to purchase or keep their own home by creating a 10 percent universal mortgage credit that gives tax relief to 10 million Americans who have a home mortgage."
       :short: "lower interest payments"
     - :name: "Increase the Supply of Affordable Housing throughout Metropolitan Regions:"
       :description: "Communities prosper when all families have access to affordable housing. Barack Obama and Joe Biden supported efforts to create an Affordable Housing Trust Fund to create thousands of new units of affordable housing every year. Barack Obama and Joe Biden will also restore cuts to public housing operating subsidies, and ensure that all Department of Housing and Urban Development (HUD) programs are restored to their original purpose."
       :short: "increase the supply of affordable housing"
-  :issue_sections:
   - :name: "POVERTY"
-    :description: ""      
-    :issue_bullets:    
+    :description: ""
+    :issue_bullets:
     - :name: "Establish 'Promise Neighborhoods' for Areas of Concentrated Poverty:"
       :description: "Successful strategies to address concentrated, intergenerational poverty are comprehensive in nature and address the full range of obstacles that stand in the way of poor children. One highly-acclaimed model is the Harlem Children's Zone in New York City, which provides a full network of services to an entire neighborhood from birth to college. Obama and Biden will create 20 Promise Neighborhoods in cities that have high levels of poverty and crime and low levels of student academic achievement."
       :short: "establish promise neighborhoods"
@@ -1414,7 +1311,6 @@
     - :name: "Help Low-Income Workers Enter the Job Market:"
       :description: "As president, Obama will invest $1 billion over five years in transitional jobs and career pathways programs that implement proven methods of helping low-income Americans succeed in the workforce. This investment will be coupled with other measures to encourage the private sector and state and local governments to increase their support of these effective employment programs."
       :short: "help low income workers enter the job market"
-  :issue_sections:
   - :name: "STRENGTHEN LIVABILITY OF CITIES"
     :description: ""      
     :issue_bullets:    
@@ -1430,7 +1326,6 @@
     - :name: "Foster Healthy Communities:"
       :description: "How a community is designed – including the layout of its roads, buildings and parks – has a huge impact on the health of its residents. For instance, nearly one-third of Americans live in neighborhoods without sidewalks and less than half of our country's children have a playground within walking distance of their homes. Barack Obama introduced the Healthy Places Act to help local governments assess the health impact of new policies and projects, like highways or shopping centers."
       :short: "foster healthy communities"
-  :issue_sections:
   - :name: "URBAN EDUCATION"
     :description: ""      
     :issue_bullets:    
@@ -1443,7 +1338,6 @@
     - :name: "Reduce the High School Dropout Rate:"
       :description: "The warning signs for high school drop-outs often occur well before high school.  Obama will sign into law his 'Success in the Middle Act' to improve the education of middle school students in low-performing schools. Obama and Biden will also establish a competitive grant process for entities pursuing evidence-based models that have been proven to reduce dropouts."
       :short: "reduce the high school dropout rate"
-  :issue_sections:
   - :name: "CRIME AND LAW ENFORCEMENT"
     :description: ""      
     :issue_bullets:    
@@ -1460,12 +1354,11 @@
       :description: "As president, Barack Obama would repeal the Tiahrt Amendment, which restricts the ability of local law enforcement to access important gun trace information, and give police officers across the nation the tools they need to solve gun crimes and fight the illegal arms trade. Obama and Biden also favor commonsense measures that respect the Second Amendment rights of gun owners, while keeping guns away from children and from criminals who shouldn't have them. They support closing the gun show loophole and making guns in this country childproof. They also support making the expired federal Assault Weapons Ban permanent, as such weapons belong on foreign battlefields and not on our streets."
       :short: "address gun violence in cities"
     - :name: "End Racial Profiling:"
-      :description: "Barack Obama cosponsored federal legislation to ban racial profiling and require federal, state and local law enforcement agencies to take steps to eliminate the practice. He introduced and passed a law in the Illinois State Senate requiring the Illinois Department of Transportation to record the race, age, and gender of all drivers stopped for traffic violations so that bias could be detected and addressed."     
+      :description: "Barack Obama cosponsored federal legislation to ban racial profiling and require federal, state and local law enforcement agencies to take steps to eliminate the practice. He introduced and passed a law in the Illinois State Senate requiring the Illinois Department of Transportation to record the race, age, and gender of all drivers stopped for traffic violations so that bias could be detected and addressed."
       :short: "end racial profiling"
-  :issue_sections:
   - :name: "STRENGTHEN HOMELAND SECURITY"
-    :description: ""      
-    :issue_bullets:    
+    :description: ""
+    :issue_bullets:
     - :name: "Allocate Funds Based on Risk:"
       :description: "Barack Obama and Joe Biden believe that the president and Congress should direct our precious homeland security dollars according to risk, not as a form of general revenue sharing.  To address this pressing issue, Obama introduced an amendment, supported by the Families of 9/11 and former 9/11 Commissioners Lee Hamilton and Tim Roemer, to increase risk-based funding in the 9/11 bill."
       :short: "allocate funds based on risk"
@@ -1478,10 +1371,9 @@
     - :name: "Safeguard Mass Public Transportation:"
       :description: "Every weekday, Americans take 34 million trips on public transportation systems to get to work, school and beyond. Obama and Biden will fight for greater information-sharing between national intelligence agents and local officials and provide local law enforcement agencies with the everyday tools they need to protect their transportation systems."
       :short: "safeguard mass public transportation"
-  :issue_sections:
   - :name: "SUPPORT FAMILIES"
-    :description: ""      
-    :issue_bullets:    
+    :description: ""
+    :issue_bullets:
     - :name: "Provide a Tax Cut for Working Families:"
       :description: "Barack Obama and Joe Biden will restore fairness to the tax code and provide 150 million workers the tax relief they deserve. They will create a new 'Making Work Pay' tax credit of up to $500 per person, or $1,000 per working family."
       :short: "provide 150 million workers tax relief"
@@ -1503,8 +1395,6 @@
     - :name: "Encourage Responsible Lending Institutions to Make Small Consumer Loans:"
       :description: "Some mainstream, responsible lending institutions are beginning to enter the short-term lending market to provide many Americans with fair alternatives to predatory lending institutions.  Barack Obama and Joe Biden will work with his Secretary of Treasury and the Federal Deposit Insurance Corporation to encourage banks, credit unions and Community Development Financial Institutions to provide affordable short-term and small dollar loans – and to drive the sharks out of business."
       :short: ""
-
-:issue_groups:
 - :name: "Veterans"
   :description: ""
   :issue_sections:
@@ -1523,7 +1413,6 @@
     - :name: "Fight Veterans Employment Discrimination:"
       :description: "Obama and Biden will crack down on employers who commit job discrimination against guardsmen and reservists."
       :short: "fight veterans employment discrimination"
-  :issue_sections:
   - :name: "Help for Returning Service Members"
     :description: "Obama and Biden will improve the quality of health care for veterans, rebuild the VA's broken benefits system, and combat homelessness among veterans."      
     :issue_bullets:    
@@ -1536,7 +1425,6 @@
     - :name: "Fix the Benefits Bureaucracy:"
       :description: "Obama and Biden will hire additional claims workers, and improve training and accountability so that VA benefit decisions are rated fairly and consistently. They also will transform the paper benefit claims process to an electronic one to reduce errors and improve timeliness."
       :short: "fix the benefits bureaucracy"
-  :issue_sections:
   - :name: "Improved Mental Health Treatment"
     :description: "Obama and Biden will improve mental health treatment for troops and veterans suffering from combat-related psychological injuries."      
     :issue_bullets:    
@@ -1549,8 +1437,6 @@
     - :name: "Expand Vet Centers:"
       :description: "Obama and Biden will expand and strengthen Vet Centers to provide more counseling for vets and their families."
       :short: "expand vet centers"
-
-:issue_groups:
 - :name: "Women"
   :description: ""
   :issue_sections:
@@ -1575,7 +1461,6 @@
     - :name: "Supporting Stem Cell Research:"
       :description: "Barack Obama and Joe Biden believe that we owe it to the American public to explore the potential of stem cells to treat the millions of people suffering from debilitating and life-threatening diseases. Obama is a co-sponsor of the Stem Cell Research Enhancement Act of 2007, which would allow research of human embryonic stem cells derived from embryos donated (with consent) from in vitro fertilization clinics. These embryos must be deemed in excess and created based solely for the purpose of fertility treatment."
       :short: "supporting stem cell research"
-  :issue_sections:
   - :name: "REPRODUCTIVE CHOICE"
     :description: ""      
     :issue_bullets:    
@@ -1585,7 +1470,6 @@
     - :name: "Preventing Unintended Pregnancy:"
       :description: "Barack Obama is an original co-sponsor of legislation to expand access to contraception, health information and preventive services to help reduce unintended pregnancies. Introduced in January 2007, the Prevention First Act will increase funding for family planning and comprehensive sex education that teaches both abstinence and safe sex methods. The Act will also end insurance discrimination against contraception, improve awareness about emergency contraception, and provide compassionate assistance to rape victims."
       :short: "preventing unintended pregnancy"
-  :issue_sections:
   - :name: "PREVENTING VIOLENCE AGAINST WOMEN"
     :description: ""      
     :issue_bullets:    
@@ -1598,7 +1482,6 @@
     - :name: "Fighting Gender Violence Abroad:"
       :description: "The genocide in Darfur has had particularly devastating consequences for women. Tens of thousands of women have been killed, raped, and displaced since the conflict began in 2003. Barack Obama has been a leading voice in Washington urging the end of genocide in Sudan. He worked with Senator Sam Brownback (R-KS) on the Darfur Peace and Accountability Act, a version of which was signed into law. Obama has traveled to the United Nations to meet with Sudanese officials and visited refugee camps on the Chad-Sudan border to raise international awareness of the ongoing humanitarian disaster there. He also worked with Senator Harry Reid (D-NV) to secure $20 million for the African Union peacekeeping mission."
       :short: "fighting gender violence abroad"
-  :issue_sections:
   - :name: "ECONOMIC ISSUES"
     :description: ""      
     :issue_bullets:    
@@ -1614,7 +1497,6 @@
     - :name: "Encouraging Retirement Saving:"
       :description: "1. Create Automatic Workplace Pensions: The Obama-Biden retirement security plan will automatically enroll workers in a workplace pension plan. Under this plan, employers who do not currently offer a retirement plan, will be required to enroll their employees in a direct-deposit IRA account that is compatible to existing direct-deposit payroll systems. Employees may opt-out if they choose. Experts estimate that this program will increase the savings participation rate for low and middle-income workers from its current 15 percent level to around 80 percent. 2. Expand Retirement Savings Incentives for Working Families: Obama and Biden will ensure savings incentives are fair to all workers by creating a generous savings match for low and middle-income Americans. His plan will match 50 percent of the first $1,000 of savings for families that earn less than $75,000. The savings match will be automatically deposited into designated personal accounts. Over 80 percent of these savings incentives will go to new savers."
       :short: "encouraging retirement saving"
-  :issue_sections:
   - :name: "NATIONAL SECURITY"
     :description: ""      
     :issue_bullets:    
@@ -1624,10 +1506,9 @@
     - :name: "Caring for Women Veterans:"
       :description: "There are 1.7 million women veterans today, a number that is increasing every day. The Department of Veterans Affairs (VA) that was built to care for World War II veterans is not ready to handle the influx of women veterans from Iraq and Afghanistan. As a member of the Senate Veterans Affairs Committee, Barack Obama has introduced legislation to force the Pentagon and VA to better track the newest generation of veterans – including the number of women veterans – so that the VA can better plan their care. Obama also introduced legislation to fight homelessness among veterans, with a special focus on treating women who may have been victims of sexual trauma. Along with Senator Claire McCaskill, Obama has also co-sponsored legislation to provide funding for additional caseworkers and mental health counselors, a women's mental health treatment program, and a comprehensive mental health study of returning soldiers. As president, Barack Obama will fight to ensure that women can get the care they deserve at the VA."
       :short: "caring for women veterans"
-  :issue_sections:
   - :name: "POVERTY"
-    :description: ""      
-    :issue_bullets:    
+    :description: ""
+    :issue_bullets:
     - :name: "Fighting Poverty:"
       :description: "Of the 37 million Americans living below the poverty line, approximately 14.6 million are women — a staggering number equal to the combined populations of Iowa, Indiana, and Wisconsin. And nearly 13 million children are living in poverty, a rise of 1.3 million since 2000. Barack Obama and Joe Biden are committed to a renewed effort to tackle the underlying problems that cause poverty."
       :short: "fighting poverty"
@@ -1637,7 +1518,6 @@
     - :name: "Helping Low-Income Workers:"
       :description: "Obama and Joe Biden will invest $1 billion over five years in transitional jobs and career pathway programs that implement proven methods of helping low-income Americans succeed in the workforce. Obama and Biden will also create a program to directly engage disadvantaged youth in energy efficiency opportunities to strengthen their communities, while also providing them with practical skills in this important high-growth career field."
       :short: "helping low income workers"
-  :issue_sections:
   - :name: "EDUCATION"
     :description: ""      
     :issue_bullets:    
@@ -1656,8 +1536,6 @@
     - :name: "Making College More Affordable:"
       :description: "Barack Obama and Joe Biden will make college affordable for all Americans by creating a new American Opportunity Tax Credit. This fully refundable credit will ensure that the first $4,000 of a college education is completely free for most Americans, and will cover two-thirds the cost of tuition at the average public college or university. Recipients of this credit will be required to conduct 100 hours of public service a year, either during the school year or over the summer months."
       :short: "make colleg more affordable"
-
-:issue_groups:
 - :name: "Additional Issues"
   :description: ""
   :issue_sections:
@@ -1673,153 +1551,3 @@
     :description: "Barack Obama did not grow up hunting and fishing, but he recognizes the great conservation legacy of America's hunters and anglers and has great respect for the passion that hunters and anglers have for their sport. Were it not for America's hunters and anglers, including the great icons like Theodore Roosevelt and Aldo Leopold, our nation would not have the tradition of sound game management, a system of ethical, science-based game laws and an extensive public lands estate on which to pursue the sport. Barack Obama and Joe Biden recognize that we must forge a broad coalition if we are to address the great conservation challenges we face. America's hunters and anglers are a key constituency that must take an active role and have a powerful voice in this coalition." 
   - :name: "Transportation"
     :description: "As our society becomes more mobile and interconnected, the need for 21st-century transportation networks has never been greater. However, too many of our nation's railways, highways, bridges, airports, and neighborhood streets are slowly decaying due to lack of investment and strategic long-term planning. Barack Obama and Joe Biden believe that America's long-term competitiveness depends on the stability of our critical infrastructure. They will make strengthening our transportation systems, including our roads and bridges, a top priority."    
-
-   
-      
-      
-      
-      
-   # ["Disabilities",
-   #  "**Barack Obama will provide educational opportunities to Americans with disabilities:**  Obama and Biden will fight to provide students with disabilities the public education they have a right to, invest in early intervention programs, improve college opportunities, and support universal screening of infants.\n\n**End workplace discrimination and promote equal opportunity:** Obama and Biden will restore the Americans with Disabilities Act, reducing workplace and labor market discrimination against people with disabilities.\n\n**Support independent, community-based living for Americans with disabilities:** Obama and Biden will ensure people with mental or functional disabilities are placed in community settings when appropriate.",
-   #  []],
-   # ["Economy",
-   #  "**Barack Obama will provide a tax cut for working families:** Obama and Biden will restore fairness to the tax code and provide 95 percent of working Americans the tax relief they need. They will create a new \"Making Work Pay\" tax credit of up to $500 per person, or $1,000 per working family.\n\n**Provide tax relief for small businesses and startups:** Obama and Biden will eliminate all capital gains taxes on startup and small businesses to encourage innovation and job creation.\n\n**Fight for fair trade:** Obama and Biden will fight for a trade policy that opens up foreign markets to support good American jobs. They will use trade agreements to spread good labor and environmental standards around the world.",
-   #  [["Jumpstart the Economy", "", []],
-   #   ["Provide Middle Class Americans Tax Relief", "", []],
-   #   ["Trade", "", []],
-   #   ["Job Creation", "", []],
-   #   ["Support Small Business", "", []],
-   #   ["Labor", "", []],
-   #   ["Protect Homeownership and Crack Down on Mortgage Fraud", "", []],
-   #   ["Address Predatory Credit Card Practices", "", []],
-   #   ["Reform Bankruptcy Laws", "", []],
-   #   ["Work/Family Balance", "", []]]],
-   # ["Education",
-   #  "**Barack Obama will reform No Child Left Behind:** Obama and Biden believe teachers should not be forced to spend the academic year preparing students to fill in bubbles on standardized tests and he will improve the assessments used to track student progress to measure readiness for college.\n\n**Invest in early childhood education:** The Obama-Biden comprehensive \"Zero to Five\" plan will provide critical support to young children and their parents. And they will help states move toward voluntary, universal pre-school.\n\n**Make college affordable to all Americans:** Obama and Biden will create a new American Opportunity Tax Credit worth $4,000 in exchange for community service. It will cover two-thirds the cost of tuition at the average public college or university and make community college tuition completely free for most students.",
-   #  [["Early Childhood Education", "", []],
-   #   ["K-12", "", []],
-   #   ["Recruit, Prepare, Retain, and Reward Teachers", "", []],
-   #   ["Higher Education", "", []]]],
-   # ["Energy & Environment", "", []],
-   # ["Ethics",
-   #  "**Barack Obama will centralize ethics and lobbying information for voters:** Obama and Biden will create a centralized Internet database of lobbying reports, ethics records, and campaign finance filings.\n\n**Require independent monitoring of lobbying laws and ethics rules:** Obama and Biden will fight for an independent watchdog agency to oversee the investigation of congressional ethics violations.\n\n**Close the revolving door on former and future employers:** No political appointees in an Obama-Biden administration will be permitted to work on regulations or contracts directly and substantially related to their prior employer for two years. And no political appointee will be able to lobby the executive branch after leaving government service during the remainder of the administration.",
-   #  [["Shine the Light on Washington Lobbying", "", []],
-   #   ["Shine the Light on Federal Contracts, Tax Breaks and Earmarks", "", []],
-   #   ["Bring Americans Back into their Government", "", []],
-   #   ["Free the Executive Branch from Special Interest Influence", "", []]]],
-   # ["Faith",
-   #  "*\"(Obama's speech on faith) may be the most important pronouncement by a Democrat on faith and politics since John F. Kennedy's Houston speech in 1960 declaring his independence from the Vatican...Obama offers the first faith testimony I have heard from any politician that speaks honestly about the uncertainties of belief.\"*\n&em; E.J. Dionne, Op-Ed., Washington Post, June 30, 2006\n\nIn June of 2006, Senator Obama delivered what was called the most important speech on religion and politics in 40 years. Speaking before an evangelical audience, Senator Obama candidly discussed his own religious conversion and doubts, and the need for a deeper, more substantive discussion about the role of faith in American life.\nSenator Obama also laid down principles for how to discuss faith in a pluralistic society, including the need for religious people to translate their concerns into universal, rather than religion-specific, values during public debate. In December, 2006, Senator Obama discussed the importance of faith in the global battle against AIDS.",
-   #  []],
-   # ["Family",
-   #  "**Barack Obama will provide a \"Making Work Pay\" tax cut for America's working families:** Obama and Biden will restore fairness to the tax code and 95 percent of workers the tax relief they need. They will create a new \"Making Work Pay\" tax credit of up to $500 per person, or $1,000 per working family.\n\n**Strengthen fatherhood and families:** Obama and Biden will work to remove some of the government penalties on married families, crack down on men avoiding child support payments, fund support services for fathers and their families, and support domestic violence prevention efforts.\n\n**Restore Work-Family Balance:** Obama and Biden will double funding for after-school programs, expand the Family Medical Leave Act, provide low-income families with a refundable tax credit to help with their child-care expenses, and encourage flexible work schedules.",
-   #  [["Support Working Families", "", []],
-   #   ["Strengthen Our Schools", "", []],
-   #   ["Help American Families Stay Healthy", "", []],
-   #   ["Protect Homeownership", "", []],
-   #   ["Strengthen Families at Home", "", []],
-   #   ["Strengthen Retirement Security", "", []]]],
-   # ["Fiscal",
-   #  "**Barack Obama will restore fiscal discipline to Washington:** Obama and Biden review the federal budget line by line and eliminate programs that t work or are unnecessary.don\n\n**Reverse Bush tax cuts for the wealthy:** Obama and Biden will protect tax cuts for poor and middle-class families, and will reverse most of the Bush tax cuts for the wealthiest taxpayers.\n\n**Close special interest corporate loopholes:** Obama and Biden will level the playing field for all businesses by eliminating special-interest loopholes and deductions, such as those for the oil and gas industry.",
-   #  [["Restore Fiscal Discipline to Washington", "", []],
-   #   ["Make the Tax System More Fair and Efficient", "", []]]],
-   # ["Foreign Policy",
-   #  "**Secure loose nuclear materials from terrorists:** Obama and Biden will secure all loose nuclear materials in the world within four years, and will negotiate a verifiable global ban on the production of new nuclear weapons material to curb the spread of nuclear weapons.\n\n**Barack Obama will pursue tough, direct diplomacy without preconditions to end the threat from Iran:** Obama and Biden will present the Iranian regime with a clear choice. If Iran abandons its nuclear program and support for terrorism, they would offer incentives like membership in the World Trade Organization. If Iran continues its troubling behavior, Obama and Biden will step up our economic pressure and political isolation.\n\n**Renew American diplomacy:** Obama and Biden will renew American diplomacy to meet the challenges of the 21st century. They will rebuild our alliances. And they would be willing to meet with all nations, friend and foe, to advance American interests.",
-   #  [["Ending the War in Iraq", "", []],
-   #   ["Iran", "", []],
-   #   ["Renewing American Diplomacy", "", []],
-   #   ["Nuclear Weapons", "", []],
-   #   ["Bipartisanship and Openness", "", []],
-   #   ["On Israel", "", []],
-   #   ["Meeting the Challenge of a Resurgent Russia", "", []],
-   #   ["On Africa", "", []],
-   #   ["On Latin America & the Caribbean", "", []],
-   #   ["Learn More About the Obama-Biden Plan", "", []]]],
-   # ["Healthcare",
-   #  "**Barack Obama will make health insurance affordable and accessible to all:** The Obama-Biden plan provides affordable, accessible health care for all Americans, builds on the existing healthcare system, and uses existing providers, doctors and plans to implement the plan.\n\n**Obama will lower health care costs:** The Obama plan will lower health care costs by $2,500 for a typical family by investing in health information technology, prevention and care coordination.\n\n**Promote public health:** Obama and Biden will require coverage of preventive services, including cancer screenings, and will increase state and local preparedness for terrorist attacks and natural disasters.",
-   #  [["Make Health Insurance Work for People and Businesses - Not Just Insurance and Drug Companies.",
-   #    "",
-   #    []],
-   #   ["Reduce Costs and Save a Typical American Family up to $2,500", "", []]]],
-   # ["Homeland Security",
-   #  "**Barack Obama will defeat terrorism worldwide:** Obama and Biden will find, disrupt, and destroy al Qaeda; prepare the military to meet 21st century threats; and the Battle of  by ensuring American foreign policy is consistent with America's traditional values.Ideaswin \n\n**Prevent nuclear terrorism:** Obama and Biden will lead the effort to secure nuclear weapons materials at vulnerable sites within four years and help our allies stop the smuggling of weapons of mass destruction.\n\n**Strengthen American biosecurity:** Obama and Biden will work to prevent bioterror attacks and mitigate consequences by improving U.S. intelligence collection and response management.",
-   #  [["Defeat Terrorism Worldwide", "", []],
-   #   ["Prevent Nuclear Terrorism", "", []],
-   #   ["Strengthen American Biosecurity", "", []],
-   #   ["Protect Our Information Networks", "", []],
-   #   ["Improve Intelligence Capacity and Protect Civil Liberties", "", []],
-   #   ["Protect Americans from Terrorist Attacks and National Disasters", "", []],
-   #   ["Protect Critical Infrastructure", "", []],
-   #   ["Modernize America's Aging Infrastructure", "", []]]],
-   # ["Immigration",
-   #  "**Barack Obama will secure our borders:** Obama and Biden want to preserve the integrity of our borders. They support additional personnel, infrastructure, and technology on the border and at our ports of entry.\n\n**Improve our immigration system:** Obama and Biden believe we must fix the dysfunctional immigration bureaucracy and increase the number of legal immigrants to keep families together and meet the demand for jobs that employers cannot fill.\n\n**Bring people out of the shadows:** Obama and Biden support a system that requires undocumented immigrants who are in good standing to pay a fine, learn English, and go to the back of the line for the opportunity to become citizens.",
-   #  [["Create Secure Borders", "", []],
-   #   ["Improve Our Immigration System", "", []],
-   #   ["Remove Incentives to Enter Illegally", "", []],
-   #   ["Bring People Out of the Shadows", "", []],
-   #   ["Work with Mexico", "", []]]],
-   # ["Iraq",
-   #  "**Barack Obama will responsibly end the war in Iraq: ** Immediately upon taking office, Obama will give his Secretary of Defense and military commanders a new mission in Iraq: successfully ending the war. The removal of our troops will be responsible and phased.\n\n**Encourage political accommodation:** Obama and Biden will press Iraq's leaders to take responsibility for their future and to substantially spend their oil revenues on their own reconstruction.\n\n**Increase stability in Iraq and the region:** Obama and Biden will launch an aggressive diplomatic effort to reach a comprehensive compact on the stability of Iraq and the region. They also will address Iraq's refugee crisis.",
-   #  [["Create Secure Borders", "", []],
-   #   ["Improve Our Immigration System", "", []],
-   #   ["Remove Incentives to Enter Illegally", "", []],
-   #   ["Bring People Out of the Shadows", "", []],
-   #   ["Work with Mexico", "", []]]],
-   # ["Poverty",
-   #  "**Barack Obama will expand access to jobs:** Obama and Biden will invest $1 billion over five years in transitional jobs and career pathway programs that implement proven methods of helping low-income Americans succeed in the workforce.\n\n**Make work pay for all Americans:** Obama and Biden will increase benefits for working parents, raise the minimum wage to $9.50 an hour by 2011, and provide tax relief to low- and middle-income workers.\n\n**Support rural and urban areas:** Obama and Biden will invest in rural small businesses, improve rural schools, and attract more doctors to rural areas. And they will work with urban leaders to increase the supply of affordable housing and address the unique challenges of every metropolitan area.",
-   #  [["Expand Access to Jobs", "", []],
-   #   ["Make Work Pay for All Americans", "", []],
-   #   ["Strengthen Families", "", []],
-   #   ["Increase the Supply of Affordable Housing", "", []],
-   #   ["Tackle Concentrated Poverty", "", []]]],
-   # ["Rural",
-   #  "**Barack Obama will ensure economic opportunity for family farmers:** Obama and Biden will fight for farm programs that provide family farmers with stability and predictability. They will implement a $250,000 payment limitation so that we help family farmers - not large corporate agribusiness.\n\n**Support small business development:** Obama and Biden will provide capital for farmers to create value-added enterprises, like cooperative marketing initiatives and farmer-owned processing plants.\n\n**Improve rural quality of life:** Obama and Biden will combat methamphetamine use, improve health care, improve education, and upgrade infrastructure in rural areas.",
-   #  [["Ensure Economic Opportunity For Family Farmers", "", []],
-   #   ["Support Rural Economic Development", "", []],
-   #   ["Improve Rural Quality Of Life", "", []]]],
-   # ["Service",
-   #  "**Barack Obama will enable all Americans to serve:** Obama and Biden will expand AmeriCorps and the Peace Corps, engage retiring Americans, and set up an America's Voice Initiative to send Americans who are fluent speakers of local languages to expand our public diplomacy.\n\n**Integrate service into learning:** Obama and Biden will set a goal that all middle and high school students do 50 hours of community service a year, and will establish a new tax credit that is worth $4,000 a year in exchange for 100 hours of public service a year.\n\n**Invest in the nonprofit sector:** Obama and Biden will create a Social Investment Fund Network to use federal seed money to leverage private sector funding. They will create an agency dedicated to building the capacity and effectiveness of the nonprofit sector.",
-   #  [["Enable All Americans to Serve", "", []],
-   #   ["Integrate Service into Learning", "", []],
-   #   ["Invest in the Nonprofit Sector", "", []]]],
-   # ["Seniors & Social Security",
-   #  "**Barack Obama will protect Social Security:** Obama and Biden are committed to ensuring Social Security is solvent and viable for the American people, now and in the future. They are strongly opposed to privatizing Social Security.\n\n**Provide cheaper prescription drugs:** Obama and Biden will allow the federal government to negotiate for lower drug prices for the Medicare program. They also support allowing seniors to import safe prescription drugs from overseas.\n\n**Protect and strengthen Medicare:** Obama and Biden are committed to the long-term strength of the Medicare program. They will reduce waste in the Medicare system and will tackle fundamental healthcare reform.",
-   #  [["Protect Social Security", "", []],
-   #   ["Strengthen Retirement Savings", "", []],
-   #   ["Affordable Health Care", "", []],
-   #   ["Protect and Honor Seniors", "", []]]],
-   # ["Taxes",
-   #  "Barack Obama's tax plan delivers broad-based tax relief to middle class families and cuts taxes for small businesses and companies that create jobs in America, while restoring fairness to our tax code and returning to fiscal responsibility. Coupled with Obama's commitment to invest in key areas like health, clean energy, innovation and education, his tax plan will help restore bottom-up economic growth that helps create good jobs in America and empowers all families achieve the American dream.",
-   #  []],
-   # ["Technology",
-   #  "**Barack Obama will protect the openness of the internet:** Obama and Biden strongly support the principle of network neutrality to preserve the benefits of open competition on the Internet.\n\n**Deploy a modern communications infrastructure:** Obama and Biden believe we can get true broadband to every community in America.\nImprove America's competitiveness:\n\nObama and Biden will ensure our goods and services are treated fairly in foreign markets, invest in the sciences, and will provide new research grants to the most outstanding early-career researchers in the country.",
-   #  [["Ensure an open Internet.", "", []],
-   #   ["Create a transparent and connected democracy.", "", []],
-   #   ["Encourage a modern communications infrastructure.", "", []],
-   #   ["Prepare all of our children for a 21st century economy.", "", []],
-   #   ["Improve America's competitiveness.", "", []],
-   #   ["Employ science and technology to solve our nation's most pressing problems.",
-   #    "",
-   #    []]]],
-   # ["Urban Policy",
-   #  "**Barack Obama will strengthen federal commitment to our cities:** Obama and Biden will create a White House Office of Urban Policy to develop a strategy for metropolitan America and to ensure that all federal dollars targeted to urban areas are effectively spent on the highest-impact programs.\n\n**Stimulate economic prosperity in urban areas:** Obama and Biden will support job creation, enhance workforce training, and increase access to capital for underserved businesses.\n\n**Make housing more affordable:** Obama and Biden will ensure that middle-class Americans get the financial assistance they need to purchase or keep their own home. And they will increase the supply of affordable housing.",
-   #  [["Strengthen Federal Commitment to our Cities", "", []],
-   #   ["Stimulate Economic Prosperity in our Metropolitan Regions", "", []],
-   #   ["Housing", "", []],
-   #   ["Poverty", "", []],
-   #   ["Strengthen Livability of Cities", "", []],
-   #   ["Urban Education", "", []],
-   #   ["Crime and Law Enforcement", "", []],
-   #   ["Strengthen Homeland Security", "", []],
-   #   ["Support Families", "", []]]],
-   # ["Veterans",
-   #  "**Barack Obama will restore our sacred trust with our nation's veterans:** Obama and Biden are committed to creating a 21st Century Department of Veterans' Affairs that provides the care and benefits our nation's veterans deserve.\n\n**Help returning service members:** Obama and Biden will improve the quality of health care for veterans, rebuild the VA's broken benefits system, and combat homelessness among veterans.\n\n**Improve mental health treatment:** Obama and Biden will improve mental health treatment for troops and veterans suffering from combat-related psychological injuries.",
-   #  []],
-   # ["Women", "", []],
-   # ["Additional Issues",
-   #  "",
-   #  [["Arts", "", []],
-   #   ["Child Advocacy", "", []],
-   #   ["Katrina", "", []],
-   #   ["Science", "", []],
-   #   ["Sportsmen", "", []],
-   #   ["Transportation", "", []]]]]
