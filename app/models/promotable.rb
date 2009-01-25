@@ -8,14 +8,14 @@ module Promotable
     return if promoted?
     
     # default to showing on both homee page and index
-    promotion_locations = {:home_page => true, :index => true}.merge(promotion_locations)
+    promotion_locations = {:home_page => true, :index_page => true}.merge(promotion_locations)
     
     home_page = promotion_locations[:home_page]
-    index = promotion_locations[:index]
+    index_page = promotion_locations[:index_page]
     
     p = Promotion.create!(:item => self, 
                           :home_page => home_page, 
-                          :index => index,
+                          :index_page => index_page,
                           :user => promoter)
    self.promotion = p
   end

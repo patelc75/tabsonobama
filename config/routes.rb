@@ -18,7 +18,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :users
   map.resources :passwords
   map.resource :session
-  
+  map.resources :promotions, :only => [:create, :destroy]
   map.resources :ratings, :only => :index
 
   map.resources :issue_groups, :as => :groups do |groups|

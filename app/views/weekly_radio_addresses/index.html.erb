@@ -30,6 +30,10 @@
                                                 </div>
                                 </div>
                         </div>
+                <% promote_div_id = "promote-#{address.class}-#{address.id}" %>
+                <div id="<%= promote_div_id %>">
+                  <%= render :partial => "/promotions/promote", :locals => {:item => address, :update_div => promote_div_id} %>
+                </div>
                 <br class="clear" />
                 <br class="clear"/>
                 </div>

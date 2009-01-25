@@ -1,0 +1,16 @@
+<% if logged_in? && current_user.is_admin?%>
+  <% item ||= nil %>
+  <% if item %>
+    <% update_div ||= "promote-#{item.class}-#{item.id}" %>
+    <% if item.promoted? %>
+      <% promotion = item.promotion %>
+      <%= link_to_remote "<b>Un</b>promote this!", :url => promotion_url(promotion), :method => :delete, :update => update_div %>
+    <% else %>
+      <%= link_to_remote "Promote this!", :url => promotions_url(:item_type => item.class, :item_id => item.id), :update => update_div %>
+    <% end %>
+  <% end %>
+  
+  <% if !item %>
+    Unpromoted.
+  <% end %>
+<% end %>

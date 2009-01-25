@@ -26,7 +26,10 @@
           		<%= render :partial => 'ratings/rate', :locals => {:asset => c, :align => "left"} %>
           	</div>
           </div>
-          <% if current_user.%>
+          <% promote_div_id = "promote-#{c.class}-#{c.id}" %>
+          <div id="<%= promote_div_id %>">
+            <%= render :partial => "/promotions/promote", :locals => {:item => c, :update_div => promote_div_id} %>
+          </div>
           <br class="clear" />
           <br class="clear"/>
           </li>
