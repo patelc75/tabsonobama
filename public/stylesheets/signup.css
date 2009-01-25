@@ -1,40 +1,45 @@
-#user_name_login {
+#user_signup {
+	width: 400px;
+}
+
+#user_signup  ul li {
+	display: inline;
+	padding-right: 10px;
+	float: left;
+}
+
+#user_signup  ul li label {
+	font-family:Georgia,'Times New Roman',Times,serif;
+	font-size:1.7em;
+	line-height:1.1em;
+}
+
+#user_signup  ul li label.affiliation {
+	font-family:Georgia,'Times New Roman',Times,serif;
+	font-size:0.85em;
+	line-height:0.6em;
+}
+
+#user_signup ul li div{
+	width: 185px;
+	height: 55px;
+}
+
+#user_signup ul li div.recaptcha {
+	width: 370px;
+	height: 135px;
 	text-align: center;
-	color:#222222;
-	font-family:"Lucida Grande",verdana,arial,helvetica,sans-serif;
 }
 
-#user_name_login h1 {
-	border-bottom:0 none;
-	color:#333333;
-	font-family:"Lucida Grande",arial,sans-serif;
-	font-size:16px;
-	font-weight:bold;
-	margin:0;
-	padding:0;
+#user_signup ul li div.openidurl {
+	width: 370px;
+	height: 65px;
+	text-align: center;
 }
 
-#user_name_login h2 {
-	color:#333333;
-	font-family:"Lucida Grande",arial,sans-serif;
-	font-size:14px;
-	margin:20px 0 5px;
-	padding:0;
-}
-
-#user_name_login h2 {
-	color:#333333;
-	font-family:"Lucida Grande",arial,sans-serif;
-	font-size:14px;
-	margin:20px 0 5px;
-	padding:0;
-}
-
-#user_name_login input {
-	padding:3px;
-}
-
-#user_name_login p {
-	font-size:12px;
-	line-height:16px;
+#user_signup ul li div.submitbutton {
+	padding-top: 20px;
+	width: 370px;
+	height: 65px;
+	text-align: center;
 }
