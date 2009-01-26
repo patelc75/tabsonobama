@@ -80,8 +80,8 @@ end
 
 # recaptcha gem constants
 # gem install --source http://www.loonsoft.com/recaptcha/pkg/ recaptcha
-RCC_PUB  = '6LfRqgQAAAAAALWpxhD_Qt13QBD_pPFyISEzTnhu'
-RCC_PRIV = '6LfRqgQAAAAAAOMNBL1_vyglxaHyPVqjlN9ItX_w'
+RCC_PUB  = '6LdA1QQAAAAAAJERNxYqRohcDPd39X1ms-xQfqpk'
+RCC_PRIV = '6LdA1QQAAAAAADVqsHaONK7Qj7_Of9Wp19DpypFY'
 
 
 module ActiveRecord #:nodoc:
