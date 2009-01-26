@@ -7,7 +7,9 @@
  		<ul class="issues">
  			<% IssueGroup.find(:all).each do |issue_group| %>
 				<li>
-					<h3><%= issue_group.name %></h3>
+					<h3>
+					<%= link_to issue_group.name, :controller => "issue_groups", :action => "show", :id => issue_group.permalink %>
+					</h3>
 					<div id="star-ratings-block-<%=issue_group.class.to_s%>-<%= issue_group.id %>" class="star-ratings-block">
 		 				<%= render :partial => 'ratings/rate', :locals => {:asset => issue_group} %>
 		 			</div>
