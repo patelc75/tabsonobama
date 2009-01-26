@@ -1,8 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :weekly_radio_addresses
-
-  map.resources :cabinet_members
- 
   # Restful Authentication Rewrites
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
@@ -13,22 +9,25 @@ ActionController::Routing::Routes.draw do |map|
   map.change_password '/change_password/:reset_code', :controller => 'passwords', :action => 'reset'
   map.open_id_complete '/opensession', :controller => "sessions", :action => "create", :requirements => { :method => :get }
   map.open_id_create '/opencreate', :controller => "users", :action => "create", :requirements => { :method => :get }
-  
+  #map.promise_groups '/campaign_promises/:permalink', :controller => 'issue_groups', :action => 'show'
+  #map.promise_items '/campaign_promises/:permalink', :controller => 'issue_bullets', :action => 'show'  
+
   # Restful Authentication Resources
+  map.resources :splashes
+  map.resources :weekly_radio_addresses
+  map.resources :cabinet_members
   map.resources :users
   map.resources :passwords
   map.resource :session
   map.resources :promotions, :only => [:create, :destroy]
   map.resources :ratings, :only => :index
 
-  map.resources :issue_groups, :as => :groups do |groups|
-    groups.resources :issue_sections, :as => :sections do |sections|
-      sections.resources :issue_bullets, :as => :issues
+  map.resources :issue_groups, :as => :campaign_promises do |groups|
+    groups.resources :issue_sections, :as => :campaign_sections do |sections|
+      sections.resources :issue_bullets, :as => :campaign_bullets
     end
   end
 
-  map.resources :splashes
-    
   # Home Page
   map.root :controller => APP_CONFIG[:root_controller], :action => 'index'
 

@@ -2,7 +2,7 @@
 <div class="box">
  	<div class="boxcontent">
  	<h2>Rate</h2>
- 		<h3>Campaign Promises</h3>
+ 		<h3><%= link_to "Campaign Promises", { :controller => "campaign_promises", :action => "index" } , { :title => "Show All Campaign Promises"} %></h3> 	
  		
  		<ul class="issues">
  			<% IssueGroup.find(:all).each do |issue_group| %>

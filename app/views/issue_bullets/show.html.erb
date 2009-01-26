@@ -3,7 +3,7 @@
 <!-- bullets -->
 <div class="box">
 	<div class="boxcontent">
-		<% @issue_bullet = IssueBullet.find(params[:id]) %>
+		<% @issue_bullet = @current_object %>
 		<h1><%= "#{@issue_bullet.issue_section.issue_group.name}" %></h1>
 		<hr />
 		
@@ -33,7 +33,7 @@
                       <h3><%= "#{@issue_bullet.name}" %></h3>
                       <br>
                               <div id="star-ratings-block-<%=@issue_bullet.class.to_s%>-<%= @issue_bullet.id %>" class="star-ratings-block">
-                    		 				<%= render :partial => 'ratings/rate', :locals => {:asset => @issue_bullet} %>
+                    		 <%= render :partial => 'ratings/rate', :locals => {:asset => @issue_bullet} %>
                     		 			</div>
               </div>
 
@@ -44,27 +44,16 @@
 			<br class="clear" />
 								
 			<ul>
-				<li>
+				<h4>
 				<%= "#{@issue_bullet.description}" %>
-					<p>
-					</p>
-	
 	 				<br class="clear" />
-				</li>
-				<li>
-									
-					<br class="clear" />
-				</li>
+				</h4>					
+				<br class="clear" />
 			</ul>
 			
 			<ul>
-				<li>
-					<br class="clear" />
-				</li>
-				
-				<li>
-					<br class="clear" />
-				</li>
+				<br class="clear" />
+				<br class="clear" />
 			</ul>
 			
 			<br class="clear"/>

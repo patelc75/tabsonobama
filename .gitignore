@@ -1,6 +1,7 @@
 log/*.log
 tmp/**/*
 .DS_Store
+.eprj
 doc/api
 doc/app
 coverage

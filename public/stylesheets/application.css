@@ -416,45 +416,6 @@ ul#featured .rate {
 		color: #222;
 }
 
-.plans {
-		padding: 0 35px;
-}
-
-.plans h4 {
-		font-size: 1.3em;
-		line-height: 1.0em;
-		color: #004382;
-}
-
-.plans ul {
-		margin: 15px 0;
-		list-style: none;
-}
-
-.plans ul li ul {
-		margin: 15px 35px;
-		
-}
-
-.plans ul li ul li {
-		margin: 10px 35px 10px 0;
-		width: 465px;
-}
-
-.plans ul li ul li .rating ul {
-		margin: 0;
-}
-
-.plans ul li ul li .rating ul li {
-		width: auto;
-}
-
-.plans ul li ul li .text {
-		float: left;
-		width: 300px;
-		font-size: 1.2em;
-}
-/* rating */
 
 .rating {
 		width: 80px;

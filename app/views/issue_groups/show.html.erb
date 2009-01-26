@@ -1,20 +1,21 @@
 <%= stylesheet_link_tag "groups" %> 
 	    	
 <div class="box">
- 	<div class="boxcontent">
-	 	<h1><%= current_object.name %></h1>
-	 	<hr />
-    <div class="plans">	
-    	<hr />
-    	<h3>Barack Obama and Joe Biden's Plan</h3>
+  <div class="boxcontent">
+    <h2>Barack Obama and Joe Biden's Plan for Campaign Promise Group:</h2><h1><%= current_object.name %></h1>
+  </div>
+ </div>
+  <div class="plans">	
     	<ul>
     	  <% current_object.issue_sections.each do |section| %>
+    	    <div class="box">	
+    	    <div class="boxcontent">
     		<li><h4><%= section.name %></h4>
       		<ul>
       		  <% section.issue_bullets.each do |bullet| %>
       			<li>
       				<div class="text">
-      					<%= bullet.name %>
+      					<%= link_to bullet.name, :controller => "issue_bullets", :action => "show", :id => bullet.permalink %>
       				</div>
       				<div class="rating">
       					<ul>
@@ -31,9 +32,9 @@
             <% end %>
       		</ul>
     		</li>
-        <% end %>
+    		</div>
+    		</div>
+          <% end %>
     	</ul>
     	<br class="clear"/>
-  	</div>
-  </div>
-</div>
+ </div>
