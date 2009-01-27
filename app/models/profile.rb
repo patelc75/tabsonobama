@@ -7,4 +7,7 @@ class Profile < ActiveRecord::Base
   
   validates_format_of :last_name, :with => Authentication.name_regex, :message => Authentication.bad_name_message, :allow_nil => true
   validates_length_of :last_name, :maximum => 50
+  
+  validates_presence_of :zip
+  validates_presence_of :country_code
 end

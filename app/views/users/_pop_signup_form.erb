@@ -32,6 +32,12 @@
 			</li>
 			<li>
 				<div>
+					<label for="country_code">Country of Citizenship</label><br />
+          <%= render :partial => "users/country_select" %>
+        </div>
+      </li>
+			<li>
+				<div>
 					<label for="affiliation_id" class="affiliation">What is your political affiliation?</label><br />
           <%= profile_form.collection_select(:affiliation_id, Affiliation.all, :id, :name) %>
 				</div>

@@ -11,10 +11,12 @@
       <%= profile_form.text_field :last_name, :id => 'lastname' %>
       <%= title "Zipcode", :h2 %>
       <%= profile_form.text_field :zip, :id => 'zip' %>
+      <%= title "Country of Citizenship", :h2 %>
+      <%= render :partial => "country_select" %>
       <%= title "What is your political affiliation?", :p %>
       <%= profile_form.collection_select(:affiliation_id, Affiliation.all, :id, :name) %>
     <% end %>
-
+    
     <%= title "Username", :h2 %>
     <%= f.text_field :login %>
     <%= title "Email", :h2 %>
