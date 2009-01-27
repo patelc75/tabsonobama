@@ -2,6 +2,13 @@
 	width: 400px;
 }
 
+#user_signup h1 {
+	color:#004382;
+	font-size:2.9em;
+	line-height:1em;
+	margin: 0px;
+}
+
 #user_signup  ul li {
 	display: inline;
 	padding-right: 10px;
@@ -10,36 +17,54 @@
 
 #user_signup  ul li label {
 	font-family:Georgia,'Times New Roman',Times,serif;
-	font-size:1.7em;
+	font-size:1.25em;
 	line-height:1.1em;
 }
 
-#user_signup  ul li label.affiliation {
+#user_signup  ul li div.country_code label{
 	font-family:Georgia,'Times New Roman',Times,serif;
-	font-size:0.85em;
-	line-height:0.6em;
+	font-size:1.25em;
+	line-height:1.1em;
+}
+
+#user_signup  ul li div.country_code select{
+	width: 185px;
 }
 
 #user_signup ul li div{
 	width: 185px;
-	height: 55px;
+	height: 50px;
 }
 
 #user_signup ul li div.recaptcha {
 	width: 370px;
 	height: 135px;
 	text-align: center;
+	padding-left: 25px;
 }
 
 #user_signup ul li div.openidurl {
 	width: 370px;
-	height: 65px;
+	height: 80px;
 	text-align: center;
+}
+
+#user_signup ul li div.openidurl input {
+	width: 300px;
+}
+
+#user_signup ul li div.affiliation {
+	width: 370px;
+	height: 50px;
+	text-align: center;
+}
+
+#user_signup ul li div.affiliation  select{
+	width: 185px;
 }
 
 #user_signup ul li div.submitbutton {
 	padding-top: 20px;
 	width: 370px;
-	height: 65px;
 	text-align: center;
 }
