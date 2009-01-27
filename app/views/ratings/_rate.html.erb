@@ -15,5 +15,5 @@
         <% end -%>
     </ul>
   </div>
-  <div align="<%= defined?(align) ? align : 'right' %>" style="color: gray;"><%= number_with_precision(asset.rating_average, 1) %>/5 Stars (<%= asset.rated_count %> votes)</div><br />
+  <div align="<%= defined?(align) ? align : 'right' %>" style="color: gray;"><%= number_with_precision(asset.rating_average, :precision => 1) %>/5 Stars (<%= asset.rated_count %> votes)</div><br />
 

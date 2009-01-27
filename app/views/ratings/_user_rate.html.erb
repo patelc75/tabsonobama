@@ -18,6 +18,6 @@
   </ul>
 </div>
 <div align="<%= defined?(align) ? align : 'right' %>" style="color: gray;">
-  <%= number_with_precision(avg, 1) %>/5 Stars (<%= count %> votes)
+  <%= number_with_precision(avg, :precision => 1) %>/5 Stars (<%= count %> votes)
 </div>
 <br />
