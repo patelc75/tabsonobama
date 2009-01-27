@@ -15,7 +15,7 @@
       		  <% section.issue_bullets.each do |bullet| %>
       			<li>
       				<div class="text">
-      					<%= link_to bullet.name, :controller => "issue_bullets", :action => "show", :id => bullet.permalink %>
+      					<%= link_to bullet.name, "#{bullet.issue_section.issue_group.permalink}/#{bullet.permalink}" %>
       				</div>
       				<div class="rating">
       					<ul>
