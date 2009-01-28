@@ -5,7 +5,7 @@ class IssueBullet < ActiveRecord::Base
   include Promotable
   has_one :promotion, :as => :item, :dependent => :destroy
   
-  has_permalink :name
+  has_permalink :short
   def to_param
     self.permalink
   end
