@@ -45,6 +45,7 @@ namespace :app do
           IssueBullet.create({
             :name => bullet[:name], 
             :description => bullet[:description], 
+            :short => bullet[:short],
             :issue_section => is
           })
         end if section[:issue_bullets]
