@@ -4,6 +4,6 @@ class AddShortToIssueBullets < ActiveRecord::Migration
   end
   
   def self.down
-    remove_column :issue_bullets, :text
+    remove_column :issue_bullets, :short
   end
 end
