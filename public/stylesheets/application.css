@@ -288,6 +288,10 @@ a:active{
 		width: 307px;
 }
 
+.more .meta .star-ratings-block {
+		float: left;
+}
+
 .more .photo {
 		float: right;
 		margin: 0 10px;
