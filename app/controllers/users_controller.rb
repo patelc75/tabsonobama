@@ -17,7 +17,10 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
       flash[:notice] = "Successfully updated user roles."
-      redirect_to users_url
+      #redirect_to users_url
+	  respond_to do |format|
+		  format.js { render :partial => "/users/pop_signup_form" }
+	  end
     else
       render :action => 'edit'
     end
@@ -40,7 +43,8 @@ class UsersController < ApplicationController
         end
       end
     else
-      create_new_user(params[:user])
+	  $stderr.puts "\n DEBUG DEBUG DEBUG \n #{params[:user]} \n DEBUG DEBUG DEBUG \n"
+	  create_new_user(params[:user])
     end
   end
   
@@ -51,13 +55,22 @@ class UsersController < ApplicationController
     when (!params[:activation_code].blank?) && user && !user.active?
       user.activate!
       flash[:notice] = "Signup complete! Please sign in to continue."
-      redirect_to login_path
+      #redirect_to login_path
+	  respond_to do |format|
+		  format.js { render :partial => "/users/pop_signup_form" }
+	  end
     when params[:activation_code].blank?
       flash[:error] = "The activation code was missing.  Please follow the URL from your email."
-      redirect_back_or_default(root_path)
+      #redirect_back_or_default(root_path)
+	  respond_to do |format|
+		  format.js { render :partial => "/users/pop_signup_form" }
+	  end
     else 
       flash[:error]  = "We couldn't find a user with that activation code -- check your email? Or maybe you've already activated -- try signing in."
-      redirect_back_or_default(root_path)
+      #redirect_back_or_default(root_path)
+	  respond_to do |format|
+		  format.js { render :partial => "/users/pop_signup_form" }
+	  end
     end
   end
   
@@ -67,9 +80,9 @@ class UsersController < ApplicationController
     @user = User.new(attributes)
     if @user.valid?
       if @user.not_using_openid?
-        if validate_recap(params, @user.errors)
+        #if validate_recap(params, @user.errors)
           @user.register!
-        end
+        #end
       else
         @user.register_openid!
       end
@@ -78,12 +91,19 @@ class UsersController < ApplicationController
     if @user.errors.empty?
       successful_creation(@user)
     else
-      failed_creation
+	  respond_to do |format|
+		format.js { render :partial => "/users/pop_signup_form", :locals => { :status => 'failure', :user => @user, :display => 'block' } }
+	  end
+      #failed_creation
     end
   end
   
   def successful_creation(user)
-    redirect_back_or_default(root_path)
+    #redirect_back_or_default(root_path)
+	  respond_to do |format|
+		  format.js { render :partial => "/users/pop_signup_form", :locals => { :status => 'success', :logintype => 'normal', :display => 'block' } } if @user.not_using_openid?
+		  format.js { render :partial => "/users/pop_signup_form", :locals => { :status => 'success', :logintype => 'openid', :display => 'block' } } unless @user.not_using_openid?
+	  end
     flash[:notice] = "Thanks for signing up!"
     flash[:notice] << " We're sending you an email with your activation code." if @user.not_using_openid?
     flash[:notice] << " You can now login with your OpenID." unless @user.not_using_openid?
@@ -91,7 +111,10 @@ class UsersController < ApplicationController
   
   def failed_creation(message = 'Sorry, there was an error creating your account')
     flash[:error] = message
-    render :action => :new
+    #render :action => :new
+	respond_to do |format|
+		format.js { render :partial => "/users/pop_signup_form" }
+	end
   end
   
   def authorized?
