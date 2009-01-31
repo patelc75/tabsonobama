@@ -17,6 +17,13 @@
  		
  		<!-- featured campaign promises -->
  		<div class="moreissues">
+ 			<%
+				# Pass the real values in later...
+				features = []
+				features << IssueGroup.find(:first, :conditions => ["name = 'Economy'"])
+				features << IssueGroup.find(:first, :conditions => ["name = 'Immigration'"])
+				features << IssueGroup.find(:first, :conditions => ["name = 'Civil Rights'"])
+			%>
  			<h3>Featured Campaign Promises</h3>
  			<ul id="featured">
  				<li>
@@ -27,16 +34,9 @@
  							<blockquote>
  								<p>&quot;Obama and Biden will restore  fairness to the tax code and provide 150 million workers the tax relief they need...&quot; <a href="#">continued...</a></p>
  							</blockquote>
-			 				<div class="rating">
-				 				<ul>
-									<li><a href="#" title="1 out of 5" class="one-star">1</a></li>
-									<li><a href="#" title="2 out of 5" class="two-stars">2</a></li>
-									<li><a href="#" title="3 out of 5" class="three-stars">3</a></li>
-									<li><a href="#" title="4 out of 5" class="four-stars">4</a></li>
-									<li><a href="#" title="5 out of 5" class="five-stars">5</a></li>
-								</ul>
-				 				<span class="votes">18,294 votes</span>
-			 				</div>
+			 				<div id="star-ratings-block-<%= features[0].class.to_s %>-<%= features[0].id %>" class="star-ratings-block">
+				 				<%= render :partial => 'ratings/rate', :locals => {:asset => features[0]} %>
+				 			</div>
 				 			<br class="clear" />
  						</li>
  					</ul>
@@ -48,17 +48,10 @@
  							Create Secure Borders
 	 						<blockquote>
  								<p>&quot;Obama and Biden want to preserve the integrity of our borders...&quot; <a href="#">continued...</a></p>
- 							</blockquote>
-			 				<div class="rating">
-				 				<ul>
-									<li><a href="#" title="1 out of 5" class="one-star">1</a></li>
-									<li><a href="#" title="2 out of 5" class="two-stars">2</a></li>
-									<li><a href="#" title="3 out of 5" class="three-stars">3</a></li>
-									<li><a href="#" title="4 out of 5" class="four-stars">4</a></li>
-									<li><a href="#" title="5 out of 5" class="five-stars">5</a></li>
-								</ul>
-				 				<span class="votes">18,294 votes</span>
-			 				</div>
+ 							</blockquote>			 				
+			 				<div id="star-ratings-block-<%= features[1].class.to_s %>-<%= features[1].id %>" class="star-ratings-block">
+				 				<%= render :partial => 'ratings/rate', :locals => {:asset => features[1]} %>
+				 			</div>
 				 			<br class="clear" />
 							</li>
  					</ul>
@@ -70,17 +63,10 @@
  							End Racial Profiling
 		 					<blockquote>
  								<p>&quot;Obama and Biden will enact federal law to stem racial profiling...&quot; <a href="#">continued...</a></p>
- 							</blockquote>
-			 				<div class="rating">
-				 				<ul>
-									<li><a href="#" title="1 out of 5" class="one-star">1</a></li>
-									<li><a href="#" title="2 out of 5" class="two-stars">2</a></li>
-									<li><a href="#" title="3 out of 5" class="three-stars">3</a></li>
-									<li><a href="#" title="4 out of 5" class="four-stars">4</a></li>
-									<li><a href="#" title="5 out of 5" class="five-stars">5</a></li>
-								</ul>
-				 				<span class="votes">18,294 votes</span>
-			 				</div>
+ 							</blockquote>			 				
+			 				<div id="star-ratings-block-<%= features[2].class.to_s %>-<%= features[2].id %>" class="star-ratings-block">
+				 				<%= render :partial => 'ratings/rate', :locals => {:asset => features[2]} %>
+				 			</div>
 				 			<br class="clear" />
  						</li>
  					</ul>
