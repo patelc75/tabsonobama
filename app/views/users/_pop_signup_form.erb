@@ -1,12 +1,31 @@
-<div style="display:none" id="userSignup">
+<% display = 'none' if local_assigns[:display].nil? %>
+<div style="display:<%=display%>" id="userSignup">
 
 <div class="signup">
 	<div style="width: 400px; text-align: right; cursor: pointer;">
+	<% status = nil if local_assigns[:status].nil? %>
+	<% logintype = nil if local_assigns[:logintype].nil? %>
+	<% if status == 'failure'%>
+		<% user = nil if local_assigns[:user].nil? %>
+		<%if user!= nil %>
+			<%user.errors.each do |e| %>
+				<%=e%>
+			<%end%>
+		<%end%>
+	<%end%>
 	<a onclick="tb_remove();"> Close</a>
 	</div>  
 	
-	<% @user.password = @user.password_confirmation = nil %>
-	<% remote_form_for @user, :update => "pop_signup" do |f| %>
+	<%if status == 'success' %>
+	  <div id="user_signup">
+		<% if logintype == 'openid' %>
+			<h1>Thanks for signing up! You can now login with your OpenID.</h1>
+		<% else %>
+			<h1>Thanks for signing up! We're sending you an email with your activation code.</h1>
+		<% end %>
+	  </div>
+	<% else %>
+	<% remote_form_for @user, :url=> { :controller => "users", :action=> "create"}, :update => "TB_ajaxContent" do |f| %>
 	  <div id="user_signup">
 		<h1>Sign Up.</h1>
 		<br />
@@ -15,19 +34,19 @@
 			<li>
 				<div>
 					<label for="firstname">First Name</label><br />
-					<%= profile_form.text_field :first_name, :id => 'firstname', :name => 'firstname' %>
+					<%= profile_form.text_field :first_name, :id => 'firstname' %>
 				</div>
 			</li>
 			<li>
 				<div>
 					<label for="lastname">Last Name</label><br />
-					<%= profile_form.text_field :last_name, :id => 'lastname', :name => 'lastname' %>
+					<%= profile_form.text_field :last_name, :id => 'lastname' %>
 				</div>
 			</li>
 			<li>
 				<div>
 					<label for="zip">Zipcode</label><br />
-					<%= profile_form.text_field :zip, :id => 'zip', :name => 'zip' %>
+					<%= profile_form.text_field :zip, :id => 'zip' %>
 				</div>
 			</li>
 			<li>
@@ -46,19 +65,19 @@
 			<li>
 				<div>
 					<label for="login">Username</label><br />
-					<%= f.text_field :login, :name => 'login', :id => 'login' %>
+					<%= f.text_field :login, :id => 'login' %>
 				</div>
 			</li>
 			<li>
 				<div>
 					<label for="email">Email</label><br />
-					<%= f.text_field :email, :id => 'email', :name => "email" %>
+					<%= f.text_field :email, :id => 'email' %>
 				</div>
 			</li>
 			<li>
 				<div>
 					<label for="pass">Desired Password:</label><br />
-					<%= f.password_field :password, :id => 'pass', :name => 'password' %>
+					<%= f.password_field :password, :id => 'pass' %>
 				</div>
 			</li>
 			<li>
@@ -93,6 +112,9 @@
 	  	  
 	  </div>
 	<% end %>
+	<% end %>
+</div>
+
 </div>
 <script type="text/javascript">	
 	setTimeout('Recaptcha.create("6LfRqgQAAAAAALWpxhD_Qt13QBD_pPFyISEzTnhu","reCAPTCHA", {theme: "white"})',5); 
