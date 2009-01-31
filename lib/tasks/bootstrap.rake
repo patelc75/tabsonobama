@@ -76,7 +76,9 @@ namespace :app do
   	puts
   end
   
-  task :load_all => [:bootstrap, :load_weekly_radio_addresses, :load_cabinet_members, :load_campaign_promises]
+  task :load_all => [:load_weekly_radio_addresses, :load_cabinet_members, :load_campaign_promises]
   
-  task :delete_all => [:bootstrap, :delete_weekly_radio_addresses, :delete_cabinet_members, :delete_campaign_promises]
+  task :delete_all => [:delete_weekly_radio_addresses, :delete_cabinet_members, :delete_campaign_promises]
+  
+  task :setup => [:bootstrap, :load_all]
 end
