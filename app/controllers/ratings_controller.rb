@@ -2,6 +2,14 @@ class RatingsController < ApplicationController
   before_filter :get_class_by_name, :only => [:rate]
   
   before_filter :login_required, :only => [:index]
+  
+  def login
+    render :update do |page|
+	  page << "tb_show('Dialog', '#TB_inline?height=325&width=400&inlineId=userLogin&modal=true', null);"  
+    end
+    #render :action => "login.js.rjs" 
+  end
+  
   def index
     @members = CabinetMember.find_rated_by(current_user).uniq
     @addresses = WeeklyRadioAddress.find_rated_by(current_user).uniq
@@ -9,7 +17,6 @@ class RatingsController < ApplicationController
   end
     
   def rate
-    
     rateable = @rateable_class.find(params[:id])
     is_rateable = true
     if logged_in?

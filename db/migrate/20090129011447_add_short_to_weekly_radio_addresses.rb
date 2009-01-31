@@ -4,6 +4,6 @@ class AddShortToWeeklyRadioAddresses < ActiveRecord::Migration
   end
   
   def self.down
-    remove_column :weekly_radio_addresses, :text
+    remove_column :weekly_radio_addresses, :short
   end
 end
