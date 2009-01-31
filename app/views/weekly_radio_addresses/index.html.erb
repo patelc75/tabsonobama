@@ -16,18 +16,11 @@
                                         </object>
                                 </div>
                                 <div class="titlerate">
-                                        <h3><%= "#{address.description}" %></h3>
-                                        <br>
-                                                <div class="rating">
-                                                        <ul>
-                                                                <li><a href="#" title="1 out of 5" class="one-star">1</a></li>
-                                                                <li><a href="#" title="2 out of 5" class="two-stars">2</a></li>
-                                                                <li><a href="#" title="3 out of 5" class="three-stars">3</a></li>
-                                                                <li><a href="#" title="4 out of 5" class="four-stars">4</a></li>
-                                                                <li><a href="#" title="5 out of 5" class="five-stars">5</a></li>
-                                                        </ul>
-                                                        <span class="votes">18,294 votes</span>
-                                                </div>
+                                    <h3><%= "#{address.description}" %></h3>
+                                    <br>
+                                    <div id="star-ratings-block-<%= address.class.to_s %>-<%= address.id %>" class="star-ratings-block">
+						 				<%= render :partial => 'ratings/rate', :locals => {:asset => address, :align => 'left'} %>
+						 			</div>
                                 </div>
                         </div>
                 <% promote_div_id = "promote-#{address.class}-#{address.id}" %>
