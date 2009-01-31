@@ -1,0 +1,31 @@
+<% display = 'none' if local_assigns[:display].nil? %>
+<div style="display:<%=display%>" id="userForgot">
+	<div style="width: 300px; text-align: right; cursor: pointer;">
+		<a onclick="tb_remove();"> Close</a>
+	</div>
+
+	<% email = '-' if local_assigns[:email].nil? %>
+
+	<div id="user_forgot">
+		<% if email != '-' %>
+			<h2>A link to change your password has been sent to <%=email%>.</h2>
+		<% else %>
+			<%= title "Forgot Your Password?", :h2 %>
+			<% @password = Password.new %>
+			<% remote_form_for @password, :url=> { :controller => "passwords", :action=> "create"}, :update => "TB_ajaxContent" do |f| %>
+			  <%= f.error_messages %>
+					<ul>
+						<li style="list-style: none;">			
+						<%= f.label :email %> <br />
+						<%= f.text_field :email %>
+						<br />
+						<br />
+						</li>
+					</ul>
+				<div class="buttons">
+				<%= f.submit "Submit" %>
+				</div>
+			<% end %>
+		<% end %>
+	</div>
+</div>
