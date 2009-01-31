@@ -44,9 +44,8 @@
 		list-style: none;
 }
 
-.plans ul li ul {
+.bullets-list {
 		margin: 15px 35px;
-		
 }
 
 .plans ul li ul li {

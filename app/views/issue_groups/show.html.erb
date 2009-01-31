@@ -11,25 +11,18 @@
     	    <div class="box">	
     	    <div class="boxcontent">
     		<li><h4><%= section.name %></h4>
-      		<ul>
+      		<ul class="bullets-list">
       		  <% section.issue_bullets.each do |bullet| %>
       			<li>
       				<div class="text">
       					<%= link_to bullet.name, "#{bullet.issue_section.issue_group.permalink}/#{bullet.permalink}" %>
       				</div>
-      				<div class="rating">
-      					<ul>
-      						<li><a href="#" title="1 out of 5" class="one-star">1</a></li>
-      						<li><a href="#" title="2 out of 5" class="two-stars">2</a></li>
-      						<li><a href="#" title="3 out of 5" class="three-stars">3</a></li>
-      						<li><a href="#" title="4 out of 5" class="four-stars">4</a></li>
-      						<li><a href="#" title="5 out of 5" class="five-stars">5</a></li>
-      					</ul>
-      					<span class="votes"><%= bullet.rated_count %> votes</span>
-      				</div>
+      				<div id="star-ratings-block-<%= bullet.class.to_s %>-<%= bullet.id %>" class="star-ratings-block">
+		 				<%= render :partial => 'ratings/rate', :locals => {:asset => bullet} %>
+		 			</div>
       				<br class="clear" />
       			</li>
-            <% end %>
+              <% end %>
       		</ul>
     		</li>
     		</div>
