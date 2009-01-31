@@ -10,7 +10,10 @@ class PasswordsController < ApplicationController
     if @password.save
       PasswordMailer.deliver_forgot_password(@password)
       flash[:notice] = "A link to change your password has been sent to #{@password.email}."
-      redirect_to :action => :new
+      #redirect_to :action => :new
+	  respond_to do |format|
+		  format.js { render :partial => "/passwords/pop_forgot_form", :locals => { :email => @password.email, :display => 'block' } }
+	  end
     else
       render :action => :new
     end
