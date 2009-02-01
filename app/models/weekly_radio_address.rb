@@ -8,4 +8,10 @@ class WeeklyRadioAddress < ActiveRecord::Base
   def to_param
     self.permalink
   end
+  
+  def self.featured
+    promotion = Promotion.home_page.weekly_radio_address.first
+    return promotion.item if promotion
+    return find(:first, :order => "rand()")
+  end
 end

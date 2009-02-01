@@ -18,15 +18,14 @@
 	 			<h3>Featured Cabinet Member</h3>
  				
  				<%
- 					# Pass the real value in to the partial later...
- 					featured = CabinetMember.find(:first, :conditions => ["nominee = 'Hillary Rodham Clinton'"])
+ 					cabinet_member = CabinetMember.featured
  				%>
- 				<div id="star-ratings-block-<%= featured.class.to_s %>-<%= featured.id %>" class="star-ratings-block">
-					<%= render :partial => 'ratings/rate', :locals => {:asset => featured, :align => 'left'} %>
+ 				<div id="star-ratings-block-<%= cabinet_member.class.to_s %>-<%= cabinet_member.id %>" class="star-ratings-block">
+					<%= render :partial => 'ratings/rate', :locals => {:asset => cabinet_member, :align => 'left'} %>
 				</div>
 	 		</div>
 	 		<div class="photo">
-	 			<img alt="Hilary Clinton" src="../images/hilary.jpg" />
+	 			<img alt="<%= cabinet_member.nominee %>" src="/images/<%= cabinet_member.photo_filename %>" />
 	 		</div>
  			<br class="clear" />
  		</div>
