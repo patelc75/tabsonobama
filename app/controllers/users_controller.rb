@@ -43,8 +43,8 @@ class UsersController < ApplicationController
         end
       end
     else
-	  $stderr.puts "\n DEBUG DEBUG DEBUG \n #{params[:user]} \n DEBUG DEBUG DEBUG \n"
-	  create_new_user(params[:user])
+      # $stderr.puts "\n DEBUG DEBUG DEBUG \n #{params[:user]} \n DEBUG DEBUG DEBUG \n"
+      create_new_user(params[:user])
     end
   end
   
