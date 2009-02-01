@@ -10,7 +10,12 @@
     <a href='/login' id="login-again-link">Try again</a>.
   </div>
   <div id="login-links">
-  	<li><a title="SignUp" href="/signup" onclick="tb_show('Dialog', '#TB_inline?height=600&width=400&inlineId=userSignup&modal=true', null); return false;"> Sign Up</li>
+    
+    <% # only show signup button for signup popup if not signup url %>
+    <% unless (controller.controller_name == "users" && controller.action_name == "new") %>
+    	<li><a title="SignUp" href="/signup" onclick="tb_show('Dialog', '#TB_inline?height=600&width=400&inlineId=userSignup&modal=true', null); return false;"> Sign Up</li>
+    <% end %>
+    
   	<li><a title="Login" href="/login" id="login-link">Login</a></li>
   </div>
   <div id="login-form" style="display:none">
