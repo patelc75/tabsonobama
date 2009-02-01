@@ -3,10 +3,10 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe Invitation do
 
   before(:each) do
+    @default_user = create_user
     @valid_attributes = {
-      :sender_id => 1,
+      :sender => @default_user,
       :recipient_email => "value for recipient_email",
-      :token => "value for token",
       :sent_at => Time.now
     }
   end
@@ -17,15 +17,47 @@ describe Invitation do
   
   describe 'validations' do
     
-    [:sender_id, :recipient_email, :token].each do |attribute|
+    [:sender, :recipient_email].each do |attribute|
       it "should require #{attribute}" do
         @valid_attributes.delete(attribute)
-        invalid = Invitation.create(@valid_attributes)
+        invalid = Invitation.new(@valid_attributes)
         invalid.should_not be_valid
         invalid.should have(1).error_on(attribute)
       end
     end
+    
+    it "should ensure recipient isn't already registered" do
+      @default_user.has_invitations?.should be_true
+      obama = create_user(:login => 'obama', :email => 'obama@tabsonobama.org')
+      @valid_attributes[:recipient_email] = obama.email
+      invalid = Invitation.create(@valid_attributes)
+      invalid.should_not be_valid
+      invalid.should have(1).error_on(:recipient_email)
+    end
+    
+    it "should ensure sender has invitations" do
+      @default_user.invitation_limit = 0
+      @default_user.has_invitations?.should be_false
+      invalid = Invitation.create(@valid_attributes)
+      invalid.should_not be_valid
+      invalid.should have(1).error_on(:base)
+    end
 
+  end
+  
+  describe 'creation' do
+  
+    it 'should generate a token' do
+      invitation = Invitation.create(@valid_attributes)
+      invitation.token.should_not be_nil
+    end
+
+    it "should decrement sender's invitation limit" do
+      @default_user.invitation_limit.should == 5
+      Invitation.create(@valid_attributes)
+      @default_user.invitation_limit.should == 4
+    end
+  
   end
 
 end

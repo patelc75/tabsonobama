@@ -5,6 +5,10 @@ class User < ActiveRecord::Base
   
   has_many :ratings
   has_one :profile, :dependent => :destroy
+
+  has_many :sent_invitations, :class_name => "Invitation", :foreign_key => "sender_id"
+  belongs_to :invitation
+  before_validation_on_create :set_invitation_limit
   
   validates_associated :profile
   
@@ -33,5 +37,14 @@ class User < ActiveRecord::Base
     roles.each do |role|
       self.roles.delete(role) unless role_ids.include?(role.id)
     end
+  end
+  
+  def has_invitations?
+    self.invitation_limit > 0
+  end
+  
+private
+  def set_invitation_limit
+    self.invitation_limit = 5
   end
 end

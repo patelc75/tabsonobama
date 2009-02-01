@@ -32,6 +32,13 @@ describe User do
       @user.reload
       @user.should be_pending
     end
+    
+    it 'starts with invitations' do
+      @creating_user.call
+      @user.reload
+      @user.invitation_limit.should > 0
+    end
+    
   end
 
   #
