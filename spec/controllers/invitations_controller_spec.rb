@@ -3,7 +3,13 @@ require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 describe InvitationsController do
 
   def mock_invitation(options={})
-    stubs = {:sender= => true}
+    stubs = {
+      :sender= => true,
+      :recipient_email => 'email',
+      :token => 'abc',
+      :update_attribute => true,
+      :valid? => true
+    }
     stubs.merge!(options)
     @mock_invitation ||= mock_model(Invitation, stubs)
   end

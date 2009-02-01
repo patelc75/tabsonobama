@@ -100,7 +100,7 @@ describe UsersController do
     end
     
     it "should route users's 'new' action correctly" do
-      route_for(:controller => 'users', :action => 'new').should == "/signup"
+      route_for(:controller => 'users', :action => 'new', :invitation_token => 'abc').should == "/signup/abc"
     end
     
     it "should route {:controller => 'users', :action => 'create'} correctly" do
