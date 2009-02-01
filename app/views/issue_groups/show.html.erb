@@ -2,15 +2,15 @@
 	    	
 <div class="box">
   <div class="boxcontent">
-    <h2>Barack Obama and Joe Biden's Plan for Campaign Promise Group:</h2><h1><%= current_object.name %></h1>
+    <h2>Barack Obama and Joe Biden's Campaign Promise:</h2><h1><%= current_object.name %></h1>
   </div>
- </div>
+</div>
   <div class="plans">	
     	<ul>
     	  <% current_object.issue_sections.each do |section| %>
     	    <div class="box">	
     	    <div class="boxcontent">
-    		<li><h4><%= section.name %></h4>
+    		<li><h3><%= section.name %></h3>
       		<ul class="bullets-list">
       		  <% section.issue_bullets.each do |bullet| %>
       			<li>
