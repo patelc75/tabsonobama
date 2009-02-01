@@ -8,7 +8,12 @@
         </li>
         <% 1.upto(5) do |x| -%>
         <li style="text-align: center">
-            <%= link_to_remote( "#{x}", 
+        	<% # Following line was <%= link_to_remote( "#{x}", but #{x} caused
+        	   # the number in the link to be visible in IE7 (even though it's
+        	   # hidden with CSS). Is the number in the link needed since the        	   
+        	   # the rating is passed into the ajax call?
+        	%>
+            <%= link_to_remote( "", 
                         { :url => { :controller => "ratings", :action => "rate", 
                             :id => asset.id, :rating => x, :rated_type => asset.class.to_s } },
                         { :class => "#{@convert[x-1]}-stars", :name => "#{pluralize(x,'star')} out of 5",
