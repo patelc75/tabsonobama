@@ -7,7 +7,7 @@ h1 {
 
 hr {
 		margin: 15px 0;
-		border: 1px solid #f0f0f0;
+		border: 3px solid #f0f0f0;
 }
 
 .box {
@@ -54,5 +54,9 @@ hr {
 
 .titlerate {
 		float:left;
-		width:580px;
+		width:680px;
+}
+
+.star-ratings-block {
+		float:left;
 }

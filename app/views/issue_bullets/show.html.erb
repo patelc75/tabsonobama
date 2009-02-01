@@ -4,45 +4,29 @@
 <div class="box">
 	<div class="boxcontent">
 		<% @issue_bullet = @current_object %>
+		<h2>Barack Obama and Joe Biden's Campaign Promise </h2>
 		<h1><%= "#{@issue_bullet.issue_section.issue_group.name}" %></h1>
-		<hr />
-		
 		<div class="plans">	
-		
-			<h3><%= "#{@issue_bullet.issue_section.name}" %></h3>
-			<p>
+			<h3>
+				<%= "#{@issue_bullet.issue_section.name}" %>
 				<br class="clear" />
 				<strong>
-				<%= "#{@issue_bullet.issue_section.description}" %>
+					<%= "#{@issue_bullet.issue_section.description}" %>
 				</strong> 
-				</br>
-			</p>
-			
-			<p>
-			</p>
-		
-			<p>
-			</p>
-		
-			<p>
-			</p>
-	
-			<br class="clear" />
+			</h3>
+
+			<hr>			
+			<p></p>
 			<br class="clear" />	
-							<div class="titlerate">
-                      <h3><%= "#{@issue_bullet.name}" %></h3>
-                      <br>
-                              <div id="star-ratings-block-<%=@issue_bullet.class.to_s%>-<%= @issue_bullet.id %>" class="star-ratings-block">
-                    		 <%= render :partial => 'ratings/rate', :locals => {:asset => @issue_bullet} %>
-                    		 			</div>
-              </div>
 
-			<p>
-			</p>
+			<div class="titlerate">
+            <h3><%= "#{@issue_bullet.name}" %></h3>
+            </div>
+			<div id="star-ratings-block-<%=@issue_bullet.class.to_s%>-<%= @issue_bullet.id %>" class="star-ratings-block">
+             	<%= render :partial => 'ratings/rate', :locals => {:asset => @issue_bullet} %>
+            </div>
 
-			<br class="clear" />
-			<br class="clear" />
-								
+			<p></p><br class="clear" /><br class="clear" />	
 			<ul>
 				<h4>
 				<%= "#{@issue_bullet.description}" %>
@@ -50,13 +34,13 @@
 				</h4>					
 				<br class="clear" />
 			</ul>
-			
 			<ul>
 				<br class="clear" />
 				<br class="clear" />
 			</ul>
-			
+			<p></p>
 			<br class="clear"/>
+
 			<%= render :partial => "intense_debate/comments", :locals => {:model => @issue_bullet} %>
 		</div>
 	</div>
