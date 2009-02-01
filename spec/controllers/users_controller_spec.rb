@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
 describe UsersController do
-  fixtures :users
+  fixtures :users, :invitations
   
   before(:each) do
     recaptcha_client = mock_model(ReCaptcha::Client, :validate => true, :last_error => "mock")
@@ -88,8 +88,14 @@ describe UsersController do
   end
   
   def create_user(options = {})
-    post :create, :user => { :login => 'quire', :email => 'quire@example.com',
-      :password => 'quire69', :password_confirmation => 'quire69' }.merge(options)
+    defaults = {
+      :login => 'quire', 
+      :email => 'quire@example.com',
+      :password => 'quire69', 
+      :password_confirmation => 'quire69',
+      :invitation => invitations(:quire_invitation)
+    }
+    post :create, :user => defaults.merge(options)
   end
 end
 

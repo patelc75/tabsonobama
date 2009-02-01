@@ -6,7 +6,7 @@ require File.dirname(__FILE__) + '/../spec_helper'
 include AuthenticatedTestHelper
 
 describe User do
-  fixtures :users
+  fixtures :users, :invitations
 
   describe 'being created' do
     before do
@@ -97,6 +97,13 @@ describe User do
     end.should_not change(User, :count)
   end
 
+  it 'requires invitation' do
+    lambda do
+      u = create_user(:invitation => nil)
+      u.errors.on(:invitation).should_not be_nil
+    end.should_not change(User, :count)
+  end
+  
   describe 'allows legitimate emails:' do
     ['foo@bar.com', 'foo@newskool-tld.museum', 'foo@twoletter-tld.de', 'foo@nonexistant-tld.qq',
      'r@a.wk', '1234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890@gmail.com',
@@ -300,7 +307,15 @@ describe User do
   
 protected
   def create_user(options = {})
-    record = User.new({ :login => 'quire', :email => 'quire@example.com', :password => 'quire69', :password_confirmation => 'quire69' }.merge(options))
+    invitation = invitations(:quire_invitation)
+    defaults = {
+      :login => 'quire', 
+      :email => 'quire@example.com', 
+      :password => 'quire69', 
+      :password_confirmation => 'quire69',
+      :invitation => invitation
+    }
+    record = User.new(defaults.merge(options))
     record.register! if record.valid?
     record
   end

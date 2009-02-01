@@ -1,6 +1,7 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe Invitation do
+  fixtures :users
 
   before(:each) do
     @default_user = create_user
@@ -17,17 +18,17 @@ describe Invitation do
   
   describe 'validations' do
     
-      it "should require recipient email" do
-        @valid_attributes.delete(:recipient_email)
-        invalid = Invitation.new(@valid_attributes)
-        invalid.should_not be_valid
-        invalid.should have(1).error_on(:recipient_email)
-      end
+    it "should require recipient email" do
+      @valid_attributes.delete(:recipient_email)
+      invalid = Invitation.new(@valid_attributes)
+      invalid.should_not be_valid
+      invalid.should have(1).error_on(:recipient_email)
+    end
     
     it "should ensure recipient isn't already registered" do
       @default_user.has_invitations?.should be_true
-      obama = create_user(:login => 'obama', :email => 'obama@tabsonobama.org')
-      @valid_attributes[:recipient_email] = obama.email
+      aaron = users(:aaron)
+      @valid_attributes[:recipient_email] = aaron.email
       invalid = Invitation.create(@valid_attributes)
       invalid.should_not be_valid
       invalid.should have(1).error_on(:recipient_email)
