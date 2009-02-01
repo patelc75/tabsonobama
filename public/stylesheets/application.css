@@ -527,3 +527,7 @@ br.clear {
 #nav ul#user {
   color: #000;
 }
+
+#idc-container .idc-new {
+	float: none !important;
+}

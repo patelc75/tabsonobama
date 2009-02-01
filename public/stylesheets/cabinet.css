@@ -119,3 +119,7 @@ br.clear {
 	width: 450px;
 	height: 200px;
 } 
+
+#idc-container-parent {
+	margin: 0 50px;
+}
