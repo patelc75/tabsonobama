@@ -17,14 +17,12 @@ describe Invitation do
   
   describe 'validations' do
     
-    [:sender, :recipient_email].each do |attribute|
-      it "should require #{attribute}" do
-        @valid_attributes.delete(attribute)
+      it "should require recipient email" do
+        @valid_attributes.delete(:recipient_email)
         invalid = Invitation.new(@valid_attributes)
         invalid.should_not be_valid
-        invalid.should have(1).error_on(attribute)
+        invalid.should have(1).error_on(:recipient_email)
       end
-    end
     
     it "should ensure recipient isn't already registered" do
       @default_user.has_invitations?.should be_true

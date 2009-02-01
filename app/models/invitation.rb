@@ -3,7 +3,7 @@ class Invitation < ActiveRecord::Base
   belongs_to :sender, :class_name => "User"
   has_one :recipient, :class_name => "User"
   
-  validates_presence_of :sender, :recipient_email
+  validates_presence_of :recipient_email
   validate :recipient_is_not_registered
   validate :sender_has_invitations
   
@@ -26,7 +26,9 @@ private
   end
   
   def decrement_sender_count
-    self.sender.decrement! :invitation_limit
+    if sender
+      self.sender.decrement! :invitation_limit
+    end
   end
   
 end
