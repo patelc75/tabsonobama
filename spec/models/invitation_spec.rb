@@ -14,5 +14,18 @@ describe Invitation do
   it "should create a new instance given valid attributes" do
     Invitation.create!(@valid_attributes)
   end
+  
+  describe 'validations' do
+    
+    [:sender_id, :recipient_email, :token].each do |attribute|
+      it "should require #{attribute}" do
+        @valid_attributes.delete(attribute)
+        invalid = Invitation.create(@valid_attributes)
+        invalid.should_not be_valid
+        invalid.should have(1).error_on(attribute)
+      end
+    end
+
+  end
 
 end
