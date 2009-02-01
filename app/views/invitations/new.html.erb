@@ -2,10 +2,13 @@
 
 <% form_for(@invitation) do |f| %>
   <%= f.error_messages %>
-
   <p>
-    <%= f.submit "Create" %>
+    <%= f.label :recipient_email, "Your friend's email address" %>
+    <%= f.text_field :recipient_email %>
+  </p>
+  <p>
+    <%= f.submit "Invite!" %>
+    or
+    <%= link_to 'cancel', invitations_path %>
   </p>
 <% end %>
-
-<%= link_to 'Back', invitations_path %>

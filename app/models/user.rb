@@ -43,6 +43,14 @@ class User < ActiveRecord::Base
     self.invitation_limit > 0
   end
   
+  def invitation_token
+    self.invitation.token if invitation
+  end
+  
+  def invitation_token=(token)
+    self.invitation = Invitation.find_by_token(token)
+  end
+  
 private
   def set_invitation_limit
     self.invitation_limit = 5
