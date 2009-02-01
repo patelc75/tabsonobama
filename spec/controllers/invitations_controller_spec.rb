@@ -29,7 +29,7 @@ describe InvitationsController do
       it "should redirect to the created invitation" do
         Invitation.stub!(:new).and_return(mock_invitation(:save => true))
         post :create, :invitation => {}
-        response.should redirect_to(invitation_url(mock_invitation))
+        response.should redirect_to(root_url)
       end
       
     end
