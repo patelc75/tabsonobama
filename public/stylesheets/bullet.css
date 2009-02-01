@@ -23,7 +23,6 @@ hr {
 }
 
 .box div.boxcontent {
-		height: 700px;
 		padding: 5px 15px 10px 15px;
 		background: #FFF url('/images/boxbottom.gif') no-repeat bottom left;
 }
@@ -56,4 +55,8 @@ hr {
 .titlerate {
 		float:left;
 		width:580px;
+}
+
+#idc-container .idc-new {
+	float: none !important;
 }
