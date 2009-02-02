@@ -25,9 +25,11 @@
     <%= f.password_field :password, :id => 'pass' %>
     <%= title "Re-enter Password:", :h2 %>
     <%= f.password_field :password_confirmation, :id => 'password' %>
+    <%= f.hidden_field :invitation_token %>
+
 	<br />
 	<br />
-    <%= get_captcha() %>
+    <%= get_captcha(:options => {:theme => 'white'}) %>
   
     <!-- OpenID signup styled? -->
     <p>Signup with OpenID</p>

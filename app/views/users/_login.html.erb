@@ -43,8 +43,7 @@
 
       <div class="extras">
         <ul>
-		  
-          <li><img alt="openID" src="images/openid.jpg"/></li>
+          <li><%= image_tag('openid.jpg', :alt => 'openID' ) %></li>
 		<li><a href="/amnesia/forgot_password">Use OpenID</a></li>
 		<li><a href="/amnesia/forgot_password">Forget your username and password?</a></li>
         </ul>
@@ -53,7 +52,9 @@
     </div>
   
     <div id="open_id_login" style="display: none">
-      <h2><img src="/images/openid.jpg" alt="Login with an OpenID" /></h2>
+      <h2>
+        <%= image_tag('openid.jpg', :alt => 'Login with an OpenID' ) %>
+      </h2>
       <input id="identity_url" name="openid_url" type="text" /><br />
       <label><input type="checkbox" name="remember_me" class="auto" /> Remember me on this computer</label><br />
       <input type="submit" value="Sign in" class="button" />

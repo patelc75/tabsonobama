@@ -1,7 +1,16 @@
 <% if current_user %>
+
+  <% if current_user.has_invitations? %>
+    <%= link_to "Send an invitation", new_invitation_path %>
+    (You have <%= current_user.invitation_limit %> left)
+  <% end %>
+  &nbsp;
+  |
+  &nbsp;
   You are logged in as
   <%= current_user.login %>
   <%= link_to "Logout", logout_url %>
+
 <% else %>
   <div id="login-again" style="display:none">
     <% if @login %>

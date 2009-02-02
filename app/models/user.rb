@@ -10,12 +10,12 @@ class User < ActiveRecord::Base
   belongs_to :invitation
   before_validation_on_create :set_invitation_limit
   
-  validates_presence_of :invitation, :message => 'is required'
-  validates_uniqueness_of :invitation_id
+  validates_presence_of :invitation, :message => ' is required'
+  validates_uniqueness_of :invitation_id, :message => " must be unique", :allow_nil => true
   
   validates_associated :profile
   
-  attr_accessible :new_profile_attributes, :updated_roles, :invitation
+  attr_accessible :new_profile_attributes, :updated_roles, :invitation_token, :invitation
   
   def is_admin?
     roles.include?(Role.admin_role)

@@ -27,7 +27,8 @@ class UsersController < ApplicationController
   end
   
   def new
-    @user = User.new
+    @user = User.new(:invitation_token => params[:invitation_token])
+    @user.email = @user.invitation.recipient_email if @user.invitation
     @profile = @user.build_profile
   end
   
@@ -91,9 +92,10 @@ class UsersController < ApplicationController
     if @user.errors.empty?
       successful_creation(@user)
     else
-	  respond_to do |format|
-		format.js { render :partial => "/users/pop_signup_form", :locals => { :status => 'failure', :user => @user, :display => 'block' } }
-	  end
+      respond_to do |format|
+        format.js { render :partial => "/users/pop_signup_form", :locals => { :status => 'failure', :user => @user, :display => 'block' } }
+        format.html { render :action => :new }
+      end
       #failed_creation
     end
   end
