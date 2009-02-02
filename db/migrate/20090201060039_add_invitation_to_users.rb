@@ -5,9 +5,12 @@ class AddInvitationToUsers < ActiveRecord::Migration
 
     # Create default admin user
     user = User.create do |u|
+      email = APP_CONFIG[:admin_email]
+      
       u.login = 'admin'
       u.password = u.password_confirmation = 'chester'
-      u.email = APP_CONFIG[:admin_email]
+      u.email = email
+      u.invitation = Invitation.create!(:recipient_email => email)
     end
     # Activate user
     user.register!
@@ -19,6 +22,7 @@ class AddInvitationToUsers < ActiveRecord::Migration
     super_admin_role = Role.create(:name => 'super_admin')
     user.roles << super_admin_role
   end
+    
 
   def self.down
     remove_column :users, :invitation_limit
