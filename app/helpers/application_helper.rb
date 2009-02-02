@@ -20,4 +20,8 @@ module ApplicationHelper
     messages
   end
   
+  def signup_request?
+    controller.controller_name.match(/users/) && controller.action_name.match(/(new|create)/)
+  end
+  
 end

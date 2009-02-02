@@ -14,19 +14,19 @@ describe UsersController do
       response.should be_success
     end.should change(User, :count).by(1)
   end
-
   
   it 'signs up user in pending state' do
     create_user
     assigns(:user).reload
     assigns(:user).should be_pending
   end
-
+  
   it 'signs up user with activation code' do
     create_user
     assigns(:user).reload
     assigns(:user).activation_code.should_not be_nil
   end
+  
   it 'requires login on signup' do
     lambda do
       create_user(:login => nil)
@@ -50,7 +50,7 @@ describe UsersController do
       response.should be_success
     end.should_not change(User, :count)
   end
-
+  
   it 'requires email on signup' do
     lambda do
       create_user(:email => nil)
@@ -58,7 +58,6 @@ describe UsersController do
       response.should be_success
     end.should_not change(User, :count)
   end
-  
   
   it 'activates user' do
     User.authenticate('aaron', 'monkey').should be_nil
@@ -100,7 +99,9 @@ describe UsersController do
 end
 
 describe UsersController do
+  
   describe "route generation" do
+    
     it "should route users's 'index' action correctly" do
       route_for(:controller => 'users', :action => 'index').should == "/users"
     end
@@ -128,9 +129,11 @@ describe UsersController do
     it "should route users's 'destroy' action correctly" do
       route_for(:controller => 'users', :action => 'destroy', :id => '1').should == "/users/1"
     end
+
   end
   
   describe "route recognition" do
+
     it "should generate params for users's index action from GET /users" do
       params_from(:get, '/users').should == {:controller => 'users', :action => 'index'}
       params_from(:get, '/users.xml').should == {:controller => 'users', :action => 'index', :format => 'xml'}
@@ -170,9 +173,11 @@ describe UsersController do
       params_from(:delete, '/users/1.xml').should == {:controller => 'users', :action => 'destroy', :id => '1', :format => 'xml'}
       params_from(:delete, '/users/1.json').should == {:controller => 'users', :action => 'destroy', :id => '1', :format => 'json'}
     end
+    
   end
   
   describe "named routing" do
+    
     before(:each) do
       get :new
     end
@@ -198,6 +203,7 @@ describe UsersController do
     it "should route edit_user_path(:id => '1') to /users/1/edit" do
       edit_user_path(:id => '1').should == "/users/1/edit"
     end
+    
   end
   
 end

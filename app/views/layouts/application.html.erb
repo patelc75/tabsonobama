@@ -35,11 +35,10 @@
 <%=render :partial => "/users/pop_login_form" %>
 </div>
 
-<% # only show signup button for signup popup if not signup url %>
-<% unless (controller.controller_name == "users" && controller.action_name == "new") %>
-<div id="pop_signup">
-<%=render :partial => "/users/pop_signup_form" %>
-</div>
+<% unless signup_request? %>
+  <div id="pop_signup">
+    <%=render :partial => "/users/pop_signup_form" %>
+  </div>
 <% end %>
 
 <div id="pop_forgot_password">

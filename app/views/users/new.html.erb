@@ -3,8 +3,9 @@
 <% form_for @user do |f| %>
   <%= f.error_messages %>
   <div id="user_name_login">
-    <%= title "Sign Up.", :h1 %>
+    <%= title "Sign Up.", :h1 %>  
     <% fields_for "user[new_profile_attributes]", @profile do |profile_form| %>
+      <%= "#{controller.controller_name}/#{controller.action_name}" %>
       <%= title "First Name", :h2 %>
       <%= profile_form.text_field :first_name, :id => 'firstname' %>
       <%= title "Last Name", :h2 %>
