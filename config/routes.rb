@@ -22,7 +22,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :issue_groups, :as => :campaign_promise_groups
   map.resources :issue_sections, :as => :campaign_promise_sections
   map.resources :issue_bullets, :as => :campaign_promise_bullets
-  map.resources :invitations
+  map.resources :invitations, :only => [:new, :create]
   
   # Custom routes for cabinet, weekly, and campaign promises
   map.connect 'campaign-promises', :controller => "issue_groups"
