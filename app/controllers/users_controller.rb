@@ -80,9 +80,9 @@ class UsersController < ApplicationController
     @user = User.new(attributes)
     if @user.valid?
       if @user.not_using_openid?
-        #if validate_recap(params, @user.errors)
+        if validate_recap(params, @user.errors)
           @user.register!
-        #end
+        end
       else
         @user.register_openid!
       end
