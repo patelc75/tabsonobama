@@ -3,7 +3,7 @@ ActionController::Routing::Routes.draw do |map|
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
-  map.signup '/signup', :controller => 'users', :action => 'new'
+  map.signup '/signup/:invitation_token', :controller => 'users', :action => 'new'
   map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate', :activation_code => nil
   map.forgot_password '/forgot_password', :controller => 'passwords', :action => 'new'
   map.change_password '/change_password/:reset_code', :controller => 'passwords', :action => 'reset'
@@ -22,6 +22,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :issue_groups, :as => :campaign_promise_groups
   map.resources :issue_sections, :as => :campaign_promise_sections
   map.resources :issue_bullets, :as => :campaign_promise_bullets
+  map.resources :invitations, :only => [:new, :create]
   
   # Custom routes for cabinet, weekly, and campaign promises
   map.connect 'campaign-promises', :controller => "issue_groups"

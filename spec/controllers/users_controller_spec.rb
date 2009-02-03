@@ -1,7 +1,7 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
 describe UsersController do
-  fixtures :users
+  fixtures :users, :invitations
   
   before(:each) do
     recaptcha_client = mock_model(ReCaptcha::Client, :validate => true, :last_error => "mock")
@@ -11,22 +11,22 @@ describe UsersController do
   it 'allows signup' do
     lambda do
       create_user
-      response.should be_redirect
+      response.should be_success
     end.should change(User, :count).by(1)
   end
-
   
   it 'signs up user in pending state' do
     create_user
     assigns(:user).reload
     assigns(:user).should be_pending
   end
-
+  
   it 'signs up user with activation code' do
     create_user
     assigns(:user).reload
     assigns(:user).activation_code.should_not be_nil
   end
+  
   it 'requires login on signup' do
     lambda do
       create_user(:login => nil)
@@ -50,7 +50,7 @@ describe UsersController do
       response.should be_success
     end.should_not change(User, :count)
   end
-
+  
   it 'requires email on signup' do
     lambda do
       create_user(:email => nil)
@@ -59,11 +59,10 @@ describe UsersController do
     end.should_not change(User, :count)
   end
   
-  
   it 'activates user' do
     User.authenticate('aaron', 'monkey').should be_nil
     get :activate, :activation_code => users(:aaron).activation_code
-    response.should redirect_to('/login')
+    # response.should redirect_to('/login')
     flash[:notice].should_not be_nil
     flash[:error ].should     be_nil
     User.authenticate('aaron', 'monkey').should == users(:aaron)
@@ -88,19 +87,27 @@ describe UsersController do
   end
   
   def create_user(options = {})
-    post :create, :user => { :login => 'quire', :email => 'quire@example.com',
-      :password => 'quire69', :password_confirmation => 'quire69' }.merge(options)
+    defaults = {
+      :login => 'quire', 
+      :email => 'quire@example.com',
+      :password => 'quire69', 
+      :password_confirmation => 'quire69',
+      :invitation => invitations(:quire_invitation)
+    }
+    post :create, :user => defaults.merge(options)
   end
 end
 
 describe UsersController do
+  
   describe "route generation" do
+    
     it "should route users's 'index' action correctly" do
       route_for(:controller => 'users', :action => 'index').should == "/users"
     end
     
     it "should route users's 'new' action correctly" do
-      route_for(:controller => 'users', :action => 'new').should == "/signup"
+      route_for(:controller => 'users', :action => 'new', :invitation_token => 'abc').should == "/signup/abc"
     end
     
     it "should route {:controller => 'users', :action => 'create'} correctly" do
@@ -122,9 +129,11 @@ describe UsersController do
     it "should route users's 'destroy' action correctly" do
       route_for(:controller => 'users', :action => 'destroy', :id => '1').should == "/users/1"
     end
+
   end
   
   describe "route recognition" do
+
     it "should generate params for users's index action from GET /users" do
       params_from(:get, '/users').should == {:controller => 'users', :action => 'index'}
       params_from(:get, '/users.xml').should == {:controller => 'users', :action => 'index', :format => 'xml'}
@@ -164,9 +173,11 @@ describe UsersController do
       params_from(:delete, '/users/1.xml').should == {:controller => 'users', :action => 'destroy', :id => '1', :format => 'xml'}
       params_from(:delete, '/users/1.json').should == {:controller => 'users', :action => 'destroy', :id => '1', :format => 'json'}
     end
+    
   end
   
   describe "named routing" do
+    
     before(:each) do
       get :new
     end
@@ -192,6 +203,7 @@ describe UsersController do
     it "should route edit_user_path(:id => '1') to /users/1/edit" do
       edit_user_path(:id => '1').should == "/users/1/edit"
     end
+    
   end
   
 end

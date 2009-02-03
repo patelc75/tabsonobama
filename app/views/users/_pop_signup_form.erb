@@ -87,6 +87,11 @@
 				</div>
 			</li>
 			<li>
+				<div>
+          <%= f.hidden_field :invitation_token %>
+				</div>
+			</li>
+			<li>
 				<div class="recaptcha">
 					<div id="reCAPTCHA"> 
 					  <%= get_captcha() %>
@@ -96,7 +101,7 @@
 			<li>
 				<div class="openidurl">
 					<!-- OpenID signup styled? -->
-					<img alt="openID" src="images/openid.jpg"/>
+					<%= image_tag('openid.jpg', :alt => 'openID' ) %>
 					<h3>Signup with OpenID</h3>
 					<label for="openid_url">OpenID URL:</label><br />
 					<%= text_field_tag :openid_url, params[:openid_url] || params['openid.identity'] %>

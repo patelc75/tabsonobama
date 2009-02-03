@@ -6,7 +6,7 @@ require File.dirname(__FILE__) + '/../spec_helper'
 include AuthenticatedTestHelper
 
 describe User do
-  fixtures :users
+  fixtures :users, :invitations
 
   describe 'being created' do
     before do
@@ -32,6 +32,13 @@ describe User do
       @user.reload
       @user.should be_pending
     end
+    
+    it 'starts with invitations' do
+      @creating_user.call
+      @user.reload
+      @user.invitation_limit.should > 0
+    end
+    
   end
 
   #
@@ -90,6 +97,23 @@ describe User do
     end.should_not change(User, :count)
   end
 
+  it 'requires invitation' do
+    lambda do
+      u = create_user(:invitation => nil)
+      u.errors.on(:invitation).should_not be_nil
+    end.should_not change(User, :count)
+  end
+  
+  it 'requires unique invitation' do
+    email = 'obama@tabsonobama.org'
+    invitation = Invitation.create(:recipient_email => email)
+    obama = create_user(:email => email, :invitation => invitation)
+    obama.should be_valid
+    imposter = create_user(:email => 'imposter@tabsonobama.org', :invitation => invitation)
+    imposter.should_not be_valid
+    imposter.should have(1).error_on(:invitation_id)
+  end
+  
   describe 'allows legitimate emails:' do
     ['foo@bar.com', 'foo@newskool-tld.museum', 'foo@twoletter-tld.de', 'foo@nonexistant-tld.qq',
      'r@a.wk', '1234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890-234567890@gmail.com',
@@ -291,9 +315,24 @@ describe User do
 
   end
   
+  # invitation virtual attr
+  it 'should set the invitation using its token' do
+    invitation_token = invitations(:quire_invitation).token
+    user = User.create(:invitation_token => invitation_token)
+    user.invitation_token.should == invitation_token
+  end
+  
 protected
   def create_user(options = {})
-    record = User.new({ :login => 'quire', :email => 'quire@example.com', :password => 'quire69', :password_confirmation => 'quire69' }.merge(options))
+    invitation = invitations(:quire_invitation)
+    defaults = {
+      :login => 'quire', 
+      :email => 'quire@example.com', 
+      :password => 'quire69', 
+      :password_confirmation => 'quire69',
+      :invitation => invitation
+    }
+    record = User.new(defaults.merge(options))
     record.register! if record.valid?
     record
   end

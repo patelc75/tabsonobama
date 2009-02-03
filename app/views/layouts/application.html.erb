@@ -35,9 +35,11 @@
 <%=render :partial => "/users/pop_login_form" %>
 </div>
 
-<div id="pop_signup">
-<%=render :partial => "/users/pop_signup_form" %>
-</div>
+<% unless signup_request? %>
+  <div id="pop_signup">
+    <%=render :partial => "/users/pop_signup_form" %>
+  </div>
+<% end %>
 
 <div id="pop_forgot_password">
 <%=render :partial => "/passwords/pop_forgot_form" %>

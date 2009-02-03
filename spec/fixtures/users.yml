@@ -1,4 +1,3 @@
-
 quentin:
   id:                        1
   login:                     quentin
@@ -11,6 +10,7 @@ quentin:
   activation_code:           
   activated_at:              <%= 5.days.ago.to_s :db %>
   state:                     active
+  invitation: quentin_invitation
       
 aaron:
   id:                        2
@@ -23,9 +23,8 @@ aaron:
   remember_token:            
   activation_code:           1b6453892473a467d07372d45eb05abc2031647a
   activated_at:              
-
   state:                     pending
-
+  invitation: aaron_invitation
 
 old_password_holder:
   id:                        3
@@ -34,9 +33,7 @@ old_password_holder:
   salt:                      7e3041ebc2fc05a40c60028e2c4901a81035d3cd
   crypted_password:          00742970dc9e6319f8019fd54864d3ea740f04b1 # test
   created_at:                <%= 1.days.ago.to_s :db %>
-
   activation_code:           
   activated_at:              <%= 5.days.ago.to_s :db %>
-
-
   state:                     active
+  invitation: salty_dog_invitation

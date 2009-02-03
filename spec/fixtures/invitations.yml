@@ -1,0 +1,15 @@
+quentin_invitation:
+  recipient_email: quentin@example.com
+  token: abc
+
+aaron_invitation:
+  recipient_email: aaron@example.com
+  token: def
+
+salty_dog_invitation:
+    recipient_email: salty_dog@example.com
+    token: ghi
+
+quire_invitation:
+    recipient_email: quire@example.com
+    token: jkl
