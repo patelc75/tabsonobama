@@ -12,6 +12,6 @@ class WeeklyRadioAddress < ActiveRecord::Base
   def self.featured
     promotion = Promotion.home_page.weekly_radio_address.first
     return promotion.item if promotion
-    return find(:first, :order => "rand()")
+    return find(:first, :order => "created_at desc")
   end
 end
