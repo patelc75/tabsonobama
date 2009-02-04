@@ -11,6 +11,10 @@
 					<div id="star-ratings-block-<%=issue_group.class.to_s%>-<%= issue_group.id %>" class="star-ratings-block">
 		 				<%= render :partial => 'ratings/rate', :locals => {:asset => issue_group} %>
 		 			</div>
+		 			<% promote_div_id = "promote-#{issue_group.class}-#{issue_group.id}" %>
+          <div id="<%= promote_div_id %>">
+            <%= render :partial => "/promotions/promote", :locals => {:item => issue_group, :update_div => promote_div_id} %>
+          </div>
 				</li>
 			<% end %>
  		</ul>
@@ -18,59 +22,26 @@
  		<!-- featured campaign promises -->
  		<div class="moreissues">
  			<%
-				# Pass the real values in later...
-				features = []
-				features << IssueGroup.find(:first, :conditions => ["name = 'Economy'"])
-				features << IssueGroup.find(:first, :conditions => ["name = 'Immigration'"])
-				features << IssueGroup.find(:first, :conditions => ["name = 'Civil Rights'"])
+				featured_groups = IssueGroup.featured
 			%>
  			<h3>Featured Campaign Promises</h3>
  			<ul id="featured">
- 				<li>
- 					Economy
- 					<ul class="issue">
- 						<li>
- 							Provide a Tax Cut for Working Families
- 							<blockquote>
- 								<p>&quot;Obama and Biden will restore  fairness to the tax code and provide 150 million workers the tax relief they need...&quot; <a href="#">continued...</a></p>
- 							</blockquote>
-			 				<div id="star-ratings-block-<%= features[0].class.to_s %>-<%= features[0].id %>" class="star-ratings-block">
-				 				<%= render :partial => 'ratings/rate', :locals => {:asset => features[0]} %>
-				 			</div>
-				 			<br class="clear" />
- 						</li>
- 					</ul>
- 				</li>
- 				<li>
- 					Immigration
- 					<ul class="issue">
- 						<li>
- 							Create Secure Borders
-	 						<blockquote>
- 								<p>&quot;Obama and Biden want to preserve the integrity of our borders...&quot; <a href="#">continued...</a></p>
- 							</blockquote>			 				
-			 				<div id="star-ratings-block-<%= features[1].class.to_s %>-<%= features[1].id %>" class="star-ratings-block">
-				 				<%= render :partial => 'ratings/rate', :locals => {:asset => features[1]} %>
-				 			</div>
-				 			<br class="clear" />
-							</li>
- 					</ul>
- 				</li>
- 				<li>
- 					Civil Rights
- 					<ul class="issue">
- 						<li>
- 							End Racial Profiling
-		 					<blockquote>
- 								<p>&quot;Obama and Biden will enact federal law to stem racial profiling...&quot; <a href="#">continued...</a></p>
- 							</blockquote>			 				
-			 				<div id="star-ratings-block-<%= features[2].class.to_s %>-<%= features[2].id %>" class="star-ratings-block">
-				 				<%= render :partial => 'ratings/rate', :locals => {:asset => features[2]} %>
-				 			</div>
-				 			<br class="clear" />
- 						</li>
- 					</ul>
- 				</li>
+ 			  <% featured_groups.each do |featured| %>
+   				<li>
+   				  <%= link_to featured.name, "/campaign-promises/#{featured.permalink}" %>
+   					<ul class="issue">
+   						<li>
+   							<blockquote>
+   						    <p>&quot;<%= truncate(h(featured.description), :length => 80) %>&quot;</p>
+   							</blockquote>
+  			 				<div id="star-ratings-block-<%= featured.class.to_s %>-<%= featured.id %>" class="star-ratings-block">
+  				 				<%= render :partial => 'ratings/rate', :locals => {:asset => featured} %>
+  				 			</div>
+  				 			<br class="clear" />
+   						</li>
+   					</ul>
+   				</li>
+   			<% end %>
  			</ul>
  		</div>
  		
