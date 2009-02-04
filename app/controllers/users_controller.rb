@@ -81,6 +81,7 @@ class UsersController < ApplicationController
     @user = User.new(attributes)
     if @user.valid?
       if @user.not_using_openid?
+		# $stderr.puts "\n DEBUG DEBUG DEBUG \n #{params[:recaptcha_challenge_field]} \n #{params[:recaptcha_response_field]} \n DEBUG DEBUG DEBUG \n"
         if validate_recap(params, @user.errors)
           @user.register!
         end
@@ -88,7 +89,7 @@ class UsersController < ApplicationController
         @user.register_openid!
       end
     end
-    
+	
     if @user.errors.empty?
       successful_creation(@user)
     else
