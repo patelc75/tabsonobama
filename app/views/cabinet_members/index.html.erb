@@ -5,38 +5,40 @@
 <% else %>
   <!-- cabinet -->
   <div class="box">
-   	<h1>Cabinet</h1>
-   	<hr />
-
-    <div id="cabinetlist">
-      <ul class="mainlist">
-        <% @cabinet_members.each do |c| %>
-          <li class="mainlist">				
-          <div class="phototitlerate">
-          	<div class="cabinetphoto">						
-          		<img alt="<%=c.nominee%>" src="<%=c.image_link%>" width="75px" />
-          		<h5><%= link_to c.nominee, "cabinet-members/#{c.permalink}" %><h5>
-          	</div>
-          	<div class="titlerate">
-          	</div>
-          	<h3><%=c.office%></h3>
-          	<h4><%= c.department %></h4>
-          	<br>	
-          	<div id="star-ratings-block-<%= c.class.to_s %>-<%= c.id %>" class="star-ratings-block">
-          		<%= render :partial => 'ratings/rate', :locals => {:asset => c, :align => "left"} %>
-          	</div>
-          </div>
-          <% promote_div_id = "promote-#{c.class}-#{c.id}" %>
-          <div id="<%= promote_div_id %>">
-            <%= render :partial => "/promotions/promote", :locals => {:item => c, :update_div => promote_div_id} %>
-          </div>
-          <br class="clear" />
-          <br class="clear"/>
-          </li>
-        <% end %>
-      </ul>
-    </div> <!-- /cabinetlist -->
-    <br class="clear" />
-    <br class="clear"/>
+  	<div class="boxcontent">
+	   	<h1>Cabinet</h1>
+	   	<hr />
+	
+	    <div id="cabinetlist">
+	      <ul class="mainlist">
+	        <% @cabinet_members.each do |c| %>
+	          <li class="mainlist">				
+	          <div class="phototitlerate">
+	          	<div class="cabinetphoto">						
+	          		<img alt="<%=c.nominee%>" src="<%=c.image_link%>" width="75px" />
+	          		<h5><%= link_to c.nominee, "cabinet-members/#{c.permalink}" %><h5>
+	          	</div>
+	          	<div class="titlerate">
+	          	</div>
+	          	<h3><%=c.office%></h3>
+	          	<h4><%= c.department %></h4>
+	          	<br>	
+	          	<div id="star-ratings-block-<%= c.class.to_s %>-<%= c.id %>" class="star-ratings-block">
+	          		<%= render :partial => 'ratings/rate', :locals => {:asset => c, :align => "left"} %>
+	          	</div>
+	          </div>
+	          <% promote_div_id = "promote-#{c.class}-#{c.id}" %>
+	          <div id="<%= promote_div_id %>">
+	            <%= render :partial => "/promotions/promote", :locals => {:item => c, :update_div => promote_div_id} %>
+	          </div>
+	          <br class="clear" />
+	          <br class="clear"/>
+	          </li>
+	        <% end %>
+	      </ul>
+	    </div> <!-- /cabinetlist -->
+	    <br class="clear" />
+	    <br class="clear"/>
+    </div>
   </div> <!-- /box -->
 <% end %>
