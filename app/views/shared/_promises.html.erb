@@ -25,6 +25,7 @@
 				featured_groups = IssueGroup.featured
 			%>
  			<h3>Featured Campaign Promises</h3>
+ 			<% if !featured_groups.nil? %>
  			<ul id="featured">
  			  <% featured_groups.each do |featured| %>
    				<li>
@@ -41,6 +42,7 @@
    						</li>
    					</ul>
    				</li>
+   			  <% end %>
    			<% end %>
  			</ul>
  		</div>

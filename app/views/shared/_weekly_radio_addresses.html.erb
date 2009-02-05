@@ -13,11 +13,13 @@
  		<div class="featured more">
  			<div class="meta">
 	 			<h3>Featured Radio Address</h3>
- 				<% weekly_radio_address = WeeklyRadioAddress.featured %>
- 				<h4><%= "#{weekly_radio_address.timestamp.strftime("%B %d %Y")} - #{weekly_radio_address.description}" %></h4>
- 				<div id="star-ratings-block-<%= weekly_radio_address.class.to_s %>-<%= weekly_radio_address.id %>" class="star-ratings-block">
-					<%= render :partial => 'ratings/rate', :locals => {:asset => weekly_radio_address, :align => 'left'} %>
-				</div> 	
+	 			 	<% weekly_radio_address = WeeklyRadioAddress.featured %>
+	 			 	<% if !weekly_radio_address.nil? %>
+		 				<h4><%= "#{weekly_radio_address.timestamp.strftime("%B %d %Y")} - #{weekly_radio_address.description}" %></h4>
+		 				<div id="star-ratings-block-<%= weekly_radio_address.class.to_s %>-<%= weekly_radio_address.id %>" class="star-ratings-block">
+							<%= render :partial => 'ratings/rate', :locals => {:asset => weekly_radio_address, :align => 'left'} %>
+						</div>
+					<% end %> 	
 	 		</div>
 	 		<div class="photo">
 	 			<img src="/images/radio.jpg" />

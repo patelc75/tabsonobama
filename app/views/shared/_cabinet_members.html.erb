@@ -17,10 +17,12 @@
  			<div class="meta">
 	 			<h3>Featured Cabinet Member</h3>
  				<% cabinet_member = CabinetMember.featured %>
- 				<h4><%= cabinet_member.nominee %></h4>
- 				<div id="star-ratings-block-<%= cabinet_member.class.to_s %>-<%= cabinet_member.id %>" class="star-ratings-block">
-					<%= render :partial => 'ratings/rate', :locals => {:asset => cabinet_member, :align => 'left'} %>
-				</div>
+ 				<% if !cabinet_member.nil? %>
+	 				<h4><%= cabinet_member.nominee %></h4>
+	 				<div id="star-ratings-block-<%= cabinet_member.class.to_s %>-<%= cabinet_member.id %>" class="star-ratings-block">
+						<%= render :partial => 'ratings/rate', :locals => {:asset => cabinet_member, :align => 'left'} %>
+					</div>
+				<% end %>
 	 		</div>
 	 		<div class="photo">
 	 			<img alt="<%= cabinet_member.nominee %>" src="<%= cabinet_member.image_link %>" />
