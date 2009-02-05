@@ -79,12 +79,14 @@ class UsersController < ApplicationController
   
   def create_new_user(attributes)
     @user = User.new(attributes)
+    RAILS_DEFAULT_LOGGER.info "@user.login: #{@user.login} enter User.create_new_user"
     if @user.valid?
+      RAILS_DEFAULT_LOGGER.info "@user.login #{@user.login} passed @user.valid?"
       if @user.not_using_openid?
-		# $stderr.puts "\n DEBUG DEBUG DEBUG \n #{params[:recaptcha_challenge_field]} \n #{params[:recaptcha_response_field]} \n DEBUG DEBUG DEBUG \n"
+		RAILS_DEFAULT_LOGGER.info "@user.login #{@user.login} passed @user.not_using_openid?"
+		#RAILS_DEFAULT_LOGGER.info "#{params[:recaptcha_challenge_field} #{params[:recaptcha_response_field]}"
         if validate_recap(params, @user.errors)
           @user.register!
-        end
       else
         @user.register_openid!
       end
