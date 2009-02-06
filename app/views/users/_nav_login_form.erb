@@ -20,8 +20,7 @@
   </div>
   <div id="login-links">
     
-    <% # only show signup button for signup popup if not signup url %>
-    <% unless (controller.controller_name == "users" && controller.action_name == "new") %>
+    <% unless signup_request? %>
     	<li><a title="SignUp" href="/signup" onclick="tb_show('Dialog', '#TB_inline?height=600&width=400&inlineId=userSignup&modal=true', null); return false;"> Sign Up</li>
     <% end %>
     

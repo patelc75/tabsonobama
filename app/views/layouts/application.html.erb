@@ -25,7 +25,12 @@
 		</script>
 	</head>
 
+  <% if signup_request? %>
+  <body onload="tb_show('Dialog', '#TB_inline?height=600&width=400&inlineId=userSignup&modal=true', null); return false;">
+  <% else %>
 	<body>
+	<% end %>
+
 <div id="dialogID" style="display:none">
   <p>One vote per 24 hour period only.</p>
   <p style="text-align:center"><input type="submit" id="Login" value="&nbsp;&nbsp;Ok&nbsp;&nbsp;" onclick="tb_remove()" /></p>
@@ -35,11 +40,9 @@
 <%=render :partial => "/users/pop_login_form" %>
 </div>
 
-<% unless signup_request? %>
-  <div id="pop_signup">
-    <%=render :partial => "/users/pop_signup_form" %>
-  </div>
-<% end %>
+<div id="pop_signup">
+  <%=render :partial => "/users/pop_signup_form" %>
+</div>
 
 <div id="pop_forgot_password">
 <%=render :partial => "/passwords/pop_forgot_form" %>
