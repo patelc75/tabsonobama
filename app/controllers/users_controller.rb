@@ -85,8 +85,7 @@ class UsersController < ApplicationController
       if @user.not_using_openid?
 		RAILS_DEFAULT_LOGGER.info "@user.login #{@user.login} passed @user.not_using_openid?"
 		#RAILS_DEFAULT_LOGGER.info "#{params[:recaptcha_challenge_field} #{params[:recaptcha_response_field]}"
-        if validate_recap(params, @user.errors)
-          @user.register!
+          @user.register! if validate_recap(params, @user.errors)
       else
         @user.register_openid!
       end
