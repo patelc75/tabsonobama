@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-	
 	<head>
 	    <title>Keeping Tabs on Obama</title>
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -60,8 +59,10 @@
 	    	<div id="nav">
 	    		<ul>
 					<li class="home"><%= link_to "Home", { :controller => "home", :action => "index" } , { :title => "Home"} %></li>
-					<li><%= link_to "About", { :controller => "home", :action => "about" } , { :title => "About"} %></l>
-					<li><%= link_to "My Ratings", { :controller => "ratings", :action => "index" } , { :title => "My Ratings"} %></l>
+					<li><%= link_to "About", { :controller => "home", :action => "about" } , { :title => "About"} %></li>
+						
+			<li><%= link_to_remote "My Ratings", :update => "yield", :url => {:controller => 'ratings', :action => 'index'} %></li>
+					<!--%= link_to "My Ratings", { :controller => "ratings", :action => "index" } , { :title => "My Ratings"} %-->
 					<!--li><a title="Blog" href="#">Blog</a></li-->
 					<!--li><a title="Press" href="#">Press</a></li-->
 		        </ul>
@@ -79,7 +80,7 @@
       	   </div>
     	   <% end %>
  			  
-				<%= yield %>
+				<div id="yield"><%= yield %></div>
 			</div>
 
 			<div id="footer">
