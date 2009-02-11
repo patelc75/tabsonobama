@@ -8,25 +8,27 @@
   <div class="boxcontent">
     <h2>Rated Cabinet Members</h2>
     
-    <% unless @members.empty? %>
-    
-      <% @members.uniq.each do |member| %>
-      <div class="featured more">
-        <div class="meta">
-          <h3><%= member.nominee %></h3>
-          <%= render :partial => 'ratings/user_rate', :locals => {:asset => member, :rater => current_user} %>
-        </div>
-        <div class="photo">
-          <img alt="<%= member.nominee %>" src="<%= member.image_link %>" />
-        </div>
-        <br class="clear" />
-      </div>
-      <% end %>
-    
+    <% if !@logged_in %>
+    	You must login to see your ratings or signup to start your ratings
     <% else %>
-      You have not rated any Cabinet Members
+	    <% unless @members.empty? %>
+	      <% @members.uniq.each do |member| %>
+	      <div class="featured more">
+	        <div class="meta">
+	          <h3><%= member.nominee %></h3>
+	          <%= render :partial => 'ratings/user_rate', :locals => {:asset => member, :rater => current_user} %>
+	        </div>
+	        <div class="photo">
+	          <img alt="<%= member.nominee %>" src="<%= member.image_link %>" />
+	        </div>
+	        <br class="clear" />
+	      </div>
+	      <% end %>
+	    
+	    <% else %>
+	      You have not rated any Cabinet Members
+	    <% end %>
     <% end %>
-    
     <br class="clear" />
   </div>
 </div>
@@ -35,23 +37,25 @@
 <div class="box">
   <div class="boxcontent">
     <h2>Rated Weekly Radio Addresses</h2>
-    
-    <% unless @addresses.empty? %>
-    
-      <% @addresses.uniq.each do |address| %>
-      <div class="featured more">
-        <div class="meta">
-          <h3><%= address.name %></h3>
-          <%= render :partial => 'ratings/user_rate', :locals => {:asset => address, :rater => current_user} %>
-        </div>
-        <br class="clear" />
-      </div>
-      <% end %>
-    
-    <% else %>
-      You have not rated any Weekly Radio Addresses
-    <% end %>
-    
+
+    <% if !@logged_in %>
+    	You must login to see your ratings or signup to start your ratings
+    <% else %>    
+	    <% unless @addresses.empty? %>
+	      <% @addresses.uniq.each do |address| %>
+	      <div class="featured more">
+	        <div class="meta">
+	          <h3><%= address.name %></h3>
+	          <%= render :partial => 'ratings/user_rate', :locals => {:asset => address, :rater => current_user} %>
+	        </div>
+	        <br class="clear" />
+	      </div>
+	      <% end %>
+	    
+	    <% else %>
+	      You have not rated any Weekly Radio Addresses
+	    <% end %>
+     <% end %>
     <br class="clear" />
   </div>
 </div>
@@ -60,23 +64,25 @@
 <div class="box">
   <div class="boxcontent">
     <h2>Rated Campaign Promises</h2>
-    
-    <% unless @groups.empty? %>
-      
-      <% @groups.uniq.each do |group| %>
-      <div class="featured more">
-        <div class="meta">
-          <h3><%= group.name %></h3>
-          <%= render :partial => 'ratings/user_rate', :locals => {:asset => group, :rater => current_user} %>
-        </div>
-        <br class="clear" />
-      </div>
-      <% end %>
-    
-    <% else %>
-      You have not rated any campaign promises
-    <% end %>
-    
+
+    <% if !@logged_in %>
+    	You must login to see your ratings or signup to start your ratings
+    <% else %>       
+	    <% unless @groups.empty? %>
+	      <% @groups.uniq.each do |group| %>
+	      <div class="featured more">
+	        <div class="meta">
+	          <h3><%= group.name %></h3>
+	          <%= render :partial => 'ratings/user_rate', :locals => {:asset => group, :rater => current_user} %>
+	        </div>
+	        <br class="clear" />
+	      </div>
+	      <% end %>
+	    
+	    <% else %>
+	      You have not rated any campaign promises
+	    <% end %>
+    <% end %>    
     <br class="clear" />
   </div>
 </div>
