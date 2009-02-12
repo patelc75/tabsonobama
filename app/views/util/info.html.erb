@@ -15,7 +15,6 @@ Email delivery method: <code><%= ActionMailer::Base.delivery_method %></code><br
 SMTP server: <code> <%= ActionMailer::Base.smtp_settings[:address] %></code><br>
 Ruby: <code> <%= "#{RUBY_VERSION} (#{RUBY_RELEASE_DATE}) on #{RUBY_PLATFORM}" %> </code><br>
 Rails: <code> <%= "#{Rails::VERSION::STRING}" %> </code><br>
-<!--not sure why git --version is not working-->
 Git: <code><%= `/usr/local/bin/git --version` %></code><br>
 <br>
 
