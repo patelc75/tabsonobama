@@ -1,6 +1,7 @@
 <!-- See http://corelib.rubyonrails.org/classes/CGI.html for more environment variables -->
 UNIX hostname: <code><%= `hostname` %></code><br>
 System Datetime: <code><%= `date` %></code><br>
+Git Revision: <code><%= `cd ~/stagingtabs; /usr/local/bin/git describe` %></code><br>
 <br>
 <b>Network</b><br>
 SERVER_ADDR: <code><%= request.env["SERVER_ADDR"].to_s %></code> <br>
@@ -15,6 +16,6 @@ SMTP server: <code> <%= ActionMailer::Base.smtp_settings[:address] %></code><br>
 Ruby: <code> <%= "#{RUBY_VERSION} (#{RUBY_RELEASE_DATE}) on #{RUBY_PLATFORM}" %> </code><br>
 Rails: <code> <%= "#{Rails::VERSION::STRING}" %> </code><br>
 <!--not sure why git --version is not working-->
-Git: <code><%= `git --version` %></code><br>
+Git: <code><%= `/usr/local/bin/git --version` %></code><br>
 <br>
 
