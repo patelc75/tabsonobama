@@ -6,6 +6,6 @@ class Promotion < ActiveRecord::Base
   named_scope :index_page, :conditions => {:index_page => true}, :order => "created_at DESC"
   
   named_scope :cabinet_member, :conditions => {:item_type => "CabinetMember"}, :limit => 1
-  named_scope :issue_group, :conditions => {:item_type => "IssueGroup"}, :limit => 3
+  named_scope :issue_bullet, :conditions => {:item_type => "IssueBullet"}, :limit => 3
   named_scope :weekly_radio_address, :conditions => {:item_type => "WeeklyRadioAddress"}, :limit => 1
 end
