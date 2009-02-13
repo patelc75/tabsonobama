@@ -123,11 +123,7 @@ class UsersController < ApplicationController
   end
   
   def authorized?
-    logged_in? && super_admin?
+    logged_in? && current_user.is_super_admin?
   end
   
-  def super_admin?
-    super_admin_role = Role.find_by_name('super_admin')
-    current_user.roles.include?(super_admin_role)
-  end
 end
