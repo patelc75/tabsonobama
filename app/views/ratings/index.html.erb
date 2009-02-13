@@ -45,7 +45,7 @@
 	      <% @addresses.uniq.each do |address| %>
 	      <div class="featured more">
 	        <div class="meta">
-	          <h3><%= "#{@address.timestamp.strftime("%B %d %Y")}" %></h3>
+	          <h3><%= "#{address.timestamp.strftime("%B %d %Y")}" %></h3>
 	          <%= render :partial => 'ratings/user_rate', :locals => {:asset => address, :rater => current_user} %>
 	        </div>
 	        <br class="clear" />

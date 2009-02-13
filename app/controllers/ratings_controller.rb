@@ -14,7 +14,7 @@ class RatingsController < ApplicationController
     	@addresses = []
     	@groups = []
 	end
-	render :partial => 'myratings' 
+	#render :partial => 'myratings' 
   end
     
   def rate
