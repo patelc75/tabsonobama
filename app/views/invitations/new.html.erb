@@ -1,4 +1,6 @@
-<h1>New invitation</h1>
+<div class="box">
+<div class="boxcontent">
+<h1>Send an invitation</h1>
 
 <% form_for(@invitation) do |f| %>
   <%= f.error_messages %>
@@ -9,6 +11,8 @@
   <p>
     <%= f.submit "Invite!" %>
     or
-    <%= link_to 'cancel', invitations_path %>
+    <%= link_to 'cancel', :controller => "home", :action => "index" %>
   </p>
 <% end %>
+</div>
+</div>

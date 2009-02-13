@@ -1,12 +1,13 @@
 <%= stylesheet_link_tag "signup" %>
 <% @user.password = @user.password_confirmation = nil %>
-
+<div class="box">
+<div class="boxcontent">
 <% form_for @user do |f| %>
   <div id="user_name_login">
     <h1><%= f.error_messages %></h1>
     <%= title "Sign Up.", :h1 %>  
     <% fields_for "user[new_profile_attributes]", @profile do |profile_form| %>
-      <%= title "First Name", :h2 %>
+      <!--%= title "First Name", :h2 %--> First Name
       <%= profile_form.text_field :first_name, :id => 'firstname' %>
       <%= title "Last Name", :h2 %>
       <%= profile_form.text_field :last_name, :id => 'lastname' %>
@@ -43,3 +44,5 @@
     <%= submit_tag 'Sign up', :class => 'button' %>
   </div>
 <% end %>
+</div>
+</div>
