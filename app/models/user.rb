@@ -18,7 +18,11 @@ class User < ActiveRecord::Base
   attr_accessible :new_profile_attributes, :updated_roles, :invitation_token, :invitation
   
   def is_admin?
-    roles.include?(Role.admin_role)
+    self.roles.include?(Role.admin_role)
+  end
+  
+  def is_super_admin?
+    self.roles.include?(Role.super_admin_role)
   end
   
   def new_profile_attributes=(profile_attributes)
@@ -56,6 +60,6 @@ class User < ActiveRecord::Base
   
 private
   def set_invitation_limit
-    self.invitation_limit = 5
+    self.invitation_limit = self.is_super_admin? ? 5 : 0
   end
 end
