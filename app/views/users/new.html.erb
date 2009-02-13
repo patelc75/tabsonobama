@@ -4,8 +4,8 @@
 =begin
 %>
 <% form_for @user do |f| %>
-  <%= f.error_messages %>
   <div id="user_name_login">
+    <h1><%= f.error_messages %></h1>
     <%= title "Sign Up.", :h1 %>  
     <% fields_for "user[new_profile_attributes]", @profile do |profile_form| %>
       <%= title "First Name", :h2 %>

@@ -11,7 +11,7 @@
 			<%user.errors.each do |e| %>
 				<%=e%>
 			<%end%>
-		<%end%>
+		<%end%>`
 	<%end%>
 	<a onclick="tb_remove();"> Close</a>
 	</div>  
@@ -85,8 +85,6 @@
 					<label for="password">Re-enter Password:</label><br />
 					<%= f.password_field :password_confirmation, :id => 'password' %>
 				</div>
-			</li>
-			<li>
 				<div>
 					<%= f.hidden_field :invitation_token %>
 				</div>
