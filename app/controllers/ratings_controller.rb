@@ -1,7 +1,6 @@
 class RatingsController < ApplicationController
   before_filter :get_class_by_name, :only => [:rate]
-  
-  #before_filter :login_required, :only => [:index]
+  before_filter :login_required, :only => [:index]
 
   def index
   	if logged_in?
@@ -38,7 +37,7 @@ class RatingsController < ApplicationController
         page.replace_html "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}", :partial => "rate", :locals => { :asset => rateable }
         page.visual_effect :highlight, "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}"
         unless logged_in?
-          page << "tb_show('Dialog', '#TB_inline?height=325&width=400&inlineId=userLogin&modal=true', null);"
+          page << "tb_show('Dialog', '#TB_inline?height=150&width=200&inlineId=loginID&modal=true', null);"
         end
       end
     else

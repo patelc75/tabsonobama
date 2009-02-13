@@ -1,8 +1,6 @@
 <%= stylesheet_link_tag "signup" %>
 <% @user.password = @user.password_confirmation = nil %>
-<%
-=begin
-%>
+
 <% form_for @user do |f| %>
   <div id="user_name_login">
     <h1><%= f.error_messages %></h1>
@@ -45,6 +43,3 @@
     <%= submit_tag 'Sign up', :class => 'button' %>
   </div>
 <% end %>
-<%
-=end
-%>
