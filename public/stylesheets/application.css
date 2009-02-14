@@ -367,6 +367,7 @@ ul#featured li ul.issue li {
 		font-size: 0.9em;
 		line-height: 1.1em;
 		font-weight: normal;
+		margin: 0px 25px 0px 0;
 }
 
 ul#featured li ul.issue li blockquote {

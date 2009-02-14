@@ -61,10 +61,11 @@
 	    	
 			<div id="content">
 			  <% if flash[:notice] %>
-      	   <div id="notice">
+      	   <div id="notice" style="float:right">
       	     <%= flash[:notice] %>
              <a id="close-notice" href='#'>X</a>
       	   </div>
+      	   <br><br>
     	   <% end %>
  			  
 				<div id="yield"><%= yield %></div>

@@ -16,7 +16,9 @@
 	      <div class="featured more">
 	        <div class="meta">
 	          <h3><%= member.nominee %></h3>
-	          <%= render :partial => 'ratings/user_rate', :locals => {:asset => member, :rater => current_user} %>
+	          <div class="star-ratings-block">
+				<%= render :partial => 'ratings/user_rate', :locals => {:asset => member, :rater => current_user} %>
+		 	  </div>
 	        </div>
 	        <div class="photo">
 	          <img alt="<%= member.nominee %>" src="<%= member.image_link %>" />
@@ -46,7 +48,9 @@
 	      <div class="featured more">
 	        <div class="meta">
 	          <h3><%= "#{address.timestamp.strftime("%B %d %Y")}" %></h3>
+	          <div class="star-ratings-block">
 	          <%= render :partial => 'ratings/user_rate', :locals => {:asset => address, :rater => current_user} %>
+	          </div>
 	        </div>
 	        <br class="clear" />
 	      </div>
@@ -73,7 +77,9 @@
 	      <div class="featured more">
 	        <div class="meta">
 	          <h3><%= group.name %></h3>
+	         <div class="star-ratings-block">
 	          <%= render :partial => 'ratings/user_rate', :locals => {:asset => group, :rater => current_user} %>
+	          </div>
 	        </div>
 	        <br class="clear" />
 	      </div>
