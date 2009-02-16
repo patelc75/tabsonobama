@@ -5,6 +5,7 @@
 		background: #FFF url('/images/boxtop.gif') no-repeat top left;
 }
 
+
 .box h2 {
 		margin: 0 0 5px 0;
 		color: #db2a3a;	
@@ -14,6 +15,10 @@
 		min-height: 10px;
 		padding: 5px 15px 10px 15px;
 		background: #FFF url('/images/boxbottom.gif') no-repeat bottom left;
+}
+
+.boxcontent h1 {
+		margin: 0px;
 }
 
 .boxcontent h3 {
@@ -40,25 +45,33 @@
 }
 
 .plans ul {
-		/*margin: 15px 0;*/
 		list-style: none;
 }
 
+.plans ul li {
+		margin: 0px 25px 0px 0;
+		width:700px;
+}
+
+.plans ul li .text {
+		float: left;
+		width: 535px;
+}
+
+.plans ul li .rating ul {
+		margin: 0;
+}
+
+.plans ul li .rating ul li {
+		width: auto;
+}
+ 
 .bullets-list {
 		margin: 15px 35px;
 }
 
 .plans ul li ul li {
-		margin: 10px 35px 10px 0;
 		width: 665px;
-}
-
-.plans ul li ul li .rating ul {
-		margin: 0;
-}
-
-.plans ul li ul li .rating ul li {
-		width: auto;
 }
 
 .plans ul li ul li .text {
