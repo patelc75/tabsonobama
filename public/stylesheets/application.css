@@ -51,6 +51,10 @@ h2 a, h2 a:active, h2 a:link, h2 a:visited {
 		font-weight: normal;
 }
 
+h4 {
+		margin: 4px 0;
+}
+
 a, a:active, a:link, a:visited {
         border-bottom: none;
         color: #2575AD;
@@ -246,7 +250,7 @@ a:active{
 
 .more {
 		width: 403px;
-		border-left: 2px solid #f2f2f2;
+		border-left: 1px solid #004382;
 		padding: 0 20px;
 }
 
@@ -269,7 +273,7 @@ a:active{
 }
 
 .more h3 {
-		margin-bottom: 10px;
+		margin-bottom: 3px;
 		font-size: 1.5em;
 		line-height: 1.0em;
 }
@@ -316,6 +320,7 @@ ul.issues {
 		margin: 10px 0;
 		padding: 5px 0px;
 		list-style: none;
+		border-right: 1px solid #004382;
 }
 
 ul.issues li {
@@ -337,7 +342,7 @@ ul.issues h3 {
 		width: 248px;
 		margin: 10px 0;
 		padding: 5px 20px;
-		border-left: 2px solid #f2f2f2;
+		/*border-left: 2px solid #004382;*/
 }
 
 .boxcontent div.moreissues h3 {
