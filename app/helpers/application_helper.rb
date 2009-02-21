@@ -1,4 +1,4 @@
-require 'recaptcha'
+require 'ruby-recaptcha'
 include ReCaptcha::ViewHelper
 
 module ApplicationHelper

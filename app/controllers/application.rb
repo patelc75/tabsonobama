@@ -1,4 +1,4 @@
-gem 'recaptcha'
+gem 'ruby-recaptcha'
 
 class ApplicationController < ActionController::Base
   include AuthenticatedSystem

@@ -48,4 +48,4 @@
 	url = git://github.com/jasherai/acts-as-rated.git
 [submodule "vendor/plugins/action_mailer_tls"]
 	path = vendor/plugins/action_mailer_tls
-	url = git://github.com/caritos/action_mailer_tls.git
+	url = git://github.com/thincloud/action_mailer_tls.git

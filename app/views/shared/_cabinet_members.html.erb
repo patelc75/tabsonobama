@@ -25,7 +25,9 @@
 				<% end %>
 	 		</div>
 	 		<div class="photo">
+	 			<% if !cabinet_member.nil? %>
 	 			<img alt="<%= cabinet_member.nominee %>" src="<%= cabinet_member.image_link %>" />
+	 			<% end %>
 	 		</div>
  			<br class="clear" />
  		</div>
