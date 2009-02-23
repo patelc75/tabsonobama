@@ -249,7 +249,7 @@ a:active{
 }
 
 .more {
-		width: 403px;
+		width: 325px;
 		border-left: 1px solid #004382;
 		padding: 0 20px;
 }
@@ -269,7 +269,7 @@ a:active{
 .featured h3 {
 		display: block;
 		float: left;
-		width: 285px;
+		width: 235px;
 }
 
 .more h3 {
@@ -289,7 +289,7 @@ a:active{
 
 .more .meta {
 		float: left;
-		width: 307px;
+		width: 230px;
 }
 
 .more .meta .star-ratings-block {
