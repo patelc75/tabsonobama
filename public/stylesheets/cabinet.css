@@ -67,6 +67,9 @@ a:active{
 		width: 180px;
 		
 }
+.titlerate.single{
+		width: 500px;
+}
 .titleratecabinet{
 		float: left;
 		width: 180px;
@@ -119,6 +122,10 @@ br.clear {
 	width: 450px;
 	height: 200px;
 } 
+
+#cabinetlist ul.mainlist li.mainlist.single {
+	width: 770px;
+}
 
 #idc-container-parent {
 	margin: 0 50px;
