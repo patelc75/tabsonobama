@@ -22,7 +22,7 @@
         <% end -%>
     </ul>
   </div>
-  <div align="<%= align %>" style="color: gray;<%= align == 'left' ? ' padding-left: 3px;' : '' %>">
+  <div align="<%= align %>" style="color: gray;">
   	Average <%= number_with_precision(asset.rating_average, :precision => 1) %> (<%= asset.rated_count %> votes)
   </div>
   <% if (asset.class.name == "WeeklyRadioAddress" || asset.class.name == "CabinetMember" || asset.class.name == "IssueBullet") %>

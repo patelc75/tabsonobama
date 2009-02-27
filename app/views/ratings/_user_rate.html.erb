@@ -17,7 +17,11 @@
       <% end -%>
   </ul>
 </div>
-<div align="<%= defined?(align) ? align : 'right' %>" style="color: gray;">
-  <%= number_with_precision(avg, :precision => 1) %>/5 Stars (<%= count %> votes)
-</div>
-<br />
+  <div align="<%= defined?(align) ? align : 'right' %>" style="color: gray;">
+  	Average <%= number_with_precision(asset.rating_average, :precision => 1) %> (<%= asset.rated_count %> votes)
+  </div>
+  <% if (asset.class.name == "WeeklyRadioAddress" || asset.class.name == "CabinetMember" || asset.class.name == "IssueBullet") %>
+  <div align="<%= defined?(align) ? align : 'right' %>" class="comments"><%= link_to "Comments", "#{asset.class.name.pluralize.underscore.dasherize}/#{asset.permalink}" %></div>
+  <% else %>
+  <div class="comments"></div>
+  <% end %>

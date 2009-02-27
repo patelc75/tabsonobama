@@ -19,7 +19,7 @@
 	        <div class="meta">
 	          <h3><%= member.nominee %></h3>
 	          <div class="star-ratings-block">
-				<%= render :partial => 'ratings/user_rate', :locals => {:asset => member, :rater => current_user} %>
+				<%= render :partial => 'ratings/user_rate', :locals => {:asset => member, :rater => current_user, :align => "left"} %>
 		 	  </div>
 	        </div>
 	        <div class="photo">
@@ -55,7 +55,7 @@
 	          <h3><%= "#{address.timestamp.strftime("%B %d %Y")}" %></h3>
 	          <h4><%= "#{address.description}" %></h4>
 	          <div class="star-ratings-block">
-	          <%= render :partial => 'ratings/user_rate', :locals => {:asset => address, :rater => current_user} %>
+	          <%= render :partial => 'ratings/user_rate', :locals => {:asset => address, :rater => current_user, :align => "left"} %>
 	          </div>
 	        </div>
 	        <br class="clear" />

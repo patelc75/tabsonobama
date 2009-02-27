@@ -543,7 +543,7 @@ br.clear {
 
 .comments {
 	color:gray;
-	padding-left:3px;
+	/*padding-left:3px;*/
 	text-align: auto;;
 }
 
