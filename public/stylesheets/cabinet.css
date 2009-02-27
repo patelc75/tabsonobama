@@ -28,18 +28,6 @@ h2 a, h2 a:active, h2 a:link, h2 a:visited {
 		font-weight: normal;
 }
 
-a, a:active, a:link, a:visited {
-        border-bottom: none;
-        color: #2575AD;
-        font-weight: bold;
-        text-decoration: none;
-}
-
-a:hover {
-        border-bottom: none;
-        color: #ac3433;
-}
-
 p {
 		margin: 15px 0;
 }

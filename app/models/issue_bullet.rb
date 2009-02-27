@@ -1,6 +1,7 @@
 class IssueBullet < ActiveRecord::Base
   acts_as_rated
   belongs_to :issue_section
+  belongs_to :issue_group
 
   include Promotable
   has_one :promotion, :as => :item, :dependent => :destroy

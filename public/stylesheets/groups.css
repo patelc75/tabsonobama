@@ -14,6 +14,7 @@
 .box div.boxcontent {
 		min-height: 10px;
 		padding: 5px 15px 10px 15px;
+		padding-left: 80px;
 		background: #FFF url('/images/boxbottom.gif') no-repeat bottom left;
 }
 
@@ -28,9 +29,10 @@
 		line-height: 1.0em;
 }
 
-.boxcontent a {
+.boxcontent {
 		color: #004382;
 		font-weight: normal;
+
 }
 
 

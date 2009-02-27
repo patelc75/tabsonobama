@@ -1,4 +1,5 @@
 <%= stylesheet_link_tag "signup" %>
+
 <% @user.password = @user.password_confirmation = nil %>
 <div class="box">
 <div class="boxcontent">
@@ -6,43 +7,33 @@
   <div id="user_name_login">
     <h1><%= f.error_messages %></h1>
     <%= title "Sign Up.", :h1 %>  
+    <table>
     <% fields_for "user[new_profile_attributes]", @profile do |profile_form| %>
-      <!--%= title "First Name", :h2 %--> First Name
-      <%= profile_form.text_field :first_name, :id => 'firstname' %>
-      <%= title "Last Name", :h2 %>
-      <%= profile_form.text_field :last_name, :id => 'lastname' %>
-      <%= title "Zipcode", :h2 %>
-      <%= profile_form.text_field :zip, :id => 'zip' %>
-      <%= title "Country of Citizenship", :h2 %>
-      <%= render :partial => "country_select" %>
-      <%= title "What is your political affiliation?", :p %>
-      <%= profile_form.collection_select(:affiliation_id, Affiliation.all, :id, :name) %>
+      <tr><td>First Name</td> 			 	<td><%= profile_form.text_field :first_name, :id => 'firstname' %></td></tr>
+      <tr><td>Last Name</td> 				<td><%= profile_form.text_field :last_name, :id => 'lastname' %></td></tr>
+      <tr><td>Zip/Postal Code</td> 			<td><%= profile_form.text_field :zip, :id => 'zip' %></td></tr>
+      <tr><td>Country of Citizenship</td> 	<td><%= render :partial => "country_select" %></td></tr>
+      <tr><td>Political Affiliation</td> 	<td><%= profile_form.collection_select(:affiliation_id, Affiliation.all, :id, :name) %></td></tr>
     <% end %>
     
-    <%= title "Username", :h2 %>
-    <%= f.text_field :login %>
-    <%= title "Email", :h2 %>
-    <%= f.text_field :email, :id => 'email' %>
-    <%= title "Desired Password:", :h2 %>
-    <%= f.password_field :password, :id => 'pass' %>
-    <%= title "Re-enter Password:", :h2 %>
-    <%= f.password_field :password_confirmation, :id => 'password' %>
-    <%= f.hidden_field :invitation_token %>
-
-	<br />
-	<br />
-    <%= get_captcha(:options => {:theme => 'white'}) %>
+    <tr><td>Username</td> 	      			<td><%= f.text_field :login %></td></tr>
+    <tr><td>Email</td> 		  	 			<td><%= f.text_field :email, :id => 'email' %></td></tr>
+    <tr><td>Desired Password</td>        	<td><%= f.password_field :password, :id => 'pass' %></td></tr>
+	<tr><td>Confirm Password</td> 			<td><%= f.password_field :password_confirmation, :id => 'password' %></td></tr>
+    						<%= f.hidden_field :invitation_token %>
+	</table>
+	 <%= get_captcha(:options => {:theme => 'white'}) %>
   
-    <!-- OpenID signup styled? -->
-    <p>Signup with OpenID</p>
     <p>
-      OpenID URL:
+     <img align="middle" src="/images/openid.png"/>
+      Sign up with OpenID URL:<br>      					
       <%= text_field_tag :openid_url, params[:openid_url] || params['openid.identity'] %>
     </p>
-    <!-- end OpenID section -->
   
     <%= submit_tag 'Sign up', :class => 'button' %>
   </div>
 <% end %>
 </div>
 </div>
+
+

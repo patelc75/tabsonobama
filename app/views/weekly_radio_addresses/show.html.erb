@@ -17,7 +17,7 @@
                                         <h3><%= "#{@address.description}" %></h3>
                                         <br>
                                                 <div id="star-ratings-block-<%=@address.class.to_s%>-<%= @address.id %>" class="star-ratings-block">
-                                      		 				<%= render :partial => 'ratings/rate', :locals => {:asset => @address} %>
+                                      		 				<%= render :partial => 'ratings/rate', :locals => {:asset => @address, :align => "left"} %>
                                       		 			</div>
                                 </div>
                         </div>

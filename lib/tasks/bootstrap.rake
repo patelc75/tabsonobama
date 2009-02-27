@@ -46,7 +46,8 @@ namespace :app do
             :name => bullet[:name], 
             :description => bullet[:description], 
             :short => bullet[:short],
-            :issue_section => is
+            :issue_section => is,
+            :issue_group => ig
           })
         end if section[:issue_bullets]
       end if group[:issue_sections]

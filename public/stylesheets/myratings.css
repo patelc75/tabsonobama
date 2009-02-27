@@ -1,12 +1,56 @@
+.bullets-list {
+	margin-top: 0px;
+}
+
+.box div.boxcontent {
+	padding-left: 15px;
+}
+
+.plans {
+	/*padding: 0 35px;*/
+	margin-left: 70px;
+	padding-right: 100px;
+}
+
+.not-rated {
+	font-size: 1.2em;
+	color: #004382;
+}
+
+.h3 {
+	font-size: 1.4em;		
+}
+
 .more .meta {
-	width: 157px;
+	width: 127px;
 }
 
 .featured {
-	width: auto;
-	
+	float: left;	
 }
 
 .featured h3 {
 	width: 215px;
+}
+
+.boxcontent h3 {
+	color: #004382;
+	font-size: 1.3em;
+	font-weight: normal;
+	line-height: 1em;
+}
+
+.boxcontent h1 {
+	color: #004382;
+	font-size: 1.8em;
+	font-weight: normal;
+	line-height: 1em;
+}
+
+.more {
+	border-left:0px;
+	margin-left:10px;
+	padding:0 20px 0 20px;
+	width:235px;
+	height: 135px;
 }

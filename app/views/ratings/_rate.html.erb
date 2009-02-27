@@ -15,7 +15,7 @@
         	%>
             <%= link_to_remote( "", 
                         { :url => { :controller => "ratings", :action => "rate", 
-                            :id => asset.id, :rating => x, :rated_type => asset.class.to_s } },
+                            :id => asset.id, :rating => x, :rated_type => asset.class.to_s, :align => align } },
                         { :class => "#{@convert[x-1]}-stars", :name => "#{pluralize(x,'star')} out of 5",
                             :title => "Rate this a #{x} out of 5" } ) %>
         </li>
@@ -23,6 +23,8 @@
     </ul>
   </div>
   <div align="<%= align %>" style="color: gray;<%= align == 'left' ? ' padding-left: 3px;' : '' %>">
-  	<%= number_with_precision(asset.rating_average, :precision => 1) %>/5 Stars (<%= asset.rated_count %> votes)
+  	Average <%= number_with_precision(asset.rating_average, :precision => 1) %> (<%= asset.rated_count %> votes)
   </div>
-  <br />
+  <% if (asset.class.name == "WeeklyRadioAddress" || asset.class.name == "CabinetMember" || asset.class.name == "IssueBullet") %>
+  <div align="<%= align %>" class="comments"><%= link_to "Comments", "#{asset.class.name.pluralize.underscore.dasherize}/#{asset.permalink}" %></div>
+  <% end %>

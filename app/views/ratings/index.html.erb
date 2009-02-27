@@ -1,3 +1,4 @@
+<%= stylesheet_link_tag "groups", :cache => true %>
 <%= stylesheet_link_tag "myratings", :cache => true %>
 
 <% if !@logged_in %>
@@ -8,8 +9,7 @@
 
 <div class="box">
   <div class="boxcontent">
-    <h2>Rated Cabinet Members</h2>
-    
+    <h2>Your Cabinet Member Ratings</h2><br>
     <% if !@logged_in %>
     	You must login to see your ratings or signup to start your ratings
     <% else %>
@@ -30,7 +30,11 @@
 	      <% end %>
 	    
 	    <% else %>
-	      You have not rated any Cabinet Members
+	      	<div class="not-rated">
+	      	<br>
+	    	You have not rated any Cabinet Members
+	    	<br>
+	    	</div>
 	    <% end %>
     <% end %>
     <br class="clear" />
@@ -40,8 +44,7 @@
 
 <div class="box">
   <div class="boxcontent">
-    <h2>Rated Weekly Radio Addresses</h2>
-
+    <h2>Your Weekly Radio Addresses Ratings</h2><br>
     <% if !@logged_in %>
     	You must login to see your ratings or signup to start your ratings
     <% else %>    
@@ -60,39 +63,79 @@
 	      <% end %>
 	    
 	    <% else %>
+		 <div class="not-rated">
+		  <br>
 	      You have not rated any Weekly Radio Addresses
+		  <br>
+	     </div>
 	    <% end %>
      <% end %>
     <br class="clear" />
-  </div>
+    </div>
 </div>
 
 
 <div class="box">
   <div class="boxcontent">
-    <h2>Rated Campaign Promises</h2>
-
+    <h2>Your Campaign Promises Ratings</h2><br>
+	<div class="not-rated">
     <% if !@logged_in %>
     	You must login to see your ratings or signup to start your ratings
     <% else %>       
-	    <% unless @groups.empty? %>
-	      <% @groups.uniq.each do |group| %>
-	      <div class="featured more">
-	        <div class="meta">
-	          <h3><%= group.name %></h3>
-	          <div class="star-ratings-block">
-	          <%= render :partial => 'ratings/user_rate', :locals => {:asset => group, :rater => current_user} %>
-	          </div>
-	        </div>
-	        <br class="clear" />
-	      </div>
-	      <% end %>
-	    
-	    <% else %>
+	    <% if @group_hash.empty? %>
+	      <br>
 	      You have not rated any campaign promises
+	      <br>
 	    <% end %>
     <% end %>    
+    </div>
     <br class="clear" />
-  </div>
+
+  
+  <div class="plans">	
+    	  <% @group_hash.each_value do |group| %>
+    	<ul>
+    	<li>
+    	  <div class="text">		
+    	  <h1><%= group.name %></h1>
+    	  </div>
+    	 <div id="star-ratings-block-<%= group.class.to_s %>-<%= group.id %>" class="star-ratings-block">
+		 <%= render :partial => 'ratings/user_rate', :locals => {:asset => group, :rater => current_user} %>		
+		 </div>
+	 <br class="clear" />
+    	  <% @section_hash.each_value do |section| %>
+    	    <% if section.issue_group_id == group.id %>
+			<div class="text">		
+      		  <h3><%= section.name %></h3>
+      		</div>
+      		<div id="star-ratings-block-<%= section.class.to_s %>-<%= section.id %>" class="star-ratings-block">
+		 	<%= render :partial => 'ratings/user_rate', :locals => {:asset => section, :rater => current_user} %>
+			</div>
+			
+      		<br class="clear" />
+      		<ul class="bullets-list">
+      		  <% @bullet_hash.each_value do |bullet| %>
+      			<% if bullet.issue_group_id == group.id and bullet.issue_section_id == section.id %>
+      		  	<li>
+      				<div class="text">
+      					<%= link_to bullet.name, "#{bullet.issue_section.issue_group.permalink}/#{bullet.permalink}" %>
+      				</div>
+      				<div id="star-ratings-block-<%= bullet.class.to_s %>-<%= bullet.id %>" class="star-ratings-block">
+		 			<%= render :partial => 'ratings/user_rate', :locals => {:asset => bullet, :rater => current_user} %>
+		 			</div>
+      				<br class="clear" />
+      			</li>
+      			<% end %>
+              <% end %>
+      		</ul>
+    		</li>
+    		<% end %>
+          <% end %>
+          <hr>
+          <% end %>          
+    	</ul>
+    	<br class="clear"/>
+ </div>
+   </div>
 </div>
 

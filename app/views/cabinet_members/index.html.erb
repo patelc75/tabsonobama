@@ -20,9 +20,8 @@
 	          	</div>
 	          	<div class="titlerate">
 	          	</div>
-	          	<h3><%= c.department %></h3>
-	          	<h4><%= c.office %></h4>
-	          	<br>	
+	          	<h3><%= link_to c.department, "cabinet-members/#{c.permalink}" %></h3>
+	          	<h4><%= link_to c.office, "cabinet-members/#{c.permalink}" %></h4>
 	          	<div id="star-ratings-block-<%= c.class.to_s %>-<%= c.id %>" class="star-ratings-block">
 	          		<%= render :partial => 'ratings/rate', :locals => {:asset => c, :align => "left"} %>
 	          	</div>
