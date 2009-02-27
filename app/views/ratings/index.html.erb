@@ -17,7 +17,7 @@
 	      <% @members.uniq.each do |member| %>
 	      <div class="featured more">
 	        <div class="meta">
-	          <h3><%= member.nominee %></h3>
+	          <h3><%= link_to member.nominee, "cabinet-members/#{member.permalink}" %></h3>
 	          <div class="star-ratings-block">
 				<%= render :partial => 'ratings/user_rate', :locals => {:asset => member, :rater => current_user, :align => "left"} %>
 		 	  </div>
@@ -51,9 +51,9 @@
 	    <% unless @addresses.empty? %>
 	      <% @addresses.uniq.each do |address| %>
 	      <div class="featured more">
-	        <div class="meta">
-	          <h3><%= "#{address.timestamp.strftime("%B %d %Y")}" %></h3>
-	          <h4><%= "#{address.description}" %></h4>
+	        <div class="meta">	        	
+	          <h3><%= link_to "#{address.timestamp.strftime("%B %d %Y")}", "weekly-radio-addresses/#{address.permalink}" %></h3>
+	          <h4><%= link_to "#{address.description}", "weekly-radio-addresses/#{address.permalink}" %></h4>
 	          <div class="star-ratings-block">
 	          <%= render :partial => 'ratings/user_rate', :locals => {:asset => address, :rater => current_user, :align => "left"} %>
 	          </div>
@@ -96,8 +96,8 @@
     	  <% @group_hash.each_value do |group| %>
     	<ul>
     	<li>
-    	  <div class="text">		
-    	  <h1><%= group.name %></h1>
+    	  <div class="text">	
+    	  <h1><%= link_to group.name, "/campaign-promises/#{group.permalink}" %></h1>
     	  </div>
     	 <div id="star-ratings-block-<%= group.class.to_s %>-<%= group.id %>" class="star-ratings-block">
 		 <%= render :partial => 'ratings/user_rate', :locals => {:asset => group, :rater => current_user} %>		
@@ -105,8 +105,8 @@
 	 <br class="clear" />
     	  <% @section_hash.each_value do |section| %>
     	    <% if section.issue_group_id == group.id %>
-			<div class="text">		
-      		  <h3><%= section.name %></h3>
+			<div class="text">						
+      		  <h3><%= link_to section.name, "/campaign-promises/#{group.permalink}" %></h3>
       		</div>
       		<div id="star-ratings-block-<%= section.class.to_s %>-<%= section.id %>" class="star-ratings-block">
 		 	<%= render :partial => 'ratings/user_rate', :locals => {:asset => section, :rater => current_user} %>

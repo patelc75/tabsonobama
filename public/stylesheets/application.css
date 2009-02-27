@@ -135,13 +135,14 @@ strong {
 }
 
 #nav ul li a {
-        font-weight: bold;
         text-decoration: none;
 		text-transform: uppercase;
         color: #01245d;
+	    font-weight: bold;        
 }
 
 #nav ul a:hover {
+	    color: #ac3433;
 }
 
 #nav ul#user {
