@@ -25,11 +25,7 @@
             </h3>
             <br>
             <div id="star-ratings-block-<%=@cabinet_member.class.to_s%>-<%= @cabinet_member.id %>" class="star-ratings-block">
-              <% # TODO: fix and uncomment
-=begin %>
-              <%= render :partial => 'ratings/rate', :locals => {:asset => @cabinet_member} %>
-                            <% 
-=end %>
+              <%= render :partial => 'ratings/rate', :locals => {:asset => @cabinet_member, :align => 'left'} %>
             </div>
           </div>
         </div>
