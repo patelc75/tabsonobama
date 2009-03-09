@@ -1,4 +1,5 @@
 <% @convert = %w[one two three four five] %>
+<% @labels = %w["Terrible" "Poor" "Average" "Good" "Great"] %>
 
 <% align ||= "right" %>
 
@@ -17,7 +18,7 @@
                         { :url => { :controller => "ratings", :action => "rate", 
                             :id => asset.id, :rating => x, :rated_type => asset.class.to_s, :align => align } },
                         { :class => "#{@convert[x-1]}-stars", :name => "#{pluralize(x,'star')} out of 5",
-                            :title => "Rate this a #{x} out of 5" } ) %>
+                            :title => "Rate this #{@labels[x-1]} (#{x} out of 5)" } ) %>
         </li>
         <% end -%>
     </ul>
