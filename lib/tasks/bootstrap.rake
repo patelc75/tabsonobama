@@ -21,6 +21,16 @@ namespace :app do
   	CabinetMember.delete_all()
   end
   
+  task :delete_ratings => :environment do
+    puts "Deleting " + "#{Rating.count}" + " rows from #{Rating.table_name}"
+  	Rating.delete_all()
+  end
+  
+  task :delete_promotions => :environment do
+    puts "Deleting " + "#{Promotion.count}" + " rows from #{Promotion.table_name}"
+  	Promotion.delete_all()
+  end
+  
   task :load_campaign_promises => [:environment] do
     yaml = YAML.load(File.open("#{RAILS_ROOT}/db/fixtures/campaign_promises.yml"))
     puts "Loading " + "#{RAILS_ROOT}/db/fixtures/campaign_promises.yml"
@@ -79,7 +89,7 @@ namespace :app do
   
   task :load_all => [:load_weekly_radio_addresses, :load_cabinet_members, :load_campaign_promises]
   
-  task :delete_all => [:delete_weekly_radio_addresses, :delete_cabinet_members, :delete_campaign_promises]
+  task :delete_all => [:delete_weekly_radio_addresses, :delete_cabinet_members, :delete_campaign_promises, :delete_ratings, :delete_promotions]
   
   task :setup => [:bootstrap, :load_all]
 end
