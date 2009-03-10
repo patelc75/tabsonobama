@@ -1,8 +1,14 @@
+ 		<% if logged_in? && current_user.is_admin?%>
+ 			<h4><%= link_to "Add a new Weekly Radio Addresses", { :controller => "weekly_radio_addresses", :action => "new" }, { :title => "Add a new Weekly Radio Addresses"} %></h4>
+ 			<h4><%= link_to "Delete this Weekly Radio Addresses", { :controller => "weekly_radio_addresses", :action => "delete", :id => @address.permalink }, { :title => "Delete this Weekly Radio Address"} %></h4>
+ 			<br>
+ 		<% end %>
+
 <div id="boxcontent">
         <div class="box">
                 <div class="boxcontent">
                 <h2>Barack Obama's Weekly Radio Address</h2>
-                <h1><%= "#{@address.timestamp.strftime("%B %d %Y")}" %></h1>
+                <h1><%= "#{@address.timestamp.strftime("%B %d, %Y")}" %></h1>
                 <br/>
                         <div class="phototitlerate">
                                 <div class="photo">
@@ -14,7 +20,7 @@
                                         </object>
                                 </div>
                                 <div class="titlerate">
-                                        <h3><%= link_to "#{@address.description}", "weekly-radio-addresses/#{@address.permalink}" %>                                            
+                                        <h3><%= "#{@address.description}" %>                                            
                                         </h3>
                                         <br>
                                                 <div id="star-ratings-block-<%=@address.class.to_s%>-<%= @address.id %>" class="star-ratings-block">

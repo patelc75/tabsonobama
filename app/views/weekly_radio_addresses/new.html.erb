@@ -1,0 +1,20 @@
+<div class="box">
+<div class="boxcontent">
+<h1>Add a new weekly radio address</h1>
+
+<% form_for(@weekly) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <b><%= f.label :timestamp, "Date of Address" %> </b><%= f.text_field :timestamp %><br> eg. 2009-1-24<br><br>
+    <b><%= f.label :youtube_link, "Youtube link" %> </b><%= f.text_field :youtube_link %> <br>eg. http://www.youtube.com/v/qN1S1LdkUeg&hl=en&fs=1<br><br>
+    <b><%= f.label :description, "Description" %></b> <%= f.text_field :description %><br>  eg. American Recovery and Reinvestment Plan<br><br>
+    <b><%= f.label :short, "Short Description" %></b> <%= f.text_field :short %> <br>  eg. american recovery and reinvestment plan
+  </p>
+  <p>
+    <%= f.submit "Add" %>
+    or
+    <%= link_to 'cancel', :controller => "home", :action => "index" %>
+  </p>
+<% end %>
+</div>
+</div>

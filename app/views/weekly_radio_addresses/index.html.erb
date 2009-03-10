@@ -1,13 +1,17 @@
+<!--%= stylesheet_link_tag "weekly" %--> 
 <div class="box">
   <div class="boxcontent">
     <h2>Barack Obama's Weekly Radio Addresses</h2>
+ 		<% if logged_in? && current_user.is_admin?%>
+ 			<h4><%= link_to "Add a new Weekly Radio Addresses", { :controller => "weekly_radio_addresses", :action => "new" }, { :title => "Add a new Weekly Radio Addresses"} %></h4><br>
+ 		<% end %>
   </div>
 </div>
-<div id="boxcontent">
-	<% @addresses.each do |address| %>
+	<% first_few =  @addresses[0..4] %>
+	<% first_few.each do |address| %>
         <div class="box">
                 <div class="boxcontent">
-                <h1><%= link_to "#{address.timestamp.strftime("%B %d %Y")}", 
+                <h1><%= link_to "#{address.timestamp.strftime("%B %d, %Y")}", 
                                 "/weekly-radio-addresses/#{address.permalink}" %></h1>
                 <br/>
                         <div class="phototitlerate">
@@ -20,7 +24,7 @@
                                         </object>
                                 </div>
                                 <div class="titlerate">
-                                    <h3><%= "#{address.description}" %></h3>
+                                    <h3><%= link_to "#{address.description}", "/weekly-radio-addresses/#{address.permalink}" %>  </h3>
                                     <br>
                                     <div id="star-ratings-block-<%= address.class.to_s %>-<%= address.id %>" class="star-ratings-block">
 						 				<%= render :partial => 'ratings/rate', :locals => {:asset => address, :align => 'left'} %>
@@ -36,4 +40,28 @@
                 </div>
         </div>
 	<% end %>
+
+<div class="plans">	
+<ul>
+<div class="box">	
+<div class="boxcontent">
+<div class="text">
+		<% if @addresses.length > 5 %>
+			<% remaining =  @addresses[5..@addresses.length] %>
+			<% remaining.each do |address| %>
+		 				<% promote_div_id = "promote-#{address.class}-#{address.id}" %>
+          				<div id="<%= promote_div_id %>">
+            				<%= render :partial => "/promotions/promote", :locals => {:item => address, :update_div => promote_div_id} %>
+          				</div>
+      					<h3><%= link_to "#{address.timestamp.strftime("%B %d, %Y")} - #{address.description}", 
+                                "/weekly-radio-addresses/#{address.permalink}" %> </h3>
+            		 	<div id="star-ratings-block-<%= address.class.to_s %>-<%= address.id %>" class="star-ratings-block">
+							<%= render :partial => 'ratings/rate', :locals => {:asset => address, :align => 'left'} %>
+						</div>
+            <br><br>
+            <% end %>
+		<% end %>
+</div>
+</div>
+</ul>
 </div>

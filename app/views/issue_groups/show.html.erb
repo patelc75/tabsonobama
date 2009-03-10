@@ -36,6 +36,10 @@
       		  <% section.issue_bullets.each do |bullet| %>
       			<li>
       				<div class="text">
+		 				<% promote_div_id = "promote-#{bullet.class}-#{bullet.id}" %>
+          				<div id="<%= promote_div_id %>">
+            			<%= render :partial => "/promotions/promote", :locals => {:item => bullet, :update_div => promote_div_id} %>
+          				</div>
       					<%= link_to bullet.name, "#{bullet.issue_section.issue_group.permalink}/#{bullet.permalink}" %>
       				</div>
       				<div id="star-ratings-block-<%= bullet.class.to_s %>-<%= bullet.id %>" class="star-ratings-block">
