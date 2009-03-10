@@ -1,0 +1,21 @@
+<% @labels = %w[Terrible Poor Average Good Great] %>
+
+<% align ||= "right" %>
+
+  <div align="<%= align %>">
+  	<table>
+  	
+  	<% 1.upto(5) do |x| -%>
+  	<tr>
+  	<td>
+    <ul class='star-rating'>
+        <li class='current-rating' style='width:<%= ((6-x) * 23).to_i -%>px;'></li>
+    </ul>
+    </td>
+    <td>
+    	<h3>&nbsp;=&nbsp;<%= "#{@labels[5-x]} job"%></h3>
+    </td>
+    </tr>
+    <% end -%>
+    </table>
+  </div>

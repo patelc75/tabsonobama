@@ -52,7 +52,7 @@
 	      <% @addresses.uniq.each do |address| %>
 	      <div class="featured more">
 	        <div class="meta">	        	
-	          <h3><%= link_to "#{address.timestamp.strftime("%B %d %Y")}", "weekly-radio-addresses/#{address.permalink}" %></h3>
+	          <h3><%= link_to "#{address.timestamp.strftime("%B %d, %Y")}", "weekly-radio-addresses/#{address.permalink}" %></h3>
 	          <h4><%= link_to "#{address.description}", "weekly-radio-addresses/#{address.permalink}" %></h4>
 	          <div class="star-ratings-block">
 	          <%= render :partial => 'ratings/user_rate', :locals => {:asset => address, :rater => current_user, :align => "left"} %>

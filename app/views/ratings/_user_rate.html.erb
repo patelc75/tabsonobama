@@ -1,5 +1,6 @@
 <% avg = asset.rating_average_by_rater(rater) %>
 <% count = asset.rating_count_by_rater(rater) %>
+<% @labels = %w["Terrible" "Poor" "Average" "Good" "Great"] %>
 
 <% @convert = %w[one two three four five] %>
 <div align="<%= defined?(align) ? align : 'right' %>">
@@ -12,7 +13,7 @@
                       { :url => { :controller => "ratings", :action => "rate", 
                           :id => asset.id, :rating => x, :rated_type => asset.class.to_s } },
                       { :class => "#{@convert[x-1]}-stars", :name => "#{pluralize(x,'star')} out of 5",
-                          :title => "Rate this a #{x} out of 5" } ) %>
+                            :title => "Rate this #{@labels[x-1]} (#{x} out of 5)" } ) %>
       </li>
       <% end -%>
   </ul>

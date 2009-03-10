@@ -41,12 +41,12 @@ class RatingsController < ApplicationController
         page.replace_html "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}", :partial => "rate", :locals => { :asset => rateable, :align => params[:align] }
         page.visual_effect :highlight, "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}"
         unless logged_in?
-          page << "tb_show('Dialog', '#TB_inline?height=150&width=200&inlineId=loginID&modal=true', null);"
+          page << "tb_show('Dialog', '#TB_inline?height=250&width=300&inlineId=loginID&modal=true', null);"
         end
       end
     else
       render :update do |page|
-        page << "tb_show('Dialog', '#TB_inline?height=150&width=200&inlineId=dialogID&modal=true', null);"
+        page << "tb_show('Dialog', '#TB_inline?height=250&width=200&inlineId=dialogID&modal=true', null);"
         #page << '$("#dialog").dialog({ modal: true, overlay: { opacity: 0.5, background: "black" } });'
       end
     end
