@@ -12,7 +12,7 @@ chu:
   department: Energy
   office: Secretary
   nominee: Steven Chu
-  image_link: http://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Steven_Chu_ChangeGov_Press.jpg/225px-Steven_Chu_ChangeGov_Press.jpg
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/SecretaryChu.jpg/75px-SecretaryChu.jpg
   wikipedia_link: http://en.wikipedia.org/wiki/Steven_Chu
   previous_political_office: n/a
   previous_political_office_link: n/a
@@ -27,16 +27,6 @@ clinton:
   previous_political_office: Junior Senator from New York
   previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
   photo_filename: HillaryClinton.jpg
-
-daschle:
-  department: Health and Human Services
-  office: Secretary
-  nominee: Tom Daschle
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tom_Daschle%2C_official_Senate_photo.jpg/75px-Tom_Daschle%2C_official_Senate_photo.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Hilda_Solis
-  previous_political_office: U.S. Senator and Senate Majority Leader from South Dakota
-  previous_political_office_link: http://en.wikipedia.org/wiki/Party_leaders_of_the_United_States_Senate
-  photo_filename: TomDaschle.jpg
 
 donovan:
   department: Housing and Urban Development
@@ -57,6 +47,16 @@ duncan:
   previous_political_office: Chief Executive Officer of the Chicago Public Schools
   previous_political_office_link: http://en.wikipedia.org/wiki/Chief_Executive_Officer
   photo_filename: ArneDuncan.jpg  
+
+emanuel:
+  department: White House Chief of Staff
+  office: Chief
+  nominee: Rahm Emanuel
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Rahm_Emanuel%2C_official_photo_portrait_color.jpg/75px-Rahm_Emanuel%2C_official_photo_portrait_color.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Rahm_Emanuel
+  previous_political_office: Illinois Reoresentative
+  previous_political_office_link: http://en.wikipedia.org/wiki/Illinois%27s_5th_congressional_district
+  photo_filename: RahmEmanuel.jpg
  
 geithner:
   department: Treasury
@@ -87,6 +87,26 @@ holder:
   previous_political_office: Judge of the Superior Court of the District of Columbia
   previous_political_office_link: http://en.wikipedia.org/wiki/Director_of_Central_Intelligence
   photo_filename: RobertGates.jpg
+  
+jackson:
+  department: Environmental Protection Agency
+  office: Administrator
+  nominee: Lisa Jackson
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Lisa_P._Jackson.jpg/75px-Lisa_P._Jackson.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Lisa_P._Jackson
+  previous_political_office: Chief of Staff to Governor of New Jersey
+  previous_political_office_link: http://en.wikipedia.org/wiki/Governor_of_New_Jersey
+  photo_filename: LisaJackson.jpg  
+
+kerlikowske:
+  department: Office of National Drug Control Policy
+  office: Director
+  nominee: Gil Kerlikowske
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gil_Kerlikowske.jpg/75px-Gil_Kerlikowske.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Gil_Kerlikowske
+  previous_political_office: Seattle Chief of Police
+  previous_political_office_link: http://en.wikipedia.org/wiki/Seattle_Police_Department
+  photo_filename: GilKerlikowske.jpg
 
 kirk:
   department: Office of US Trade Representative 
@@ -108,6 +128,16 @@ laHood:
   previous_political_office_link: http://en.wikipedia.org/wiki/United_States_House_of_Representatives
   photo_filename: RayLaHood.jpg
 
+locke:
+  department: Commerce
+  office: Secretary
+  nominee: Gary Locke
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Gary_Locke.jpg/75px-Gary_Locke.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Gary_Locke
+  previous_political_office: Governor of Washington
+  previous_political_office_link: http://en.wikipedia.org/wiki/Governor_of_Washington
+  photo_filename: garylocke.jpg
+
 napolitano:
   department: Homeland Security
   office: Secretary
@@ -117,6 +147,36 @@ napolitano:
   previous_political_office: Governor of Arizona
   previous_political_office_link: http://en.wikipedia.org/wiki/Arizona
   photo_filename: JanetNapolitano.jpg
+  
+orszag:
+  department: Office of Management and Budget 
+  office: Director
+  nominee: Peter Orszag
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Peter_R_Orszag_CBO_official_picture.jpg/75px-Peter_R_Orszag_CBO_official_picture.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Peter_Orszag
+  previous_political_office: Director of the Congressional Budget Office
+  previous_political_office_link: http://en.wikipedia.org/wiki/Congressional_Budget_Office
+  photo_filename: PeterOrszag  
+  
+rice:
+  department: United Nations
+  office: Ambassador
+  nominee: Susan Rice
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Susan_Rice_official_United_Nations_portrait.jpg/75px-Susan_Rice_official_United_Nations_portrait.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Susan_Rice
+  previous_political_office: National Security Council Staffer
+  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_National_Security_Council
+  photo_filename: SusanRice.jpg  
+  
+romer:
+  department: Council of Economic Advisors
+  office: Chair
+  nominee: Christina Romer
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/ChristinaRomer_20090105_EconMeeting-9208.jpg/75px-ChristinaRomer_20090105_EconMeeting-9208.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Christina_Romer
+  previous_political_office: Professor of Economics at UC Berkeley
+  previous_political_office_link: http://en.wikipedia.org/wiki/University_of_California_Berkeley
+  photo_filename: ChristinaRomer.jpg
 
 salazar:
   department: Interior
@@ -128,15 +188,15 @@ salazar:
   previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
   photo_filename: KenSalazar.jpg
 
-tobedetermined3:
-  department: Commerce
+sebelius:
+  department: Health and Human Services
   office: Secretary
-  nominee: To Be Determined
-  image_link: http://images2.wikia.nocookie.net/uncyclopedia/images/thumb/0/01/DramaticQuestionMark.png/50px-DramaticQuestionMark.png
-  wikipedia_link: http://en.wikipedia.org/wiki/Secretary_of_commerce
-  previous_political_office: n/a 
-  previous_political_office_link: n/a 
-  photo_filename: n/a  
+  nominee: Katherine Sebelius
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/GovKathleenSebeliusphoto.jpg/75px-GovKathleenSebeliusphoto.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Kathleen_Sebelius
+  previous_political_office: Governor of Kansas
+  previous_political_office_link: http://en.wikipedia.org/wiki/Governor_of_Kansas
+  photo_filename: KatherineSebelius.jpg
 
 shinseki:
   department: Veterans' Affairs
@@ -158,16 +218,6 @@ solis:
   previous_political_office_link: http://en.wikipedia.org/wiki/United_States_House_of_Representatives
   photo_filename: HildaSolis.jpg  
   
-tobedetermined:
-  department: Office of National Drug Control Policy
-  office: Director
-  nominee: To Be Determined
-  image_link: http://images2.wikia.nocookie.net/uncyclopedia/images/thumb/0/01/DramaticQuestionMark.png/50px-DramaticQuestionMark.png
-  wikipedia_link: http://en.wikipedia.org/wiki/Director_of_the_National_Drug_Control_Policy
-  previous_political_office: n/a 
-  previous_political_office_link: n/a 
-  photo_filename: n/a
-  
 vilsack:
   department: Agriculture
   office: Secretary
@@ -177,14 +227,13 @@ vilsack:
   previous_political_office: Governor of Iowa
   previous_political_office_link: http://en.wikipedia.org/wiki/Iowa
   photo_filename: TomVilsack.jpg
-  
-tobedetermined2:
-  department: Office of Social Security Administration
-  office: Administor
-  nominee: To Be Determined
-  image_link: http://images2.wikia.nocookie.net/uncyclopedia/images/thumb/0/01/DramaticQuestionMark.png/50px-DramaticQuestionMark.png
-  wikipedia_link: http://en.wikipedia.org/wiki/Social_Security_Administration
-  previous_political_office: n/a 
-  previous_political_office_link: n/a 
-  photo_filename: n/a
+
  
+
+  
+
+  
+
+  
+
+  
