@@ -22,7 +22,12 @@
   	Average <%= number_with_precision(asset.rating_average, :precision => 1) %> (<%= asset.rated_count %> votes)
   </div>
   <% if (asset.class.name == "WeeklyRadioAddress" || asset.class.name == "CabinetMember" || asset.class.name == "IssueBullet") %>
-  <div align="<%= defined?(align) ? align : 'right' %>" class="comments"><%= link_to "Comments", "#{asset.class.name.pluralize.underscore.dasherize}/#{asset.permalink}" %></div>
+  <div align="<%= defined?(align) ? align : 'right' %>" class="comments">
+  	<% if asset.class.name == "IssueBullet" %>
+  	  <%= link_to "Comments", "/campaign-promises/#{asset.issue_section.issue_group.permalink}/#{asset.permalink}" %>
+  	<% else %>
+  	  <%= link_to "Comments", "#{asset.class.name.pluralize.underscore.dasherize}/#{asset.permalink}" %>
+  	<% end %>
   <% else %>
   <div class="comments"></div>
   <% end %>
