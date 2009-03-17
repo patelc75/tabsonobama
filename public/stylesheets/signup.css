@@ -1,5 +1,5 @@
 input {
-        width: 320px;
+        width: 220px;
         margin: 5px 0;
         padding: 8px;
         border: 1px solid #CCC;
@@ -29,4 +29,17 @@ input {
         color: #FFF;
         background-color: #01245C;
         font-weight: bold;
+}
+
+.rate-guide {
+	float: left;
+	padding-left: 30px;	
+}
+
+.sign-up {
+	float: left;
+}
+
+#remember_me {
+	width: auto;
 }
