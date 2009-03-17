@@ -25,12 +25,14 @@
     	    <div class="box">	
     	    <div class="boxcontent">
     		<li>
+    		<% if section.name != ""%>
 			<div class="text">
       		  <h3><%= section.name %></h3>
       		</div>
       		<div id="star-ratings-block-<%= section.class.to_s %>-<%= section.id %>" class="star-ratings-block">
 		 		<%= render :partial => 'ratings/rate', :locals => {:asset => section} %>
 			</div>
+			<% end %>
       		<br class="clear" />
       		<ul class="bullets-list">
       		  <% section.issue_bullets.each do |bullet| %>

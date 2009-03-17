@@ -104,15 +104,18 @@
 		 </div>
 	 <br class="clear" />
     	  <% @section_hash.each_value do |section| %>
-    	    <% if section.issue_group_id == group.id %>
-			<div class="text">						
+    	  
+    	    
+    	  	<% if section.issue_group_id == group.id %>
+			<% if section.name != ""%>
+    	  	<div class="text">						
       		  <h3><%= link_to section.name, "/campaign-promises/#{group.permalink}" %></h3>
       		</div>
       		<div id="star-ratings-block-<%= section.class.to_s %>-<%= section.id %>" class="star-ratings-block">
 		 	<%= render :partial => 'ratings/user_rate', :locals => {:asset => section, :rater => current_user} %>
 			</div>
-			
       		<br class="clear" />
+      		<% end %>
       		<ul class="bullets-list">
       		  <% @bullet_hash.each_value do |bullet| %>
       			<% if bullet.issue_group_id == group.id and bullet.issue_section_id == section.id %>
