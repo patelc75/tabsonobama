@@ -1,17 +1,21 @@
-<%= title "Forgot Your Password?", :h2 %>
+<%= stylesheet_link_tag "signup" %>
+<div class="box">
+<div class="boxcontent">
+<%= title "Forgot Your Password?", :h1 %>
 <% form_for @password do |f| %>
   <%= f.error_messages %>
 	<fieldset>
-		<legend>Enter Your Email Address</legend>
-		<ol>
-			<li>			
+		Enter Your Email Address			
 		    <%= f.label :email %>
 		    <%= f.text_field :email %>
-			</li>
-		</ol>
 	</fieldset>
 	<div class="buttons">
-  	<%= f.submit "Submit" %>
+  	<%= f.submit "Submit", :class => 'button' %>
 	</div>
 <% end %>
-
+	<br>
+	<br>
+	<br>
+	<br>
+</div>
+</div>

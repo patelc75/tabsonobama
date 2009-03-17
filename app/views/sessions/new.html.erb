@@ -1,36 +1,48 @@
-<%= title "Login", :h2 %>
-
+<%= stylesheet_link_tag "signup" %>
+<div class="box">
+<div class="boxcontent">
+<%= title "Log In.", :h1 %>  
 <div class="form-container">
 <% form_tag session_path do %>
 	<fieldset>
-		<legend>Your Details</legend>
-		<ul>
-			<li>
-				<%= label_tag 'login', 'Username' %>
-				<%= text_field_tag 'login', @login %>
-			</li>
-			<li>
-				<%= label_tag 'password' %>
-				<%= password_field_tag 'password', nil %>
-			</li>
-			<li>
-				<%= label_tag 'remember_me', 'Remember me' %>
-				<%= check_box_tag 'remember_me', '1', @remember_me %>
-			</li>
-		</ul>
+		<table>
+			<tr>
+				<td><%= label_tag 'login', 'Username' %></td>
+				<td><%= text_field_tag 'login', @login %></td>
+			</tr>
+			<tr>
+				<td><%= label_tag 'password' %></td>
+				<td><%= password_field_tag 'password', nil %></td>
+			</tr>
+			<tr>
+				<td><%= label_tag 'remember_me', 'Remember me ' %></td>
+				<td><%= check_box_tag 'remember_me', '1', @remember_me %></td>
+			</tr>
+		</table>
+
 	</fieldset>
+			<br>
+			<h2>Or Login with OpenID</h2>
 	<fieldset>
-		<legend>Login with OpenID</legend>
-		<ul>
-			<li>
-				<%= label_tag 'openid_url', 'OpenID URL' %>
-				<%= text_field_tag 'openid_url' %>
-			</li>
-		</ul>
+		<table>
+		<tr>
+			<td><img align="middle" padding-top="15px" src="/images/openid.png"/><%= label_tag 'openid_url', 'OpenID URL: ' %></td>
+			<td><%= text_field_tag 'openid_url' %></td>
+		</tr>
+		</table>
 	</fieldset>
+	<br>
 	<div class="buttonrow">
-		<%= submit_tag 'Login' %>
-		<%= link_to 'Forgotten Password', forgot_password_path %>
+		<%= submit_tag 'Login', :class => 'button' %>
+		<br>
+		<%= link_to 'Forget Password?', forgot_password_path %>
 	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	
 <% end -%>
+</div>
+</div>
 </div>
