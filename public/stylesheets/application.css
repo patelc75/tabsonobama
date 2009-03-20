@@ -320,8 +320,8 @@ a:active{
 /* issues */
 ul.issues {
 		float: left;
-		width: 580px;
-		margin: 10px 0;
+		width: 560px;
+		margin: 10px 0 0 20px;
 		padding: 5px 0px;
 		list-style: none;
 		border-right: 1px solid #004382;
@@ -329,9 +329,8 @@ ul.issues {
 
 ul.issues li {
 		float: left;
-		width: 265px;
-		margin: 0px 25px 0px 0;
-		padding-bottom: 10px;
+		width: 225px;
+		margin: 0px 55px 10px 0;
 }
 
 ul.issues h3 {
@@ -557,4 +556,13 @@ br.clear {
 
 .signup_label {
 	width: 100px;	
+}
+
+.nav_login {
+        width: auto;
+        margin: auto;
+        padding: auto;
+        border: auto;
+        background-color: #FFF;
+        font-size: auto;
 }
