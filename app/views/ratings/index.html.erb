@@ -93,9 +93,11 @@
 
   
   <div class="plans">	
-    	  <% @group_hash.each_value do |group| %>
     	<ul>
-    	<li>
+    	  <% i=0 %>	
+    	  <% @group_hash.each_value do |group| %>
+    	  <% i = i + 1 %>
+    	  <li> 
     	  <div class="text">	
     	  <h1><%= link_to group.name, "/campaign-promises/#{group.permalink}" %></h1>
     	  </div>
@@ -131,10 +133,13 @@
       			<% end %>
               <% end %>
       		</ul>
-    		</li>
+    		
     		<% end %>
           <% end %>
+          </li>
+          <% if i != @group_hash.length %>
           <hr>
+          <% end %>
           <% end %>          
     	</ul>
     	<br class="clear"/>
