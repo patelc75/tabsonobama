@@ -20,7 +20,7 @@ class UserMailer < ActionMailer::Base
   protected
 
   def setup_message(subject, msg_body)
-    @from        = "no-reply@server.tabsonobama.org"
+    @from        = "no-reply@tabsonobama.org"
     @subject     = "[" + `hostname` + "] "
     @subject     += subject unless subject.blank?
     @sent_on     = Time.now
@@ -30,7 +30,8 @@ class UserMailer < ActionMailer::Base
   
   def setup_email(user)
     @recipients = "#{user.email}"
-    @from = APP_CONFIG[:admin_email]
+    #@from = APP_CONFIG[:admin_email]
+    @from = "no-reply@tabsonobama.org"
     @subject = "[#{APP_CONFIG[:site_name]}] "
     @sent_on = Time.now
     @body[:user] = user
