@@ -7,6 +7,27 @@ biden:
   previous_political_office: Senator from Delaware
   previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
   photo_filename: JoeBiden.jpg
+  
+blair:
+  department: National Intelligence
+  office: Director
+  nominee: Dennis C. Blair
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Dennis_Blair_official_Director_of_National_Intelligence_portrait.jpg/230px-Dennis_Blair_official_Director_of_National_Intelligence_portrait.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Dennis_C._Blair
+  previous_political_office: United States Navy four-star admiral
+  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Navy
+  photo_filename: DennisCBlair.jpg  
+  
+browner:
+  department: Energy and Climate Policy
+  office: White House Coordinator
+  nominee: Carol M. Browner
+  image_link: http://news-service.stanford.edu/news/2006/april5/gifs/brownerCMYK.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Carol_Browner
+  previous_political_office: Administrator of the Environmental Protection Agency
+  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Environmental_Protection_Agency
+  photo_filename: CarolMBrowner.jpg
+  
 
 chu:
   department: Energy
@@ -77,6 +98,16 @@ gates:
   previous_political_office: Director of Central Intelligence for the CIA
   previous_political_office_link: http://en.wikipedia.org/wiki/Superior_Court_of_the_District_of_Columbia
   photo_filename: EricHolder.jpg
+  
+gibbs:
+  department: White House Press Secretary
+  office: Press Secretary
+  nominee: Robert Gibbs
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Robert_Gibbs.jpg/200px-Robert_Gibbs.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Robert_Gibbs
+  previous_political_office: Communications Director for U.S. Senator Barack Obama
+  previous_political_office_link: http://en.wikipedia.org/wiki/Communications_director
+  photo_filename: RobertGibbs.jpg  
 
 holder:
   department: Justice
@@ -97,6 +128,16 @@ jackson:
   previous_political_office: Chief of Staff to Governor of New Jersey
   previous_political_office_link: http://en.wikipedia.org/wiki/Governor_of_New_Jersey
   photo_filename: LisaJackson.jpg  
+  
+jones:
+  department: National Security
+  office: Advisor
+  nominee: James L. Jones
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/James_L._Jones_2.jpg/225px-James_L._Jones_2.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/James_L._Jones
+  previous_political_office: United States Marine Corps four-star general
+  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Marine_Corps
+  photo_filename: JamesLJones.jpg  
 
 kerlikowske:
   department: Office of National Drug Control Policy
@@ -158,6 +199,16 @@ orszag:
   previous_political_office_link: http://en.wikipedia.org/wiki/Congressional_Budget_Office
   photo_filename: PeterOrszag  
   
+panetta:
+  department: Central Intelligence Agency
+  office: Director
+  nominee: Leon Panetta
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Leon_Panetta%2C_informal_photo.jpg/225px-Leon_Panetta%2C_informal_photo.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Leon_Panetta
+  previous_political_office: President Bill Clinton's White House Chief of Staff
+  previous_political_office_link: http://en.wikipedia.org/wiki/Central_Intelligence_Agency
+  photo_filename: LeonPanetta.jpg  
+  
 rice:
   department: United Nations
   office: Ambassador
@@ -187,6 +238,16 @@ salazar:
   previous_political_office: Junior Senator from Colorado
   previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
   photo_filename: KenSalazar.jpg
+  
+schiliro:
+  department: Legislative Affairs
+  office: Assistant
+  nominee: Phil Schiliro
+  image_link: http://blog.prospect.org/blog/ezraklein/schiliro_190.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Phil_Schiliro
+  previous_political_office: Democratic Chief of Staff for the US House Committee on Oversight and Government Reform
+  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_House_Committee_on_Oversight_and_Government_Reform
+  photo_filename: PhilSchiliro.jpg  
 
 sebelius:
   department: Health and Human Services
@@ -218,6 +279,16 @@ solis:
   previous_political_office_link: http://en.wikipedia.org/wiki/United_States_House_of_Representatives
   photo_filename: HildaSolis.jpg  
   
+summers:
+  department: National Economic Council
+  office: Director
+  nominee: Lawrence H. Summers
+  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Summers_Lawrence.jpg/225px-Summers_Lawrence.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Lawrence_Summers
+  previous_political_office: Professor at Harvard University's Kennedy School of Government.
+  previous_political_office_link: http://en.wikipedia.org/wiki/Kennedy_School_of_Government
+  photo_filename: LawrenceHSummers.jpg  
+  
 vilsack:
   department: Agriculture
   office: Secretary
@@ -228,7 +299,15 @@ vilsack:
   previous_political_office_link: http://en.wikipedia.org/wiki/Iowa
   photo_filename: TomVilsack.jpg
 
- 
+
+  
+
+  
+
+
+
+
+
 
   
 
