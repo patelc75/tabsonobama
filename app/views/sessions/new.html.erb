@@ -4,7 +4,6 @@
 <%= title "Log In.", :h1 %>  
 <div class="form-container">
 <% form_tag session_path do %>
-	<fieldset>
 		<table>
 			<tr>
 				<td><%= label_tag 'login', 'Username' %></td>
@@ -20,17 +19,15 @@
 			</tr>
 		</table>
 
-	</fieldset>
 			<br>
-			<h2>Or Login with OpenID</h2>
-	<fieldset>
+			<h3>Or Login with OpenID</h3>
 		<table>
 		<tr>
 			<td><img align="middle" padding-top="15px" src="/images/openid.png"/><%= label_tag 'openid_url', 'OpenID URL: ' %></td>
 			<td><%= text_field_tag 'openid_url' %></td>
 		</tr>
 		</table>
-	</fieldset>
+
 	<br>
 	<div class="buttonrow">
 		<%= submit_tag 'Login', :class => 'button' %>

@@ -4,10 +4,8 @@
 <%= title "Forgot Your Password?", :h1 %>
 <% form_for @password do |f| %>
   <%= f.error_messages %>
-	<fieldset>
 		Enter Your Email Address			
 		    <%= f.text_field :email %>
-	</fieldset>
 	<div class="buttons">
   	<%= f.submit "Submit", :class => 'button' %>
 	</div>
