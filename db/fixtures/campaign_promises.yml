@@ -370,7 +370,7 @@
     - :name: "Get 1 Million Plug-In Hybrid Cars on the Road by 2015:"
       :description: "These vehicles can get up to 150 miles per gallon. Barack Obama and Joe Biden believe we should work to ensure these cars are built here in America, instead of factories overseas"
       :short: "get hybrid cars on the road"
-    - :name: "Create a New $7,000 Tax Credit for Purchasing Advanced Vehicles."
+    - :name: "Create a New $7,000 Tax Credit for Purchasing Advanced Vehicles:"
       :description: ""
       :short: "create a tax credit for buying advanced vehicles"
     - :name: "Establish a National Low Carbon Fuel Standard:"
@@ -1177,7 +1177,7 @@
 - :name: "Taxes"
   :description: "Barack Obama’s tax plan delivers broad-based tax relief to middle class families and cuts taxes for small businesses and companies that create jobs in America, while restoring fairness to our tax code and returning to fiscal responsibility. Coupled with Obama’s commitment to invest in key areas like health, clean energy, innovation and education, his tax plan will help restore bottom-up economic growth that helps create good jobs in America and empowers all families achieve the American dream."
   :issue_sections:
-  - :name: "Under the Obama Plan:"
+  - :name: ""
     :description: ""
     :issue_bullets:
     - :name: "Cuts for 95 Perecent of Workers:"
