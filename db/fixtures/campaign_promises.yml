@@ -976,6 +976,9 @@
     - :name: "Improve Transportation Access to Jobs:"
       :description: "As president, Obama will work to ensure that low-income Americans have transportation access to jobs. Obama will double funding for the federal Jobs Access and Reverse Commute program to ensure that additional federal public transportation dollars flow to the highest-need communities and that urban planning initiatives take this aspect of transportation policy into account."
       :short: "improve transportation access to jobs"
+    - :name: "Reduce Crime Recidivism by Providing Ex-Offender Supports:"
+      :description: "Obama and Biden will work to ensure that ex-offenders have access to job training, substance abuse and mental health counseling, and employment opportunities. Obama and Biden will also create a prison-to-work incentive program and reduce barriers to employment."
+      :short: "reduce crime recidivism"
   - :name: "Make Work Pay for All Americans"
     :description: ""
     :issue_bullets:
