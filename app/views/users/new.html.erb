@@ -5,8 +5,8 @@
 <div class="box">
 <div class="boxcontent">
 <% form_for @user do |f| %>
-  <div id="user_name_login">
-    <h1><%= f.error_messages %></h1>
+  <div class="user_name_login">
+    <h4><%= f.error_messages %></h4>
     <%= title "Sign Up.", :h1 %>  
     <table>
     <% fields_for "user[new_profile_attributes]", @profile do |profile_form| %>
@@ -27,7 +27,7 @@
   
     <p>
      <img align="middle" src="/images/openid.png"/>
-      Sign up with OpenID URL:<br>      					
+      Or sign up with OpenID URL:     					
       <%= text_field_tag :openid_url, params[:openid_url] || params['openid.identity'] %>
     </p>
   

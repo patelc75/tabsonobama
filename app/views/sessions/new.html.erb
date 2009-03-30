@@ -18,12 +18,10 @@
 				<td><%= check_box_tag 'remember_me', '1', @remember_me %></td>
 			</tr>
 		</table>
-
 			<br>
-			<h3>Or Login with OpenID</h3>
 		<table>
 		<tr>
-			<td><img align="middle" padding-top="15px" src="/images/openid.png"/><%= label_tag 'openid_url', 'OpenID URL: ' %></td>
+			<td><img align="middle" padding-top="15px" src="/images/openid.png"/>Or Login with OpenID</td>
 			<td><%= text_field_tag 'openid_url' %></td>
 		</tr>
 		</table>

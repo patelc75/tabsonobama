@@ -1,4 +1,4 @@
-input {
+.user_name_login input {
         width: 220px;
         margin: 5px 0;
         padding: 8px;
@@ -6,14 +6,22 @@ input {
         background-color: #FFF;
         font-size: 20px;
         color: #333;
-        font: 20px; /*Georgia, 'Lucinda Grande', sans-serif;*/	        
+        font: 20px; /*Georgia, 'Lucinda Grande', sans-serif;*/  
 }
-
-.boxcontent {
-        font-size: 20px;
-        color: #333;
-        font: 20px; /* Georgia, 'Lucinda Grande', sans-serif;	*/
-        padding-left: 200px;
+ 
+.user_name_login input.button {
+        display: block;
+        width: 200px;
+        heigh: 50px;
+        padding: 5px;
+        margin-left: 0;
+        border: none;
+        -moz-border-radius: 3px;
+        cursor: default;
+        text-decoration: none;
+        color: #FFF;
+        background-color: #01245C;
+        font-weight: bold;
 }
 
 .button {
@@ -31,15 +39,22 @@ input {
         font-weight: bold;
 }
 
+.boxcontent {
+        font-size: 20px;
+        color: #333;
+        font: 20px; /* Georgia, 'Lucinda Grande', sans-serif;  */
+        padding-left: 200px;
+}
+ 
 .rate-guide {
-	float: left;
-	padding-left: 30px;	
+  float: left;
+  padding-left: 30px;  
 }
-
+ 
 .sign-up {
-	float: left;
+  float: left;
 }
-
+ 
 #remember_me {
-	width: auto;
+  width: auto;
 }
