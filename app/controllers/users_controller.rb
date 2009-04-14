@@ -108,7 +108,8 @@ class UsersController < ApplicationController
     flash[:notice] << " You can now login with your OpenID." unless @user.not_using_openid?
     
     respond_to do |format|
-      format.html { redirect_back_or_default(root_path) }
+      #format.html { redirect_back_or_default(root_path) }
+      format.html { render :controller => :users, :action => :success }
       format.js { render :partial => "/users/pop_signup_form", :locals => { :status => 'success', :logintype => 'normal', :display => 'block' } } if @user.not_using_openid?
       format.js { render :partial => "/users/pop_signup_form", :locals => { :status => 'success', :logintype => 'openid', :display => 'block' } } unless @user.not_using_openid?
     end
