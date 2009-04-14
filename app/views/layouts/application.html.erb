@@ -30,8 +30,7 @@
 <div id="loginID" style="display:none">
   <div style="float:right"><%= link_to_function("Close", "tb_remove()")%></div><br><br>
     <h3>
-    You must be logged in to rate items. Please click Sign Up or Log In.
-    <!--%= link_to "Login", login_url %--> 
+    You must be logged in to rate items. Please click <%= link_to "Sign Up", "/signup" %> or <%= link_to "Login", login_url %> 
     <br><br>
 It's simple.</h3>
 	<%= render :partial => 'ratings/rate_guide', :locals => {:align => 'left'} %>	
