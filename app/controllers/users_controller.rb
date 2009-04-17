@@ -51,25 +51,29 @@ class UsersController < ApplicationController
   
   def activate
     logout_keeping_session!
-    user = User.find_by_activation_code(params[:activation_code]) unless params[:activation_code].blank?
+    #logout_killing_session
+    @user = User.find_by_activation_code(params[:activation_code]) unless params[:activation_code].blank?
     case
-    when (!params[:activation_code].blank?) && user && !user.active?
-      user.activate!
+    when (!params[:activation_code].blank?) && @user && !@user.active?
+      @user.activate!
       flash[:notice] = "Signup complete! Please sign in to continue."
       respond_to do |format|
-        format.html { redirect_to login_path }
+        #format.html { redirect_to login_path }
+        format.html { render :controller => :users, :action => :success_activate }
         format.js { render :partial => "/users/pop_signup_form" }
       end
     when params[:activation_code].blank?
       flash[:error] = "The activation code was missing.  Please follow the URL from your email."
       respond_to do |format|
-        format.html { redirect_back_or_default(root_path) }
+        format.html { redirect_to login_path }
+      	#format.html { redirect_back_or_default(root_path) }
         format.js { render :partial => "/users/pop_signup_form" }
       end
     else 
       flash[:error]  = "We couldn't find a user with that activation code -- check your email? Or maybe you've already activated -- try signing in."
       respond_to do |format|
-        format.html { redirect_back_or_default(root_path) }
+        format.html { redirect_to login_path }
+      	#format.html { redirect_back_or_default(root_path) }
         format.js { render :partial => "/users/pop_signup_form" }
       end
     end
