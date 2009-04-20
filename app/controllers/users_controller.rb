@@ -28,7 +28,7 @@ class UsersController < ApplicationController
   
   def new
     @user = User.new(:invitation_token => params[:invitation_token])
-    @user.email = @user.invitation.recipient_email if @user.invitation
+    @user.email = @user.invitation.recipient_email.strip if @user.invitation
     @profile = @user.build_profile
   end
   
