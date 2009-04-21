@@ -7,7 +7,7 @@
 <% form_for @user do |f| %>
   <div class="user_name_login">
     <h4><%= f.error_messages %></h4>
-    <%= title "Sign Up.", :h1 %>  
+    <%= title "Sign Up", :h1 %>  
     <table>
     <% fields_for "user[new_profile_attributes]", @profile do |profile_form| %>
       <tr><td>First Name</td> 			 	<td><%= profile_form.text_field :first_name, :id => 'firstname' %></td></tr>
@@ -31,7 +31,7 @@
       <%= text_field_tag :openid_url, params[:openid_url] || params['openid.identity'] %>
     </p>
   
-    <%= submit_tag 'Sign up', :class => 'button' %>
+    <%= submit_tag 'Sign Up', :class => 'button' %>
   </div>
 <% end %>
 </div>
