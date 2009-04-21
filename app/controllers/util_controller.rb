@@ -1,4 +1,7 @@
 class UtilController < ApplicationController
+  #before_filter :login_required, :only => [:index]
+  require_role "admin"
+  
   def info
   end
 
