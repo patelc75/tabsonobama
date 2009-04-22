@@ -15,9 +15,9 @@
  		
  		<div class="featured more">
  			<div class="meta">
-	 			<h3>Featured Radio Address</h3>
 	 			 	<% weekly_radio_address = WeeklyRadioAddress.featured %>
 	 			 	<% if !weekly_radio_address.nil? %>
+	 			 		<h3><%= link_to "Featured Radio Address", "weekly-radio-addresses/#{weekly_radio_address.permalink}" %></h3>
 		 				<h4><%= link_to "#{weekly_radio_address.timestamp.strftime("%B %d, %Y")} - #{weekly_radio_address.description}", "weekly-radio-addresses/#{weekly_radio_address.permalink}" %></h4>
 		 				<div id="star-ratings-block-<%= weekly_radio_address.class.to_s %>-<%= weekly_radio_address.id %>" class="star-ratings-block">
 							<%= render :partial => 'ratings/rate', :locals => {:asset => weekly_radio_address, :align => 'left'} %>

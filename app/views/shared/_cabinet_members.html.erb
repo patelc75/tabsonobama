@@ -5,7 +5,6 @@
  	    
  		<div class="featured">
  			<h3><%= link_to "Cabinet Members", "/cabinet-members", { :title => "Show All Cabinet Members"} %></h3>
-			
 			<div id="star-ratings-block-<%= Aggregate.class_name %>-<%= CabinetMember.class_name %>" class="star-ratings-block">
 				<%= render :partial => 'ratings/rate', :locals => {:asset => Aggregate.find(:first, :conditions => ['rateable_type = ?', CabinetMember.class_name])} %>
 			</div>
@@ -15,9 +14,9 @@
  		
  		<div class="featured more">
  			<div class="meta">
-	 			<h3>Featured Cabinet Member</h3>
  				<% cabinet_member = CabinetMember.featured %>
  				<% if !cabinet_member.nil? %>
+ 					<h3><%= link_to "Featured Cabinet Member", "cabinet-members/#{cabinet_member.permalink}" %></h3>
 	 				<h4><%= link_to cabinet_member.nominee, "cabinet-members/#{cabinet_member.permalink}" %></h4>
 	 				<div id="star-ratings-block-<%= cabinet_member.class.to_s %>-<%= cabinet_member.id %>" class="star-ratings-block">
 						<%= render :partial => 'ratings/rate', :locals => {:asset => cabinet_member, :align => 'left'} %>

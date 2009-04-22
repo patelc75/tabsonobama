@@ -54,7 +54,14 @@
 .sign-up {
   float: left;
 }
- 
+
+.boxcontent h3 {
+		color: #004382;
+		font-weight: normal;
+		font-size: 1.0em;
+		line-height: 1.0em;
+}
+
 #remember_me {
   width: auto;
 }
