@@ -4,14 +4,15 @@
 <div class="box">
   <div class="boxcontent">
   	
-  <h1>Cabinet</h1>
+  <h1>Cabinet Member</h1>
+  <h4><%= link_to "Show other Cabinet Members", "/cabinet-members", { :title => "Show All Cabinet Members"} %></h4>
   <hr />
   <div id="cabinetlist">
     <ul class="mainlist">
       <li class="mainlist single">
         <div class="phototitlerate">
           <div class="cabinetphoto">
-            <img alt="<%= @cabinet_member.nominee %>" src="<%= @cabinet_member.image_link %>" />
+            <img alt="<%= @cabinet_member.nominee %>" src="<%= @cabinet_member.image_link %>" width="75px"/>
             <h5>
               <a href="<%= @cabinet_member.wikipedia_link %>"><%= @cabinet_member.nominee %></a>
             </h5>
@@ -19,10 +20,8 @@
           <div class="titlerate single">
             <h3><%= @cabinet_member.office %> of <%= @cabinet_member.department %></h3>
             <br/>
-            <h4>Formerly:</h3>
-            <h4>
-              <%= link_to @cabinet_member.previous_political_office, @cabinet_member.previous_political_office_link %>
-            </h3>
+            <h4>Formerly: <%= link_to @cabinet_member.previous_political_office, @cabinet_member.previous_political_office_link %>
+            </h4>
             <br>
             <div id="star-ratings-block-<%=@cabinet_member.class.to_s%>-<%= @cabinet_member.id %>" class="star-ratings-block">
               <%= render :partial => 'ratings/rate', :locals => {:asset => @cabinet_member, :align => 'left'} %>
