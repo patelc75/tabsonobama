@@ -2,6 +2,8 @@
 <div class="box">
   <div class="boxcontent">
     <h2>Barack Obama's Weekly Radio Addresses</h2>
+	<h4><%= link_to "Show other Weekly Radio Addresses", "/weekly-radio-addresses", { :title => "Show All Weekly Radio Addresses"} %></h4>
+
  		<% if logged_in? && current_user.is_admin?%>
  			<h4><%= link_to "Add a new Weekly Radio Addresses", { :controller => "weekly_radio_addresses", :action => "new" }, { :title => "Add a new Weekly Radio Addresses"} %></h4><br>
  		<% end %>

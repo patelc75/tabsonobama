@@ -3,7 +3,9 @@
  	<div class="boxcontent">
  	<h2>Rate</h2>
  		<h3><%= link_to "Campaign Promises", "/campaign-promises" , { :title => "Show All Campaign Promises"} %></h3> 	
- 		 			Click each promise for subtopics
+ 		<div class="normal-text"> 
+ 		Click each promise for subtopics
+ 		</div>
 
  		<ul class="issues">
  			<% IssueGroup.find(:all).each do |issue_group| %>
