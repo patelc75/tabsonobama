@@ -4,7 +4,9 @@
 <ul> 	
 <div class="box">
   <div class="boxcontent">
-    <h2>Barack Obama and Joe Biden's Campaign Promise:</h2>
+    <h2>Barack Obama and Joe Biden's Campaign Promise Group:</h2>
+	<h4></h4> 	
+
     <li>
     <div class="text">
     	<h1><%= current_object.name %></h1>
@@ -12,6 +14,7 @@
     <div id="star-ratings-block-<%= current_object.class.to_s %>-<%= current_object.id %>" class="star-ratings-block">
 		<%= render :partial => 'ratings/rate', :locals => {:asset => current_object} %>
 	</div>
+	<%= link_to "Show other Campaign Promises", "/campaign-promises" , { :title => "Show other Campaign Promises"} %>
 	 <br class="clear" />
 	</li>
   </div>

@@ -1,3 +1,5 @@
+
+
 h1 {
 		margin: 10px 0;
 		font-size: 2.9em;
@@ -34,10 +36,6 @@ hr {
 		line-height: 1.0em;
 }
 
-.boxcontent a {
-		color: #004382;
-		font-weight: normal;
-}
 
 .boxcontent div.moreissues {
 		float: left;

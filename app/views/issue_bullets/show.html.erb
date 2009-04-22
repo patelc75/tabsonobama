@@ -5,7 +5,7 @@
 	<div class="boxcontent">
 		<% @issue_bullet = @current_object %>
 		<h2>Barack Obama and Joe Biden's Campaign Promise </h2>
-		<h1><%= "#{@issue_bullet.issue_section.issue_group.name}" %></h1>
+		<h1><%= link_to @issue_bullet.issue_section.issue_group.name, "/campaign-promises/#{@issue_bullet.issue_section.issue_group.permalink}" %></h1>
 		<div class="plans">	
 			<h3>
 				<%= "#{@issue_bullet.issue_section.name}" %>
