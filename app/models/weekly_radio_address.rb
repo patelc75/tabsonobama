@@ -6,7 +6,7 @@ class WeeklyRadioAddress < ActiveRecord::Base
   
   has_permalink :timestamp
   def to_param
-    self.permalink
+    self.permalink[0..10]
   end
   
   def self.featured
