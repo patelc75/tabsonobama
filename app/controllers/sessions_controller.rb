@@ -45,6 +45,7 @@ class SessionsController < ApplicationController
     end
   end
   
+    
   def successful_login
     new_cookie_flag = (params[:remember_me] == "1")
     handle_remember_cookie! new_cookie_flag
