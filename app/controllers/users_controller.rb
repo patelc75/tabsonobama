@@ -64,7 +64,7 @@ class UsersController < ApplicationController
         #format.html {redirect_to : action=> "/home"}
         format.html { render :controller => :users, :action => :success_activate }
         #format.js { render :partial => "/users/pop_signup_form" }
-        format.js { render :partial => "/users/pop_login_form" }
+        format.js { render :partial => "/users/nav_login_form" }
       end
     when params[:activation_code].blank?
       flash[:error] = "The activation code was missing.  Please follow the URL from your email."
