@@ -60,7 +60,8 @@ class UsersController < ApplicationController
       #flash[:notice] = "Signup complete! Please sign in to continue."
       respond_to do |format|
         #format.html { redirect_to login_path }
-        format.html { redirect_back_or_default(root_path) }
+        format.html { redirect_to "http://staging.tabsonobama.org/home"}
+        #format.html {redirect_to : action=> "/home"}
        # format.html { render :controller => :users, :action => :success_activate }
         #format.js { render :partial => "/users/pop_signup_form" }
         format.js { render :partial => "/users/nav_login_form" }
