@@ -4,8 +4,7 @@ class WeeklyRadioAddress < ActiveRecord::Base
   include Promotable
   has_one :promotion, :as => :item, :dependent => :destroy
   
-  has_permalink :timestamp #, :to_param => self.permalink[0..10]
-  
+  has_permalink :timestamp.strftime("%B %d, %Y") #, :to_param => self.permalink[0..10]   added strftime("%B %d, %Y") 
   def to_param
     self.permalink #[0..10]
   end
