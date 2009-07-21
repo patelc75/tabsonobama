@@ -13,7 +13,7 @@
 	<% first_few.each do |address| %>
         <div class="box">
                 <div class="boxcontent">
-                <h1><%= link_to "#{address.timestamp.strftime("%B %d, %Y")}", 
+                <h1><%= link_to "#{address.timestamp.strftime("%d, %Y")}", 
                                 "/weekly-radio-addresses/#{address.permalink}" %></h1>
                 <br/>
                         <div class="phototitlerate">
