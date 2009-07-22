@@ -55,32 +55,28 @@ class UsersController < ApplicationController
     @user = User.find_by_activation_code(params[:activation_code]) unless params[:activation_code].blank?
     case
     when (!params[:activation_code].blank?) && @user && !@user.active?
-      @user.activate!     
-      self.current_user = @user
-      activation_login(@user)
+      @user.activate!
       
-    end
-      #redirect_back_or_default('/')
-      #flash[:notice] = "Logged in successfully"
+     
+      self.current_user = @user
+      successful_login
     
       #flash[:notice] = "Signup complete! Please sign in to continue."
-      #respond_to do |format|
+      respond_to do |format|
         #format.html { redirect_to login_path }
-       # format.html { redirect_to "http://staging.tabsonobama.org/home/"}
+        format.html { redirect_to "http://staging.tabsonobama.org/home/"}
         #format.html {redirect_to : action=> "/home"}
-       # format.html { render :controller => :users, :action => :success_activate }
+        format.html { render :controller => :users, :action => :success_activate }
         #format.js { render :partial => "/users/pop_signup_form" }
-        #format.js { render :partial => "/users/nav_login_form" }
-      #end
+        format.js { render :partial => "/users/nav_login_form" }
+      end
     when params[:activation_code].blank?
       flash[:error] = "The activation code was missing.  Please follow the URL from your email."
       respond_to do |format|
         format.html { redirect_to login_path }
       	#format.html { redirect_back_or_default(root_path) }
         format.js { render :partial => "/users/pop_signup_form" }
-        end
-     end    
-       
+      end
     else 
       flash[:error]  = "We couldn't find a user with that activation code -- check your email? Or maybe you've already activated -- try signing in."
       respond_to do |format|
@@ -142,18 +138,5 @@ class UsersController < ApplicationController
   def authorized?
     logged_in? && current_user.is_super_admin?
   end
-  
-  def activation_login(user)  	
-  #new_cookie_flag = (params[:remember_me] == "1")
-    #handle_remember_cookie! new_cookie_flag    
-    flash[:notice] = "Logged in successfully"
-    
-    respond_to do |format|
-    format.html {redirect_back_or_default('/') }
-    format.html { render :controller => :users, :action => :success_activate }
-    format.js { render :partial => "/users/nav_login_form" }
-    end
-  	
-  end	
   
 end
