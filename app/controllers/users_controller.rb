@@ -150,6 +150,7 @@ class UsersController < ApplicationController
     
     respond_to do |format|
     format.html {redirect_back_or_default('/') }
+    format.html { render :controller => :users, :action => :success_activate }
     format.js { render :partial => "/users/nav_login_form" }
     end
   	
