@@ -56,6 +56,10 @@ class UsersController < ApplicationController
     case
     when (!params[:activation_code].blank?) && @user && !@user.active?
       @user.activate!
+      
+     
+      self.current_user = @user
+      successful_login
     
       #flash[:notice] = "Signup complete! Please sign in to continue."
       respond_to do |format|
