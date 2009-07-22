@@ -51,8 +51,9 @@ class SessionsController < ApplicationController
     handle_remember_cookie! new_cookie_flag
     flash[:notice] = "Logged in successfully"
     respond_to do |format|
-      format.html { redirect_back_or_default(root_path) }
+      #format.html { redirect_back_or_default(root_path) }
       #format.js { render :partial => "/users/pop_login_form" }
+      format.html { redirect_to "http://staging.tabsonobama.org/home/"}
       format.js { render :partial => "/users/nav_login_form" }
     end
   end
