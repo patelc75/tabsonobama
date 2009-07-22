@@ -143,8 +143,7 @@ class UsersController < ApplicationController
     logged_in? && current_user.is_super_admin?
   end
   
-  def activation_login(user)
-  	
+  def activation_login(user)  	
   new_cookie_flag = (params[:remember_me] == "1")
     handle_remember_cookie! new_cookie_flag    
     flash[:notice] = "Logged in successfully"
@@ -152,7 +151,7 @@ class UsersController < ApplicationController
     respond_to do |format|
     format.html {redirect_back_or_default('/') }
     format.js { render :partial => "/users/nav_login_form" }
-    
+    end
   	
   end	
   
