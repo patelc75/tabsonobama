@@ -58,9 +58,7 @@ class UsersController < ApplicationController
       @user.activate!
       
       self.current_user = @user
-      activation_login(@user
-     
-    
+      activation_login(@user) 
     
       
       end
