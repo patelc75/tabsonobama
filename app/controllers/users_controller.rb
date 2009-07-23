@@ -134,19 +134,16 @@ class UsersController < ApplicationController
   end
   
    def activation_login(user)  	
-  new_cookie_flag = (params[:remember_me] == "1")
+    new_cookie_flag = (params[:remember_me] == "1")
     handle_remember_cookie! new_cookie_flag    
     flash[:notice] = "Logged in successfully"
     
     respond_to do |format|
-    format.html {redirect_back_or_default('/') }
-    format.html { render :controller => :users, :action => :success_activate }
-    format.js { render :partial => "/users/nav_login_form" }
+      format.html {redirect_back_or_default('/') }
+      format.html { render :controller => :users, :action => :success_activate }
+      format.js { render :partial => "/users/nav_login_form" }
     end
   
-end
-end
-
-
-  	
- 
+   end
+   
+end   
