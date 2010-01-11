@@ -56,10 +56,12 @@ class UsersController < ApplicationController
     case
     when (!params[:activation_code].blank?) && @user && !@user.active?
       @user.activate!
-      flash[:notice] = "Signup complete! Please sign in to continue."
+      self.current_user = @user
+      
+      flash[:notice] = "Signup complete!"
       respond_to do |format|
         #format.html { redirect_to login_path }
-        format.html { render :controller => :users, :action => :success_activate }
+        format.html { redirect_to root_url }
         format.js { render :partial => "/users/pop_signup_form" }
       end
     when params[:activation_code].blank?
