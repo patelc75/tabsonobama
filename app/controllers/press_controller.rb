@@ -1,0 +1,2 @@
+class PressController < ApplicationController
+end

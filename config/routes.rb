@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
   # Restful Authentication Rewrites
-  map.logout '/about', :controller => 'home', :action => 'about'
+  map.about '/about', :controller => 'home', :action => 'about'
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
@@ -15,7 +15,7 @@ ActionController::Routing::Routes.draw do |map|
   # Restful Authentication Resources
   map.resources :splashes
   map.resources :weekly_radio_addresses
-  map.resources :cabinet_members
+  map.resources :cabinet_members  
   map.resources :users
   map.resources :passwords	
   map.resource :session
