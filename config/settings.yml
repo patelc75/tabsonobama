@@ -1,8 +1,8 @@
 global:
-  project_name: tabsonobama
+  project_name: tabsonrahm
   
 development: &non_production_settings
-  root_controller: home
+  root_controller: splashes
   site_url: http://localhost:3000
   site_name: Tabs on Obama
   admin_email: tabsonobama@gmail.com
@@ -17,7 +17,7 @@ staging:
   admin_email: chirag@tabsonobama.org
   
 production:
-  root_controller: home
-  site_url: http://www.tabsonobama.org
+  root_controller: splashes
+  site_url: http://www.tabsonrahm.org
   site_name: Tabs on Obama
   admin_email: chirag@tabsonobama.org
