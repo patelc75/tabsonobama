@@ -5,7 +5,7 @@
  		<% if logged_in? && current_user.is_admin?%>
  			<h4><%= link_to "Add a new Weekly Radio Addresses", { :controller => "weekly_radio_addresses", :action => "new" }, { :title => "Add a new Weekly Radio Addresses"} %></h4>
  		<% end %>
-		<h3><%= link_to "Weekly Radio Addresses", "/weekly-radio-addresses", { :title => "Show All Weekly Radio Addresses"} %></h3>
+		<h3><%= link_to "Weekly Addresses", "/weekly-radio-addresses", { :title => "Show All Weekly Radio Addresses"} %></h3>
 			<div id="star-ratings-block-<%= Aggregate.class_name %>-<%= WeeklyRadioAddress.class_name %>" class="star-ratings-block">
 				<%= render :partial => 'ratings/rate', :locals => {:asset => Aggregate.find(:first, :conditions => ['rateable_type = ?', WeeklyRadioAddress.class_name])} %>
 			</div>
