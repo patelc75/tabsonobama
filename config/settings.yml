@@ -2,9 +2,9 @@ global:
   project_name: tabsonrahm
   
 development: &non_production_settings
-  root_controller: splashes
+  root_controller: home
   site_url: http://localhost:3000
-  site_name: Tabs on Obama
+  site_name: Tabs on Rahm
   admin_email: tabsonobama@gmail.com
   
 test:
@@ -13,11 +13,11 @@ test:
 staging:
   root_controller: splashes
   site_url: http://staging.tabsonobama.org
-  site_name: Tabs on Obama
+  site_name: Tabs on Rahm
   admin_email: chirag@tabsonobama.org
   
 production:
   root_controller: splashes
   site_url: http://www.tabsonrahm.org
-  site_name: Tabs on Obama
+  site_name: Tabs on Rahm
   admin_email: chirag@tabsonobama.org
