@@ -3,7 +3,7 @@
 .star-rating a:active,  
 .star-rating a:focus,  
 .star-rating .current-rating{  
-    background: url('/images/3_Os_redesign_23px_1-18.gif') left -1000px repeat-x;  
+    background: url('/images/Three_star_strip.jpg') left -1000px repeat-x;  
 }  
 .star-rating{  
     position: relative;  

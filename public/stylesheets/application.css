@@ -85,7 +85,7 @@ strong {
 }
 
 #spine {
-		background-color: #0062A3;
+		background-color: #D5E7F9;
 		height: 30px;
 		width: 100%;
 }
@@ -101,7 +101,7 @@ strong {
 		height: 202px;
 		padding: 0;
 		margin: 0;
-		background: #01245c url(../images/header.jpg) no-repeat scroll;
+		background: #50FBF7 url(../images/header.jpg) no-repeat scroll;
 }
 
 #nav {
@@ -179,7 +179,7 @@ strong {
 		margin: 0;
 		padding: 15px;
 		clear: both;
-		background: #01245c url(../images/footerlogo.gif) no-repeat scroll 50% 15px;
+		background: #4e6df6 url(../images/footerlogo.gif) no-repeat scroll 50% 15px;
 		color: #CCC;
 }
 
