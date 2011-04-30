@@ -11,7 +11,7 @@ test:
   <<: *non_production_settings
 
 staging:
-  root_controller: splashes
+  root_controller: home
   site_url: http://staging.tabsonobama.org
   site_name: Tabs on Obama
   admin_email: chirag@tabsonobama.org
