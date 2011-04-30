@@ -28,11 +28,13 @@
 	</table>
 	 <%= get_captcha(:options => {:theme => 'white'}) %>
   
+<% if false %>
     <p>
      <img align="middle" src="/images/openid.png"/>
       Or sign up with OpenID URL:     					
       <%= text_field_tag :openid_url, params[:openid_url] || params['openid.identity'] %>
     </p>
+<% end %>
   
     <%= submit_tag 'Sign Up', :class => 'button' %>
 
