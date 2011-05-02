@@ -2,14 +2,27 @@
 <div class="boxcontent">
 <table>
 <tr>
-	<td width = "420px">
-		<h3>The Basics</h3><br>
+	<td width = "420px" valign="top">
+    <a href="http://tabsonrahm.org">TabsOnRahm.org</a> is a non profit whose mission is to revamp the traditional approval rating with a Netflix-like rating system. TabsOnRahm.org extracted all of Emanuel's campaign promises from <a href="http://www.chicagoforrahm.com/">ChicagoForRahm.com</a> and asks ordinary citizens to rate his administration's performance from 1 to 5. The purpose is to engage both the active voter and more importantly the casual voter to make a more informed decision for the 2015 election. TabsOnRahm.org is creating relationships with organizations and individuals, both conservative and liberal, to write blog posts that directly link back to a campaign promise.<br><br>
+    TabsOnRahm.org is created by the folks behind <a href="http://tabsonobama.org"> TabsOnObama.org</a>. For more information, see the <a href="http://www.metro.us/newyork/local/article/618849--site-keeps-tabs-on-obama">Jan 2010 article printed about TabsOnObama.org in the Metro (New York City)</a>. Last, TabsOnRahm.org will provide a forum for the 45% of Chicago voters that supported one of Emanuel's opponents (including Chico, Moseley Braun, and Del Valle). The vision is to keep the administration “in check” for a potentially lengthy tenure in office due to lack of term limits.   
+  </td>
+	</td>
+	<td width = "60px">
+	</td>
+<td valign="top">
+	<h3>It's simple to use.</h3><br>
+	<%= render :partial => 'ratings/rate_guide', :locals => {:align => 'left'} %>	
+	<br><br><br><br><br><br><br><br>           
+  <% if false %>    
+	<h3>Watch our 1 minute video.</h3><br>
+	<object width="400" height="300"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=6263733&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=6263733&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object>
+  <% end %>
+	
+</td>
+  </tr>
+  </table>
 
-		As Obama’s 1-year anniversary in office arrives, TabsOnObama.org aims to revamp the presidential approval rating with a Netflix-like rating system. TabsOnObama.org is a non-profit service that asks visitors to rate how they feel the Obama administration has performed thus far in comparison to the campaign promises he outlined before he took office.
-
-		Do you feel Obama as failed to stick to his healthcare promises? Give him a 1 or 2. Think he followed his word on preventing nuclear terrorism? Double check what he said in 2008 by digging into the site’s section on Homeland Security, and if you feel he has followed his original plan, give him a 4 or 5. The results are then tallied together and an average rating is immediately given along with the total number of votes.
-
-		Visitors to the site also have the chance to rate cabinet members and President Obama´s weekly addresses to the nation. You can also leave thoughts pertaining to various aspects of the Administration using a commenting system, which allows the highest ranked comments to be listed first.
+<% if false %>    
 		<br><br>
 		<h3>The Story</h3><br>
 
@@ -22,18 +35,6 @@
 		Independently run by its founders, the website remains unbiased by not accepting any corporate donations or generating any advertising revenue. The site was created with the help of a handful of concerned volunteers across the United States.
 
 		“We hope to use interactive web to promote a transparent, instantaneous, and participatory government never previously thought possible. As Obama´s one-year anniversary in office approaches, this is the best time to make the Administration´s track record ratable and visible by all,” says Danzico.	
-	</td>
-	<td width = "60px">
-	</td>
-<td valign="top">
-	<h3>It's simple to use.</h3><br>
-	<%= render :partial => 'ratings/rate_guide', :locals => {:align => 'left'} %>	
-	<br><br><br><br><br><br><br><br>
-	<h3>Watch our 1 minute video.</h3><br>
-	<object width="400" height="300"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=6263733&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=6263733&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object>
-	
-</td>
-
 </table>
 <hr>
 <table>
@@ -51,27 +52,21 @@
 	<br>
 </td>
 <td>
+  <% end %>
 	<table cellpadding="20">			
-	<tr>
-		
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact us at<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="5"><a href="mailto:contact@tabsonobama.org">contact@tabsonobama.org</a><br></font>
+	<tr>Contact us at<br><font size="5"><a href="mailto:contact@tabsonobama.org">contact@tabsonrham.org</a><br></font>
 	<tr>
 	<tr>
-		<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		Follow us on<br>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<%= link_to image_tag("twitter.png", :border=>0), "http://www.twitter.com/tabsonobama" %>
-	</tr>
+		<br><br>Follow us on<br> <%= link_to image_tag("twitter.png", :border=>0), "http://www.twitter.com/tabsonrahm" %>
+	</tr> 
+<% if false %>	
 	<tr>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comment or digg our<br> 
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<%= link_to image_tag("http://i.cdn.turner.com/ireport/static/themes/custom/resources/irb/banner.gif", :border=>0), "http://www.ireport.com/docs/DOC-380893" %>
-	</tr>
+	</tr>     
+<% end %>	
 	</table>
-</td>
-</tr>
-</table>
 </div>
 </div>
