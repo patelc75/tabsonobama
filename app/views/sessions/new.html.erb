@@ -1,7 +1,7 @@
 <%= stylesheet_link_tag "signup" %>
 <div class="box">
 <div class="boxcontent">
-<%= title "Log In.", :h1 %>  
+<%= title "Log In", :h2 %>  
 <div class="form-container">
 <% form_tag session_path do %>
 		<table>
@@ -18,12 +18,13 @@
 				<td><%= check_box_tag 'remember_me', '1', @remember_me %></td>
 			</tr>
 		</table>
-			<br>
 		<table>
+<% if false %>		  
 		<tr>
 			<td><img align="middle" padding-top="15px" src="/images/openid.png"/>Or Login with OpenID</td>
 			<td><%= text_field_tag 'openid_url' %></td>
-		</tr>
+		</tr>   
+<% end %>		
 		</table>
 
 	<br>
@@ -34,9 +35,6 @@
 	</div>
 	<br>
 	<br>
-	<br>
-	<br>
-	
 <% end -%>
 </div>
 </div>

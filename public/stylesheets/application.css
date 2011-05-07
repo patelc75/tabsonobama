@@ -7,8 +7,7 @@ body {
 		color: #444;
 		font-family: 'Lucida Grande',Arial,Helvetica,Sans-Serif;
 		font-size: 0.75em;
-		background: url(../images/bg.jpg) no-repeat scroll center top;
-		background-color: #5E82FB;
+		background-color: #6185FA;
 }
 
 h1, h2, h3, h4, h5 {
@@ -85,7 +84,7 @@ strong {
 }
 
 #spine {
-		background-color: #D5E7F9;
+		background-color: #6185FA;
 		height: 30px;
 		width: 100%;
 }
@@ -179,7 +178,7 @@ strong {
 		margin: 0;
 		padding: 15px;
 		clear: both;
-		background: #4e6df6 no-repeat scroll 50% 15px;
+		background: #6185FA no-repeat scroll 50% 15px;
 		color: #CCC;
 }
 
