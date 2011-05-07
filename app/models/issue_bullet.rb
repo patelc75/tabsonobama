@@ -15,6 +15,6 @@ class IssueBullet < ActiveRecord::Base
   def self.featured
     promotions = Promotion.home_page.issue_bullet.collect{|promotion| promotion.item}
     return promotions unless promotions.empty?
-    return find(:all, :order => "rand()", :limit => 3)
+    return find(:all, :order => "rand()", :limit => 1)
   end
 end
