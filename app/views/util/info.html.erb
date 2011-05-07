@@ -2,6 +2,7 @@
 UNIX hostname: <code><%= `hostname` %></code><br>
 System Datetime: <code><%= `date` %></code><br>
 Git Revision: <code><%= `cd ~/stagingtabs; /usr/local/bin/git describe` %></code><br>
+Rails Environment: <code><%= ENV['RAILS_ENV'] %></code><br>  
 <br>
 <b>Network</b><br>
 SERVER_ADDR: <code><%= request.env["SERVER_ADDR"].to_s %></code> <br>
