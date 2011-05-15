@@ -41,7 +41,7 @@ It's simple.</h3>
 		<div id="spine"></div>
 
 		<div id="wrapper">
-		
+		  <div id ="outer_box" style="border-width:3px;border-style:solid;margin-top:35px">
 			<div id="header" alt="Rate the Obama Administration's performance from 1 to 5 on issues that matter to you">
 				
 				<h1><%= link_to "Home", { :controller => "home", :action => "index" } , { :title => "Home"} %></h1>
@@ -73,7 +73,8 @@ It's simple.</h3>
  			  
 				<div id="yield"><%= yield %></div>
 			</div>
-
+      
+      </div>
 			<div id="footer">
 				<span id="disclaimer">A Citizen-Run Community</span>
 			</div>
