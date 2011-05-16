@@ -11,7 +11,7 @@ private
     subject    "[#{APP_CONFIG[:site_name]}] Invitation"
     recipients invitation.recipient_email
     #from       APP_CONFIG[:admin_email]
-    from 	   "no-reply@tabsonobama.org"
+    from 	   "no-reply@tabsonrahm.org"
     sent_on    Time.now
     body       :invitation => invitation, :signup_link => signup_link
   end

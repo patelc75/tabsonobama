@@ -15,7 +15,7 @@ class PasswordMailer < ActionMailer::Base
   def setup_email(user)
     @recipients = "#{user.email}"
     #@from = APP_CONFIG[:admin_email]
-    @from = "no-reply@tabsonobama.org"
+    @from = "no-reply@tabsonrahm.org"
     @subject = "[#{APP_CONFIG[:site_name]}] "
     @sent_on = Time.now
     @body[:user] = user
