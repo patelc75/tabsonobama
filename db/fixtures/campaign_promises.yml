@@ -384,7 +384,9 @@
       :short: ""  
 - :name: "LGBT Equality"
   :description: "Rahm has been a supporter of equality for the LGBT community in his personal and professional life.  He has fought for legal protection, funding and opportunity across the diverse spectrum of the community.  Rahm is proud of the 100% rating he earned from the Human Rights Campaign while serving in Congress. Looking forward, Rahm believes there are many things he can accomplish in Chicago by advocating for LGBT equality, working to improve coalitions and communications among the city’s diverse communities and bringing services to all LGBT persons located throughout the city.  Chicago thrives on its diversity, and we gain strength because we are different. The LGBT community has made numerous significant contributions to Chicago’s rich history, and Rahm looks forward to continuing a strong partnership between the mayor’s office and the LGBT communities and persons living everywhere in Chicago."
-  :issue_sections: "LGBT Equality"
+  :issue_sections: 
+  - :name: "LGBT Equality"
+    :description:
     :issue_bullets:
     - :name: "Marriage Equality"
       :description: "Rahm celebrates with the community the passage of comprehensive civil union legislation in December in Springfield. He vigorously advocated passage to members of the state legislature. He continues to believe that full marriage equality, in name and in rights, should always be the goal. While in Congress, he voted repeatedly against discriminatory efforts to make marriage equality more difficult to attain for gay and lesbian couples. Rahm voted against the Marriage Protection Amendment, which attempted to define marriage as only between one man and one woman."
