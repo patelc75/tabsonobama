@@ -252,8 +252,8 @@
     :description: 
     :issue_bullets:
     - :name: "Designate a dozen Energy Efficiency Target Zones:"
-      :description:"Certain parts of the city are particularly ripe for energy and water efficiency investments. They range from residential neighborhoods with older building stock to local business strips that have not been effectively reached by existing efficiency programs. Rahm will task the Department of Housing and Economic Development, working with the Department of Environment, to locate twelve Energy Efficiency Target Zones that are shown to offer the most ability to perform efficiency upgrades, offer real cost and energy savings, and create jobs in the process."
-      :short: "designate energy efficiency target zones"
+      :description: "Certain parts of the city are particularly ripe for energy and water efficiency investments. They range from residential neighborhoods with older building stock to local business strips that have not been effectively reached by existing efficiency programs. Rahm will task the Department of Housing and Economic Development, working with the Department of Environment, to locate twelve Energy Efficiency Target Zones that are shown to offer the most ability to perform efficiency upgrades, offer real cost and energy savings, and create jobs in the process."
+      :short: "designate energy efficiency target zones."
     - :name: "Select anchor organizations to manage the implementation of the retrofits in each zone"
       :description: "Each zone will have a designated anchor organization that has a demonstrated ability to bring together the diverse business and residential constituents in their neighborhood. The organization will set clear targets for energy savings and jobs created and will help building owners to access funding and workers. They will be responsible for managing the retrofit process and reporting regularly to the city."
       :short: "retrofits by anchor organizations"
