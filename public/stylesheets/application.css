@@ -7,7 +7,7 @@ body {
 		color: #444;
 		font-family: 'Lucida Grande',Arial,Helvetica,Sans-Serif;
 		font-size: 0.75em;
-		background-color: #6185FA;
+		background-color: #B0B0B0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -84,7 +84,7 @@ strong {
 }
 
 #spine {
-		background-color: #6185FA;
+		background-color: #B0B0B0;
 		height: 30px;
 		width: 100%;
 }
@@ -178,7 +178,7 @@ strong {
 		margin: 0;
 		padding: 15px;
 		clear: both;
-		background: #6185FA no-repeat scroll 50% 15px;
+		background: #B0B0B0 no-repeat scroll 50% 15px;
 		color: #CCC;
 }
 
@@ -200,10 +200,11 @@ strong {
 		text-align: center;
 		width: 930px;
 		margin-top: 50px;
-		font-size: 1.5em;
+		font-size: 1.5em; 
+		font-weight: bold;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		color: #CCC;
+		color: #004382;
 }
 
 a:active{
