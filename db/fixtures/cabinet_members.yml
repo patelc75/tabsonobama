@@ -1,318 +1,113 @@
-biden:
-  department: Office of the Vice President
-  office: Vice President of the United States
-  nominee: Joe Biden
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Thumbnail-sized_photo_of_Joe_Biden.jpg/75px-Thumbnail-sized_photo_of_Joe_Biden.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Joe_Biden
-  previous_political_office: Senator from Delaware
-  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
-  photo_filename: JoeBiden.jpg
+mintle:
+  department: Senior Staff
+  office: Chief of Staff
+  nominee: Theresa Mintle
+  image_link: 
+  wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
+  previous_political_office: Chief of Staff for the Chicago Transit Board
+  previous_political_office_link: 
+  photo_filename: 
   
-blair:
-  department: National Intelligence
-  office: Director
-  nominee: Dennis C. Blair
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Dennis_Blair_official_Director_of_National_Intelligence_portrait.jpg/230px-Dennis_Blair_official_Director_of_National_Intelligence_portrait.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Dennis_C._Blair
-  previous_political_office: United States Navy four-star admiral
-  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Navy
-  photo_filename: DennisCBlair.jpg  
+davis:
+  department: Senior Staff
+  office: First Deputy Chief of Staff
+  nominee: Felicia Davis
+  image_link: 
+  wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
+  previous_political_office: Chicago Police Officer
+  previous_political_office_link: 
+  photo_filename: 
   
-browner:
-  department: Energy and Climate Policy
-  office: White House Coordinator
-  nominee: Carol M. Browner
-  image_link: http://news-service.stanford.edu/news/2006/april5/gifs/brownerCMYK.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Carol_Browner
-  previous_political_office: Administrator of the Environmental Protection Agency
-  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Environmental_Protection_Agency
-  photo_filename: CarolMBrowner.jpg
+swanson:
+  department: Senior Staff
+  office: Deputy Chief of Staff for Education
+  nominee: Elizabeth Swanson
+  image_link: 
+  wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
+  previous_political_office: Executive Director of The Pritzker Traubert Family Foundation
+  previous_political_office_link: 
+  photo_filename: 
   
 
-chu:
-  department: Energy
-  office: Secretary
-  nominee: Steven Chu
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/SecretaryChu.jpg/75px-SecretaryChu.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Steven_Chu
-  previous_political_office: n/a
+hynes:
+  department: Senior Staff
+  office: Director, Office of Legislative Counsel and Government Affairs
+  nominee: Matthew Hynes
+  image_link: 
+  wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
+  previous_political_office: managing partner of Hynes Law Offices LLC
   previous_political_office_link: n/a
 
 
-clinton:
-  department: State
-  office: Secretary
-  nominee: Hillary Rodham Clinton
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Hillary_Rodham_Clinton.jpg/220px-Hillary_Rodham_Clinton.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Hillary_Rodham_Clinton
-  previous_political_office: Junior Senator from New York
-  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
-  photo_filename: HillaryClinton.jpg
+guerra:
+  department: Senior Staff
+  office: First Deputy Director, Office of Legislative Counsel and Government Affairs
+  nominee: Maria Guerra
+  image_link: 
+  wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
+  previous_political_office: Deputy Director over public private partnerships in the Office of the City of Chicago's Chief Financial Officer
+  previous_political_office_link: 
+  photo_filename: 
 
-donovan:
-  department: Housing and Urban Development
-  office: Secretary
-  nominee: Shaun Donovan
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/ShaunDonovan.jpeg/75px-ShaunDonovan.jpeg
-  wikipedia_link: http://en.wikipedia.org/wiki/Shaun_Donovan
-  previous_political_office: Head of the New York City Department of Housing Preservation and Development
-  previous_political_office_link: http://en.wikipedia.org/wiki/New_York_City_Department_of_Housing_Preservation_and_Development
-  photo_filename: ShaunDonovan.jpg 
+spielfogel:
+  department: Senior Staff
+  office: Chief of Policy of Strategic Planning
+  nominee: David Spielfogel
+  image_link: 
+  wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
+  previous_political_office: Director of the Chicago 2011 Transition Project
+  previous_political_office_link: 
+  photo_filename: 
  
-duncan: 
-  department: Education
-  office: Secretary
-  nominee: Arne Duncan
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Arne_Duncan.JPG/75px-Arne_Duncan.JPG
-  wikipedia_link: http://en.wikipedia.org/wiki/Arne_Duncan
-  previous_political_office: Chief Executive Officer of the Chicago Public Schools
-  previous_political_office_link: http://en.wikipedia.org/wiki/Chief_Executive_Officer
-  photo_filename: ArneDuncan.jpg  
+simmons: 
+  department: Senior Staff
+  office: Policy Director
+  nominee: Mike Simmons
+  image_link: 
+  wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
+  previous_political_office: policy director for the Cook County Commissioner 
+  previous_political_office_link: 
+  photo_filename:  
 
-emanuel:
-  department: White House Chief of Staff
-  office: Chief
-  nominee: Rahm Emanuel
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Rahm_Emanuel%2C_official_photo_portrait_color.jpg/75px-Rahm_Emanuel%2C_official_photo_portrait_color.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Rahm_Emanuel
-  previous_political_office: Illinois Reoresentative
-  previous_political_office_link: http://en.wikipedia.org/wiki/Illinois%27s_5th_congressional_district
-  photo_filename: RahmEmanuel.jpg
+schrader:
+  department: Senior Staff
+  office: Chief Operation Officer
+  nominee: Lisa Schrader
+  image_link: 
+  wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
+  previous_political_office: worked in the Mayor's office
+  previous_political_office_link: 
+  photo_filename: 
  
-geithner:
-  department: Treasury
-  office: Secretary
-  nominee: Timothy Geithner
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Timothy_F_Geithner.jpg/75px-Timothy_F_Geithner.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Timothy_Geithner
-  previous_political_office: 9th president of the Federal Reserve Bank of New York
-  previous_political_office_link: http://en.wikipedia.org/wiki/Federal_Reserve_Bank_of_New_York
-  photo_filename: TimothyGeithner.jpg
+mather:
+  department: Senior Staff
+  office: Communications Director
+  nominee: Chris Mather
+  image_link: 
+  wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
+  previous_political_office: Communications Director for Federal Agriculture Secretary
+  previous_political_office_link: 
+  photo_filename: 
 
-gates:
-  department: Defense
-  office: Secretary
-  nominee: Robert Gates
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Robert_Gates%2C_official_DoD_photo_portrait%2C_2006.jpg/75px-Robert_Gates%2C_official_DoD_photo_portrait%2C_2006.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Robert_Gates
-  previous_political_office: Director of Central Intelligence for the CIA
-  previous_political_office_link: http://en.wikipedia.org/wiki/Superior_Court_of_the_District_of_Columbia
-  photo_filename: EricHolder.jpg
-  
-gibbs:
-  department: White House Press Secretary
+cooper:
+  department: Senior Staff
   office: Press Secretary
-  nominee: Robert Gibbs
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Robert_Gibbs.jpg/200px-Robert_Gibbs.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Robert_Gibbs
-  previous_political_office: Communications Director for U.S. Senator Barack Obama
-  previous_political_office_link: http://en.wikipedia.org/wiki/Communications_director
-  photo_filename: RobertGibbs.jpg  
-
-holder:
-  department: Justice
-  office: Attorney General
-  nominee: Eric Holder
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/EricHolder.jpg/75px-EricHolder.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Eric_Holder
-  previous_political_office: Judge of the Superior Court of the District of Columbia
-  previous_political_office_link: http://en.wikipedia.org/wiki/Director_of_Central_Intelligence
-  photo_filename: RobertGates.jpg
+  nominee: Tarrah Cooper
+  image_link: 
+  wikipedia_link:  http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
+  previous_political_office: n/a
+  previous_political_office_link: n/a
+  photo_filename: n/a
   
-jackson:
-  department: Environmental Protection Agency
-  office: Administrator
-  nominee: Lisa Jackson
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Lisa_P._Jackson.jpg/75px-Lisa_P._Jackson.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Lisa_P._Jackson
-  previous_political_office: Chief of Staff to Governor of New Jersey
-  previous_political_office_link: http://en.wikipedia.org/wiki/Governor_of_New_Jersey
-  photo_filename: LisaJackson.jpg  
-  
-jones:
-  department: National Security
-  office: Advisor
-  nominee: James L. Jones
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/James_L._Jones_2.jpg/225px-James_L._Jones_2.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/James_L._Jones
-  previous_political_office: United States Marine Corps four-star general
-  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Marine_Corps
-  photo_filename: JamesLJones.jpg  
+loredo:
+  department: Senior Staff
+  office: Director, Scheduling and Advance
+  nominee: Shannon Loredo
+  image_link: n/a
+  wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
+  previous_political_office: Director for Community Investments at Great Lakes Higher Education
+  previous_political_office_link: n/a
+  photo_filename: n/a
 
-kerlikowske:
-  department: Office of National Drug Control Policy
-  office: Director
-  nominee: Gil Kerlikowske
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Gil_Kerlikowske.jpg/75px-Gil_Kerlikowske.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Gil_Kerlikowske
-  previous_political_office: Seattle Chief of Police
-  previous_political_office_link: http://en.wikipedia.org/wiki/Seattle_Police_Department
-  photo_filename: GilKerlikowske.jpg
-
-kirk:
-  department: US Trade Representative 
-  office: Representative
-  nominee: Ron Kirk
-  image_link: http://upload.wikimedia.org/wikipedia/commons/2/22/Ron_Kirk.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Ron_Kirk
-  previous_political_office: Mayor of Dallas, Texas
-  previous_political_office_link: http://en.wikipedia.org/wiki/Dallas
-  photo_filename: RonKirk.jpg
-
-laHood:
-  department: Transportation
-  office: Secretary
-  nominee: Ray LaHood
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Ray_LaHood.jpg/75px-Ray_LaHood.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Ray_LaHood
-  previous_political_office: Republican Member of the United States House of Representatives
-  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_House_of_Representatives
-  photo_filename: RayLaHood.jpg
-
-locke:
-  department: Commerce
-  office: Secretary
-  nominee: Gary Locke
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Gary_Locke.jpg/75px-Gary_Locke.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Gary_Locke
-  previous_political_office: Governor of Washington
-  previous_political_office_link: http://en.wikipedia.org/wiki/Governor_of_Washington
-  photo_filename: garylocke.jpg
-
-napolitano:
-  department: Homeland Security
-  office: Secretary
-  nominee: Janet Napolitano
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/JanetNapolitanoIraq.jpg/75px-JanetNapolitanoIraq.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Janet_Napolitano
-  previous_political_office: Governor of Arizona
-  previous_political_office_link: http://en.wikipedia.org/wiki/Arizona
-  photo_filename: JanetNapolitano.jpg
-  
-orszag:
-  department: Office of Management and Budget 
-  office: Director
-  nominee: Peter Orszag
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Peter_R_Orszag_CBO_official_picture.jpg/75px-Peter_R_Orszag_CBO_official_picture.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Peter_Orszag
-  previous_political_office: Director of the Congressional Budget Office
-  previous_political_office_link: http://en.wikipedia.org/wiki/Congressional_Budget_Office
-  photo_filename: PeterOrszag  
-  
-panetta:
-  department: Central Intelligence Agency
-  office: Director
-  nominee: Leon Panetta
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Leon_Panetta%2C_informal_photo.jpg/225px-Leon_Panetta%2C_informal_photo.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Leon_Panetta
-  previous_political_office: President Bill Clinton's White House Chief of Staff
-  previous_political_office_link: http://en.wikipedia.org/wiki/Central_Intelligence_Agency
-  photo_filename: LeonPanetta.jpg  
-  
-rice:
-  department: United Nations
-  office: Ambassador
-  nominee: Susan Rice
-  image_link: http://www.usunnewyork.usmission.gov/images/srice_bio.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Susan_Rice
-  previous_political_office: National Security Council Staffer
-  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_National_Security_Council
-  photo_filename: SusanRice.jpg  
-  
-romer:
-  department: Council of Economic Advisors
-  office: Chair
-  nominee: Christina Romer
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/ChristinaRomer_20090105_EconMeeting-9208.jpg/75px-ChristinaRomer_20090105_EconMeeting-9208.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Christina_Romer
-  previous_political_office: Professor of Economics at UC Berkeley
-  previous_political_office_link: http://en.wikipedia.org/wiki/University_of_California_Berkeley
-  photo_filename: ChristinaRomer.jpg
-
-salazar:
-  department: Interior
-  office: Secretary
-  nominee: Ken Salazar
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Kensalazar.jpg/75px-Kensalazar.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Ken_Salazar
-  previous_political_office: Junior Senator from Colorado
-  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_Senate
-  photo_filename: KenSalazar.jpg
-  
-schiliro:
-  department: Legislative Affairs
-  office: Assistant
-  nominee: Phil Schiliro
-  image_link: http://blog.prospect.org/blog/ezraklein/schiliro_190.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Phil_Schiliro
-  previous_political_office: Democratic Chief of Staff for the US House Committee on Oversight and Government Reform
-  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_House_Committee_on_Oversight_and_Government_Reform
-  photo_filename: PhilSchiliro.jpg  
-
-sebelius:
-  department: Health and Human Services
-  office: Secretary
-  nominee: Katherine Sebelius
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/GovKathleenSebeliusphoto.jpg/75px-GovKathleenSebeliusphoto.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Kathleen_Sebelius
-  previous_political_office: Governor of Kansas
-  previous_political_office_link: http://en.wikipedia.org/wiki/Governor_of_Kansas
-  photo_filename: KatherineSebelius.jpg
-
-shinseki:
-  department: Veterans' Affairs
-  office: Secretary
-  nominee: Eric Shinseki
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Eric_Shinseki_official_portrait.jpg/75px-Eric_Shinseki_official_portrait.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Eric_Shinseki
-  previous_political_office: Chief of Staff of the Army
-  previous_political_office_link: http://en.wikipedia.org/wiki/Chief_of_Staff_of_the_United_States_Army
-  photo_filename: EricShinseki.jpg
-
-solis:
-  department: Labor
-  office: Secretary
-  nominee: Hilda Solis
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Hilda_Solis.jpg/75px-Hilda_Solis.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Hilda_Solis
-  previous_political_office: Member of the United States House of Representatives 
-  previous_political_office_link: http://en.wikipedia.org/wiki/United_States_House_of_Representatives
-  photo_filename: HildaSolis.jpg  
-  
-summers:
-  department: National Economic Council
-  office: Director
-  nominee: Lawrence H. Summers
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Summers_Lawrence.jpg/225px-Summers_Lawrence.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Lawrence_Summers
-  previous_political_office: Professor at Harvard University's Kennedy School of Government.
-  previous_political_office_link: http://en.wikipedia.org/wiki/Kennedy_School_of_Government
-  photo_filename: LawrenceHSummers.jpg  
-  
-vilsack:
-  department: Agriculture
-  office: Secretary
-  nominee: Tom Vilsack
-  image_link: http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Tom_Vilsack%2C_official_USDA_photo_portrait.jpg/75px-Tom_Vilsack%2C_official_USDA_photo_portrait.jpg
-  wikipedia_link: http://en.wikipedia.org/wiki/Tom_Vilsack
-  previous_political_office: Governor of Iowa
-  previous_political_office_link: http://en.wikipedia.org/wiki/Iowa
-  photo_filename: TomVilsack.jpg
-
-
-  
-
-  
-
-
-
-
-
-
-  
-
-  
-
-  
 
   
