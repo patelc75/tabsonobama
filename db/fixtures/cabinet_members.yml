@@ -1,6 +1,6 @@
 mintle:
-  department: Senior Staff
-  office: Chief of Staff
+  department: Chief of Staff
+  office: 
   nominee: Theresa Mintle
   image_link: 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -9,8 +9,8 @@ mintle:
   photo_filename: 
   
 davis:
-  department: Senior Staff
-  office: First Deputy Chief of Staff
+  department: First Deputy Chief of Staff
+  office: 
   nominee: Felicia Davis
   image_link: http://www.suntimes.com/csp/cms/sites/dt.common.streams.StreamServer.cls?STREAMOID=cmaGjvUuHBgJAYerdPoh3s$daE2N3K4ZzOUsqbU5sYvYOGrRUMaEOBFxK7KQHS74WCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&CONTENTTYPE=image/jpeg 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -19,8 +19,8 @@ davis:
   photo_filename: 
   
 swanson:
-  department: Senior Staff
-  office: Deputy Chief of Staff for Education
+  department: Deputy Chief of Staff for Education
+  office: 
   nominee: Elizabeth Swanson
   image_link: http://media.linkedin.com/mpr/pub/image-UuZAhFLm1jH_LPue2trdhzkQ1xGPL4uenPSmhwQn1S3wizkq/elizabeth-swanson.jpg 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -30,8 +30,8 @@ swanson:
   
 
 hynes:
-  department: Senior Staff
-  office: Director, Office of Legislative Counsel and Government Affairs
+  department: Director, Office of Legislative Counsel and Government Affairs
+  office: 
   nominee: Matthew Hynes
   image_link: 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -40,8 +40,8 @@ hynes:
 
 
 guerra:
-  department: Senior Staff
-  office: First Deputy Director, Office of Legislative Counsel and Government Affairs
+  department: First Deputy Director, Office of Legislative Counsel and Government Affairs
+  office: 
   nominee: Maria Guerra
   image_link: 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -50,8 +50,8 @@ guerra:
   photo_filename: 
 
 spielfogel:
-  department: Senior Staff
-  office: Chief of Policy of Strategic Planning
+  department: Chief of Policy of Strategic Planning
+  office: 
   nominee: David Spielfogel
   image_link: 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -70,8 +70,8 @@ simmons:
   photo_filename:  
 
 schrader:
-  department: Senior Staff
-  office: Chief Operation Officer
+  department: Chief Operation Officer
+  office: 
   nominee: Lisa Schrader
   image_link: 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -80,8 +80,8 @@ schrader:
   photo_filename: 
  
 mather:
-  department: Senior Staff
-  office: Communications Director
+  department: Communications Director
+  office: 
   nominee: Chris Mather
   image_link: 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -90,8 +90,8 @@ mather:
   photo_filename: 
 
 cooper:
-  department: Senior Staff
-  office: Press Secretary
+  department: Press Secretary
+  office: 
   nominee: Tarrah Cooper
   image_link: 
   wikipedia_link:  http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -100,8 +100,8 @@ cooper:
   photo_filename: n/a
   
 loredo:
-  department: Senior Staff
-  office: Director, Scheduling and Advance
+  department: Director, Scheduling and Advance
+  office: 
   nominee: Shannon Loredo
   image_link: n/a
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
