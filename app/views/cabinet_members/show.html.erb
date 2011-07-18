@@ -4,8 +4,8 @@
 <div class="box">
   <div class="boxcontent">
   	
-  <h1>Cabinet Member</h1>
-  <h4><%= link_to "Show other Cabinet Members", "/cabinet-members", { :title => "Show All Cabinet Members"} %></h4>
+  <h1>Senior Staff</h1>
+  <h4><%= link_to "Show other Senior Staff", "/cabinet-members", { :title => "Show All Cabinet Members"} %></h4>
   <hr />
   <div id="cabinetlist">
     <ul class="mainlist">
@@ -18,7 +18,8 @@
             </h5>
           </div>
           <div class="titlerate single">
-            <h3><%= @cabinet_member.office %> of <%= @cabinet_member.department %></h3>
+            <h3><% if !@cabinet_member.office.blank? %><%= @cabinet_member.office %> of <% end %>
+            <%= @cabinet_member.department %></h3>
             <br/>
             <h4>Formerly: <%= link_to @cabinet_member.previous_political_office, @cabinet_member.previous_political_office_link %>
             </h4>

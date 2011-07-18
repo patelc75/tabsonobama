@@ -4,7 +4,7 @@
  	    <h2>Rate</h2>
  	    
  		<div class="featured">
- 			<h3><%= link_to "Cabinet Members", "/cabinet-members", { :title => "Show All Cabinet Members"} %></h3>
+ 			<h3><%= link_to "Senior Staff", "/cabinet-members", { :title => "Show All Cabinet Members"} %></h3>
 			<div id="star-ratings-block-<%= Aggregate.class_name %>-<%= CabinetMember.class_name %>" class="star-ratings-block">
 				<%= render :partial => 'ratings/rate', :locals => {:asset => Aggregate.find(:first, :conditions => ['rateable_type = ?', CabinetMember.class_name])} %>
 			</div>
@@ -16,7 +16,7 @@
  			<div class="meta">
  				<% cabinet_member = CabinetMember.featured %>
  				<% if !cabinet_member.nil? %>
- 					<h3><%= link_to "Featured Cabinet Member", "cabinet-members/#{cabinet_member.permalink}" %></h3>
+ 					<h3><%= link_to "Featured Staff Member", "cabinet-members/#{cabinet_member.permalink}" %></h3>
 	 				<h4><%= link_to cabinet_member.nominee, "cabinet-members/#{cabinet_member.permalink}" %></h4>
 	 				<div id="star-ratings-block-<%= cabinet_member.class.to_s %>-<%= cabinet_member.id %>" class="star-ratings-block">
 						<%= render :partial => 'ratings/rate', :locals => {:asset => cabinet_member, :align => 'left'} %>
@@ -25,7 +25,7 @@
 	 		</div>
 	 		<div class="photo">
 	 			<% if !cabinet_member.nil? %>
-	 			<img alt="<%= cabinet_member.nominee %>" src="<%= cabinet_member.image_link %>" />
+	 			<img alt="<%= cabinet_member.nominee %>" src="<%= !cabinet_member.image_link.blank? ? cabinet_member.image_link : "images/#{cabinet_member.photo_filename}" %>" />
 	 			<% end %>
 	 		</div>
  			<br class="clear" />

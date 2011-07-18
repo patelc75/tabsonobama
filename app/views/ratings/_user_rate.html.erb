@@ -24,8 +24,8 @@
   </ul>
 </div>
   <div align="<%= defined?(align) ? align : 'right' %>" style="color: gray;">
-  	My Average <%= number_with_precision(avg, :precision => 1) %> (<%= count %> votes)<br>
-  	All Average <%= number_with_precision(asset.rating_average, :precision => 1) %> (<%= asset.rated_count %> votes)<br>
+  	Your Average: <%= number_with_precision(avg, :precision => 1) %> (<%= count %> votes)<br>
+  	All Average: <%= number_with_precision(asset.rating_average, :precision => 1) %> (<%= asset.rated_count %> votes)<br>
   	
   </div>
   <% if (asset.class.name == "WeeklyRadioAddress" || asset.class.name == "CabinetMember" || asset.class.name == "IssueBullet") %>

@@ -6,7 +6,7 @@
   <!-- cabinet -->
   <div class="box">
   	<div class="boxcontent">
-	   	<h1>Cabinet</h1>
+	   	<h1>Senior Staff</h1>
 	   	<hr />
 	
 	    <div id="cabinetlist">
@@ -15,13 +15,14 @@
 	          <li class="mainlist">				
 	          <div class="phototitlerate">
 	          	<div class="cabinetphoto">						
-	          		<img alt="<%=c.nominee%>" src="<%=c.image_link%>" width="75px" />
+	          		<img alt="<%=c.nominee%>" src="<%= !c.image_link.blank? ? c.image_link : "images/#{c.photo_filename}" %>" width="75px" />
 	          		<h5><%= link_to c.nominee, "cabinet-members/#{c.permalink}" %><h5>
 	          	</div>
 	          	<div class="titlerate">
 	          	</div>
 	          	<h3><%= link_to c.department, "cabinet-members/#{c.permalink}" %></h3>
-	          	<h4><%= link_to c.office, "cabinet-members/#{c.permalink}" %></h4>
+	          	
+	          	<h4><% if !c.office.blank? %><%= link_to c.office, "cabinet-members/#{c.permalink}" %><% end %></h4>
 	          	<div id="star-ratings-block-<%= c.class.to_s %>-<%= c.id %>" class="star-ratings-block">
 	          		<%= render :partial => 'ratings/rate', :locals => {:asset => c, :align => "left"} %>
 	          	</div>
