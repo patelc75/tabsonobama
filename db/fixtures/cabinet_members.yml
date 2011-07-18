@@ -1,16 +1,16 @@
 mintle:
-  department: Chief of Staff
-  office: 
+  department: Senior Staff
+  office: Chief of Staff
   nominee: Theresa Mintle
-  image_link: 
+  image_link: http://www.lgcchicago.com/images/fellows/img482.jpg
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
   previous_political_office: Chief of Staff for the Chicago Transit Board
   previous_political_office_link: 
   photo_filename: 
   
 davis:
-  department: First Deputy Chief of Staff
-  office: 
+  department: Senior Staff
+  office: First Deputy Chief of Staff
   nominee: Felicia Davis
   image_link: http://www.suntimes.com/csp/cms/sites/dt.common.streams.StreamServer.cls?STREAMOID=cmaGjvUuHBgJAYerdPoh3s$daE2N3K4ZzOUsqbU5sYvYOGrRUMaEOBFxK7KQHS74WCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&CONTENTTYPE=image/jpeg 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -19,8 +19,8 @@ davis:
   photo_filename: 
   
 swanson:
-  department: Deputy Chief of Staff for Education
-  office: 
+  department: Education
+  office: Deputy Chief of Staff
   nominee: Elizabeth Swanson
   image_link: http://media.linkedin.com/mpr/pub/image-UuZAhFLm1jH_LPue2trdhzkQ1xGPL4uenPSmhwQn1S3wizkq/elizabeth-swanson.jpg 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -30,8 +30,8 @@ swanson:
   
 
 hynes:
-  department: Director, Office of Legislative Counsel and Government Affairs
-  office: 
+  department: Office of Legislative Counsel and Government Affairs
+  office: Director
   nominee: Matthew Hynes
   image_link: 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -40,8 +40,8 @@ hynes:
 
 
 guerra:
-  department: First Deputy Director, Office of Legislative Counsel and Government Affairs
-  office: 
+  department: Office of Legislative Counsel and Government Affairs
+  office: First Deputy Director
   nominee: Maria Guerra
   image_link: http://www.mlichicago.com/Participants/part45.jpg
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -50,8 +50,8 @@ guerra:
   photo_filename: 
 
 spielfogel:
-  department: Chief of Policy of Strategic Planning
-  office: 
+  department: Strategic Planning
+  office: Chief of Policy
   nominee: David Spielfogel
   image_link: 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -63,15 +63,15 @@ simmons:
   department: Senior Staff
   office: Policy Director
   nominee: Mike Simmons
-  image_link: 
+  image_link: http://media.linkedin.com/mpr/mpr/shrink_80_80/p/2/000/0b4/306/05ed867.jpg
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
   previous_political_office: policy director for the Cook County Commissioner 
   previous_political_office_link: 
   photo_filename:  
 
 schrader:
-  department: Chief Operation Officer
-  office: 
+  department: Senior Staff
+  office: Chief Operation Officer
   nominee: Lisa Schrader
   image_link: 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -80,8 +80,8 @@ schrader:
   photo_filename: 
  
 mather:
-  department: Communications Director
-  office: 
+  department: Communications 
+  office: Director
   nominee: Chris Mather
   image_link: 
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
@@ -90,18 +90,18 @@ mather:
   photo_filename: 
 
 cooper:
-  department: Press Secretary
-  office: 
+  department: Communications
+  office: Press Secretary
   nominee: Tarrah Cooper
-  image_link: 
+  image_link: http://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/editorial/6/00/a63/600a6356-8303-11e0-a184-0019bb30f31a-revisions/4dd69f5f6ab79.preview-100.jpg
   wikipedia_link:  http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
   previous_political_office: n/a
   previous_political_office_link: n/a
   photo_filename: n/a
   
 loredo:
-  department: Director, Scheduling and Advance
-  office: 
+  department: Scheduling and Advance
+  office: Director
   nominee: Shannon Loredo
   image_link: n/a
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
