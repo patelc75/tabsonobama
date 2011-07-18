@@ -8,8 +8,8 @@ module AuthenticatedSystem
 
     # Accesses the current user from the session.
     # Future calls avoid the database because nil is not equal to false.
-    def current_user
-      @current_user ||= (login_from_session || login_from_basic_auth || login_from_cookie) unless @current_user == false
+    def current_user     
+        @current_user ||= (login_from_session || login_from_basic_auth || login_from_cookie || login_from_anonymous) unless @current_user == false
     end
 
     # Store the given user id in the session.
@@ -103,7 +103,7 @@ module AuthenticatedSystem
 
     # Called from #current_user.  First attempt to login by the user id stored in the session.
     def login_from_session
-      self.current_user = User.find_by_id(session[:user_id]) if session[:user_id]
+      self.current_user = User.find_by_id(session[:user_id]) if session[:user_id]   
     end
 
     # Called from #current_user.  Now, attempt to login by basic authentication information.
@@ -126,6 +126,24 @@ module AuthenticatedSystem
         handle_remember_cookie! false # freshen cookie token (keeping date)
         self.current_user
       end
+    end 
+    
+    def login_from_anonymous
+      user = User.new({"new_profile_attributes"=>                                 
+                          { "country_code"=>"", "zip"=>"", "first_name"=>"Anonymous",
+                            "last_name"=>"User", "affiliation_id"=>"1"
+                          }, 
+                       "password"               =>  "anonymous123", 
+                       "password_confirmation"  =>  "anonymous123", 
+                       #"invitation_token"       =>  "", 
+                       "invitation_limit"       =>  0,                        
+                       "login"                  =>  "anonymous_#{Time.now.strftime("%m-%d-%y+%I:%M:%S%p")}", 
+                       "email"                  =>  "anonymous@tabsonrahm.org",
+                       "current_ip"             =>  request.env['REMOTE_ADDR']})    
+      user.send(:create_without_callbacks)
+      self.current_user = user
+      handle_remember_cookie! true # freshen cookie token (keeping date)
+      self.current_user
     end
 
     # This is ususally what you want; resetting the session willy-nilly wreaks

@@ -1,5 +1,5 @@
-<% if current_user %>
-
+<% #debugger %>
+<% if current_user and !current_user.login.include?("anonymous") %>
   <% if current_user.has_invitations? %>
     <%= link_to "Send an invitation", new_invitation_path %>
     (You have <%= current_user.invitation_limit %> left)
@@ -10,14 +10,17 @@
   &nbsp;  | &nbsp;  
   <%= link_to "Logout", logout_url %>
 
-<% else %>
+<% else %>      
   <div id="login-again" style="display:none">
     <% if @login %>
       <%= link_to "Forgot your password?", forgot_password_url %> or
     <% end %>
     <a href='/login' id="login-again-link">Try again</a>.
   </div>
-  <div id="login-links">
+  <div id="login-links">     
+    <% if current_user and current_user.login.include?("anonymous") %>
+       <li>You are Anonymous!</li>
+    <% end %>
 <li><a href="http://twitter.com/tabsonrahm"><img style="opacity: 0.8; -moz-opacity: 0.8; padding-top:12px" title="Follow Us on Twitter" alt="Follow Us on Twitter" src="http://chicagohealthtech.org/wp-content/plugins/social-media-widget/images/default/32/twitter.png"></a></li>  
   	<li><a title="SignUp" href="/signup"> Sign Up</li>
   	<li><a title="Login" href="/login" id="login-link">Login</a></li>

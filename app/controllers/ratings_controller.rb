@@ -24,10 +24,12 @@ class RatingsController < ApplicationController
   def rate
     rateable = @rateable_class.find(params[:id])
     is_rateable = true
-    if logged_in?
+    if logged_in?   
       # Delete the old ratings for current user
-      # Rating.delete_all(["rated_type = ? AND rated_id = ? AND rater_id = ?", @rateable_class.base_class.to_s, params[:id], @current_user.id])
-      rating = Rating.find(:first, 
+      # Rating.delete_all(["rated_type = ? AND rated_id = ? AND rater_id = ?", @rateable_class.base_class.to_s, params[:id], @current_user.id])        
+      
+      #the previous rating is being pulled so the rater can't rate more than once per 24 hours
+      rating = Rating.find(:first,  
                            :conditions => "rated_type = '#{@rateable_class.base_class.to_s}' AND rated_id = #{params[:id]} AND rater_id = #{current_user.id}", 
                            :order => 'updated_at desc')
       if !rating || (rating.updated_at.nil? || (rating.updated_at + 1.day) < Time.now)
@@ -40,12 +42,12 @@ class RatingsController < ApplicationController
       render :update do |page|
         page.replace_html "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}", :partial => "rate", :locals => { :asset => rateable, :align => params[:align] }
         page.visual_effect :highlight, "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}"
-        unless logged_in?
+        if current_user and current_user.login.include?("anonymous")
           page << "tb_show('Dialog', '#TB_inline?height=250&width=300&inlineId=loginID&modal=true', null);"
         end
       end
     else
-      render :update do |page|
+      render :update do |page|   #this is the "One vote per 24 hour period only." popup dialog box
         page << "tb_show('Dialog', '#TB_inline?height=250&width=200&inlineId=dialogID&modal=true', null);"
         #page << '$("#dialog").dialog({ modal: true, overlay: { opacity: 0.5, background: "black" } });'
       end

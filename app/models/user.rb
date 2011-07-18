@@ -47,7 +47,7 @@ class User < ActiveRecord::Base
   end
   
   def has_invitations?
-    self.invitation_limit > 0
+    invitation_limit.nil? ? false : self.invitation_limit > 0  
   end
   
   def invitation_token
@@ -57,9 +57,9 @@ class User < ActiveRecord::Base
   def invitation_token=(token)
     self.invitation = Invitation.find_by_token(token)
   end
-  
+
 private
   def set_invitation_limit
     self.invitation_limit = self.is_super_admin? ? 5 : 0
-  end
+  end  
 end
