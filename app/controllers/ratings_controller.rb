@@ -6,7 +6,7 @@ class RatingsController < ApplicationController
   	if logged_in?
   		@logged_in = true
     	@members = CabinetMember.find_rated_by(current_user).uniq
-    	@addresses = WeeklyRadioAddress.find_rated_by(current_user).uniq
+    	@addresses = WeeklyRadioAddress.find_rated_by(current_user).uniq   
     	@groups = IssueGroup.find_rated_by(current_user).uniq
     	@sections = IssueSection.find_rated_by(current_user).uniq
     	@bullets = IssueBullet.find_rated_by(current_user).uniq
@@ -24,7 +24,9 @@ class RatingsController < ApplicationController
   def rate
     rateable = @rateable_class.find(params[:id])
     is_rateable = true
-    if logged_in?   
+    if !logged_in?   
+      login_from_anonymous      
+    end
       # Delete the old ratings for current user
       # Rating.delete_all(["rated_type = ? AND rated_id = ? AND rater_id = ?", @rateable_class.base_class.to_s, params[:id], @current_user.id])        
       
@@ -37,12 +39,12 @@ class RatingsController < ApplicationController
       else
         is_rateable = false
       end
-    end
+    #end
     if is_rateable
       render :update do |page|
         page.replace_html "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}", :partial => "rate", :locals => { :asset => rateable, :align => params[:align] }
         page.visual_effect :highlight, "star-ratings-block-#{rateable.class.to_s}-#{rateable.id}"
-        if current_user and current_user.login.include?("anonymous")
+        if current_user and current_user.login.include?("anonymous")     
           page << "tb_show('Dialog', '#TB_inline?height=250&width=300&inlineId=loginID&modal=true', null);"
         end
       end

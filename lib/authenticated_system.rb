@@ -9,7 +9,7 @@ module AuthenticatedSystem
     # Accesses the current user from the session.
     # Future calls avoid the database because nil is not equal to false.
     def current_user     
-        @current_user ||= (login_from_session || login_from_basic_auth || login_from_cookie || login_from_anonymous) unless @current_user == false
+        @current_user ||= (login_from_session || login_from_basic_auth || login_from_cookie) unless @current_user == false
     end
 
     # Store the given user id in the session.
@@ -135,10 +135,11 @@ module AuthenticatedSystem
                           }, 
                        "password"               =>  "anonymous123", 
                        "password_confirmation"  =>  "anonymous123", 
-                       #"invitation_token"       =>  "", 
+                      #"invitation_token"       =>  "", 
                        "invitation_limit"       =>  0,                        
                        "login"                  =>  "anonymous_#{Time.now.strftime("%m-%d-%y+%I:%M:%S%p")}", 
-                       "email"                  =>  "anonymous@tabsonrahm.org",
+                       "email"                  =>  "anonymous@tabsonrahm.org", 
+                       "created_at"             =>  Time.now, 
                        "current_ip"             =>  request.env['REMOTE_ADDR']})    
       user.send(:create_without_callbacks)
       self.current_user = user
