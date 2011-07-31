@@ -18,7 +18,7 @@
     <a href='/login' id="login-again-link">Try again</a>.
   </div>
   <div id="login-links">     
-    <% if current_user and current_user.login.include?("anonymous") %>
+    <% if current_user.nil? or current_user.login.include?("anonymous") %>
        <li><span style="font-size:12px;text-transform:lowercase;"><%= link_to "You're logged in anonymously!", "/anonymous" , { :title => "About"}, {:style=>'text-transform=none'} %></span></li>
     <% end %>
 <li><a href="http://twitter.com/tabsonrahm"><img style="opacity: 0.8; -moz-opacity: 0.8; padding-top:12px" title="Follow Us on Twitter" alt="Follow Us on Twitter" src="http://chicagohealthtech.org/wp-content/plugins/social-media-widget/images/default/32/twitter.png"></a></li>  
