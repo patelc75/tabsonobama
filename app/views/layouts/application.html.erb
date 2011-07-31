@@ -32,7 +32,7 @@
 <div id="loginID" style="display:none">
   <div style="float:right"><%= link_to_function("Close", "tb_remove()")%></div><br><br>
     <h3>
-    Your rating was posted <b>anonymously</b>. Please click <%= link_to "Sign Up", "/signup" %> or <%= link_to "Login", login_url %> and you can <b>track</b> your ratings!
+    Your rating was posted <u><%= link_to "anonymously", "/anonymous" %></u>. Please click <%= link_to "Sign Up", "/signup" %> or <%= link_to "Login", login_url %> and you can <b>track</b> your ratings!
     <br><br>
 It's simple.</h3>
 	<%= render :partial => 'ratings/rate_guide', :locals => {:align => 'left'} %>	

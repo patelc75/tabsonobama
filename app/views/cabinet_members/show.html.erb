@@ -12,7 +12,7 @@
       <li class="mainlist single">
         <div class="phototitlerate">
           <div class="cabinetphoto">
-            <img alt="<%= @cabinet_member.nominee %>" src="<%= @cabinet_member.image_link %>" width="75px"/>
+            <img alt="<%= @cabinet_member.nominee %>" src="<%= !@cabinet_member.image_link.blank? ? @cabinet_member.image_link : "images/#{@cabinet_member.photo_filename}" %>" width="75px"/>
             <h5>
               <a href="<%= @cabinet_member.wikipedia_link %>"><%= @cabinet_member.nominee %></a>
             </h5>
