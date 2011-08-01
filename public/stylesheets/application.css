@@ -125,7 +125,7 @@ strong {
 		background: transparent url(../images/navline.gif) no-repeat scroll 100% 50%;
         font-size: 15px;
 		letter-spacing: 2px;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 }
 
 #nav ul li:first-child {
@@ -138,10 +138,10 @@ strong {
 }
 
 #nav ul li a {
-        text-decoration: none;
-		text-transform: uppercase;
-        color: #01245d;
-	    font-weight: bold;        
+    text-decoration: none;
+		/*text-transform: uppercase;*/
+    color: #01245d;
+	  /*font-weight: bold;*/        
 }
 
 #nav ul a:hover {
