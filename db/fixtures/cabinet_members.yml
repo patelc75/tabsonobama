@@ -4,7 +4,7 @@ mintle:
   nominee: Theresa Mintle
   image_link: http://www.lgcchicago.com/images/fellows/img482.jpg
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
-  previous_political_office: Chief of Staff for the Chicago Transit Board. Mintle served as Vice-Chairman of the Retirement Plan for CTA Employees, overseeing $1.7 billion in investments and a statutorily mandated reform program; Vice-Chairman of the CTA Retirement Healthcare Trust overseeing $700 million in investments and the creation of a new healthcare program for retirees; and Chairman of the Deferred Compensation Committee directing the investment of over $340 million in employee assets. Mintle has worked in Washington, DC, Springfield, and in City Hall. She is a past American Marshall Memorial Fellow of the German Marshall Fund and Leadership Greater Chicago Fellow.
+  previous_political_office: Chief of Staff for the Chicago Transit Board. 
   previous_political_office_link: 
   photo_filename: 
   
@@ -108,6 +108,16 @@ loredo:
   previous_political_office: Director for Community Investments at Great Lakes Higher Education
   previous_political_office_link: n/a
   photo_filename: profile_female.jpg
+
+brizard:
+  department: Chicago Public Schools
+  office:  Chief Executive Officer  
+  nominee: Jean-Claude Brizard
+  image_link: http://www.broadacademy.org/asset/student/15.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Jean-Claude_Brizard
+  previous_political_office: Superintendent of Rochester City School District 
+  previous_political_office_link: http://www.rcsdk12.org/rcsd/site/default.asp
+  photo_filename: 
 
 
   
