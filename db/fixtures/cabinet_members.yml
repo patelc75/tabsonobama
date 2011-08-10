@@ -33,7 +33,7 @@ hynes:
   department: Office of Legislative Counsel and Government Affairs
   office: Director
   nominee: Matthew Hynes
-  image_link: 
+  image_link: http://www.chicagotribune.com/common/images/taxonomy/topics/tax-HYNES_DAN_140x105.jpg
   wikipedia_link: http://www.chicago2011.org/news/mayor-elect-emanuel-announces-senior-staff/
   previous_political_office: managing partner of Hynes Law Offices LLC
   previous_political_office_link: n/a
@@ -123,8 +123,28 @@ mccarthy:
   department: Chicago Police Department
   office:  Chief of Police  
   nominee: Garry McCarthy
-  image_link: http:http://t3.gstatic.com/images?q=tbn:ANd9GcSibFht5B2h3QHgAiPF06XC6H-urHuxbd6xQ6Hvt_HZDV4s0ly7
+  image_link: http://t3.gstatic.com/images?q=tbn:ANd9GcSibFht5B2h3QHgAiPF06XC6H-urHuxbd6xQ6Hvt_HZDV4s0ly7
   wikipedia_link: 
   previous_political_office: Newark, New Jersey Chief of Police 
+  previous_political_office_link: 
+  photo_filename: 
+
+rodriguez:
+  department: Department of the Environment
+  office:  Commissioner 
+  nominee: Rich Rodriguez
+  image_link: http://www.chicagoinnovationawards.com/wp-content/uploads/2011/04/rich-rodriguez.jpg
+  wikipedia_link: 
+  previous_political_office: President of Chicago Transit Authority
+  previous_political_office_link: 
+  photo_filename: 
+
+patton:
+  department: City Hall
+  office:  Corporate Counsel
+  nominee: Stephen Patton 
+  image_link: http://www.indiana.edu/~iupolsci/images/patton.jpg
+  wikipedia_link: 
+  previous_political_office: 
   previous_political_office_link: 
   photo_filename: 
