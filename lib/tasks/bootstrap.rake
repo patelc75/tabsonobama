@@ -73,6 +73,7 @@ namespace :app do
     attribute_hashes = YAML.load(File.open(file))
     attribute_hashes.each do |key,values|
   	  puts key.to_s
+  	  table_name = 'cabinet_members' if table_name == 'appointments' or table_name == 'senior_staff'
       table_name.camelize.singularize.constantize.create(values)
     end
   end
@@ -83,7 +84,7 @@ namespace :app do
   end
 
   task :load_cabinet_members => :environment do
-  	load_flat_yml_files("cabinet_members")
+  	load_flat_yml_files("#{ENV['file']}")
   	puts
   end
   
