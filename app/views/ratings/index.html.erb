@@ -9,38 +9,10 @@
 
 <div class="box">
   <div class="boxcontent">
-    <h2>Your Staff & Appointments Ratings</h2><br>
-    <% if !@logged_in %>
-    	You must login to see your ratings or signup to start your ratings
-    <% else %>
-	    <% unless @members.empty? %>
-	      <% @members.uniq.each do |member| %>
-	      <div class="featured more">
-	        <div class="meta">
-	          <h3><%= link_to member.nominee, "cabinet-members/#{member.permalink}" %></h3>
-	          <div class="star-ratings-block">
-				<%= render :partial => 'ratings/user_rate', :locals => {:asset => member, :rater => current_user, :align => "left"} %>
-		 	  </div>
-	        </div>
-	        <div class="photo">
-	          <img alt="<%= member.nominee %>" src="<%= member.image_link %>" />
-	        </div>
-	        <!--br class="clear" /-->
-	      </div>
-	      <% end %>
-	    
-	    <% else %>
-	      	<div class="not-rated">
-	      	<br>
-	    	You have not rated any Staff & Appointments.
-	    	<br>
-	    	</div>
-	    <% end %>
-    <% end %>
-    <br class="clear" />
-  </div>
+    <h2>Warning</h2><br>
+    You will lose this ratings history if you switch web browsers or clear your cookies. If you Sign Up and Login, you ratings history will be permanently available!
 </div>
-
+</div>
 
 <!--div class="box">
   <div class="boxcontent">
@@ -146,4 +118,37 @@
  </div>
    </div>
 </div>
-
+        
+<div class="box">
+  <div class="boxcontent">
+    <h2>Your Staff & Appointments Ratings</h2><br>
+    <% if !@logged_in %>
+    	You must login to see your ratings or signup to start your ratings
+    <% else %>
+	    <% unless @members.empty? %>
+	      <% @members.uniq.each do |member| %>
+	      <div class="featured more">
+	        <div class="meta">
+	          <h3><%= link_to member.nominee, "cabinet-members/#{member.permalink}" %></h3>
+	          <div class="star-ratings-block">
+				<%= render :partial => 'ratings/user_rate', :locals => {:asset => member, :rater => current_user, :align => "left"} %>
+		 	  </div>
+	        </div>
+	        <div class="photo">
+	          <img alt="<%= member.nominee %>" src="<%= member.image_link %>" />
+	        </div>
+	        <!--br class="clear" /-->
+	      </div>
+	      <% end %>
+	    
+	    <% else %>
+	      	<div class="not-rated">
+	      	<br>
+	    	You have not rated any Staff & Appointments.
+	    	<br>
+	    	</div>
+	    <% end %>
+    <% end %>
+    <br class="clear" />
+  </div>
+</div>
