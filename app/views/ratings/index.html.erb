@@ -1,7 +1,7 @@
 <%= stylesheet_link_tag "groups" %>
 <%= stylesheet_link_tag "myratings" %>
 
-<% if !@logged_in %>
+<% if false #!@logged_in %>
   <script language="javascript">
     tb_show('Dialog', '#TB_inline?height=325&width=400&inlineId=userLogin&modal=true', null);
   </script>
@@ -9,7 +9,7 @@
 
 <div class="box">
   <div class="boxcontent">
-    <h2>Your Senior Staff Ratings</h2><br>
+    <h2>Your Staff & Appointments Ratings</h2><br>
     <% if !@logged_in %>
     	You must login to see your ratings or signup to start your ratings
     <% else %>
@@ -32,7 +32,7 @@
 	    <% else %>
 	      	<div class="not-rated">
 	      	<br>
-	    	You have not rated any Senior Staff Members.
+	    	You have not rated any Staff & Appointments.
 	    	<br>
 	    	</div>
 	    <% end %>

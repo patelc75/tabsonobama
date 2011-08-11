@@ -12,7 +12,7 @@ mccarthy:
   department: Chicago Police Department
   office:  Chief of Police  
   nominee: Garry McCarthy
-  image_link: http://t3.gstatic.com/images?q=tbn:ANd9GcSibFht5B2h3QHgAiPF06XC6H-urHuxbd6xQ6Hvt_HZDV4s0ly7
+  image_link: http://img.mediaspanonline.com/5149/4728143.jpg
   wikipedia_link: 
   previous_political_office: Newark NJ Chief of Police 
   previous_political_office_link: 
@@ -32,8 +32,28 @@ patton:
   department: City Hall
   office:  Corporate Counsel
   nominee: Stephen Patton 
-  image_link: http://www.indiana.edu/~iupolsci/images/patton.jpg
+  image_link: http://www.indiana.edu/~iupolssci/images/patton.jpg
   wikipedia_link: 
   previous_political_office: 
   previous_political_office_link: 
   photo_filename: 
+    
+claypool:
+  department: Chicago Transit Authority
+  office:  President
+  nominee: Forrest Claypool
+  image_link: http://photos-h.ak.fbcdn.net/hphotos-ak-snc6/229746_10150251052242654_48691072653_7422218_7208613_s.jpg
+  wikipedia_link: http://en.wikipedia.org/wiki/Forrest_Claypool 
+  previous_political_office: 
+  previous_political_office_link: 
+  photo_filename:    
+  
+tolva:
+  department: Technology
+  office: Chief Technology Officer
+  nominee: John Tolva
+  image_link: http://b.vimeocdn.com/ts/120/005/120005301_200.jpg
+  wikipedia_link:
+  previous_political_office: 
+  previous_political_office_link: 
+  photo_filename:  
